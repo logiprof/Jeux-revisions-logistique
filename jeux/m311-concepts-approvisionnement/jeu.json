@@ -1,0 +1,36 @@
+{
+ "module": "M311",
+ "shortcode": "jeu_m311",
+ "titre": "M311 – Les concepts de l’approvisionnement",
+ "sous_titre": "Logisticien·ne CFC · Module M311",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M311 (leçons 11.1 à 11.7.3) et 100 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "G4.5 · Formes et concepts d’approvisionnement",
+   "objectifs": [
+    "G4.5 Je décris des concepts alternatifs d’approvisionnement pour réduire ou éviter les stocks de sécurité et j’explique leurs effets sur l’entreprise. (C4)"
+   ]
+  },
+  {
+   "titre": "G4.1·G4.4 · Stock, délai et procédures de commande",
+   "objectifs": [
+    "G4.1 Je décris l’évaluation des besoins en fonction de la consommation (passée) et sur la prévisualisation des besoins futurs à l’aide d’exemples pratiques et j’effectue des calculs simples. (C3) — G4.4 Je décris les méthodes de commande avec quantités fixes, quantités variables et rythme de commande. (C2)"
+   ]
+  },
+  {
+   "titre": "G4.8 · Quantité optimale de commande (Andler)",
+   "objectifs": [
+    "G4.8 Je calcule la quantité optimale de commande (Andler), j’interprète le résultat et j’en tire des conclusions pour mon travail. (C3)"
+   ]
+  },
+  {
+   "titre": "G3.4 · Analyse ABC",
+   "objectifs": [
+    "G3.4 J’établis dans Excel une analyse ABC (rotation des stocks ou chiffre d’affaires) d’une partie de l’entrepôt ou d’un groupe d’articles et je propose des mesures d’optimisation de l’entrepôt. (C4)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

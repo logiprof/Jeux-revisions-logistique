@@ -1,0 +1,36 @@
+{
+ "module": "M312",
+ "shortcode": "jeu_m312",
+ "titre": "M312 – Données de stockage",
+ "sous_titre": "Logisticien·ne CFC · Module M312",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M312 (leçons 12.1 à 12.5) et 100 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "G2.12 · Conservation, péremption et pertes",
+   "objectifs": [
+    "G2.12 Je décris les causes et les conséquences de la perte de matériel, de la durée de conservation et des dates de péremption des marchandises. (C2)"
+   ]
+  },
+  {
+   "titre": "G4.2·G4.3 · Seuils de stock et point de commande",
+   "objectifs": [
+    "G4.2 J’explique l’origine d’un stock de sécurité et d’un stock maximum (capacités de stockage, consommation, fiabilité de livraison, qualité des fournisseurs, stock moyen, rotation des stocks, délais de réapprovisionnement) et j’effectue des calculs à cet effet. (C3) — G4.3 J’explique l’importance du point de commande, le calcule sur la base de la consommation à l’aide d’un exemple de cas et en déduis les conséquences pour l’approvisionnement. (C3)"
+   ]
+  },
+  {
+   "titre": "G3.1 · Tenir à jour les données de stock",
+   "objectifs": [
+    "G3.1 Je tiens à jour les données relatives aux stocks (stock disponible, stock total, stock bloqué, stock d’assurance qualité, stock réservé) et explique les différences. (C3)"
+   ]
+  },
+  {
+   "titre": "G3.2·G4.9·H1.6 · Inventaire, écarts et corrections",
+   "objectifs": [
+    "G3.2 Je calcule et analyse les différences d’inventaire à l’aide d’une étude de cas, je les explique et je propose des améliorations. (C4) — G4.9 Je calcule les stocks de marchandises effectifs à déclarés et le stock minimal et j’en déduis les résultats des mesures à prendre. (C4) — H1.6 J’explique la procédure de correction des quantités dans l’ERP de l’entreprise après la préparation de commandes. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}
