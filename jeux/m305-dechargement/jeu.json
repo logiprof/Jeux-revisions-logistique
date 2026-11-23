@@ -1,0 +1,36 @@
+{
+ "module": "M305",
+ "shortcode": "jeu_m305",
+ "titre": "M305 – Déchargement des marchandises",
+ "sous_titre": "Logisticien·ne CFC · Module M305",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M305 (introduction, leçons 5.1 et 5.2) et 100 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "b3.8·c1.1 · Dangers de l’infrastructure",
+   "objectifs": [
+    "b3.8 Je décris à l’aide d’exemples les risques et dangers apparaissant dans le processus logistique pour moi-même, pour les collaborateurs et pour les tiers. (C2) — c1.1 Je décris les travaux préparatoires et les ressources nécessaires (personnel, place, matériel, EPI) pour une réception économique et conforme. (C2)"
+   ]
+  },
+  {
+   "titre": "c1.2·c1.4 · Véhicule et équipements de liaison",
+   "objectifs": [
+    "c1.2 Je décris les mesures et les moyens auxiliaires pour sécuriser le moyen de transport (cale, frein de stationnement, fixation de la rampe et béquilles de sécurité). (C2) — c1.4 Je décris les équipements de travail pour le déchargement (tôle de liaison, pont de chargement, plateforme élévatrice, etc.). (C2)"
+   ]
+  },
+  {
+   "titre": "c1.3·a1.3 · Engins et bases légales",
+   "objectifs": [
+    "c1.3 Je décris les engins de manutention et de levage, leurs caractéristiques et leurs domaines d’utilisation. (C2) — a1.3 J’explique les bases légales relatives à la capacité de travail (sécurité, jeunes travailleurs, temps de repos, équipements). (C2) — a4.3 Indications du fabricant. — d1.7 Moyens auxiliaires ergonomiques."
+   ]
+  },
+  {
+   "titre": "b3.8 · Zones à risque et signalisation",
+   "objectifs": [
+    "b3.8 Je décris à l’aide d’exemples les risques et dangers apparaissant dans le processus logistique pour moi-même, pour les collaborateurs et pour les tiers. (C2) — stockage automatisé, électricité, signalisation"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

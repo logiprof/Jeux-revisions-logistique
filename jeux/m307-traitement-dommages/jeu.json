@@ -1,0 +1,30 @@
+{
+ "module": "M307",
+ "shortcode": "jeu_m307",
+ "titre": "M307 – Contrôle sommaire et traitement des dommages",
+ "sous_titre": "Logisticien·ne CFC · Module M307",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M307 (leçons 7.1 à 7.3) et 75 épreuves, dont 41 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "c2.6 · Erreurs, écarts et protocole",
+   "objectifs": [
+    "c2.6 J’explique l’importance de la signature de réception sur les documents de transport et d’accompagnement et je décris comment les écarts sont consignés sur les documents. (C2)"
+   ]
+  },
+  {
+   "titre": "c2.7 · Dommages liés au transport",
+   "objectifs": [
+    "c2.7 Je décris les dommages liés au transport (mécaniques, climatiques, température, nuisibles, forces physiques lors du transport, etc.). (C2)"
+   ]
+  },
+  {
+   "titre": "c1.7 · Indicateurs et enregistreurs",
+   "objectifs": [
+    "c1.7 Je décris les critères d’évaluation de l’état des marchandises et des engins échangeables livrés (indicateurs de basculement et de choc, chaîne du froid). (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

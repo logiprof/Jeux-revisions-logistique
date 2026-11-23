@@ -1,0 +1,30 @@
+{
+ "module": "M308",
+ "shortcode": "jeu_m308",
+ "titre": "M308 – Les contrôles de quantités",
+ "sous_titre": "Logisticien·ne CFC · Module M308",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M308 (leçons 8.0 à 8.3) et 75 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "c2.10a · Unités et comptage",
+   "objectifs": [
+    "c2.10 Je décris les travaux effectués dans le cadre du contrôle détaillé et explique les différences avec l’identification globale. (C2) — partie 1 : unités de mesure, histoire du mètre, comptage par quantités partielles"
+   ]
+  },
+  {
+   "titre": "c2.10b · Mesurer longueurs et volumes",
+   "objectifs": [
+    "c2.10 Je décris les travaux effectués dans le cadre du contrôle détaillé et explique les différences avec l’identification globale. (C2) — partie 2 : outils de mesure des longueurs et des volumes"
+   ]
+  },
+  {
+   "titre": "c2.10c · Peser",
+   "objectifs": [
+    "c2.10 Je décris les travaux effectués dans le cadre du contrôle détaillé et explique les différences avec l’identification globale. (C2) — partie 3 : balances, tare, poids net et brut, vérification des instruments"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

@@ -1,0 +1,36 @@
+{
+ "module": "M306",
+ "shortcode": "jeu_m306",
+ "titre": "M306 – Contrôle des contenants",
+ "sous_titre": "Logisticien·ne CFC · Module M306",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M306 (leçons 6.1 à 6.9) et 100 épreuves, dont 32 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "c2.4 · Contenants et supports de charge",
+   "objectifs": [
+    "c2.4 Je décris les supports de charge (EPAL, CHEP et Dispobox), leurs différences et leurs possibilités d’échange ainsi que les procédures d’échange correspondantes (pièce contre pièce, bon d’échange et compte courant). (C2)"
+   ]
+  },
+  {
+   "titre": "c2.5 · Échange et compte courant",
+   "objectifs": [
+    "c2.5 Je décris les exigences posées à un compte courant (pour engins échangeables) et explique les mesures de compensation. (C3) — avec les procédures d’échange de c2.4 (pièce contre pièce, bon d’échange, compte courant)"
+   ]
+  },
+  {
+   "titre": "c3.4 · Tri et état des supports",
+   "objectifs": [
+    "c3.4 Je décris les critères de tri des supports de charge et d’évaluation de leur état ainsi que, selon les résultats, le traitement correspondant (réparation, recyclage, élimination). (C2)"
+   ]
+  },
+  {
+   "titre": "c1.7 · Supports spéciaux et état des marchandises",
+   "objectifs": [
+    "c1.7 Je décris les critères d’évaluation de l’état des marchandises et des engins échangeables livrés (indicateurs de basculement et de choc, chaîne du froid). (C2) — avec les supports spéciaux et les emballages"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}
