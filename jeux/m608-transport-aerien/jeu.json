@@ -1,0 +1,36 @@
+{
+ "module": "M608",
+ "shortcode": "jeu_m608",
+ "titre": "M608 – Le transport aérien",
+ "sous_titre": "Logisticien·ne CFC · Module M608",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M608 (leçons 8.1 à 8.8) et 100 épreuves, dont 32 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B3.2 · Importance du fret aérien",
+   "objectifs": [
+    "B3.2 Je décris les bases du transport des marchandises (contrat de dépôt, transporteur, Incoterms, etc.). (C2) — partie : fret aérien, AWB, DGR IATA, trafic de remplacement"
+   ]
+  },
+  {
+   "titre": "C1.5 · Documents de transport",
+   "objectifs": [
+    "C1.5 Je décris les documents de transport (CMR, LTA, AWB, connaissement) et la différence avec le bulletin de livraison. (C2)"
+   ]
+  },
+  {
+   "titre": "D3.2 · Usages, aéroports et ULD",
+   "objectifs": [
+    "D3.2 Je décris les moyens de transport (camionnette, camion, scooter, train, avion, bateau) pour la distribution et la livraison des marchandises, avec leurs avantages et inconvénients et les critères de choix. (C2) — partie : avion"
+   ]
+  },
+  {
+   "titre": "D3.5·D4.1 · Sécurisation et marchandises dangereuses",
+   "objectifs": [
+    "D3.5 Je décris les moyens de protection couramment utilisés (…) avec leurs avantages et inconvénients, les critères d’évaluation de leur état et la responsabilité de l’évaluation avant utilisation. (C2) — D4.1 Je décris les différents moyens de sécurisation pour chaque moyen de transport. (C2) — partie : avion"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

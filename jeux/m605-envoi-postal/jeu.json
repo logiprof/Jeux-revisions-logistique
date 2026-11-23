@@ -1,0 +1,36 @@
+{
+ "module": "M605",
+ "shortcode": "jeu_m605",
+ "titre": "M605 – Mode d’envoi postal",
+ "sous_titre": "Logisticien·ne CFC · Module M605",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M605 (leçons 5.1 à 5.5) et 100 épreuves, dont 35 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "PE1 · Adresser lettres et colis",
+   "objectifs": [
+    "J’applique les règles d’adressage des lettres et des colis pour permettre un tri automatique rapide et sans erreur. (leçon 5.1)"
+   ]
+  },
+  {
+   "titre": "PE2 · Modes d’envoi lettres et colis",
+   "objectifs": [
+    "Je choisis la prestation de base et les prestations complémentaires adaptées pour l’envoi de lettres et de colis. (leçon 5.2)"
+   ]
+  },
+  {
+   "titre": "PE3 · Étranger et centres de tri",
+   "objectifs": [
+    "J’explique les particularités des envois à l’étranger et le traitement des lettres et des colis dans les centres de tri, y compris la protection de la santé. (leçons 5.3 et 5.4)"
+   ]
+  },
+  {
+   "titre": "PE4 · Distribution et retrait",
+   "objectifs": [
+    "Je décris la distribution du dernier kilomètre, la vérification de l’identité et les services de retrait PickPost et My Post 24. (leçon 5.5)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

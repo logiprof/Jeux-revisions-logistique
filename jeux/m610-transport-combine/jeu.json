@@ -1,0 +1,30 @@
+{
+ "module": "M610",
+ "shortcode": "jeu_m610",
+ "titre": "M610 – Le transport combiné",
+ "sous_titre": "Logisticien·ne CFC · Module M610",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M610 (leçons 10.1 à 10.3) et 81 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "D3.2 a · Principe et ferroutage",
+   "objectifs": [
+    "D3.2 Je décris les moyens de transport (par ex. camionnette de livraison, camion, scooter, train, avion, bateau) pour la distribution et la livraison des différentes marchandises, avec les avantages et les inconvénients ainsi que les critères (écologiques, énergétiques, économiques, de sécurité, de fiabilité, de rapidité) pour le choix du moyen de transport. (C2) — partie : principe du transport combiné, interfaces, ROLA et ferroutage non accompagné"
+   ]
+  },
+  {
+   "titre": "D3.2 b · Conteneurs ISO",
+   "objectifs": [
+    "D3.2 Je décris les moyens de transport (par ex. camionnette de livraison, camion, scooter, train, avion, bateau) pour la distribution et la livraison des différentes marchandises, avec les avantages et les inconvénients ainsi que les critères (écologiques, énergétiques, économiques, de sécurité, de fiabilité, de rapidité) pour le choix du moyen de transport. (C2) — partie : conteneurs ISO (dimensions, poids, sécurité)"
+   ]
+  },
+  {
+   "titre": "D3.2 c · Autres systèmes d’échange",
+   "objectifs": [
+    "D3.2 Je décris les moyens de transport (par ex. camionnette de livraison, camion, scooter, train, avion, bateau) pour la distribution et la livraison des différentes marchandises, avec les avantages et les inconvénients ainsi que les critères (écologiques, énergétiques, économiques, de sécurité, de fiabilité, de rapidité) pour le choix du moyen de transport. (C2) — partie : ACTS, caisses mobiles, Cargo Domino, combiné route-rail, Cargo Sous Terrain"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

@@ -1,0 +1,30 @@
+{
+ "module": "M604",
+ "shortcode": "jeu_m604",
+ "titre": "M604 – Les systèmes de distribution",
+ "sous_titre": "Logisticien·ne CFC · Module M604",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M604 (leçons 4.1 à 4.5) et 75 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B3.2 · Bases du transport et Incoterms",
+   "objectifs": [
+    "B3.2 Je décris les bases du transport des marchandises (contrat de dépôt, transporteur, Incoterms, etc.). (C2)"
+   ]
+  },
+  {
+   "titre": "D1.6 · Marché postal et DEC",
+   "objectifs": [
+    "D1.6 Je décris le marché du courrier et des DEC et je nomme les principaux prestataires. (C2)"
+   ]
+  },
+  {
+   "titre": "D3.1 · Systèmes de distribution",
+   "objectifs": [
+    "D3.1 J’explique à l’aide d’exemples pratiques différents systèmes de distribution (régional/national/international ; direct/à plusieurs niveaux). (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

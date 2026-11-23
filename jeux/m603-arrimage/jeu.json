@@ -1,0 +1,30 @@
+{
+ "module": "M603",
+ "shortcode": "jeu_m603",
+ "titre": "M603 – L’arrimage des marchandises",
+ "sous_titre": "Logisticien·ne CFC · Module M603",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M603 (leçons 3.1 à 3.3) et 75 épreuves, dont 32 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "C3.2a · Filmage, rétraction, cerclage",
+   "objectifs": [
+    "C3.2 Je décris les techniques et les moyens auxiliaires utilisés pour sécuriser les marchandises sur les supports de charge. (C2) — partie : filmage, rétraction et cerclage (leçon 3.1)"
+   ]
+  },
+  {
+   "titre": "C3.2b · Choisir le bon feuillard",
+   "objectifs": [
+    "C3.2 Je décris les techniques et les moyens auxiliaires utilisés pour sécuriser les marchandises sur les supports de charge. (C2) — partie : types de feuillards, résistance à la traction, allongement, capacité de rétraction (leçon 3.2)"
+   ]
+  },
+  {
+   "titre": "C3.2c · Types de fermeture",
+   "objectifs": [
+    "C3.2 Je décris les techniques et les moyens auxiliaires utilisés pour sécuriser les marchandises sur les supports de charge. (C2) — partie : fermetures de feuillards (boucle, chape, sans chape) (leçon 3.3)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

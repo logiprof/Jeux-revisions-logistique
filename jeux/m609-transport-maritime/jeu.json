@@ -1,0 +1,30 @@
+{
+ "module": "M609",
+ "shortcode": "jeu_m609",
+ "titre": "M609 – Le transport maritime",
+ "sous_titre": "Logisticien·ne CFC · Module M609",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M609 (leçons 9.1 à 9.5) et 89 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "D3.2 · Voies et ports maritimes",
+   "objectifs": [
+    "D3.2 Je décris les moyens de transport (par ex. camionnette de livraison, camion, scooter, train, avion, bateau) pour la distribution et la livraison des différentes marchandises, avec les avantages et les inconvénients ainsi que les critères (écologiques, énergétiques, économiques, de sécurité, de fiabilité, de rapidité) pour le choix du moyen de transport. (C2) — partie : navigation, voies et ports"
+   ]
+  },
+  {
+   "titre": "D3.5 · Arrimage et forces en mer",
+   "objectifs": [
+    "D3.5 Je décris les moyens de protection couramment utilisés pour les camions et les trains (sangles de sécurité, barres de protection, coussin d’air et cloisons de séparation, chargement ajusté) avec leurs avantages et leurs inconvénients, les critères d’évaluation de leur état et la responsabilité de l’évaluation avant utilisation. (C2) — partie : arrimage maritime et forces dynamiques"
+   ]
+  },
+  {
+   "titre": "D4.1 · Manutention et chargement",
+   "objectifs": [
+    "D4.1 Je décris les différents moyens de sécurisation pour chaque moyen de transport. (C2) — partie : manutention portuaire, spreaders, conteneurs et palettes"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

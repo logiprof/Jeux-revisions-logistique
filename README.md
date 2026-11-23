@@ -2,7 +2,7 @@
 
 Jeux de révision LogiProf pour les apprenti·e·s **logisticien·ne·s CFC**, et l’extension WordPress qui les installe sur votre site, avec mises à jour automatiques.
 
-- **47 jeux** (modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506), un dossier par jeu dans [`jeux/`](jeux/).
+- **59 jeux** (modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612), un dossier par jeu dans [`jeux/`](jeux/).
 - Chaque jeu : entraînement par objectif, examen blanc noté sur 6, révision ciblée des erreurs, progression enregistrée sur le compte de l’élève.
 - L’extension s’installe une seule fois ; chaque nouvelle version publiée ici arrive automatiquement sur le site.
 
@@ -73,6 +73,18 @@ La liste des shortcodes est aussi dans **Réglages → Jeux logistique**.
 | M504 | Le flux de matériel | `[jeu_m504]` | 4 | 100 |
 | M505 | Planification et contrôle de la production (PCP) | `[jeu_m505]` | 4 | 100 |
 | M506 | Assurance qualité (AQ) dans la production | `[jeu_m506]` | 4 | 100 |
+| M601 | La préparation de commandes | `[jeu_m601]` | 3 | 75 |
+| M602 | Les emballages | `[jeu_m602]` | 5 | 125 |
+| M603 | L’arrimage des marchandises | `[jeu_m603]` | 3 | 75 |
+| M604 | Les systèmes de distribution | `[jeu_m604]` | 3 | 75 |
+| M605 | Mode d’envoi postal | `[jeu_m605]` | 4 | 100 |
+| M606 | Le transport routier | `[jeu_m606]` | 3 | 75 |
+| M607 | Le transport ferroviaire | `[jeu_m607]` | 3 | 75 |
+| M608 | Le transport aérien | `[jeu_m608]` | 4 | 100 |
+| M609 | Le transport maritime | `[jeu_m609]` | 3 | 89 |
+| M610 | Le transport combiné | `[jeu_m610]` | 3 | 81 |
+| M611 | La préparation de commandes | `[jeu_m611]` | 6 | 162 |
+| M612 | La planification des transports | `[jeu_m612]` | 3 | 85 |
 
 ## Mises à jour automatiques
 

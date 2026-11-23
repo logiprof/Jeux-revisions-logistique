@@ -1,0 +1,30 @@
+{
+ "module": "M612",
+ "shortcode": "jeu_m612",
+ "titre": "M612 – La planification des transports",
+ "sous_titre": "Logisticien·ne CFC · Module M612",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M612 (leçons 12.1 à 12.6) et 85 épreuves, dont 35 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "h2.2 · Regroupage et cross-docking",
+   "objectifs": [
+    "h2.2 Je décris les notions de compactage (conditionnement) et de Crossdocking et explique leurs effets sur les charges de transport, le résultat d’exploitation et la réduction de CO2. (C2)"
+   ]
+  },
+  {
+   "titre": "h2.5 · Répartition du poids et arrimage",
+   "objectifs": [
+    "h2.5 J’explique la répartition sûre du poids d’un chargement sur le moyen de transport et l’effet des forces de gravitation et j’en déduis comment les marchandises doivent être sécurisées sur les moyens de transport. (C4)"
+   ]
+  },
+  {
+   "titre": "12.1–12.4 · Tournées, Make or Buy et froid",
+   "objectifs": [
+    "Contenu des leçons 12.1 à 12.4 (planification des tournées, bases légales, Make or Buy, denrées périssables et HACCP) — sans objectif dans la leçon « Objectifs » du module"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

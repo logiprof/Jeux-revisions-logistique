@@ -1,0 +1,30 @@
+{
+ "module": "M607",
+ "shortcode": "jeu_m607",
+ "titre": "M607 – Le transport ferroviaire",
+ "sous_titre": "Logisticien·ne CFC · Module M607",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M607 (leçons 7.1 à 7.4) et 75 épreuves, dont 32 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "D3.2 · Le rail et ses grands axes",
+   "objectifs": [
+    "D3.2 Je décris les moyens de transport (camionnette, camion, scooter, train, avion, bateau) pour la distribution et la livraison des marchandises, avec leurs avantages et inconvénients et les critères de choix. (C2) — partie : le rail"
+   ]
+  },
+  {
+   "titre": "D3.5 · Chargement des wagons",
+   "objectifs": [
+    "D3.5 Je décris les moyens de protection couramment utilisés pour les camions et les trains (sangles, barres de protection, coussins d’air, cloisons de séparation, chargement ajusté) avec leurs avantages et inconvénients, les critères d’évaluation de leur état et la responsabilité de l’évaluation avant utilisation. (C2)"
+   ]
+  },
+  {
+   "titre": "D4.1 · Marchandises dangereuses et avenir",
+   "objectifs": [
+    "D4.1 Je décris les différents moyens de sécurisation pour chaque moyen de transport. (C2) — signalisation des marchandises dangereuses par rail, documents, comparaison rail-route et innovations (CST)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

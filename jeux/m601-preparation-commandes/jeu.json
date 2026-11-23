@@ -1,0 +1,30 @@
+{
+ "module": "M601",
+ "shortcode": "jeu_m601",
+ "titre": "M601 – La préparation de commandes",
+ "sous_titre": "Logisticien·ne CFC · Module M601",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M601 (leçons 1.1 à 1.3) et 75 épreuves, dont 35 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "PC1 · Bases de la préparation",
+   "objectifs": [
+    "Je distingue les types de préparation (statique, dynamique), les modes de déplacement (1D, 2D), de prélèvement (manuel, automatique), de transfert (centralisé, décentralisé), de préparation des informations (batch, temps réel) et la préparation par un ou plusieurs secteurs. (leçon 1.1)"
+   ]
+  },
+  {
+   "titre": "PC2 · Modes et organisation",
+   "objectifs": [
+    "Je compare les modes de préparation et leur organisation opérationnelle : orienté commande ou orienté article, en série ou en parallèle, Pick-and-Pack, préparation par allée de prélèvement ou sérielle. (leçon 1.2)"
+   ]
+  },
+  {
+   "titre": "PC3 · Préparation assistée",
+   "objectifs": [
+    "Je décris les solutions technologiques de préparation de commandes assistée (Pick-by-Scan, Pick-by-Voice, Pick-by-Light, Pick-by-Vision), leurs avantages et leurs inconvénients. (leçon 1.3)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

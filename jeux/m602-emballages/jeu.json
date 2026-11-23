@@ -1,0 +1,42 @@
+{
+ "module": "M602",
+ "shortcode": "jeu_m602",
+ "titre": "M602 – Les emballages",
+ "sous_titre": "Logisticien·ne CFC · Module M602",
+ "duree": "10 min par série",
+ "description": "5 objectifs du module M602 (leçons 2.1 à 2.5) et 125 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B4.1 · Fonctions et durabilité",
+   "objectifs": [
+    "B4.1 Je décris l’origine, la compatibilité environnementale et l’utilisation des matériaux et matières premières utilisés dans la logistique (emballages, consommables, engins échangeables, produits de nettoyage, etc.). (C2)"
+   ]
+  },
+  {
+   "titre": "C2.2 · Marquages et normes",
+   "objectifs": [
+    "C2.2 Je décris les marquages des marchandises et des unités de transport et leur signification. (C2)"
+   ]
+  },
+  {
+   "titre": "C2.7 · Contraintes et dommages",
+   "objectifs": [
+    "C2.7 Je décris les dommages liés au transport (mécaniques, climatiques, température, nuisibles, forces physiques lors du transport, etc.). (C2)"
+   ]
+  },
+  {
+   "titre": "D1.3 · Termes d’emballage (DIN)",
+   "objectifs": [
+    "D1.3 Je cite les termes d’emballage en vigueur selon la norme DIN 55405. (C2)"
+   ]
+  },
+  {
+   "titre": "D1.4 · Choisir le bon emballage",
+   "objectifs": [
+    "D1.4 Je décris les critères (écologiques, économiques et de sécurité) pour le choix de l’emballage approprié des marchandises. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

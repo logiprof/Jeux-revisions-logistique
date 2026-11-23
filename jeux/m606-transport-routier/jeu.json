@@ -1,0 +1,30 @@
+{
+ "module": "M606",
+ "shortcode": "jeu_m606",
+ "titre": "M606 – Le transport routier",
+ "sous_titre": "Logisticien·ne CFC · Module M606",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M606 (leçons 6.1 à 6.3) et 75 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "D3.2 · Transport routier et RPLP",
+   "objectifs": [
+    "D3.2 Je décris les moyens de transport (camionnette, camion, scooter, train, avion, bateau) pour la distribution et la livraison des marchandises, avec leurs avantages et inconvénients et les critères de choix (écologiques, énergétiques, économiques, de sécurité, de fiabilité, de rapidité). (C2)"
+   ]
+  },
+  {
+   "titre": "D4.1 · Forces dynamiques et répartition",
+   "objectifs": [
+    "D4.1 Je décris les différents moyens de sécurisation pour chaque moyen de transport. (C2) — forces dynamiques, arrimage de blocage et de force, répartition de la charge, obligation d’arrimer"
+   ]
+  },
+  {
+   "titre": "D3.5 · Moyens de protection",
+   "objectifs": [
+    "D3.5 Je décris les moyens de protection couramment utilisés pour les camions et les trains (sangles, barres de protection, coussins d’air, cloisons de séparation, chargement ajusté) avec leurs avantages et inconvénients, les critères d’évaluation de leur état et la responsabilité de l’évaluation avant utilisation. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}
