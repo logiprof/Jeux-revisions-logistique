@@ -1,0 +1,30 @@
+{
+ "module": "M301",
+ "shortcode": "jeu_m301",
+ "titre": "M301 – La logistique d’approvisionnement",
+ "sous_titre": "Logisticien·ne CFC · Module M301",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M301 (leçons 1.1 à 1.5) et 76 épreuves, dont 37 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "c7.1a · Missions et concepts d’achat",
+   "objectifs": [
+    "c7.1 J’énumère les principaux facteurs (stock de sécurité, consommation, rotation, concepts d’approvisionnement) qui conduisent à une commande et j’effectue des calculs simples. (C3) — partie 1 : missions des achats, « Make or Buy », externalisation"
+   ]
+  },
+  {
+   "titre": "c7.1b · Quantités, moment et calculs",
+   "objectifs": [
+    "c7.1 J’énumère les principaux facteurs (stock de sécurité, consommation, rotation, concepts d’approvisionnement) qui conduisent à une commande et j’effectue des calculs simples. (C3) — partie 2 : quantités, moment d’achat, stock de sécurité, consommation, calculs"
+   ]
+  },
+  {
+   "titre": "b3.4 · Systèmes d’indicateurs",
+   "objectifs": [
+    "b3.4 J’explique le principe des systèmes d’indicateurs de l’entreprise et leur importance pour l’entreprise et pour l’exécution des mandats. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

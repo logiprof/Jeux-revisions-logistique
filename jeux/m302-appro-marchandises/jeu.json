@@ -1,0 +1,30 @@
+{
+ "module": "M302",
+ "shortcode": "jeu_m302",
+ "titre": "M302 – L’approvisionnement de marchandises",
+ "sous_titre": "Logisticien·ne CFC · Module M302",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M302 (leçons 2.1 à 2.3) et 75 épreuves, dont 35 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "C7.1a · Où acheter ?",
+   "objectifs": [
+    "C7.1 J’énumère les principaux facteurs (stock de sécurité, consommation, rotation, concepts d’approvisionnement) qui conduisent à une commande et j’effectue des calculs simples. (C3) — partie 1 : achat privé ou professionnel, choix du fournisseur, étapes de l’achat"
+   ]
+  },
+  {
+   "titre": "C7.1b · Offre, demande et prix",
+   "objectifs": [
+    "C7.1 J’énumère les principaux facteurs (stock de sécurité, consommation, rotation, concepts d’approvisionnement) qui conduisent à une commande et j’effectue des calculs simples. (C3) — partie 2 : loi de l’offre et de la demande, équilibre du marché"
+   ]
+  },
+  {
+   "titre": "C7.1c · Processus de commande",
+   "objectifs": [
+    "C7.1 J’énumère les principaux facteurs (stock de sécurité, consommation, rotation, concepts d’approvisionnement) qui conduisent à une commande et j’effectue des calculs simples. (C3) — partie 3 : offre, commande, confirmation, facture et concepts d’approvisionnement (JIT, JIC)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

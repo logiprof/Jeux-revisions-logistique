@@ -1,0 +1,30 @@
+{
+ "module": "M303",
+ "shortcode": "jeu_m303",
+ "titre": "M303 – Processus de réception des marchandises",
+ "sous_titre": "Logisticien·ne CFC · Module M303",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M303 (leçons 3.1 à 3.3) et 75 épreuves, dont 35 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "c1.1a · La réception des marchandises",
+   "objectifs": [
+    "c1.1 Je décris les travaux préparatoires et les ressources nécessaires (personnel, place, matériel, EPI) pour une réception économique et conforme à la qualité des marchandises sur la base des présentes commandes. (C2) — partie 1 : rôle de la réception, contrôles, bases juridiques"
+   ]
+  },
+  {
+   "titre": "c1.1b · Accepter en tant qu’acheteur",
+   "objectifs": [
+    "c1.1 Je décris les travaux préparatoires et les ressources nécessaires (personnel, place, matériel, EPI) pour une réception économique et conforme à la qualité des marchandises sur la base des présentes commandes. (C2) — partie 2 : vente mobilière, achat au comptant et sur facture"
+   ]
+  },
+  {
+   "titre": "c1.1c · Réception planifiée ou non",
+   "objectifs": [
+    "c1.1 Je décris les travaux préparatoires et les ressources nécessaires (personnel, place, matériel, EPI) pour une réception économique et conforme à la qualité des marchandises sur la base des présentes commandes. (C2) — partie 3 : réception planifiée et non planifiée, ERP, EPI"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

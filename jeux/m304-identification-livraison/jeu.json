@@ -1,0 +1,36 @@
+{
+ "module": "M304",
+ "shortcode": "jeu_m304",
+ "titre": "M304 – Identification de la livraison",
+ "sous_titre": "Logisticien·ne CFC · Module M304",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M304 (leçons 4.1 à 4.5) et 100 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "c2.3 · Identification globale",
+   "objectifs": [
+    "c2.3 Je décris les travaux d’une identification globale et en explique le but. (C2) — avec c1.1 (travaux préparatoires et sécurité au déchargement)"
+   ]
+  },
+  {
+   "titre": "c2.2 · Identification détaillée et marquages",
+   "objectifs": [
+    "c2.2 Je décris les marquages des marchandises et des unités de transport et leur signification. (C2) — avec l’identification détaillée de la livraison"
+   ]
+  },
+  {
+   "titre": "c1.5·c1.6 · Documents d’accompagnement",
+   "objectifs": [
+    "c1.5 Je décris les documents de transport (CMR, LTA, AWB, connaissement) et la différence avec le bulletin de livraison. (C2) — c1.6 Je décris les éléments d’un bulletin de livraison complet (destinataire, expéditeur, numéro d’article, désignation de l’article, quantité, unités). (C2)"
+   ]
+  },
+  {
+   "titre": "c2.6·b3.2 · Réserves et transport international",
+   "objectifs": [
+    "c2.6 J’explique l’importance de la signature de réception sur les documents de transport et d’accompagnement et je décris comment les écarts sont consignés sur les documents. (C2) — b3.2 Je décris les bases du transport des marchandises (contrat de dépôt, transporteur, Incoterms, etc.). (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

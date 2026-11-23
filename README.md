@@ -2,7 +2,7 @@
 
 Jeux de révision LogiProf pour les apprenti·e·s **logisticien·ne·s CFC**, et l’extension WordPress qui les installe sur votre site, avec mises à jour automatiques.
 
-- **19 jeux** (modules M101 à M110, M201 à M209), un dossier par jeu dans [`jeux/`](jeux/).
+- **23 jeux** (modules M101 à M110, M201 à M209, M301 à M304), un dossier par jeu dans [`jeux/`](jeux/).
 - Chaque jeu : entraînement par objectif, examen blanc noté sur 6, révision ciblée des erreurs, progression enregistrée sur le compte de l’élève.
 - L’extension s’installe une seule fois ; chaque nouvelle version publiée ici arrive automatiquement sur le site.
 
@@ -45,6 +45,10 @@ La liste des shortcodes est aussi dans **Réglages → Jeux logistique**.
 | M207 | L’avant vente | `[jeu_m207]` | 3 | 76 |
 | M208 | Le service à la vente | `[jeu_m208]` | 3 | 77 |
 | M209 | SAV Service après-vente | `[jeu_m209]` | 3 | 75 |
+| M301 | La logistique d’approvisionnement | `[jeu_m301]` | 3 | 76 |
+| M302 | L’approvisionnement de marchandises | `[jeu_m302]` | 3 | 75 |
+| M303 | Processus de réception des marchandises | `[jeu_m303]` | 3 | 75 |
+| M304 | Identification de la livraison | `[jeu_m304]` | 4 | 100 |
 
 ## Mises à jour automatiques
 
