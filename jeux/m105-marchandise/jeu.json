@@ -1,0 +1,24 @@
+{
+ "module": "M105",
+ "shortcode": "jeu_m105",
+ "titre": "M105 – Marchandise",
+ "sous_titre": "Logisticien·ne CFC · Module M105",
+ "duree": "10 min par série",
+ "description": "2 objectifs du module M105 (leçons 5.1 à 5.7) et 64 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "C4.5 · Ce qui abîme la marchandise",
+   "objectifs": [
+    "Je décris les facteurs possibles qui ont un effet négatif sur la qualité des marchandises dans l’entrepôt (nuisibles, température, humidité de l’air, poussière, lumière). (C2)"
+   ]
+  },
+  {
+   "titre": "G2.12 · Pertes et conservation",
+   "objectifs": [
+    "Je décris les causes et les conséquences de la perte de matériel, de la durée de conservation et des dates de péremption des marchandises. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

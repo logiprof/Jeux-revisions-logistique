@@ -1,0 +1,42 @@
+{
+ "module": "M106",
+ "shortcode": "jeu_m106",
+ "titre": "M106 – L’élimination des déchets CH",
+ "sous_titre": "Logisticien·ne CFC · Module M106",
+ "duree": "10 min par série",
+ "description": "5 objectifs du module M106 (leçons 6.1 à 6.7) et 133 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B4.2 · Le principe des 3R",
+   "objectifs": [
+    "J’explique le principe de la gestion des déchets selon les 3R : réduire-réutiliser-recycler (up cycling, recycler, incinérer, mettre en décharge). (C2)"
+   ]
+  },
+  {
+   "titre": "B4.3 · Économie circulaire",
+   "objectifs": [
+    "Je décris les voies d’élimination (économie circulaire), les avantages économiques et environnementaux du recyclage des quantités résiduelles de matériaux et de matières premières utilisés dans une entreprise logistique. (C2)"
+   ]
+  },
+  {
+   "titre": "B4.4 · Ressources et énergie",
+   "objectifs": [
+    "Je décris, à l’aide d’un exemple pratique, des mesures concrètes pour améliorer l’efficacité des ressources et de l’énergie dans le processus logistique. (C2)"
+   ]
+  },
+  {
+   "titre": "B4.5 · Les émissions",
+   "objectifs": [
+    "Je décris différents types d’émissions et les possibilités de les éviter. (C2)"
+   ]
+  },
+  {
+   "titre": "B4.7 · Trier et valoriser",
+   "objectifs": [
+    "Je décris l’utilité du tri et de la valorisation des déchets d’entreprise comme alternative à leur élimination, je cite des exemples concrets de déchets qui deviennent ainsi des matières valorisées. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

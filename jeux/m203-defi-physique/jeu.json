@@ -1,0 +1,60 @@
+{
+ "module": "M203",
+ "shortcode": "jeu_m203",
+ "titre": "M203 – Le défi physique dans le monde du travail",
+ "sous_titre": "Logisticien·ne CFC · Module M203",
+ "duree": "10 min par série",
+ "description": "8 objectifs du module M203 (sous-chapitre 3.6) et 202 épreuves, dont 35 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "A2.5 · Les EPI",
+   "objectifs": [
+    "J’énumère les éléments des équipements de protection individuelle (EPI) adaptés au travail, j’explique leur effet, leur utilisation et leur entretien. (C2)"
+   ]
+  },
+  {
+   "titre": "A2.7 · Mesures préventives",
+   "objectifs": [
+    "Je décris des mesures personnelles préventives concrètes pour la protection de la santé et de l’environnement afin d’éviter les maladies professionnelles et pour la sécurité au travail. (C2)"
+   ]
+  },
+  {
+   "titre": "A2.8 · Contraintes physiques",
+   "objectifs": [
+    "Je décris les contraintes physiques (squelette, articulations, musculature) liées à l’activité professionnelle, leurs effets et les mesures préventives pour les éviter ou les réduire. (C2)"
+   ]
+  },
+  {
+   "titre": "B2.5 · Situations de pression",
+   "objectifs": [
+    "Je décris des méthodes, des procédures et des comportements permettant de prévenir, de désamorcer et de gérer des situations de pression. (C2)"
+   ]
+  },
+  {
+   "titre": "B3.8 · Risques et dangers",
+   "objectifs": [
+    "Je décris à l’aide d’exemples les risques et dangers apparaissant dans le processus logistique pour moi-même, pour les collaborateurs et pour les tiers. (C2)"
+   ]
+  },
+  {
+   "titre": "B3.9 · Organisation d’urgence",
+   "objectifs": [
+    "Je cite les principaux éléments d’une organisation d’urgence et explique les procédures, le comportement et les mesures à prendre selon le plan d’urgence de l’entreprise. (C2)"
+   ]
+  },
+  {
+   "titre": "C1.3 · Engins de manutention",
+   "objectifs": [
+    "Je décris les engins de manutention et de levage (chariot élévateur, pont roulant, palonnier, table élévatrice à ciseaux, aides au levage et au transport, exosquelettes), leurs caractéristiques et leurs domaines d’utilisation dans la réception des marchandises. (C2)"
+   ]
+  },
+  {
+   "titre": "D1.7 · Moyens auxiliaires",
+   "objectifs": [
+    "Je connais différents moyens auxiliaires permettant de ranger les marchandises de manière ergonomique et sûre et j’explique leurs avantages à l’aide d’un exemple (chariot élévateur, exosquelette, diable, etc.) (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

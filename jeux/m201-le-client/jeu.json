@@ -1,0 +1,30 @@
+{
+ "module": "M201",
+ "shortcode": "jeu_m201",
+ "titre": "M201 – Le client",
+ "sous_titre": "Logisticien·ne CFC · Module M201",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M201 (leçons 1.1 à 1.4) et 77 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "A3.1 · Les rôles et le client",
+   "objectifs": [
+    "Je décris les différents rôles dans le monde du travail et explique leurs effets sur le comportement des titulaires de ces rôles. (C2)"
+   ]
+  },
+  {
+   "titre": "B1.3 · Accueil des clients",
+   "objectifs": [
+    "J’explique l’importance d’un accueil avenant des demandes et des besoins des clients internes et externes. (C2)"
+   ]
+  },
+  {
+   "titre": "D5.1 · La livraison réussie",
+   "objectifs": [
+    "Je décris les principales caractéristiques de la livraison des marchandises (6B, 7B et 8B) à la production ou aux clients internes ou externes. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

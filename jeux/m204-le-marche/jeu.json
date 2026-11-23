@@ -1,0 +1,54 @@
+{
+ "module": "M204",
+ "shortcode": "jeu_m204",
+ "titre": "M204 – Le marché",
+ "sous_titre": "Logisticien·ne CFC · Module M204",
+ "duree": "10 min par série",
+ "description": "7 objectifs du module M204 (leçons 4 à 4.3) et 175 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "M204.1 · L’étude de marché",
+   "objectifs": [
+    "Je peux analyser l’importance de l’étude de marché pour les entreprises, en identifiant les informations nécessaires à la prise de décision et en décrivant les méthodes utilisées pour recueillir ces données."
+   ]
+  },
+  {
+   "titre": "M204.2 · Le besoin",
+   "objectifs": [
+    "Je peux expliquer le concept de besoin dans la création d’un marché, en décrivant comment il influence la demande et en donnant des exemples de besoins spécifiques ayant conduit à la création de nouveaux produits ou services."
+   ]
+  },
+  {
+   "titre": "M204.3 · Les formes de marché",
+   "objectifs": [
+    "Je peux comparer les types de marchés (monopole, oligopole, polypole) en expliquant leurs caractéristiques et en évaluant leur impact sur la concurrence et les stratégies des entreprises."
+   ]
+  },
+  {
+   "titre": "M204.4 · Classer les marchés",
+   "objectifs": [
+    "Je peux décrire les critères de classification des marchés, tels que les objets échangés, les fonctions et l’accès, en donnant des exemples concrets pour chaque catégorie."
+   ]
+  },
+  {
+   "titre": "M204.5 · La taille du marché",
+   "objectifs": [
+    "Je peux expliquer les défis logistiques liés à la taille d’un marché, en comparant les spécificités des marchés locaux, régionaux, nationaux et globaux."
+   ]
+  },
+  {
+   "titre": "M204.6 · Les marchés fermés",
+   "objectifs": [
+    "Je peux décrire les mécanismes d’accès aux marchés fermés, en expliquant les restrictions telles que les licences, concessions et exigences de capital minimum."
+   ]
+  },
+  {
+   "titre": "M204.7 · Le monopole",
+   "objectifs": [
+    "Je peux analyser les causes et les conséquences d’un monopole sur un marché, en expliquant comment il influence les prix et les stratégies des entreprises concurrentes."
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

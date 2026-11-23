@@ -1,0 +1,42 @@
+{
+ "module": "M102",
+ "shortcode": "jeu_m102",
+ "titre": "M102 – Structure de la logistique",
+ "sous_titre": "Logisticien·ne CFC · Module M102",
+ "duree": "10 min par série",
+ "description": "5 objectifs du module M102 (leçons 2.1 à 2.4) et 125 épreuves, dont 40 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B3.1 · Processus selon l’entreprise",
+   "objectifs": [
+    "Je décris à l’aide d’exemples pratiques les processus logistiques de différentes entreprises de logistique (prestataire de services, entreprise commerciale, entreprise de production). (C2)"
+   ]
+  },
+  {
+   "titre": "B3.3 · Logistique interne et SCM",
+   "objectifs": [
+    "Je fais la distinction entre la logistique interne et la gestion de la chaîne d’approvisionnement et classe différents processus à l’aide d’exemples. (C2)"
+   ]
+  },
+  {
+   "titre": "B3.5 · Étapes et interfaces",
+   "objectifs": [
+    "Je décris le processus logistique de l’entreprise avec les différentes étapes ainsi que les interfaces internes et externes. (C2)"
+   ]
+  },
+  {
+   "titre": "B3.6 · Points faibles et optimisation",
+   "objectifs": [
+    "Je décris à l’aide d’études de cas les points faibles potentiels des processus logistiques de l’entreprise, ensuite, j’identifie et j’explique les mesures d’optimisation des processus et des interfaces. (C3)"
+   ]
+  },
+  {
+   "titre": "B5.2 · Les flux",
+   "objectifs": [
+    "Je décris à l’aide d’exemples pratiques les flux de marchandises, de valeurs et d’informations dans le processus logistique de diverses entreprises de logistique (prestataire de services, entreprise commerciale, entreprise de production). (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

@@ -1,0 +1,42 @@
+{
+ "module": "M104",
+ "shortcode": "jeu_m104",
+ "titre": "M104 – Flux de marchandises",
+ "sous_titre": "Logisticien·ne CFC · Module M104",
+ "duree": "10 min par série",
+ "description": "5 objectifs du module M104 (leçons 4.1 à 4.7) et 125 épreuves, dont 38 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B3.1 · Les maillons du flux",
+   "objectifs": [
+    "Je décris à l’aide d’exemples pratiques les processus logistiques de différentes entreprises de logistique (prestataire de services, entreprise commerciale, entreprise de production). (C2)"
+   ]
+  },
+  {
+   "titre": "B3.3 · TTS et grandeurs logistiques",
+   "objectifs": [
+    "Je fais la distinction entre la logistique interne et la gestion de la chaîne d’approvisionnement et classe différents processus à l’aide d’exemples. (C2)"
+   ]
+  },
+  {
+   "titre": "B3.5 · Flux et interfaces",
+   "objectifs": [
+    "Je décris le processus logistique de l’entreprise avec les différentes étapes ainsi que les interfaces internes et externes. (C2)"
+   ]
+  },
+  {
+   "titre": "B3.6 · Points faibles et améliorations",
+   "objectifs": [
+    "Je décris à l’aide d’études de cas les points faibles potentiels des processus logistiques de l’entreprise, ensuite, j’identifie et j’explique les mesures d’optimisation des processus et des interfaces. (C3)"
+   ]
+  },
+  {
+   "titre": "B5.2 · Marchandises, valeurs, informations",
+   "objectifs": [
+    "Je décris à l’aide d’exemples pratiques les flux de marchandises, de valeurs et d’informations dans le processus logistique de diverses entreprises de logistique (prestataire de services, entreprise commerciale, entreprise de production). (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

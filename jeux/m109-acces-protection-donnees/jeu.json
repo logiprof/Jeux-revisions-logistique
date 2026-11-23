@@ -1,0 +1,42 @@
+{
+ "module": "M109",
+ "shortcode": "jeu_m109",
+ "titre": "M109 – Accès et protection des données",
+ "sous_titre": "Logisticien·ne CFC · Module M109",
+ "duree": "10 min par série",
+ "description": "5 objectifs du module M109 (leçons 9.1 à 9.5) et 139 épreuves, dont 37 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "A2.2 · Autorisations d’accès",
+   "objectifs": [
+    "J’explique le principe des autorisations d’accès aux bâtiments et aux installations ainsi que les droits d’accès aux applications et je décris les systèmes utilisés dans mon entreprise pour faire respecter ces autorisations et ces droits. (C2)"
+   ]
+  },
+  {
+   "titre": "A2.3 · Sécurité informatique",
+   "objectifs": [
+    "J’explique comment j’utilise systématiquement les moyens informatiques et comment je protège l’entreprise des dangers liés notamment à l’utilisation d’Internet (sécurité des données, attaques de pirates, virus, phishing, etc.). (C2)"
+   ]
+  },
+  {
+   "titre": "B1.5 · Secrets et protection des données",
+   "objectifs": [
+    "J’explique les bases et les effets de la protection des données et de la vie privée ainsi que du secret postal. (C2)"
+   ]
+  },
+  {
+   "titre": "B1.6 · Conséquences en pratique",
+   "objectifs": [
+    "J’explique les conséquences des dispositions légales relatives à la protection des données et de la vie privée et au secret postal pour l’activité pratique, ainsi qu’une conséquence pour le client et l’entreprise en cas de violation. (C2)"
+   ]
+  },
+  {
+   "titre": "D5.3 · Personnes autorisées à recevoir",
+   "objectifs": [
+    "J’explique les conditions cadres légales relatives aux personnes autorisées à recevoir des marchandises à livrer. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

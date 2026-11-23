@@ -1,0 +1,30 @@
+{
+ "module": "M110",
+ "shortcode": "jeu_m110",
+ "titre": "M110 – Définition de la gestion des marchandises",
+ "sous_titre": "Logisticien·ne CFC · Module M110",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M110 (leçons 10.1 à 10.6) et 82 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "G1.2 · Les données de base",
+   "objectifs": [
+    "Je décris la structure, l’importance et l’utilité des données de base des marchandises. (C2)"
+   ]
+  },
+  {
+   "titre": "G3.6 · Calculer stockage et transport",
+   "objectifs": [
+    "Je calcule, à l’aide de données de base, les principes de base pour le stockage et le transport de marchandises (structure de l’entrepôt, place nécessaire, disponibilités). (C3)"
+   ]
+  },
+  {
+   "titre": "G4.1 · Évaluer les besoins",
+   "objectifs": [
+    "Je décris l’évaluation des besoins en fonction de la consommation (passée) et sur la prévisualisation des besoins futurs à l’aide d’exemples pratiques et j’effectue des calculs simples. (C3)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

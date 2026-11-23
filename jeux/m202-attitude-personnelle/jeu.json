@@ -1,0 +1,36 @@
+{
+ "module": "M202",
+ "shortcode": "jeu_m202",
+ "titre": "M202 – L’attitude personnelle",
+ "sous_titre": "Logisticien·ne CFC · Module M202",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M202 (leçons 2.1 à 2.5) et 105 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "A3.1 · Les rôles dans l’équipe",
+   "objectifs": [
+    "Je décris les différents rôles dans le monde du travail et explique leurs effets sur le comportement des titulaires de ces rôles. (C2)"
+   ]
+  },
+  {
+   "titre": "A3.2 · Le travail d’équipe",
+   "objectifs": [
+    "Je décris les conditions d’une bonne collaboration en équipe et explique pourquoi le travail d’équipe conduit à de meilleurs résultats que le travail individuel. (C2)"
+   ]
+  },
+  {
+   "titre": "B1.1 · Charte et présentation",
+   "objectifs": [
+    "J’explique l’importance de la charte d’une entreprise ainsi que ma responsabilité individuelle dans le respect des valeurs, de même que l’importance des bonnes manières et d’une présentation soignée (habillement, hygiène, etc.). (C2)"
+   ]
+  },
+  {
+   "titre": "B1.3 · Communication et accueil",
+   "objectifs": [
+    "J’explique l’importance d’un accueil avenant des demandes et des besoins des clients internes et externes. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

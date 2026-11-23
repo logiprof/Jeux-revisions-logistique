@@ -1,0 +1,30 @@
+{
+ "module": "M108",
+ "shortcode": "jeu_m108",
+ "titre": "M108 – L’élimination globale",
+ "sous_titre": "Logisticien·ne CFC · Module M108",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M108 (leçons 8.1 à 8.3) et 81 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "M108.1 · Le management environnemental",
+   "objectifs": [
+    "Je décris les composantes d’un système de management environnemental (identification des impacts, audits), ses avantages internes et externes, ainsi que le processus et les avantages de la certification ISO 14001. (C2)"
+   ]
+  },
+  {
+   "titre": "M108.2 · Les problèmes mondiaux",
+   "objectifs": [
+    "Je décris les problèmes environnementaux mondiaux (changement climatique, pénurie d’eau, pollution de l’air, érosion des sols, surpopulation, déforestation, extinction des espèces, déchets plastiques) et leurs effets sur les entreprises de logistique. (C2)"
+   ]
+  },
+  {
+   "titre": "M108.3 · L’Agenda 2030",
+   "objectifs": [
+    "Je décris les objectifs de développement durable de l’Agenda 2030 (notamment eau, énergie et consommation durable), les initiatives des entreprises de logistique pour les atteindre et le rôle de la coopération internationale. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

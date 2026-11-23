@@ -1,0 +1,36 @@
+{
+ "module": "M107",
+ "shortcode": "jeu_m107",
+ "titre": "M107 – Les catégories de déchets CH",
+ "sous_titre": "Logisticien·ne CFC · Module M107",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M107 (leçons 7 à 7.4) et 109 épreuves, dont 37 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B4.6 · Les catégories de déchets",
+   "objectifs": [
+    "Je nomme les déchets produits par une entreprise logistique et les classe dans les quatre principales catégories de déchets (déchets de chantier, déchets urbains, boues d’épuration, déchets spéciaux). (C2)"
+   ]
+  },
+  {
+   "titre": "C5.1 · Se protéger et secourir",
+   "objectifs": [
+    "Je décris les mesures et les moyens de protection de la santé, de la sécurité et de la protection de l’environnement lors de la manipulation de substances dangereuses ainsi que les mesures spécifiques de premiers secours. (C2)"
+   ]
+  },
+  {
+   "titre": "C5.2 · Reconnaître le danger",
+   "objectifs": [
+    "J’identifie les substances et matériaux dangereux pour l’environnement (étiquettes, pictogrammes, fiches de données de sécurité des fabricants, classes de danger) et les mesures de protection lors de la manipulation de produits chimiques et de matières dangereuses. (C2)"
+   ]
+  },
+  {
+   "titre": "C5.6 · Avarie et incendie",
+   "objectifs": [
+    "Je décris la procédure et les mesures de sécurité à prendre en cas d’avarie avec des marchandises dangereuses ou en cas d’incendie ou d’incident chimique (autoprotection, détection, alerte, sécurisation). (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

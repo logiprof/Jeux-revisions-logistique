@@ -1,0 +1,54 @@
+{
+ "module": "M205",
+ "shortcode": "jeu_m205",
+ "titre": "M205 – Le marketing",
+ "sous_titre": "Logisticien·ne CFC · Module M205",
+ "duree": "10 min par série",
+ "description": "7 objectifs du module M205 (leçons 5.1 à 5.5) et 175 épreuves, dont 37 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "M205.1 · Objectifs du marketing",
+   "objectifs": [
+    "Je peux expliquer les différents objectifs du marketing, tels que promouvoir les ventes, augmenter la part de marché, améliorer la notoriété et ancrer une image positive sur le marché."
+   ]
+  },
+  {
+   "titre": "M205.2 · L’offre et la demande",
+   "objectifs": [
+    "Je peux décrire l’effet de l’offre et de la demande sur les prix des produits, en donnant des exemples concrets comme les variations de prix dues à des récoltes abondantes ou des événements climatiques."
+   ]
+  },
+  {
+   "titre": "M205.3 · La mondialisation",
+   "objectifs": [
+    "Je comprends comment la mondialisation limite l’impact de l’offre locale sur les prix et peut donner des exemples de produits importés influençant les marchés locaux."
+   ]
+  },
+  {
+   "titre": "M205.4 · Le marketing-mix",
+   "objectifs": [
+    "Je peux expliquer les quatre éléments du marketing-mix (Produit, Prix, Lieu, Publicité) et leur importance dans la stratégie de marketing d’une entreprise."
+   ]
+  },
+  {
+   "titre": "M205.5 · Les types de publicité",
+   "objectifs": [
+    "Je peux distinguer entre publicité informative et publicité suggestive, en expliquant leurs caractéristiques et leurs objectifs respectifs."
+   ]
+  },
+  {
+   "titre": "M205.6 · Le concept AIDA",
+   "objectifs": [
+    "Je peux appliquer le concept AIDA (Attention, Intérêt, Désir, Action) pour créer une annonce publicitaire efficace qui capte l’attention des clients et les incite à l’achat."
+   ]
+  },
+  {
+   "titre": "M205.7 · Une bonne publicité",
+   "objectifs": [
+    "Je peux évaluer une publicité pour déterminer si elle est originale, véridique et émotionnellement engageante, en identifiant les éléments qui contribuent à son efficacité."
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

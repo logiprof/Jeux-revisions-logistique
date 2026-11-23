@@ -1,0 +1,36 @@
+{
+ "module": "M101",
+ "shortcode": "jeu_m101",
+ "titre": "M101 – Histoire de la logistique",
+ "sous_titre": "Logisticien·ne CFC · Module M101",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M101 (leçons 1.1 à 1.3) et 100 épreuves, dont 32 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "M101.1 · La logistique militaire",
+   "objectifs": [
+    "Je peux analyser l’impact de la logistique militaire sur les succès et échecs des campagnes de Napoléon Bonaparte, en décrivant les méthodes utilisées pour le ravitaillement et le transport du matériel de guerre."
+   ]
+  },
+  {
+   "titre": "M101.2 · La Route de la Soie",
+   "objectifs": [
+    "Je peux décrire le rôle de la Route de la Soie dans le commerce entre la Chine et l’Europe, en identifiant les principaux produits échangés et les adaptations logistiques nécessaires pour traverser des déserts et des montagnes."
+   ]
+  },
+  {
+   "titre": "M101.3 · L’informatique",
+   "objectifs": [
+    "Je peux décrire comment l’informatique a transformé la logistique depuis les années 1960, en fournissant des exemples concrets de l’optimisation des chaînes d’approvisionnement et de la gestion en temps réel des stocks."
+   ]
+  },
+  {
+   "titre": "M101.4 · Les innovations",
+   "objectifs": [
+    "Je peux évaluer l’importance des innovations logistiques, telles que le code-barres ou le modèle de conteneur, sur l’efficacité et la traçabilité des chaînes d’approvisionnement modernes."
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

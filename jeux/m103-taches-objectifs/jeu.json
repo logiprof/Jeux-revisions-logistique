@@ -1,0 +1,30 @@
+{
+ "module": "M103",
+ "shortcode": "jeu_m103",
+ "titre": "M103 – Tâches et objectifs de la logistique",
+ "sous_titre": "Logisticien·ne CFC · Module M103",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M103 (leçons 3.1 et 3.2) et 76 épreuves, dont 37 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B3.5 · Le processus logistique",
+   "objectifs": [
+    "Je décris le processus logistique de l’entreprise avec les différentes étapes ainsi que les interfaces internes et externes. (C2)"
+   ]
+  },
+  {
+   "titre": "B3.6 · Efficacité et efficience",
+   "objectifs": [
+    "Je décris à l’aide d’études de cas les points faibles potentiels des processus logistiques de l’entreprise, ensuite, j’identifie et j’explique les mesures d’optimisation des processus et des interfaces. (C3)"
+   ]
+  },
+  {
+   "titre": "D5.1 · Les 6B, 7B et 8B",
+   "objectifs": [
+    "Je décris les principales caractéristiques de la livraison des marchandises (6B, 7B et 8B) à la production ou aux clients internes ou externes. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

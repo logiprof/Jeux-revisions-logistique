@@ -1,0 +1,39 @@
+# Publie une nouvelle version de l'extension :
+#   1. augmenter la version (en-tête « Version », constante JRL_VERSION, « Stable tag » du readme.txt) ;
+#   2. pousser un tag vX.Y.Z (ex. git tag v1.1.0 && git push origin v1.1.0).
+# Le zip est construit et joint à la release ; les sites WordPress le proposent alors en mise à jour.
+name: Publier une version
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vérifier le numéro de version
+        run: |
+          V=$(grep -m1 -oP '^ \* Version:\s*\K[0-9.]+' jeux-revisions-logistique.php)
+          C=$(grep -m1 -oP "define\( 'JRL_VERSION', '\K[0-9.]+" jeux-revisions-logistique.php)
+          S=$(grep -m1 -oP '^Stable tag:\s*\K[0-9.]+' readme.txt)
+          echo "en-tête $V · constante $C · readme $S · réf. ${GITHUB_REF_NAME}"
+          [ "$V" = "$C" ] && [ "$V" = "$S" ] || { echo "::error::Les trois numéros de version doivent être identiques."; exit 1; }
+          if [ "${GITHUB_REF_TYPE}" = "tag" ] && [ "${GITHUB_REF_NAME#v}" != "$V" ]; then echo "::error::Le tag ${GITHUB_REF_NAME} ne correspond pas à la version $V."; exit 1; fi
+          echo "VERSION=$V" >> "$GITHUB_ENV"
+      - name: Vérifier la syntaxe PHP
+        run: for f in $(git ls-files '*.php'); do php -l "$f" >/dev/null || exit 1; done
+      - name: Construire le zip
+        run: bash outils/construire_zip.sh dist
+      - name: Publier la release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="v$VERSION"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" dist/jeux-revisions-logistique.zip --clobber
+          else
+            gh release create "$TAG" dist/jeux-revisions-logistique.zip --target "$GITHUB_SHA" --title "Version $VERSION" --generate-notes
+          fi
