@@ -1,0 +1,30 @@
+{
+ "module": "M208",
+ "shortcode": "jeu_m208",
+ "titre": "M208 – Le service à la vente",
+ "sous_titre": "Logisticien·ne CFC · Module M208",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M208 (leçons 8.1 à 8.8) et 77 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "M208.1 · Inciter à acheter",
+   "objectifs": [
+    "Je peux expliquer les motivations qui influencent le comportement d’achat, utiliser la psychologie de vente (hauteur des yeux, odeurs), gérer les incitations (timbres, points, coupons) et mettre en œuvre la promotion des ventes (réductions, offres, démonstrations, ventes additionnelles)."
+   ]
+  },
+  {
+   "titre": "M208.2 · Situations et entretiens de vente",
+   "objectifs": [
+    "Je peux distinguer les besoins des clients lors d’achats quotidiens et lors d’achats nécessitant des conseils spécialisés, et adapter mon approche de vente (entretien de vente, face à face, téléphone)."
+   ]
+  },
+  {
+   "titre": "M208.3 · Contrat de vente et CGV",
+   "objectifs": [
+    "Je comprends les droits et obligations du contrat de vente, les conditions générales de vente et les procédures de résiliation, et je peux les appliquer dans des situations réelles."
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

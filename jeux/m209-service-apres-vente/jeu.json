@@ -1,0 +1,30 @@
+{
+ "module": "M209",
+ "shortcode": "jeu_m209",
+ "titre": "M209 – SAV Service après-vente",
+ "sous_titre": "Logisticien·ne CFC · Module M209",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M209 (leçons 9.0 à 9.4) et 75 épreuves, dont 32 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "D6.2a · Traiter les réclamations",
+   "objectifs": [
+    "J’explique l’utilité et les possibilités d’un traitement des réclamations orienté vers la recherche de solutions (définitions, droit de réclamation, étapes du traitement). (C3) — partie 1 de D6.2"
+   ]
+  },
+  {
+   "titre": "D6.2b · Satisfaction et fidélisation",
+   "objectifs": [
+    "Je déduis des mesures pour maintenir la satisfaction des clients : service après-vente, fidélisation, enquêtes de satisfaction, prudence avec les jeux-concours. (C3) — partie 2 de D6.2"
+   ]
+  },
+  {
+   "titre": "D6.2c · Garantie et geste commercial",
+   "objectifs": [
+    "Je distingue la garantie du vendeur, la garantie du fabricant et la bonne volonté (geste commercial) pour proposer une solution adaptée au client. (C3) — partie 3 de D6.2"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

@@ -1,0 +1,30 @@
+{
+ "module": "M206",
+ "shortcode": "jeu_m206",
+ "titre": "M206 – Communication",
+ "sous_titre": "Logisticien·ne CFC · Module M206",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M206 (leçons 6.1 à 6.5) et 76 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B1.2a · Les bases de la communication",
+   "objectifs": [
+    "J’explique les bases et les règles de la communication (éléments clés, modèle émetteur-récepteur, feedback, interférences, écoute active). (C3) — partie 1 de B1.2"
+   ]
+  },
+  {
+   "titre": "B1.2b · Verbal, non verbal, questions",
+   "objectifs": [
+    "J’identifie la communication verbale et non verbale et j’utilise les questions ouvertes et fermées à bon escient. (C3) — partie 2 de B1.2"
+   ]
+  },
+  {
+   "titre": "B1.2c · Règles et tueurs de conversation",
+   "objectifs": [
+    "Je décris des exemples de violations aux règles de la communication (tueurs de conversation) et je conduis et termine une conversation de manière adaptée. (C3) — partie 3 de B1.2"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

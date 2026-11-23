@@ -1,0 +1,30 @@
+{
+ "module": "M207",
+ "shortcode": "jeu_m207",
+ "titre": "M207 – L’avant vente",
+ "sous_titre": "Logisticien·ne CFC · Module M207",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M207 (leçons 7.1 à 7.4) et 76 épreuves, dont 39 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "M207.1 · Les besoins et Maslow",
+   "objectifs": [
+    "Je peux expliquer la définition d’un besoin et son importance pour la vente, décrire les cinq niveaux de la pyramide de Maslow avec des exemples, analyser quel besoin est prioritaire dans une situation et l’utiliser pour répondre aux clients."
+   ]
+  },
+  {
+   "titre": "M207.2 · Vente et motifs d’achat",
+   "objectifs": [
+    "Je peux identifier les rôles de l’acheteur et du vendeur et l’objectif de la vente pour une entreprise, et lister et expliquer les différentes motivations d’achat avec des exemples."
+   ]
+  },
+  {
+   "titre": "M207.3 · Évaluer les fournisseurs",
+   "objectifs": [
+    "Je peux discuter des critères d’évaluation des fournisseurs (qualité, livraison, prix, risque de défaillance, confiance, fiabilité, dépendance), utiliser une grille de scoring pour les comparer et choisir le meilleur fournisseur."
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}
