@@ -1,0 +1,36 @@
+{
+ "module": "M410",
+ "shortcode": "jeu_m410",
+ "titre": "M410 – Les dispositifs de convoyage",
+ "sous_titre": "Logisticien·ne CFC · Module M410",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M410 (leçons 10.1 à 10.3) et 100 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "H3.4a·H3.7 · Ponts roulants et portiques",
+   "objectifs": [
+    "H3.x Je décris les différents types d’engins de levage et explique leurs principes de fonctionnement. (C2) — H3.7 Je décris les dispositifs de prise de charge des ponts roulants et leur fonctionnement. (C2) — avec H3.4 : ponts, portiques et Container-Carrier"
+   ]
+  },
+  {
+   "titre": "H3.x·H3.7 · Mouflage et sécurité du levage",
+   "objectifs": [
+    "H3.x J’explique les principes d’utilisation des dispositifs de levage et les règles de sécurité associées. (C2) — H3.7 : moufle inférieur, poulies, crochet et angle d’inclinaison"
+   ]
+  },
+  {
+   "titre": "H3.4b · Convoyeurs verticaux",
+   "objectifs": [
+    "H3.4 Je décris les convoyeurs et les dispositifs de transport et explique à l’aide d’exemples les domaines d’application et les possibilités d’utilisation. (C2) — partie : convoyeurs verticaux"
+   ]
+  },
+  {
+   "titre": "H3.4c · Convoyeurs continus et transfert",
+   "objectifs": [
+    "H3.4 Je décris les convoyeurs et les dispositifs de transport et explique à l’aide d’exemples les domaines d’application et les possibilités d’utilisation. (C2) — partie : convoyeurs continus, éléments de transfert et sécurité"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

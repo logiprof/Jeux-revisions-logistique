@@ -1,0 +1,36 @@
+{
+ "module": "M407",
+ "shortcode": "jeu_m407",
+ "titre": "M407 – Moyens de transport",
+ "sous_titre": "Logisticien·ne CFC · Module M407",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M407 (leçons 7.1 à 7.4) et 100 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "C3.3a · Classer et choisir un moyen de transport",
+   "objectifs": [
+    "C3.3 Je décris des moyens ou types de transport appropriés pour le transport interne (cross-docking, transbordement, production, stockage). (C2) — partie : critères de subdivision et de choix"
+   ]
+  },
+  {
+   "titre": "C3.3b · Équipements de transport interne",
+   "objectifs": [
+    "C3.3 Je décris des moyens ou types de transport appropriés pour le transport interne. (C2) — partie : moyens manuels, convoyeurs, ponts roulants, engins de manutention, chariots élévateurs et transstockeurs"
+   ]
+  },
+  {
+   "titre": "C1.3a · La loi du levier",
+   "objectifs": [
+    "C1.3 Je décris les engins de manutention et de levage, leurs caractéristiques et leurs domaines d’utilisation dans la réception des marchandises. (C2) — partie : levier à deux bras et stabilité du chariot élévateur"
+   ]
+  },
+  {
+   "titre": "C1.3b · Diagrammes de charge et engins de levage",
+   "objectifs": [
+    "C1.3 Je décris les engins de manutention et de levage (chariot élévateur, pont roulant, palonnier, table élévatrice à ciseaux, aides au levage et au transport, exosquelettes), leurs caractéristiques et leurs domaines d’utilisation dans la réception des marchandises. (C2) — partie : diagrammes de capacité et engins de levage"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

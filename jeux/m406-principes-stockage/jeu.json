@@ -1,0 +1,30 @@
+{
+ "module": "M406",
+ "shortcode": "jeu_m406",
+ "titre": "M406 – Principes de stockage",
+ "sous_titre": "Logisticien·ne CFC · Module M406",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M406 (leçons 6.1 à 6.6) et 75 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "C4.3a · Emplacement fixe et chaotique",
+   "objectifs": [
+    "C4.3 Je décris les différents systèmes de stockage (par ex. emplacement fixe, chaotique, FIFO, LIFO, FEFO) ainsi que les avantages et inconvénients de ces systèmes. (C2) — partie : lotissement par case et stockage chaotique"
+   ]
+  },
+  {
+   "titre": "C4.3b · FIFO et FEFO",
+   "objectifs": [
+    "C4.3 Je décris les différents systèmes de stockage (FIFO, FEFO) ainsi que leurs avantages et inconvénients. (C2) — avec C4.1 : formes de stockage supportant le FIFO et le FEFO"
+   ]
+  },
+  {
+   "titre": "C4.1·C4.3 · LIFO et HIFO",
+   "objectifs": [
+    "C4.1 J’explique les différents systèmes, formes, types et principes de stockage avec leurs caractéristiques, leurs possibilités et leur rentabilité. (C2) — partie : LIFO et HIFO, contraintes et valorisation comptable"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

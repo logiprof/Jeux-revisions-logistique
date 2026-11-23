@@ -1,0 +1,30 @@
+{
+ "module": "M402",
+ "shortcode": "jeu_m402",
+ "titre": "M402 – Les genres de stockage",
+ "sous_titre": "Logisticien·ne CFC · Module M402",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M402 (leçons 2.1 à 2.5) et 75 épreuves, dont 37 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "C4.1a · Entrepôts selon les marchandises",
+   "objectifs": [
+    "C4.1 J’explique les différents systèmes, formes, types et principes de stockage avec leurs caractéristiques, leurs possibilités et leur rentabilité. (C2) — partie 1 : conception, entrepôts de matières premières, self-service, produits finis, temporaires et de maturation"
+   ]
+  },
+  {
+   "titre": "B3.1 · Entrepôts par secteur",
+   "objectifs": [
+    "B3.1 Je décris à l’aide d’exemples pratiques les processus logistiques de différentes entreprises de logistique (prestataire de services, entreprise commerciale, entreprise de production). (C2)"
+   ]
+  },
+  {
+   "titre": "C4.1b · Choix du site et centralisation",
+   "objectifs": [
+    "C4.1 J’explique les différents systèmes, formes, types et principes de stockage avec leurs caractéristiques, leurs possibilités et leur rentabilité. (C2) — partie 2 : choix du site géographique, entrepôts centralisés ou décentralisés"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

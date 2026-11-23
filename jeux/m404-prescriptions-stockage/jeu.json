@@ -1,0 +1,30 @@
+{
+ "module": "M404",
+ "shortcode": "jeu_m404",
+ "titre": "M404 – Prescriptions de stockage",
+ "sous_titre": "Logisticien·ne CFC · Module M404",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M404 (leçons 4.1 à 4.4) et 75 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "C4.1a · Entrepôts ouverts, couverts et fermés",
+   "objectifs": [
+    "C4.1 J’explique les différents systèmes, formes, types et principes de stockage avec leurs caractéristiques, leurs possibilités et leur rentabilité. (C2) — partie 1 : entrepôts à ciel ouvert, couverts et fermés"
+   ]
+  },
+  {
+   "titre": "C4.1b · Hauteur et structure de l’entrepôt",
+   "objectifs": [
+    "C4.1 J’explique les différents systèmes, formes, types et principes de stockage avec leurs caractéristiques, leurs possibilités et leur rentabilité. (C2) — partie 2 : entrepôts de faible, moyenne et grande hauteur ; entrepôts mécanisés, automatiques et systèmes complexes"
+   ]
+  },
+  {
+   "titre": "C4.1c · Conditions pour un stockage optimal",
+   "objectifs": [
+    "C4.1 J’explique les différents systèmes, formes, types et principes de stockage avec leurs caractéristiques, leurs possibilités et leur rentabilité. (C2) — partie 3 : propreté, spaciosité et netteté"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

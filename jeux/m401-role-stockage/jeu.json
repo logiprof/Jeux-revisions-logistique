@@ -1,0 +1,30 @@
+{
+ "module": "M401",
+ "shortcode": "jeu_m401",
+ "titre": "M401 – Le rôle du stockage",
+ "sous_titre": "Logisticien·ne CFC · Module M401",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M401 (leçons 1.1 et 1.2) et 75 épreuves, dont 40 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B3.1a · Réserve et sécurité",
+   "objectifs": [
+    "B3.1 Je décris à l’aide d’exemples pratiques les processus logistiques de différentes entreprises de logistique (prestataire de services, entreprise commerciale, entreprise de production). (C2) — partie 1 : fonction de réserve, stockage chaotique et fonction de sécurité"
+   ]
+  },
+  {
+   "titre": "B3.1b · Transformation, contrôle et tri",
+   "objectifs": [
+    "B3.1 Je décris à l’aide d’exemples pratiques les processus logistiques de différentes entreprises de logistique (prestataire de services, entreprise commerciale, entreprise de production). (C2) — partie 2 : fonction de transformation et fonction de contrôle et de tri"
+   ]
+  },
+  {
+   "titre": "C4.1 · Spéculation, affinage et choix du stockage",
+   "objectifs": [
+    "C4.1 J’explique les différents systèmes, formes, types et principes de stockage avec leurs caractéristiques, leurs possibilités et leur rentabilité. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

@@ -2,7 +2,7 @@
 
 Jeux de révision LogiProf pour les apprenti·e·s **logisticien·ne·s CFC**, et l’extension WordPress qui les installe sur votre site, avec mises à jour automatiques.
 
-- **31 jeux** (modules M101 à M110, M201 à M209, M301 à M312), un dossier par jeu dans [`jeux/`](jeux/).
+- **41 jeux** (modules M101 à M110, M201 à M209, M301 à M312, M401 à M410), un dossier par jeu dans [`jeux/`](jeux/).
 - Chaque jeu : entraînement par objectif, examen blanc noté sur 6, révision ciblée des erreurs, progression enregistrée sur le compte de l’élève.
 - L’extension s’installe une seule fois ; chaque nouvelle version publiée ici arrive automatiquement sur le site.
 
@@ -57,6 +57,16 @@ La liste des shortcodes est aussi dans **Réglages → Jeux logistique**.
 | M310 | Préparation à la mise en stock | `[jeu_m310]` | 3 | 75 |
 | M311 | Les concepts de l’approvisionnement | `[jeu_m311]` | 4 | 100 |
 | M312 | Données de stockage | `[jeu_m312]` | 4 | 100 |
+| M401 | Le rôle du stockage | `[jeu_m401]` | 3 | 75 |
+| M402 | Les genres de stockage | `[jeu_m402]` | 3 | 75 |
+| M403 | Les formes de stockage | `[jeu_m403]` | 4 | 100 |
+| M404 | Prescriptions de stockage | `[jeu_m404]` | 3 | 75 |
+| M405 | Dangers dans les entrepôts | `[jeu_m405]` | 4 | 100 |
+| M406 | Principes de stockage | `[jeu_m406]` | 3 | 75 |
+| M407 | Moyens de transport | `[jeu_m407]` | 4 | 100 |
+| M408 | Organisation de l’entrepôt | `[jeu_m408]` | 6 | 150 |
+| M409 | Les engins de manutention | `[jeu_m409]` | 4 | 100 |
+| M410 | Les dispositifs de convoyage | `[jeu_m410]` | 4 | 100 |
 
 ## Mises à jour automatiques
 

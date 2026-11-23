@@ -1,0 +1,36 @@
+{
+ "module": "M405",
+ "shortcode": "jeu_m405",
+ "titre": "M405 – Dangers dans les entrepôts",
+ "sous_titre": "Logisticien·ne CFC · Module M405",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M405 (leçons 5.1 à 5.5) et 100 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B3.8·C4.2 · Accidents et stockage sûr",
+   "objectifs": [
+    "B3.8 Je décris à l’aide d’exemples les risques et dangers apparaissant dans le processus logistique pour moi-même, pour les collaborateurs et pour les tiers. (C2) — C4.2 J’interprète les données relatives aux informations sur la charge autorisée au sol et en déduis des conclusions pour mon travail. (C3)"
+   ]
+  },
+  {
+   "titre": "A1.3·B3.9 · Horaires, secours et EPI",
+   "objectifs": [
+    "A1.3 J’explique les bases légales relatives à la capacité de travail et d’intervention (prescriptions de sécurité et de protection de la santé, protection des jeunes travailleurs, temps de repos…). (C2) — A2.5 J’énumère les éléments des EPI adaptés au travail, j’explique leur effet, leur utilisation et leur entretien. (C2) — B3.9 Je cite les principaux éléments d’une organisation d’urgence et explique les procédures, le comportement et les mesures à prendre selon le plan d’urgence de l’entreprise. (C2)"
+   ]
+  },
+  {
+   "titre": "C5.6 · Risque d’incendie",
+   "objectifs": [
+    "C5.6 Je décris la procédure et les mesures de sécurité à prendre en cas d’avarie avec des marchandises dangereuses ou en cas d’incendie ou d’incident chimique (autoprotection, détection, alerte, sécurisation). (C2)"
+   ]
+  },
+  {
+   "titre": "C5.2·B3.8 · Matières dangereuses, vol et nuisibles",
+   "objectifs": [
+    "C5.1 Je décris les mesures et moyens de protection lors de la manipulation de substances dangereuses ainsi que les premiers secours. (C2) — C5.2 J’identifie les substances dangereuses (étiquettes, pictogrammes, FDS, classes de danger) et les mesures de protection. (C2) — avec B3.8 : risque de vol et nuisibles"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

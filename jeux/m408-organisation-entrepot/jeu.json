@@ -1,0 +1,48 @@
+{
+ "module": "M408",
+ "shortcode": "jeu_m408",
+ "titre": "M408 – Organisation de l’entrepôt",
+ "sous_titre": "Logisticien·ne CFC · Module M408",
+ "duree": "10 min par série",
+ "description": "6 objectifs du module M408 (leçons 8.1 à 8.13) et 150 épreuves, dont 34 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "G2.1·G2.2 · Planification et flux de l’entrepôt",
+   "objectifs": [
+    "G2.1 J’explique la procédure et les critères d’aménagement d’un entrepôt. (C2) — G2.2 Je nomme les différents éléments d’un système de stockage et explique la fonction et les tâches d’un entrepôt. (C2) — avec G1.1 : analyse du processus de réception"
+   ]
+  },
+  {
+   "titre": "G2.3·G2.4 · Types d’entrepôts et formes de stockage",
+   "objectifs": [
+    "G2.3 J’explique les types de stockage en fonction des étapes du processus et du degré d’automatisation. (C2) — G2.4 J’explique les prescriptions (empilable ou non, hauteur d’empilage et charge au sol) pour la réalisation d’un stockage en blocs. (C3)"
+   ]
+  },
+  {
+   "titre": "C4.2 · Charge au sol",
+   "objectifs": [
+    "C4.2 J’interprète les données relatives aux informations sur la charge autorisée au sol et en déduis des conclusions pour mon travail. (C3) — avec G2.9 : calcul de la charge au sol"
+   ]
+  },
+  {
+   "titre": "G2.9 · Surfaces, espace et allées",
+   "objectifs": [
+    "G2.9 Je calcule à l’aide d’une étude de cas la charge au sol, le taux d’utilisation de la surface et de l’espace de l’entrepôt. (C3) — partie : surfaces, espace et largeur d’allée"
+   ]
+  },
+  {
+   "titre": "G2.7·G2.8 · Rayonnages à palettes",
+   "objectifs": [
+    "G2.5 Je décris les dangers et risques des entrepôts à rayonnages et les mesures de sécurité. (C2) — G2.7 J’explique les différentes charges d’un rayonnage à palettes (traverses, au sol et total). (C3) — G2.8 Je calcule la charge sur les rayonnages à palettes à partir d’une étude de cas. (C3)"
+   ]
+  },
+  {
+   "titre": "G2.6·G3.5 · Numérotation et image de stock",
+   "objectifs": [
+    "G2.6 Je décris deux systèmes possibles de numérotation des emplacements de stockage sur les rayonnages. (C2) — G3.5 J’explique le but d’une image de stockage, j’établis un exemple et j’explique ce qui en découle. (C3) — avec la numérotation des articles"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}
