@@ -1,0 +1,30 @@
+{
+ "module": "M702",
+ "shortcode": "jeu_m702",
+ "titre": "M702 – Les coûts de stockage",
+ "sous_titre": "Logisticien·ne CFC · Module M702",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M702 (leçons 2.1 à 2.6) et 78 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B3.4 · Coûts fixes, variables et indicateurs",
+   "objectifs": [
+    "B3.4 J’explique le principe des systèmes d’indicateurs de l’entreprise et leur importance pour l’entreprise et pour l’exécution des mandats. (C2)"
+   ]
+  },
+  {
+   "titre": "G2.10 · Coûts des locaux de stockage",
+   "objectifs": [
+    "G2.10 J’explique les facteurs de coûts d’un emplacement de stockage et calcule à l’aide d’exemples les coûts des surfaces de stockage (coûts fixes et variables). (C3)"
+   ]
+  },
+  {
+   "titre": "B3.7 · Coûts d’un mandat et réductions",
+   "objectifs": [
+    "B3.7 Je décris, à l’aide d’une étude de cas, les coûts calculés lors de l’exécution d’un mandat de travail, évalue le résultat et en déduis des propositions de réduction des coûts. (C3)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

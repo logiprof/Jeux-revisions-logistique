@@ -1,0 +1,30 @@
+{
+ "module": "M705",
+ "shortcode": "jeu_m705",
+ "titre": "M705 – La rentabilité de l’entrepôt",
+ "sous_titre": "Logisticien·ne CFC · Module M705",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M705 (leçons 5.1 à 5.4) et 86 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "G2.10 · Coûts et taux de couverture",
+   "objectifs": [
+    "G2.10 J’explique les facteurs de coûts d’un emplacement de stockage et calcule à l’aide d’exemples les coûts des surfaces de stockage (coûts fixes et variables). (C3)"
+   ]
+  },
+  {
+   "titre": "G4.2 · G4.3 · Stocks minimum, maximum, point de commande",
+   "objectifs": [
+    "G4.2 J’explique l’origine d’un stock de sécurité (= stock minimum) et d’un stock maximum (capacités de stockage, consommation, fiabilité de livraison, qualité des fournisseurs, stock moyen, rotation des stocks, délais de réapprovisionnement) et j’effectue des calculs à cet effet. (C3) · G4.3 J’explique l’importance du point de commande, le calcule sur la base de la consommation à l’aide d’un exemple de cas et en déduis les conséquences pour l’approvisionnement. (C3)"
+   ]
+  },
+  {
+   "titre": "G4.9 · Écarts de stock et minimisation des coûts",
+   "objectifs": [
+    "G4.9 Je calcule les stocks de marchandises effectifs à déclarés et le stock minimal et j’en déduis les résultats des mesures à prendre. (C4)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

@@ -1,0 +1,30 @@
+{
+ "module": "M704",
+ "shortcode": "jeu_m704",
+ "titre": "M704 – Les indicateurs logistiques",
+ "sous_titre": "Logisticien·ne CFC · Module M704",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M704 (leçons 4.1 à 4.5) et 85 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "G3.3 · Stock moyen, rotation, couverture",
+   "objectifs": [
+    "G3.3 Je décris les possibilités et l’utilité de l’évaluation des résultats d’inventaire, j’établis des évaluations simples à l’aide d’études de cas et j’interprète les résultats. (C2)"
+   ]
+  },
+  {
+   "titre": "G4.2·G1.4 · Stocks min/max et transbordement",
+   "objectifs": [
+    "G4.2 J’explique l’origine d’un stock de sécurité (= stock minimum) et d’un stock maximum (capacités de stockage, consommation, fiabilité de livraison, qualité des fournisseurs, stock moyen, rotation des stocks, délais de réapprovisionnement) et j’effectue des calculs à cet effet. (C3) · G1.4 J’analyse le processus de transbordement et formule des propositions d’amélioration (sécurité, rentabilité, ressources). (C4)"
+   ]
+  },
+  {
+   "titre": "G4.6·G4.7 · Taux de service et erreurs de livraison",
+   "objectifs": [
+    "G4.6 Je décris les principes de la disponibilité des livraisons et des quantités manquantes ainsi que leurs effets sur la gestion des stocks et le résultat d’exploitation. (C3) · G4.7 Je calcule, à l’aide d’une étude de cas, les quantités manquantes et la disponibilité des livraisons pour des marchandises sélectionnées selon les instructions. (C3)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

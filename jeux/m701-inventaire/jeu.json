@@ -1,0 +1,30 @@
+{
+ "module": "M701",
+ "shortcode": "jeu_m701",
+ "titre": "M701 – L’inventaire",
+ "sous_titre": "Logisticien·ne CFC · Module M701",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M701 (leçons 1.1 à 1.5) et 77 épreuves, dont 39 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "C6.1·C6.2 · Obligation et types d’inventaire",
+   "objectifs": [
+    "C6.1 Je montre l’importance de l’inventaire pour une entreprise de logistique. (C2) · C6.2 J’énumère les différents types d’inventaire (inventaire à jour fixe, inventaire tournant, inventaire par sondage) et décris la procédure correspondante. (C2)"
+   ]
+  },
+  {
+   "titre": "C6.3 · Préparation et déroulement",
+   "objectifs": [
+    "C6.3 J’énumère tous les éléments importants relatif à la préparation, à la mise en oeuvre (y compris les outils de travail) et au suivi de l’inventaire. (C2)"
+   ]
+  },
+  {
+   "titre": "B3.4·C6.4·G3.2·G3.3 · Écarts, causes et évaluation",
+   "objectifs": [
+    "B3.4 J’explique le principe des systèmes d’indicateurs de l’entreprise et leur importance pour l’entreprise et pour l’exécution des mandats. (C2) · C6.4 Je compare à l’aide d’exemples de cas la valeur réelle avec la valeur théorique, j’interprète les différences et je décris les mesures possibles à cet effet. (C3) · G3.2 Je calcule et analyse les différences d’inventaire à l’aide d’une étude de cas, je les explique et je propose des améliorations. (C4) · G3.3 Je décris les possibilités et l’utilité de l’évaluation des résultats d’inventaire, j’établis des évaluations simples à l’aide d’études de cas et j’interprète les résultats. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

@@ -1,0 +1,30 @@
+{
+ "module": "M703",
+ "shortcode": "jeu_m703",
+ "titre": "M703 – Le coût du personnel",
+ "sous_titre": "Logisticien·ne CFC · Module M703",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M703 (leçons 3.1 à 3.3) et 81 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "A2.4 · Droits, obligations et sécurité",
+   "objectifs": [
+    "A2.4 Sur la base des dispositions légales, je décris les droits et les obligations de l’employeur et de l’employé en matière de protection de la santé, de prévention des maladies professionnelles et de sécurité au travail. (C2)"
+   ]
+  },
+  {
+   "titre": "3.1 · Coûts directs et indirects",
+   "objectifs": [
+    "Contenu de la leçon 3.1 (coûts directs et indirects, salaire et rémunération, réduction des coûts, types d’emploi) — sans objectif dans la leçon « Objectifs » du module"
+   ]
+  },
+  {
+   "titre": "3.2 · Salaire, trois piliers et déductions",
+   "objectifs": [
+    "Contenu de la leçon 3.2 (salaire brut et net, trois piliers, déductions) — sans objectif dans la leçon « Objectifs » du module"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}
