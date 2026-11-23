@@ -1,0 +1,30 @@
+{
+ "module": "M310",
+ "shortcode": "jeu_m310",
+ "titre": "M310 – Préparation à la mise en stock",
+ "sous_titre": "Logisticien·ne CFC · Module M310",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M310 (leçons 10.1 à 10.3) et 75 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "M310.1 · Préparer la mise en stock",
+   "objectifs": [
+    "Je peux expliquer les différentes étapes de la préparation à la mise en stock, identifier les situations nécessitant un reconditionnement ou un réemballage, proposer des emballages adaptés aux besoins commerciaux (nouvelle taille, promotion, bundle) et appliquer les exigences des systèmes automatisés de stockage."
+   ]
+  },
+  {
+   "titre": "M310.2 · Enregistrement et fiche de stock",
+   "objectifs": [
+    "Je peux expliquer le processus d’enregistrement des marchandises dans un système ERP, faire la différence entre une réception planifiée et non planifiée, et enregistrer correctement un article en respectant les informations clés comme le numéro d’article, l’unité de vente et le stock maximum."
+   ]
+  },
+  {
+   "titre": "M310.3 · Types de stock et comptabilisation",
+   "objectifs": [
+    "Je peux expliquer les notions de stock disponible, stock réservé, stock bloqué et stock d’assurance qualité, interpréter l’impact des seuils de stock, comptabiliser les entrées et sorties de stock et garantir un suivi précis des mouvements grâce aux outils de gestion informatisée."
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

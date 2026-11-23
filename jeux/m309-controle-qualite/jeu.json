@@ -1,0 +1,30 @@
+{
+ "module": "M309",
+ "shortcode": "jeu_m309",
+ "titre": "M309 – Contrôle de la qualité",
+ "sous_titre": "Logisticien·ne CFC · Module M309",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M309 (leçons 9.1 à 9.7) et 75 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "c2.11a · La qualité et ses niveaux",
+   "objectifs": [
+    "c2.11 Je décris les instruments de contrôle de la qualité que sont l’échantillonnage, le contrôle complet, le contrôle par échantillonnage multiple, le contrôle des fonctions, le prélèvement d’échantillons, je les exécute à l’aide d’une étude de cas et j’évalue les résultats. (C3) — partie 1 : assurance qualité, définition, critères et niveaux de qualité"
+   ]
+  },
+  {
+   "titre": "c2.11b · Techniques de contrôle",
+   "objectifs": [
+    "c2.11 Je décris les instruments de contrôle de la qualité que sont l’échantillonnage, le contrôle complet, le contrôle par échantillonnage multiple, le contrôle des fonctions, le prélèvement d’échantillons, je les exécute à l’aide d’une étude de cas et j’évalue les résultats. (C3) — partie 2 : contrôle complet, échantillonnage simple et multiple, contrôle du fonctionnement"
+   ]
+  },
+  {
+   "titre": "g1.6 · Prélèvement d’échantillons",
+   "objectifs": [
+    "g1.6 Je décris le processus du prélèvement d’échantillons et son importance pour le client. (C3) — avec c1.7 (critères d’évaluation de l’état des marchandises)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}
