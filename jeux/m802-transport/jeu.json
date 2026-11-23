@@ -1,0 +1,30 @@
+{
+ "module": "M802",
+ "shortcode": "jeu_m802",
+ "titre": "M802 – Le transport",
+ "sous_titre": "Logisticien·ne CFC · Module M802",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M802 (leçons 2.1 à 2.3) et 80 épreuves, dont 38 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "d2.1 · Surveillance et données de transport",
+   "objectifs": [
+    "d2.1 Je décris les exigences relatives aux données, aux informations et aux supports de données ainsi que les critères de contrôle de l’exhaustivité et de l’exactitude des données. (C2)"
+   ]
+  },
+  {
+   "titre": "d2.2 · Track and Trace et transmission aux clients",
+   "objectifs": [
+    "d2.2 Je décris, en fonction du moyen de transport (camion, train) et des marchandises à livrer, les directives relatives au placement (sur le moyen de transport ou la marchandise) et à la transmission des données aux clients. (C2)"
+   ]
+  },
+  {
+   "titre": "d3.3 · d3.4 · Plan de tournée et plan de chargement",
+   "objectifs": [
+    "d3.3 Je décris l’importance du plan de tournée, les critères pour le définir (rentabilité, écologie, sécurité, durabilité des produits, temps, ressources) et détermine à l’aide d’une étude de cas le meilleur itinéraire et un itinéraire de rechange. (C3) · d3.4 J’établis un plan de chargement à l’aide d’un exemple afin de permettre un chargement sûr et efficace. (C3)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

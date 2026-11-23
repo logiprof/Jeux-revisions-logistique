@@ -1,0 +1,30 @@
+{
+ "module": "M801",
+ "shortcode": "jeu_m801",
+ "titre": "M801 – Identification des marchandises",
+ "sous_titre": "Logisticien·ne CFC · Module M801",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M801 (leçons 1.1 à 1.8) et 87 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "c2.8 a · GTIN, ISBN, SSCC et GS1-128",
+   "objectifs": [
+    "c2.8 Je décris la structure des codes-barres (GTIN-8, GTIN-13, GS1-128, SSCC, DataMatrix, code QR, code à deux dimensions) et leurs domaines d’application. (C2) · partie 1 : codes unidimensionnels"
+   ]
+  },
+  {
+   "titre": "c2.8 b · Codes 2D et placement des étiquettes",
+   "objectifs": [
+    "c2.8 Je décris la structure des codes-barres (GTIN-8, GTIN-13, GS1-128, SSCC, DataMatrix, code QR, code à deux dimensions) et leurs domaines d’application. (C2) · partie 2 : codes bidimensionnels et placement"
+   ]
+  },
+  {
+   "titre": "c2.9 · La RFID",
+   "objectifs": [
+    "c2.9 Je décris le principe de fonctionnement et le domaine d’application de la RFID. (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

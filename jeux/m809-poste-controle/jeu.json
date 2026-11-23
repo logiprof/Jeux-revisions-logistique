@@ -1,0 +1,24 @@
+{
+ "module": "M809",
+ "shortcode": "jeu_m809",
+ "titre": "M809 – Poste de contrôle",
+ "sous_titre": "Logisticien·ne CFC · Module M809",
+ "duree": "10 min par série",
+ "description": "2 objectifs du module M809 (leçons 9.1 et 9.2) et 54 épreuves, dont 35 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "H3.1 · Intralogistique et flux",
+   "objectifs": [
+    "H 3.1 Je décris les trois domaines du système de préparation des commandes, à savoir le flux de matériel, le flux de données et l’organisation ; leur lien et leur effet sur la performance de préparation des commandes. (C3)"
+   ]
+  },
+  {
+   "titre": "H3.8 · Poste de contrôle et améliorations",
+   "objectifs": [
+    "H 3.8 J’identifie les points faibles du flux de données et de l’organisation et décris les mesures d’amélioration dans la préparation des commandes. (C4)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}
