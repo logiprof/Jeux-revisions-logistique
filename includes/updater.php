@@ -42,11 +42,10 @@ function jrl_remote( $forcer = false ) {
 	return $r;
 }
 
-/* Proposition de mise à jour (WordPress compare lui-même les versions) */
-add_filter( 'update_plugins_github.com', function ( $update, $plugin_data, $plugin_file ) {
-	if ( plugin_basename( JRL_FILE ) !== $plugin_file ) { return $update; }
+/* Description de la dernière version, au format attendu par WordPress */
+function jrl_update_info( $plugin_file ) {
 	$r = jrl_remote();
-	if ( empty( $r['ok'] ) || '' === $r['version'] ) { return $update; }
+	if ( empty( $r['ok'] ) || '' === $r['version'] ) { return false; }
 	return array(
 		'id'           => 'https://github.com/' . JRL_REPO,
 		'slug'         => 'jeux-revisions-logistique',
@@ -60,7 +59,25 @@ add_filter( 'update_plugins_github.com', function ( $update, $plugin_data, $plug
 		'tested'       => get_bloginfo( 'version' ),
 		'icons'        => array( 'svg' => plugins_url( 'assets/icone.svg', JRL_FILE ), '1x' => plugins_url( 'assets/icone.svg', JRL_FILE ) ),
 	);
+}
+
+/* Proposition de mise à jour par l'en-tête « Update URI » (WordPress compare lui-même les versions) */
+add_filter( 'update_plugins_github.com', function ( $update, $plugin_data, $plugin_file ) {
+	if ( plugin_basename( JRL_FILE ) !== $plugin_file ) { return $update; }
+	$i = jrl_update_info( $plugin_file );
+	return $i ? $i : $update;
 }, 10, 3 );
+
+/* Filet de sécurité : si le serveur ne joint pas wordpress.org, WordPress ne lit pas « Update URI » ; on inscrit la mise à jour nous-mêmes */
+add_filter( 'pre_set_site_transient_update_plugins', function ( $t ) {
+	if ( ! is_object( $t ) ) { return $t; }
+	$f = plugin_basename( JRL_FILE );
+	if ( isset( $t->response[ $f ] ) || isset( $t->no_update[ $f ] ) ) { return $t; }
+	$i = jrl_update_info( $f );
+	if ( ! $i ) { return $t; }
+	if ( version_compare( $i['new_version'], JRL_VERSION, '>' ) ) { $t->response[ $f ] = (object) $i; } else { $t->no_update[ $f ] = (object) $i; }
+	return $t;
+} );
 
 /* Fenêtre « Afficher les détails » de la mise à jour */
 add_filter( 'plugins_api', function ( $res, $action, $args ) {
