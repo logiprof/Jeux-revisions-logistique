@@ -50,9 +50,9 @@ L’extension lit la dernière *release* de ce dépôt (en-tête `Update URI`). 
 
 1. Modifiez ou ajoutez les jeux dans `jeux/`.
 2. Augmentez le numéro de version aux trois endroits : l’en-tête `Version` et la constante `JRL_VERSION` de `jeux-revisions-logistique.php`, et `Stable tag` dans `readme.txt` (ajoutez une ligne dans « Changelog »).
-3. Poussez un tag : `git tag v1.1.0 && git push origin v1.1.0`.
+3. Poussez (ou fusionnez) sur `main`.
 
-L’action GitHub **Publier une version** vérifie les numéros, construit `jeux-revisions-logistique.zip` et crée la release. Les sites se mettent à jour dans les heures qui suivent.
+L’action GitHub **Publier une version** vérifie les numéros, construit `jeux-revisions-logistique.zip` et crée la release `vX.Y.Z` si elle n’existe pas encore. Un push sans changement de version ne publie rien ; pour reconstruire le zip de la version courante, lancez l’action à la main (onglet **Actions → Publier une version → Run workflow**). Les sites se mettent à jour dans les heures qui suivent.
 
 ## Ajouter un jeu
 

@@ -1,10 +1,13 @@
-# Publie une nouvelle version de l'extension :
-#   1. augmenter la version (en-tête « Version », constante JRL_VERSION, « Stable tag » du readme.txt) ;
-#   2. pousser un tag vX.Y.Z (ex. git tag v1.1.0 && git push origin v1.1.0).
-# Le zip est construit et joint à la release ; les sites WordPress le proposent alors en mise à jour.
+# Publie une nouvelle version de l'extension.
+# Il suffit d'augmenter la version (en-tête « Version », constante JRL_VERSION, « Stable tag » du readme.txt)
+# et de pousser sur main : si la release vX.Y.Z n'existe pas encore, elle est créée avec le zip de l'extension.
+# Un push sur main sans changement de version ne publie rien. Un tag vX.Y.Z ou un lancement manuel
+# (onglet Actions > Publier une version > Run workflow) reconstruit et remplace le zip de la version courante.
+# Les sites WordPress proposent ensuite la mise à jour (et l'installent seuls si l'option est cochée).
 name: Publier une version
 on:
   push:
+    branches: [main]
     tags: ['v*']
   workflow_dispatch:
 permissions:
@@ -23,11 +26,22 @@ jobs:
           [ "$V" = "$C" ] && [ "$V" = "$S" ] || { echo "::error::Les trois numéros de version doivent être identiques."; exit 1; }
           if [ "${GITHUB_REF_TYPE}" = "tag" ] && [ "${GITHUB_REF_NAME#v}" != "$V" ]; then echo "::error::Le tag ${GITHUB_REF_NAME} ne correspond pas à la version $V."; exit 1; fi
           echo "VERSION=$V" >> "$GITHUB_ENV"
+      - name: Version déjà publiée ?
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "v$VERSION" >/dev/null 2>&1 && [ "${GITHUB_REF_TYPE}" = "branch" ] && [ "${GITHUB_EVENT_NAME}" = "push" ]; then
+            echo "La version $VERSION est déjà publiée : rien à faire."; echo "PUBLIER=0" >> "$GITHUB_ENV"
+          else
+            echo "PUBLIER=1" >> "$GITHUB_ENV"
+          fi
       - name: Vérifier la syntaxe PHP
         run: for f in $(git ls-files '*.php'); do php -l "$f" >/dev/null || exit 1; done
       - name: Construire le zip
+        if: env.PUBLIER == '1'
         run: bash outils/construire_zip.sh dist
       - name: Publier la release
+        if: env.PUBLIER == '1'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
