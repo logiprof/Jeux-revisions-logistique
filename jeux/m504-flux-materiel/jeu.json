@@ -1,0 +1,36 @@
+{
+ "module": "M504",
+ "shortcode": "jeu_m504",
+ "titre": "M504 – Le flux de matériel",
+ "sous_titre": "Logisticien·ne CFC · Module M504",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M504 (leçons 4.1 à 4.8) et 100 épreuves, dont 32 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "B3.4a · Flux de matériel et Kanban",
+   "objectifs": [
+    "B3.4 J’explique le principe des systèmes d’indicateurs de l’entreprise et leur importance pour l’entreprise et pour l’exécution des mandats. (C2) — partie : flux internes et externes, Kanban comme indicateur de réapprovisionnement"
+   ]
+  },
+  {
+   "titre": "B3.4b·B5.1 · Two-Bin, commande optique et saisie",
+   "objectifs": [
+    "B3.4 : Two-Bin et systèmes optiques comme indicateurs de commande. (C2) — B5.1 J’explique le but et l’utilité d’une saisie correcte des temps de travail et de processus et montre les possibilités d’évaluation des données. (C2)"
+   ]
+  },
+  {
+   "titre": "B3.4c·B4.4 · Juste-à-temps et Just in Sequence",
+   "objectifs": [
+    "B3.4 : JIT et JIS nécessitent des indicateurs précis pour coordonner les flux. (C2) — B4.4 Je décris des mesures pour améliorer l’efficacité des ressources et de l’énergie : réduction des stocks grâce au JIT. (C2) — avec B5.1 : saisie des délais"
+   ]
+  },
+  {
+   "titre": "B4.4 · Automatisation à faible coût et Jidoka",
+   "objectifs": [
+    "B4.4 Je décris, à l’aide d’un exemple pratique, des mesures concrètes pour améliorer l’efficacité des ressources et de l’énergie dans le processus logistique (LCA, Jidoka, trajets simplifiés). (C2)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

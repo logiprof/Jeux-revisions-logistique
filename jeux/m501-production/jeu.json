@@ -1,0 +1,30 @@
+{
+ "module": "M501",
+ "shortcode": "jeu_m501",
+ "titre": "M501 – La production",
+ "sous_titre": "Logisticien·ne CFC · Module M501",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M501 (leçons 5.1 à 5.4) et 75 épreuves, dont 36 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "PR1 · Définition et facteurs de production",
+   "objectifs": [
+    "Je peux définir le terme production et distinguer les trois grandes catégories de production (biens matériels, énergies, services). (C1) — Je comprends comment les facteurs de production (travail humain, moyens techniques, matières premières) transforment des inputs en outputs dans un processus de création de valeur. (C2)"
+   ]
+  },
+  {
+   "titre": "PR2 · Objectifs de la production",
+   "objectifs": [
+    "Je peux énumérer les principaux objectifs d’une production efficace (coûts, rendement, qualité, délais, charge, satisfaction) et expliquer leur importance. (C2) — J’analyse une situation de production et propose des actions pour améliorer le rendement, la qualité et le respect des délais. (C3)"
+   ]
+  },
+  {
+   "titre": "PR3 · Développement et structure du produit",
+   "objectifs": [
+    "Je peux décrire les cinq étapes du développement d’un produit (idée, études, prototype, modèle de série, commercialisation). (C1) — Je comprends le rôle de la planification entre les services. (C2) — J’explique la structure d’un produit, sa standardisation et le bon moment pour personnaliser. (C2-C3)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

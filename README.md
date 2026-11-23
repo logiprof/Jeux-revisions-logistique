@@ -2,7 +2,7 @@
 
 Jeux de révision LogiProf pour les apprenti·e·s **logisticien·ne·s CFC**, et l’extension WordPress qui les installe sur votre site, avec mises à jour automatiques.
 
-- **41 jeux** (modules M101 à M110, M201 à M209, M301 à M312, M401 à M410), un dossier par jeu dans [`jeux/`](jeux/).
+- **47 jeux** (modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506), un dossier par jeu dans [`jeux/`](jeux/).
 - Chaque jeu : entraînement par objectif, examen blanc noté sur 6, révision ciblée des erreurs, progression enregistrée sur le compte de l’élève.
 - L’extension s’installe une seule fois ; chaque nouvelle version publiée ici arrive automatiquement sur le site.
 
@@ -67,6 +67,12 @@ La liste des shortcodes est aussi dans **Réglages → Jeux logistique**.
 | M408 | Organisation de l’entrepôt | `[jeu_m408]` | 6 | 150 |
 | M409 | Les engins de manutention | `[jeu_m409]` | 4 | 100 |
 | M410 | Les dispositifs de convoyage | `[jeu_m410]` | 4 | 100 |
+| M501 | La production | `[jeu_m501]` | 3 | 75 |
+| M502 | La logistique de production | `[jeu_m502]` | 3 | 75 |
+| M503 | Organisation de la production | `[jeu_m503]` | 3 | 75 |
+| M504 | Le flux de matériel | `[jeu_m504]` | 4 | 100 |
+| M505 | Planification et contrôle de la production (PCP) | `[jeu_m505]` | 4 | 100 |
+| M506 | Assurance qualité (AQ) dans la production | `[jeu_m506]` | 4 | 100 |
 
 ## Mises à jour automatiques
 

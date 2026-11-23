@@ -1,0 +1,30 @@
+{
+ "module": "M503",
+ "shortcode": "jeu_m503",
+ "titre": "M503 – Organisation de la production",
+ "sous_titre": "Logisticien·ne CFC · Module M503",
+ "duree": "10 min par série",
+ "description": "3 objectifs du module M503 (leçons 3.1 à 3.5) et 75 épreuves, dont 37 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "OP1 · Types de fabrication",
+   "objectifs": [
+    "Je peux énumérer et distinguer les principaux types de fabrication (unitaire, multiple, en série, de masse, par variété et par lots). (C1) — Je compare leurs avantages et inconvénients et je choisis le type adapté à un produit en justifiant mon choix. (C2-C3)"
+   ]
+  },
+  {
+   "titre": "OP2 · Organisation de la production",
+   "objectifs": [
+    "Je peux décrire les formes d’organisation du travail (à l’établi, en atelier, à la chaîne, de chantier) et leur fonctionnement. (C1) — Je comprends leur influence sur la productivité, la qualité et les coûts, et je propose l’organisation adaptée à une situation. (C2-C3)"
+   ]
+  },
+  {
+   "titre": "OP3 · Lean Production",
+   "objectifs": [
+    "Je peux expliquer les objectifs et les principes de la Lean Production (réduction des gaspillages, flexibilité). (C2) — J’analyse un processus et suggère des améliorations basées sur la production allégée. (C3)"
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}

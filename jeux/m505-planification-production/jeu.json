@@ -1,0 +1,36 @@
+{
+ "module": "M505",
+ "shortcode": "jeu_m505",
+ "titre": "M505 – Planification et contrôle de la production (PCP)",
+ "sous_titre": "Logisticien·ne CFC · Module M505",
+ "duree": "10 min par série",
+ "description": "4 objectifs du module M505 (leçons PCP, PERT, GANTT, 5.1 à 5.3) et 100 épreuves, dont 33 % de mises en situation du métier. Trois modes : Entraînement par objectif, Examen blanc chronométré noté sur 6 et Révision ciblée des erreurs.",
+ "contenu": [
+  {
+   "titre": "PCP · Rôle et tâches de la PCP",
+   "objectifs": [
+    "Je peux définir le rôle de la PCP et expliquer son importance dans la coordination entre les ventes, les achats et la production ; je comprends ses tâches et leur enchaînement ; je peux analyser un programme de production simple (stock insuffisant)."
+   ]
+  },
+  {
+   "titre": "PCP·PG · Diagrammes PERT et Gantt",
+   "objectifs": [
+    "Planification des délais : construire et lire un diagramme PERT (dates au plus tôt et au plus tard, marges, chemin critique) et un diagramme de Gantt (leçons PERT et GANTT)."
+   ]
+  },
+  {
+   "titre": "FP·TP · Push, pull et production en vrac",
+   "objectifs": [
+    "Je peux décrire les flux poussé (push) et tiré (pull), comparer leurs flux d’informations, stocks, délais et effort de planification, et choisir le mode adapté ; je peux expliquer la production en vrac, ses caractéristiques et des exemples."
+   ]
+  },
+  {
+   "titre": "NB · Nomenclatures et besoins",
+   "objectifs": [
+    "Je comprends la différence entre besoins primaires, secondaires et secondaires nets et leur lien avec le programme de vente ; je peux calculer des besoins nets ; je peux choisir le type de nomenclature (quantitative, structurelle, modulaire ou à variantes) et expliquer l’impact d’une nomenclature erronée."
+   ]
+  }
+ ],
+ "couleur": "#067030",
+ "version": "1.0.0"
+}
