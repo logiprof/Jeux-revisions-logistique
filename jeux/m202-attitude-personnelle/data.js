@@ -146,3 +146,4 @@ window.META={
   },
   note:{text:"Les leçons du module ne décrivent pas directement les rôles dans l’équipe logistique ni les conditions du travail d’équipe (objectifs A3.1 et A3.2) : ces questions sont marquées « Hors support ». Pour les métiers de la logistique, voir",url:"https://www.orientation.ch/fr/professions/logisticien-ne-cfc",link:"orientation.ch"}
 };
+window.META.langs = ["fr","de"];

@@ -118,3 +118,4 @@ window.META={
   },
   note:{text:"Les calculs de place de stockage, de palettes et de trajets (G3.6) et la prévision par moyenne ou tendance (G4.1) sont des compléments « Hors support » : le cours donne les principes, le besoin net, la rotation des stocks (année de 360 jours) et le taux de service. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

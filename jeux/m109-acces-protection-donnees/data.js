@@ -197,3 +197,4 @@ window.META={
   },
   note:{text:"Le cours date de 2024. Depuis le 1er septembre 2023, la nouvelle loi sur la protection des données (nLPD) s’applique en Suisse ; les règles de remise des envois (D5.3) viennent de la Poste suisse et ne figurent pas dans le cours. Pour les textes en vigueur, consultez",url:"https://www.fedlex.admin.ch",link:"fedlex.admin.ch"}
 };
+window.META.langs = ["fr","de"];

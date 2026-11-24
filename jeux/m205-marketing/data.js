@@ -227,3 +227,4 @@ window.META={
   },
   note:{text:"Les objectifs de ce module ont été définis par l’enseignant (codes M205.1 à M205.7 ajoutés pour le jeu). Pour revoir les 4 P du marketing-mix et le concept AIDA, voir la leçon 5.4 et la leçon 5.5 du cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

@@ -38,5 +38,43 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M104 – Warenfluss",
+  "sous_titre": "Logistiker/-in EFZ · Modul M104",
+  "duree": "10 Min. pro Serie",
+  "description": "5 Lernziele des Moduls M104 und 125 Aufgaben, davon 38 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "B3.1 · Die Glieder des Flusses",
+    "objectifs": [
+     "Ich beschreibe anhand von Praxisbeispielen die logistischen Prozesse verschiedener Logistikunternehmen (Dienstleister, Handelsunternehmen, Produktionsunternehmen). (K2)"
+    ]
+   },
+   {
+    "titre": "B3.3 · TUL und logistische Grössen",
+    "objectifs": [
+     "Ich unterscheide zwischen interner Logistik und Supply Chain Management und ordne verschiedene Prozesse anhand von Beispielen zu. (K2)"
+    ]
+   },
+   {
+    "titre": "B3.5 · Flüsse und Schnittstellen",
+    "objectifs": [
+     "Ich beschreibe den logistischen Prozess des Unternehmens mit den verschiedenen Schritten sowie den internen und externen Schnittstellen. (K2)"
+    ]
+   },
+   {
+    "titre": "B3.6 · Schwachstellen und Verbesserungen",
+    "objectifs": [
+     "Ich beschreibe anhand von Fallstudien mögliche Schwachstellen der logistischen Prozesse des Unternehmens; danach erkenne und erkläre ich Massnahmen zur Optimierung der Prozesse und Schnittstellen. (K3)"
+    ]
+   },
+   {
+    "titre": "B5.2 · Waren, Werte, Informationen",
+    "objectifs": [
+     "Ich beschreibe anhand von Praxisbeispielen die Waren-, Wert- und Informationsflüsse im logistischen Prozess verschiedener Logistikunternehmen (Dienstleister, Handelsunternehmen, Produktionsunternehmen). (K2)"
+    ]
+   }
+  ]
+ }
 }

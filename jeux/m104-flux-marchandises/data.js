@@ -171,3 +171,4 @@ window.META={
   },
   note:{text:"Les interfaces internes et externes, la démarche d’optimisation, les coûts de production et la marge sont des compléments « Hors support ». Le flux du prestataire de services suit la description de la leçon 4.6.1. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

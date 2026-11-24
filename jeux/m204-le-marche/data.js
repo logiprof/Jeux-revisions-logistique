@@ -234,3 +234,4 @@ window.META={
   },
   note:{text:"Les objectifs de ce module ont été définis par l’enseignant (codes M204.1 à M204.7 ajoutés pour le jeu). Les défis logistiques liés à la taille du marché, les licences, le capital minimum et les effets du monopole sont des compléments « Hors support ». Sur le monopole résiduel de la Poste, voir",url:"https://www.post.ch/fr/notre-profil/portrait/service-universel/faits-sur-le-service-universel",link:"post.ch"}
 };
+window.META.langs = ["fr","de"];

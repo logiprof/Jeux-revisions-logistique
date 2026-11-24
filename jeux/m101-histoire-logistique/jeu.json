@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M101 – Geschichte der Logistik",
+  "sous_titre": "Logistiker/-in EFZ · Modul M101",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M101 und 100 Aufgaben, davon 32 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "M101.1 · Die militärische Logistik",
+    "objectifs": [
+     "Ich kann den Einfluss der militärischen Logistik auf Erfolge und Misserfolge der Feldzüge von Napoleon Bonaparte analysieren und die Methoden für die Versorgung und den Transport des Kriegsmaterials beschreiben."
+    ]
+   },
+   {
+    "titre": "M101.2 · Die Seidenstrasse",
+    "objectifs": [
+     "Ich kann die Rolle der Seidenstrasse im Handel zwischen China und Europa beschreiben und dabei die wichtigsten gehandelten Produkte sowie die logistischen Anpassungen zur Durchquerung von Wüsten und Gebirgen nennen."
+    ]
+   },
+   {
+    "titre": "M101.3 · Die Informatik",
+    "objectifs": [
+     "Ich kann beschreiben, wie die Informatik die Logistik seit den 1960er-Jahren verändert hat, und konkrete Beispiele für die Optimierung der Lieferketten und die Echtzeit-Bestandsführung geben."
+    ]
+   },
+   {
+    "titre": "M101.4 · Die Innovationen",
+    "objectifs": [
+     "Ich kann die Bedeutung logistischer Innovationen wie des Strichcodes oder des Containermodells für die Effizienz und die Rückverfolgbarkeit moderner Lieferketten beurteilen."
+    ]
+   }
+  ]
+ }
 }

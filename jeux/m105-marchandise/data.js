@@ -95,3 +95,4 @@ window.META={
   },
   note:{text:"Les effets de la poussière, les causes de pertes de matériel (vol, erreurs de gestion) et la rotation selon les dates de péremption (FEFO) sont des compléments « Hors support ». Les températures suivent le tableau de la leçon 5.5.2. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

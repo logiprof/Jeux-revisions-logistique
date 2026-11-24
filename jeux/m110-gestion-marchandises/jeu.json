@@ -26,5 +26,31 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M110 – Definition der Warenbewirtschaftung",
+  "sous_titre": "Logistiker/-in EFZ · Modul M110",
+  "duree": "10 Min. pro Serie",
+  "description": "3 Lernziele des Moduls M110 und 82 Aufgaben, davon 33 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "G1.2 · Die Stammdaten",
+    "objectifs": [
+     "Ich beschreibe den Aufbau, die Bedeutung und den Nutzen der Stammdaten von Waren. (K2)"
+    ]
+   },
+   {
+    "titre": "G3.6 · Lagerung und Transport berechnen",
+    "objectifs": [
+     "Ich berechne mithilfe von Stammdaten die Grundlagen für die Lagerung und den Transport von Waren (Lageraufbau, Platzbedarf, Verfügbarkeiten). (K3)"
+    ]
+   },
+   {
+    "titre": "G4.1 · Den Bedarf ermitteln",
+    "objectifs": [
+     "Ich beschreibe die Bedarfsermittlung aufgrund des (vergangenen) Verbrauchs und die Vorschau auf den künftigen Bedarf anhand von Praxisbeispielen und führe einfache Berechnungen durch. (K3)"
+    ]
+   }
+  ]
+ }
 }

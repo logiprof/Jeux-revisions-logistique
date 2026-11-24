@@ -108,3 +108,4 @@ window.META={
   },
   note:{text:"Le module M209 n’a qu’un objectif (D6.2, niveau C3) : le jeu le découpe en trois parties (D6.2a à D6.2c). Les étapes du traitement d’une réclamation sont un complément « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

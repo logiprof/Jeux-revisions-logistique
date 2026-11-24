@@ -38,5 +38,43 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M106 – Die Abfallentsorgung CH",
+  "sous_titre": "Logistiker/-in EFZ · Modul M106",
+  "duree": "10 Min. pro Serie",
+  "description": "5 Lernziele des Moduls M106 und 133 Aufgaben, davon 36 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "B4.2 · Das 3-R-Prinzip",
+    "objectifs": [
+     "Ich erkläre das Prinzip der Abfallwirtschaft nach den 3 R: reduzieren, wiederverwenden, rezyklieren (Upcycling, Recycling, Verbrennung, Deponie). (K2)"
+    ]
+   },
+   {
+    "titre": "B4.3 · Kreislaufwirtschaft",
+    "objectifs": [
+     "Ich beschreibe die Entsorgungswege (Kreislaufwirtschaft) sowie die wirtschaftlichen und ökologischen Vorteile des Recyclings von Restmengen an Materialien und Rohstoffen, die in einem Logistikunternehmen verwendet werden. (K2)"
+    ]
+   },
+   {
+    "titre": "B4.4 · Ressourcen und Energie",
+    "objectifs": [
+     "Ich beschreibe anhand eines Praxisbeispiels konkrete Massnahmen zur Verbesserung der Ressourcen- und Energieeffizienz im logistischen Prozess. (K2)"
+    ]
+   },
+   {
+    "titre": "B4.5 · Die Emissionen",
+    "objectifs": [
+     "Ich beschreibe verschiedene Arten von Emissionen und Möglichkeiten, sie zu vermeiden. (K2)"
+    ]
+   },
+   {
+    "titre": "B4.7 · Trennen und verwerten",
+    "objectifs": [
+     "Ich beschreibe den Nutzen der Trennung und Verwertung von Betriebsabfällen als Alternative zu ihrer Entsorgung und nenne konkrete Beispiele von Abfällen, die so zu verwerteten Stoffen werden. (K2)"
+    ]
+   }
+  ]
+ }
 }

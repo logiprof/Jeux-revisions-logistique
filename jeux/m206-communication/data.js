@@ -110,3 +110,4 @@ window.META={
   },
   note:{text:"Le module M206 n’a qu’un objectif (B1.2, niveau C3) : le jeu le découpe en trois parties selon ses sous-objectifs (B1.2a à B1.2c). Les exemples d’interférences au quai sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

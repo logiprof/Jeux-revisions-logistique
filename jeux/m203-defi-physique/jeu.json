@@ -56,5 +56,61 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M203 – Die körperliche Herausforderung in der Arbeitswelt",
+  "sous_titre": "Logistiker/-in EFZ · Modul M203",
+  "duree": "10 Min. pro Serie",
+  "description": "8 Lernziele des Moduls M203 und 202 Aufgaben, davon 35 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "A2.5 · Die PSA",
+    "objectifs": [
+     "Ich zähle die Elemente der für die Arbeit geeigneten persönlichen Schutzausrüstung (PSA) auf und erkläre ihre Wirkung, ihre Verwendung und ihre Pflege. (K2)"
+    ]
+   },
+   {
+    "titre": "A2.7 · Vorbeugende Massnahmen",
+    "objectifs": [
+     "Ich beschreibe konkrete persönliche Massnahmen zum Schutz von Gesundheit und Umwelt, um Berufskrankheiten zu vermeiden und die Arbeitssicherheit zu gewährleisten. (K2)"
+    ]
+   },
+   {
+    "titre": "A2.8 · Körperliche Belastungen",
+    "objectifs": [
+     "Ich beschreibe die mit der beruflichen Tätigkeit verbundenen körperlichen Belastungen (Skelett, Gelenke, Muskulatur), ihre Auswirkungen und die vorbeugenden Massnahmen, um sie zu vermeiden oder zu verringern. (K2)"
+    ]
+   },
+   {
+    "titre": "B2.5 · Drucksituationen",
+    "objectifs": [
+     "Ich beschreibe Methoden, Vorgehensweisen und Verhaltensweisen, um Drucksituationen vorzubeugen, sie zu entschärfen und zu bewältigen. (K2)"
+    ]
+   },
+   {
+    "titre": "B3.8 · Risiken und Gefahren",
+    "objectifs": [
+     "Ich beschreibe anhand von Beispielen die Risiken und Gefahren, die im logistischen Prozess für mich, für die Mitarbeitenden und für Dritte auftreten. (K2)"
+    ]
+   },
+   {
+    "titre": "B3.9 · Notfallorganisation",
+    "objectifs": [
+     "Ich nenne die wichtigsten Elemente einer Notfallorganisation und erkläre die Abläufe, das Verhalten und die Massnahmen gemäss dem Notfallplan des Unternehmens. (K2)"
+    ]
+   },
+   {
+    "titre": "C1.3 · Förder- und Hebegeräte",
+    "objectifs": [
+     "Ich beschreibe die Förder- und Hebegeräte (Gabelstapler, Brückenkran, Hebebalken, Scherenhubtisch, Hebe- und Transporthilfen, Exoskelette), ihre Merkmale und ihre Einsatzbereiche im Wareneingang. (K2)"
+    ]
+   },
+   {
+    "titre": "D1.7 · Hilfsmittel",
+    "objectifs": [
+     "Ich kenne verschiedene Hilfsmittel, um Waren ergonomisch und sicher einzulagern, und erkläre ihre Vorteile anhand eines Beispiels (Gabelstapler, Exoskelett, Sackkarre usw.). (K2)"
+    ]
+   }
+  ]
+ }
 }

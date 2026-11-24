@@ -26,5 +26,31 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M209 – Kundendienst (After Sales)",
+  "sous_titre": "Logistiker/-in EFZ · Modul M209",
+  "duree": "10 Min. pro Serie",
+  "description": "3 Lernziele des Moduls M209 und 75 Aufgaben, davon 32 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "D6.2a · Reklamationen bearbeiten",
+    "objectifs": [
+     "Ich erkläre den Nutzen und die Möglichkeiten einer lösungsorientierten Reklamationsbearbeitung (Definitionen, Reklamationsrecht, Schritte der Bearbeitung). (K3) — Teil 1 von D6.2"
+    ]
+   },
+   {
+    "titre": "D6.2b · Zufriedenheit und Kundenbindung",
+    "objectifs": [
+     "Ich leite Massnahmen ab, um die Zufriedenheit der Kunden zu erhalten: Kundendienst nach dem Kauf, Kundenbindung, Zufriedenheitsumfragen, Vorsicht bei Gewinnspielen. (K3) — Teil 2 von D6.2"
+    ]
+   },
+   {
+    "titre": "D6.2c · Garantie und Kulanz",
+    "objectifs": [
+     "Ich unterscheide die Gewährleistung des Verkäufers, die Herstellergarantie und die Kulanz, um dem Kunden eine passende Lösung vorzuschlagen. (K3) — Teil 3 von D6.2"
+    ]
+   }
+  ]
+ }
 }

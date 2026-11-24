@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M202 – Die persönliche Haltung",
+  "sous_titre": "Logistiker/-in EFZ · Modul M202",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M202 und 105 Aufgaben, davon 33 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "A3.1 · Die Rollen im Team",
+    "objectifs": [
+     "Ich beschreibe die verschiedenen Rollen in der Arbeitswelt und erkläre ihre Auswirkungen auf das Verhalten der Rolleninhaber. (K2)"
+    ]
+   },
+   {
+    "titre": "A3.2 · Die Teamarbeit",
+    "objectifs": [
+     "Ich beschreibe die Bedingungen einer guten Zusammenarbeit im Team und erkläre, warum Teamarbeit zu besseren Ergebnissen führt als Einzelarbeit. (K2)"
+    ]
+   },
+   {
+    "titre": "B1.1 · Leitbild und Auftreten",
+    "objectifs": [
+     "Ich erkläre die Bedeutung des Leitbilds eines Unternehmens sowie meine persönliche Verantwortung für die Einhaltung der Werte und die Bedeutung guter Umgangsformen und eines gepflegten Auftretens (Kleidung, Hygiene usw.). (K2)"
+    ]
+   },
+   {
+    "titre": "B1.3 · Kommunikation und Empfang",
+    "objectifs": [
+     "Ich erkläre die Bedeutung eines freundlichen Empfangs der Anliegen und Bedürfnisse interner und externer Kunden. (K2)"
+    ]
+   }
+  ]
+ }
 }

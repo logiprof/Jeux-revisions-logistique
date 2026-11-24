@@ -1,5 +1,5 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>M208 – Le service à la vente</title><meta name="robots" content="noindex"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} img{max-width:100%} [hidden]{display:none!important}@font-face{font-family:"Poppins";src:url("../../assets/fonts/poppins-latin-400-normal.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:"Poppins";src:url("../../assets/fonts/poppins-latin-500-normal.woff2") format("woff2");font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:"Poppins";src:url("../../assets/fonts/poppins-latin-600-normal.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:"Poppins";src:url("../../assets/fonts/poppins-latin-700-normal.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}</style></head><body>
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html lang="fr"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <style>
 /* Moteur « logistique » : charte LogiOne / LogiProf (anthracite #313a45, vert #067030, jaune « marquage d'entrepôt » #f5c400, Poppins).
    Accueil : image de titre du cours en 16:5, bandeau anthracite, pyramide de cubes. Logique identique au modèle « La vaccination ». */
@@ -249,6 +249,7 @@ h2,h3{letter-spacing:-.01em}
 .top .chip.quitwp{background:var(--y);color:#313a45;border-color:var(--y)}
 .chip.quitwp{background:var(--y);color:#313a45;border-color:var(--y)}
 .avatar{background:var(--y)}
+.chip.langsw{font-weight:700;letter-spacing:.04em}
 .avatar span{background:var(--ink-hero);color:#fff;box-shadow:0 0 0 2px var(--ink-hero)}
 .xpbar i{background:linear-gradient(90deg,var(--g-bright),var(--y))}
 .hero{background:var(--ink-hero);color:#fff;border-radius:6px;padding:clamp(20px,3vw,30px);background-size:cover;background-position:center}
@@ -321,6 +322,16 @@ const today=()=>{const d=new Date();return d.getFullYear()+"-"+String(d.getMonth
 const dayDiff=(a,b)=>Math.round((new Date(b+"T12:00")-new Date(a+"T12:00"))/864e5);
 const GOAL=META.goal||20;
 document.title=META.title;
+/* ---------- langue (FR / DE) : même jeu, même progression ---------- */
+const LANG="fr";
+const HAS_DE=Array.isArray(META.langs)&&META.langs.indexOf("de")>=0&&META.langs.indexOf("fr")>=0;
+const LQ=(()=>{try{return new URLSearchParams(location.search).get("lang")}catch(e){return null}})();
+const LPREF=(()=>{try{return localStorage.getItem("jdr-lang")}catch(e){return null}})();
+const LREDIR=HAS_DE&&!LQ&&(LPREF==="fr"||LPREF==="de")&&LPREF!==LANG;
+function goLang(l){try{localStorage.setItem("jdr-lang",l)}catch(e){}
+  const go=()=>{try{const u=new URL(location.href);u.searchParams.set("lang",l);if(!window.JDR_CFG)u.pathname=u.pathname.replace(/[^\/]*$/,l==="de"?"index.de.html":"index.html");location.replace(u.href)}catch(e){location.reload()}};
+  try{Promise.race([cloudFlush(),new Promise(r=>setTimeout(r,1500))]).then(go,go)}catch(e){go()}}
+function langBtn(){if(!HAS_DE)return"";const o=LANG==="fr"?"de":"fr";return `<button type="button" class="chip btnchip langsw" id="lang" lang="${o}" title="${o==="de"?"Auf Deutsch spielen":"Jouer en français"}">${ic("globe")}${o.toUpperCase()}</button>`}
 
 /* ---------- icons ---------- */
 const P='fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
@@ -344,6 +355,7 @@ const ICONS={
  zoom:`<circle cx="10.5" cy="10.5" r="6" ${P}/><path d="M15 15l5 5M8 10.5h5M10.5 8v5" ${P}/>`,
  person:`<circle cx="12" cy="8" r="3.5" ${P}/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5" ${P}/>`,
  clock:`<circle cx="12" cy="12" r="8.5" ${P}/><path d="M12 7.5V12l3 2" ${P}/>`,
+ globe:`<circle cx="12" cy="12" r="8.5" ${P}/><path d="M3.5 12h17M12 3.5c2.4 2.6 3.5 5.4 3.5 8.5s-1.1 5.9-3.5 8.5c-2.4-2.6-3.5-5.4-3.5-8.5s1.1-5.9 3.5-8.5z" ${P}/>`,
  copy:`<rect x="8" y="8" width="12" height="12" rx="2" ${P}/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8" ${P}/>`
 };
 Object.assign(ICONS,META.icons||{});
@@ -517,7 +529,7 @@ async function bootWP(){loadingScreen();const ok=await initCloud();if(ok)greet()
 /* Accueil sur le site : la personne est saluée par le prénom de son compte, puis commence ou reprend. */
 function greet(){
   SCREEN="greet";const started=S.xp>0||Object.keys(S.rec).length>0,i=levelOf(S.xp),done=OBJ.filter((o,oi)=>mastery(oi)>=80).length;
-  $("#app").innerHTML=`<div class="row" style="justify-content:flex-end"><button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button></div><section class="panel welcome enter">${coverHTML()}<div class="wbody"><div class="wtext">
+  $("#app").innerHTML=`<div class="row" style="justify-content:flex-end">${langBtn()}<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button></div><section class="panel welcome enter">${coverHTML()}<div class="wbody"><div class="wtext">
    <div><p class="eyebrow">${esc(META.eyebrow)}</p><h1 style="margin-top:6px">${esc(META.title)}</h1></div>
    <h2 id="hello" style="margin:0">Bonjour ${esc(WPU.first||WPU.name)}${started?", bon retour !":" !"}</h2>
    <p class="muted">${started?`Votre progression : ${globalMastery()} % de maîtrise, niveau « ${esc(LEVELS[i][1])} », ${S.xp} XP, objectifs maîtrisés : ${done}/${OBJ.length}${S.best?`, meilleure note à l'examen blanc ${S.best.toFixed(1)}`:""}.`:`${esc(META.intro)} ${OBJ.length} objectifs, ${OBJ.reduce((n,o)=>n+o.ch.length,0)} épreuves, un examen blanc noté sur 6.`}</p>
@@ -568,15 +580,15 @@ function topBar(){
    <small>${S.xp} XP${nx?` · ${nx[0]-S.xp} XP avant « ${esc(nx[1])} »`:" · niveau maximum"}</small></div></div>
    <div class="chips"><span class="chip" title="Jours consécutifs avec au moins une session">${ic("flame")}${sk} jour${sk>1?"s":""}</span>
    <span class="chip" title="Objectif du jour">${ic("target")}${Math.min(S.day.d===today()?S.day.n:0,GOAL)}/${GOAL} aujourd'hui</span>
-   <button type="button" class="chip btnchip" id="snd" aria-pressed="${S.sound}">${ic(S.sound?"sound":"mute")}Son ${S.sound?"activé":"coupé"}</button>${WP?`<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button>`:""}</div></header>`;
+   ${langBtn()}<button type="button" class="chip btnchip" id="snd" aria-pressed="${S.sound}">${ic(S.sound?"sound":"mute")}Son ${S.sound?"activé":"coupé"}</button>${WP?`<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button>`:""}</div></header>`;
 }
-function bindTop(){const q=$("#wpquit");if(q)q.addEventListener("click",()=>wpQuit(q));const b=$("#snd");if(b)b.addEventListener("click",()=>{S.sound=!S.sound;save();sTap();b.setAttribute("aria-pressed",S.sound);b.innerHTML=`${ic(S.sound?"sound":"mute")}Son ${S.sound?"activé":"coupé"}`})}
+function bindTop(){const q=$("#wpquit");if(q)q.addEventListener("click",()=>wpQuit(q));const lg=$("#lang");if(lg)lg.addEventListener("click",()=>{lg.disabled=true;goLang(LANG==="fr"?"de":"fr")});const b=$("#snd");if(b)b.addEventListener("click",()=>{S.sound=!S.sound;save();sTap();b.setAttribute("aria-pressed",S.sound);b.innerHTML=`${ic(S.sound?"sound":"mute")}Son ${S.sound?"activé":"coupé"}`})}
 
 function route(){if(WPU){S.name=WPU.name;home()}else if(WP&&!WP.loggedIn&&window.JDR_CFG)needLogin();else if(!S.name&&!S.started)welcome();else home()}
 
 function welcome(){
   SCREEN="welcome";
-  $("#app").innerHTML=(WP?`<div class="row" style="justify-content:flex-end"><button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button></div>`:"")+`<section class="panel welcome enter">${coverHTML()}<div class="wbody"><div class="wtext">
+  $("#app").innerHTML=(WP||HAS_DE?`<div class="row" style="justify-content:flex-end">${langBtn()}${WP?`<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button>`:""}</div>`:"")+`<section class="panel welcome enter">${coverHTML()}<div class="wbody"><div class="wtext">
    <div><p class="eyebrow">${esc(META.eyebrow)}</p><h1 style="margin-top:6px">${esc(META.title)}</h1></div>
    <h2 id="hello" style="margin:0">Bienvenue !</h2>
    <p class="muted">${esc(META.intro)} ${OBJ.length} objectifs, ${OBJ.reduce((n,o)=>n+o.ch.length,0)} épreuves, un examen blanc noté sur 6.</p>
@@ -842,7 +854,7 @@ const RENDER={
  }
 };
 
-if(WPU)bootWP();else if(WP&&!WP.loggedIn&&window.JDR_CFG)needLogin();else{route();initCloud()}
+if(LREDIR)goLang(LPREF);else if(WPU)bootWP();else if(WP&&!WP.loggedIn&&window.JDR_CFG)needLogin();else{route();initCloud()}
 </script>
 
 </body></html>

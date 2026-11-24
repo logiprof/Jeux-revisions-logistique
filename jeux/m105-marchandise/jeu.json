@@ -20,5 +20,25 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M105 – Ware",
+  "sous_titre": "Logistiker/-in EFZ · Modul M105",
+  "duree": "10 Min. pro Serie",
+  "description": "2 Lernziele des Moduls M105 und 64 Aufgaben, davon 34 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "C4.5 · Was die Ware beschädigt",
+    "objectifs": [
+     "Ich beschreibe die möglichen Faktoren, die sich im Lager negativ auf die Qualität der Waren auswirken (Schädlinge, Temperatur, Luftfeuchtigkeit, Staub, Licht). (K2)"
+    ]
+   },
+   {
+    "titre": "G2.12 · Verluste und Haltbarkeit",
+    "objectifs": [
+     "Ich beschreibe die Ursachen und Folgen von Materialverlust, Haltbarkeitsdauer und Verfalldaten der Waren. (K2)"
+    ]
+   }
+  ]
+ }
 }

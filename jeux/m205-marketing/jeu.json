@@ -50,5 +50,55 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M205 – Das Marketing",
+  "sous_titre": "Logistiker/-in EFZ · Modul M205",
+  "duree": "10 Min. pro Serie",
+  "description": "7 Lernziele des Moduls M205 und 175 Aufgaben, davon 37 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "M205.1 · Ziele des Marketings",
+    "objectifs": [
+     "Ich kann die verschiedenen Ziele des Marketings erklären, wie den Verkauf fördern, den Marktanteil erhöhen, die Bekanntheit verbessern und ein positives Image im Markt verankern."
+    ]
+   },
+   {
+    "titre": "M205.2 · Angebot und Nachfrage",
+    "objectifs": [
+     "Ich kann die Wirkung von Angebot und Nachfrage auf die Preise der Produkte beschreiben und konkrete Beispiele nennen, wie Preisschwankungen durch reiche Ernten oder Wetterereignisse."
+    ]
+   },
+   {
+    "titre": "M205.3 · Die Globalisierung",
+    "objectifs": [
+     "Ich verstehe, wie die Globalisierung die Wirkung des lokalen Angebots auf die Preise begrenzt, und kann Beispiele importierter Produkte nennen, die lokale Märkte beeinflussen."
+    ]
+   },
+   {
+    "titre": "M205.4 · Der Marketing-Mix",
+    "objectifs": [
+     "Ich kann die vier Elemente des Marketing-Mix (Produkt, Preis, Distribution, Kommunikation) und ihre Bedeutung in der Marketingstrategie eines Unternehmens erklären."
+    ]
+   },
+   {
+    "titre": "M205.5 · Die Werbearten",
+    "objectifs": [
+     "Ich kann zwischen informativer und suggestiver Werbung unterscheiden und ihre Merkmale und Ziele erklären."
+    ]
+   },
+   {
+    "titre": "M205.6 · Das AIDA-Konzept",
+    "objectifs": [
+     "Ich kann das AIDA-Konzept (Attention, Interest, Desire, Action) anwenden, um ein wirksames Inserat zu gestalten, das die Aufmerksamkeit der Kunden gewinnt und sie zum Kauf anregt."
+    ]
+   },
+   {
+    "titre": "M205.7 · Eine gute Werbung",
+    "objectifs": [
+     "Ich kann eine Werbung beurteilen, um festzustellen, ob sie originell, wahrheitsgetreu und emotional ansprechend ist, und die Elemente erkennen, die zu ihrer Wirksamkeit beitragen."
+    ]
+   }
+  ]
+ }
 }

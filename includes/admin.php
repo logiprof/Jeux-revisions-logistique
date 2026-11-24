@@ -67,6 +67,7 @@ function jrl_admin_page() {
 				<tr><td style="width:42%"><code>[jeux_logistique]</code></td><td>Tous les jeux de l’extension (<?php echo (int) count( $jeux ); ?>).</td></tr>
 				<tr><td><code>[jeux_logistique modules="M1"]</code></td><td>Seulement les modules M101 à M110 (M2 pour M201 à M205…).</td></tr>
 				<tr><td><code>[jeux_logistique modules="M101,M203"]</code></td><td>Seulement les modules choisis.</td></tr>
+				<tr><td><code>[jeux_logistique langue="de"]</code></td><td>Le catalogue en allemand (cartes et jeux). Fonctionne aussi avec <code>modules="…"</code> et pour un seul jeu : <code>[jeu_m101 langue="de"]</code>. Sans <code>langue</code>, l’élève peut changer de langue dans le jeu (bouton FR | DE) ; sa progression est la même dans les deux langues.</td></tr>
 				<tr><td><code>[jeux_revision]</code></td><td>Tous les jeux de révision installés sur le site, y compris ceux d’autres extensions.</td></tr>
 			</tbody>
 		</table>
