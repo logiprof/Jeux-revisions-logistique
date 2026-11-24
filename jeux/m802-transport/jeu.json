@@ -26,5 +26,31 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M802 – Der Transport",
+  "sous_titre": "Logistiker/-in EFZ · Modul M802",
+  "duree": "10 Min. pro Serie",
+  "description": "3 Lernziele des Moduls M802 und 80 Aufgaben, davon 38 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "d2.1 · Transportüberwachung und Transportdaten",
+    "objectifs": [
+     "d2.1 Ich beschreibe die Anforderungen an Daten, Informationen und Datenträger sowie die Kriterien für die Kontrolle der Vollständigkeit und Richtigkeit der Daten. (K2)"
+    ]
+   },
+   {
+    "titre": "d2.2 · Track and Trace und Datenübermittlung an die Kunden",
+    "objectifs": [
+     "d2.2 Ich beschreibe je nach Transportmittel (Lastwagen, Bahn) und zu liefernden Waren die Richtlinien für die Anbringung (am Transportmittel oder an der Ware) und die Übermittlung der Daten an die Kunden. (K2)"
+    ]
+   },
+   {
+    "titre": "d3.3 · d3.4 · Tourenplan und Ladeplan",
+    "objectifs": [
+     "d3.3 Ich beschreibe die Bedeutung des Tourenplans und die Kriterien für seine Festlegung (Wirtschaftlichkeit, Ökologie, Sicherheit, Haltbarkeit der Produkte, Zeit, Ressourcen) und bestimme anhand einer Fallstudie die beste Route und eine Ausweichroute. (K3) · d3.4 Ich erstelle anhand eines Beispiels einen Ladeplan, der ein sicheres und effizientes Laden ermöglicht. (K3)"
+    ]
+   }
+  ]
+ }
 }

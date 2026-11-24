@@ -83,3 +83,4 @@ window.META={
   },
   note:{text:"Les trois domaines (flux de matériel, flux de données, organisation) sont décrits dans le M611 : ces épreuves sont marquées « Complément M611 ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

@@ -20,5 +20,25 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M809 – Leitstand",
+  "sous_titre": "Logistiker/-in EFZ · Modul M809",
+  "duree": "10 Min. pro Serie",
+  "description": "2 Lernziele des Moduls M809 und 54 Aufgaben, davon 35 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "H3.1 · Intralogistik und Flüsse",
+    "objectifs": [
+     "H 3.1 Ich beschreibe die drei Bereiche des Kommissioniersystems, nämlich Materialfluss, Datenfluss und Organisation, ihren Zusammenhang und ihre Wirkung auf die Kommissionierleistung. (K3)"
+    ]
+   },
+   {
+    "titre": "H3.8 · Leitstand und Verbesserungen",
+    "objectifs": [
+     "H 3.8 Ich erkenne die Schwachstellen des Datenflusses und der Organisation und beschreibe Verbesserungsmassnahmen in der Kommissionierung. (K4)"
+    ]
+   }
+  ]
+ }
 }
