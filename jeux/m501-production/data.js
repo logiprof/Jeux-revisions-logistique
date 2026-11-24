@@ -109,3 +109,4 @@ window.META={
   },
   note:{text:"Les objectifs de ce module ont été définis par l’enseignant (pas par Swiss Logistics). Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

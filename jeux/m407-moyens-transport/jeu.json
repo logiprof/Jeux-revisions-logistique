@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M407 – Transportmittel",
+  "sous_titre": "Logistiker/-in EFZ · Modul M407",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M407 und 100 Aufgaben, davon 34 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "C3.3a · Transportmittel einteilen und wählen",
+    "objectifs": [
+     "C3.3 Ich beschreibe geeignete Transportmittel oder -arten für den internen Transport (Cross-Docking, Umschlag, Produktion, Lagerung). (K2) — Teil: Einteilungs- und Auswahlkriterien"
+    ]
+   },
+   {
+    "titre": "C3.3b · Ausrüstung für den internen Transport",
+    "objectifs": [
+     "C3.3 Ich beschreibe geeignete Transportmittel oder -arten für den internen Transport. (K2) — Teil: manuelle Mittel, Förderer, Brückenkrane, Flurförderzeuge, Gabelstapler und Regalbediengeräte"
+    ]
+   },
+   {
+    "titre": "C1.3a · Das Hebelgesetz",
+    "objectifs": [
+     "C1.3 Ich beschreibe die Flurförder- und Hebegeräte, ihre Eigenschaften und ihre Einsatzbereiche im Wareneingang. (K2) — Teil: zweiarmiger Hebel und Stabilität des Gabelstaplers"
+    ]
+   },
+   {
+    "titre": "C1.3b · Lastdiagramme und Hebegeräte",
+    "objectifs": [
+     "C1.3 Ich beschreibe die Flurförder- und Hebegeräte (Gabelstapler, Brückenkran, Traverse, Scherenhubtisch, Hebe- und Transporthilfen, Exoskelette), ihre Eigenschaften und ihre Einsatzbereiche im Wareneingang. (K2) — Teil: Tragfähigkeitsdiagramme und Hebegeräte"
+    ]
+   }
+  ]
+ }
 }

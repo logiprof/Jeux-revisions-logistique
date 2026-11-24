@@ -109,3 +109,4 @@ window.META={
   },
   note:{text:"Les objectifs de ce module ont été définis par l’enseignant. La règle des 6 B suit la version des objectifs (bon produit, moment, quantité, qualité, endroit, coût). Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

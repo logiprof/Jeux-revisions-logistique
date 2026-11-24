@@ -138,3 +138,4 @@ window.META={
   },
   note:{text:"Objectifs définis par l’enseignant. L’analyse d’un programme de production et la nomenclature à variantes ne sont pas détaillées dans les leçons : ces épreuves sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

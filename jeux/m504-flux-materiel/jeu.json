@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M504 – Der Materialfluss",
+  "sous_titre": "Logistiker/-in EFZ · Modul M504",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M504 und 100 Aufgaben, davon 32 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "B3.4a · Materialfluss und Kanban",
+    "objectifs": [
+     "B3.4 Ich erkläre das Prinzip der Kennzahlensysteme des Betriebs und ihre Bedeutung für den Betrieb und für die Ausführung der Aufträge. (K2) — Teil: interne und externe Flüsse, Kanban als Nachschubsignal"
+    ]
+   },
+   {
+    "titre": "B3.4b·B5.1 · Zwei-Behälter-System, optische Bestellung und Erfassung",
+    "objectifs": [
+     "B3.4: Zwei-Behälter-System und optische Systeme als Bestellsignale. (K2) — B5.1 Ich erkläre Zweck und Nutzen einer korrekten Erfassung der Arbeits- und Prozesszeiten und zeige Möglichkeiten der Datenauswertung. (K2)"
+    ]
+   },
+   {
+    "titre": "B3.4c·B4.4 · Just-in-Time und Just-in-Sequence",
+    "objectifs": [
+     "B3.4: JIT und JIS verlangen genaue Kennzahlen zur Abstimmung der Flüsse. (K2) — B4.4 Ich beschreibe Massnahmen zur Verbesserung der Ressourcen- und Energieeffizienz: Bestandssenkung dank JIT. (K2) — mit B5.1: Erfassung der Fristen"
+    ]
+   },
+   {
+    "titre": "B4.4 · Kostengünstige Automatisierung und Jidoka",
+    "objectifs": [
+     "B4.4 Ich beschreibe anhand eines Praxisbeispiels konkrete Massnahmen zur Verbesserung der Ressourcen- und Energieeffizienz im logistischen Prozess (LCA, Jidoka, vereinfachte Wege). (K2)"
+    ]
+   }
+  ]
+ }
 }

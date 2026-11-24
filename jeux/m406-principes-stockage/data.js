@@ -109,3 +109,4 @@ window.META={
   },
   note:{text:"Les principes FIFO, LIFO et FEFO sont aussi traités dans M312. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

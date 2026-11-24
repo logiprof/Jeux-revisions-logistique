@@ -108,3 +108,4 @@ window.META={
   },
   note:{text:"Malgré son titre, le module traite des types d’entrepôts et des conditions de stockage, pas de prescriptions légales. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

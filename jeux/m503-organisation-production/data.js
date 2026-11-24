@@ -109,3 +109,4 @@ window.META={
   },
   note:{text:"Les objectifs de ce module ont été définis par l’enseignant. Le jeu suit les leçons 3.2 et 3.3 lorsque le tableau de 3.4 les contredit, et l’ordre officiel du PDCA. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

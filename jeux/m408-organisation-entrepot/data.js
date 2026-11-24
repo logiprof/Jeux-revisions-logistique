@@ -199,3 +199,4 @@ window.META={
   },
   note:{text:"G1.1, G2.3, G2.4, G2.5 et G2.6 ne sont que partiellement traités dans les leçons : les épreuves complémentaires sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

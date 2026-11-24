@@ -139,3 +139,4 @@ window.META={
   },
   note:{text:"Les convoyeurs (H3.4) sont traités dans M407 et la loi du levier dans M407 7.3. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M409 – Die Flurförderzeuge",
+  "sous_titre": "Logistiker/-in EFZ · Modul M409",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M409 und 100 Aufgaben, davon 34 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "H3.3a · Einteilung und einfache Geräte",
+    "objectifs": [
+     "H3.3 Ich erkläre die Kategorien der Kommissioniergeräte und nenne Beispiele für jede Kategorie. (K2) — Teil: Einteilung, Schlepper, Deichselgeräte und Kommissioniergeräte"
+    ]
+   },
+   {
+    "titre": "H3.3b · Gabelstapler",
+    "objectifs": [
+     "H3.3 Ich erkläre die Kategorien der Kommissioniergeräte und nenne Beispiele für jede Kategorie. (K2) — Teil: Gabelstapler und Einlagerungsgeräte, Wahl nach Platz und Last"
+    ]
+   },
+   {
+    "titre": "H3.4a · Antrieb, Masten und Anbaugeräte",
+    "objectifs": [
+     "H3.4 Ich beschreibe die Hebegeräte und erkläre anhand von Beispielen Einsatzbereiche und Einsatzmöglichkeiten. (K2) — Teil: Antriebsarten, Masten, Gabeln und Anbaugeräte"
+    ]
+   },
+   {
+    "titre": "H3.4b · FTS, Regalbediengeräte und Autostore",
+    "objectifs": [
+     "H3.4 Ich beschreibe die Fördereinrichtungen und Hebegeräte und erkläre anhand von Beispielen Einsatzbereiche und Einsatzmöglichkeiten. (K2) — Teil: fahrerlose Transportsysteme, Regalbediengeräte und Autostore"
+    ]
+   }
+  ]
+ }
 }

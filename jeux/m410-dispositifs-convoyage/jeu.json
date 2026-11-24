@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M410 – Die Fördereinrichtungen",
+  "sous_titre": "Logistiker/-in EFZ · Modul M410",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M410 und 100 Aufgaben, davon 34 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "H3.4a·H3.7 · Brückenkrane und Portalkrane",
+    "objectifs": [
+     "H3.x Ich beschreibe die verschiedenen Hebegeräte und erkläre ihre Funktionsweise. (K2) — H3.7 Ich beschreibe die Lastaufnahmemittel der Brückenkrane und ihre Funktionsweise. (K2) — mit H3.4: Brücken-, Portalkrane und Container-Carrier"
+    ]
+   },
+   {
+    "titre": "H3.x·H3.7 · Flaschenzug und Sicherheit beim Heben",
+    "objectifs": [
+     "H3.x Ich erkläre die Einsatzgrundsätze der Hebeeinrichtungen und die zugehörigen Sicherheitsregeln. (K2) — H3.7: Unterflasche, Rollen, Haken und Neigungswinkel"
+    ]
+   },
+   {
+    "titre": "H3.4b · Senkrechtförderer",
+    "objectifs": [
+     "H3.4 Ich beschreibe die Förderer und Transporteinrichtungen und erkläre anhand von Beispielen Einsatzbereiche und Einsatzmöglichkeiten. (K2) — Teil: Senkrechtförderer"
+    ]
+   },
+   {
+    "titre": "H3.4c · Stetigförderer und Umsetzen",
+    "objectifs": [
+     "H3.4 Ich beschreibe die Förderer und Transporteinrichtungen und erkläre anhand von Beispielen Einsatzbereiche und Einsatzmöglichkeiten. (K2) — Teil: Stetigförderer, Umsetzelemente und Sicherheit"
+    ]
+   }
+  ]
+ }
 }

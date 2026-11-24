@@ -44,5 +44,49 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M408 – Organisation des Lagers",
+  "sous_titre": "Logistiker/-in EFZ · Modul M408",
+  "duree": "10 Min. pro Serie",
+  "description": "6 Lernziele des Moduls M408 und 150 Aufgaben, davon 34 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "G2.1·G2.2 · Planung und Flüsse des Lagers",
+    "objectifs": [
+     "G2.1 Ich erkläre das Vorgehen und die Kriterien für die Einrichtung eines Lagers. (K2) — G2.2 Ich nenne die verschiedenen Elemente eines Lagersystems und erkläre Funktion und Aufgaben eines Lagers. (K2) — mit G1.1: Analyse des Wareneingangsprozesses"
+    ]
+   },
+   {
+    "titre": "G2.3·G2.4 · Lagertypen und Lagerformen",
+    "objectifs": [
+     "G2.3 Ich erkläre die Lagertypen nach Prozessschritten und Automatisierungsgrad. (K2) — G2.4 Ich erkläre die Vorschriften (stapelbar oder nicht, Stapelhöhe und Bodenbelastung) für eine Blocklagerung. (K3)"
+    ]
+   },
+   {
+    "titre": "C4.2 · Bodenbelastung",
+    "objectifs": [
+     "C4.2 Ich interpretiere die Angaben zur zulässigen Bodenbelastung und ziehe Schlüsse für meine Arbeit. (K3) — mit G2.9: Berechnung der Bodenbelastung"
+    ]
+   },
+   {
+    "titre": "G2.9 · Flächen, Raum und Gänge",
+    "objectifs": [
+     "G2.9 Ich berechne anhand einer Fallstudie die Bodenbelastung, den Flächen- und den Raumnutzungsgrad des Lagers. (K3) — Teil: Flächen, Raum und Gangbreite"
+    ]
+   },
+   {
+    "titre": "G2.7·G2.8 · Palettenregale",
+    "objectifs": [
+     "G2.5 Ich beschreibe die Gefahren und Risiken von Regallagern und die Sicherheitsmassnahmen. (K2) — G2.7 Ich erkläre die verschiedenen Lasten eines Palettenregals (Traversen-, Boden- und Gesamtlast). (K3) — G2.8 Ich berechne die Last auf Palettenregalen anhand einer Fallstudie. (K3)"
+    ]
+   },
+   {
+    "titre": "G2.6·G3.5 · Nummerierung und Lagerspiegel",
+    "objectifs": [
+     "G2.6 Ich beschreibe zwei mögliche Systeme zur Nummerierung der Lagerplätze in Regalen. (K2) — G3.5 Ich erkläre den Zweck eines Lagerspiegels, erstelle ein Beispiel und erkläre, was sich daraus ergibt. (K3) — mit der Nummerierung der Artikel"
+    ]
+   }
+  ]
+ }
 }

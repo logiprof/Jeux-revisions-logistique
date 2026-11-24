@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M403 – Die Lagerformen",
+  "sous_titre": "Logistiker/-in EFZ · Modul M403",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M403 und 100 Aufgaben, davon 35 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "C4.1a · Bodenlagerung",
+    "objectifs": [
+     "C4.1 Ich erkläre die verschiedenen Lagersysteme, -formen, -arten und -grundsätze mit ihren Merkmalen, Möglichkeiten und ihrer Wirtschaftlichkeit. (K2) — Teil 1: Bodenlagerung, Blocklagerung, Stapeln, Druckgasflaschen, Langgut, FIFO/FEFO/LIFO"
+    ]
+   },
+   {
+    "titre": "C4.1b · Fachboden- und Palettenregale",
+    "objectifs": [
+     "C4.1 Ich erkläre die verschiedenen Lagersysteme, -formen, -arten und -grundsätze mit ihren Merkmalen, Möglichkeiten und ihrer Wirtschaftlichkeit. (K2) — Teil 2: Fachbodenregale und Palettenregale"
+    ]
+   },
+   {
+    "titre": "C4.1c · Einfahr-, Durchlauf-, Kragarm- und Verschieberegale",
+    "objectifs": [
+     "C4.1 Ich erkläre die verschiedenen Lagersysteme, -formen, -arten und -grundsätze mit ihren Merkmalen, Möglichkeiten und ihrer Wirtschaftlichkeit. (K2) — Teil 3: Einfahr- und Durchfahrregale, Durchlauf- und Einschubregale, Kragarm-, Waben- und Verschieberegale"
+    ]
+   },
+   {
+    "titre": "C4.1d · Umlauf-, Hänge- und moderne Anlagen",
+    "objectifs": [
+     "C4.1 Ich erkläre die verschiedenen Lagersysteme, -formen, -arten und -grundsätze mit ihren Merkmalen, Möglichkeiten und ihrer Wirtschaftlichkeit. (K2) — Teil 4: Umlaufregale, Hängelagerung, Shuttles, Roboter, Hochregallager, Autostore; mit B3.1 (Prozesse verschiedener Unternehmen)"
+    ]
+   }
+  ]
+ }
 }

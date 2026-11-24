@@ -139,3 +139,4 @@ window.META={
   },
   note:{text:"Le palonnier, la table élévatrice à ciseaux et les exosquelettes ne sont pas traités dans les leçons : épreuves marquées « Hors support ». Les diagrammes du cours sont décrits en texte. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

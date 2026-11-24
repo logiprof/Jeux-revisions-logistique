@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M505 – Produktionsplanung und -steuerung (PPS)",
+  "sous_titre": "Logistiker/-in EFZ · Modul M505",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M505 und 100 Aufgaben, davon 33 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "PCP · Rolle und Aufgaben der PPS",
+    "objectifs": [
+     "Ich kann die Rolle der PPS definieren und ihre Bedeutung für die Abstimmung zwischen Verkauf, Einkauf und Produktion erklären; ich verstehe ihre Aufgaben und deren Abfolge; ich kann ein einfaches Produktionsprogramm analysieren (ungenügender Bestand)."
+    ]
+   },
+   {
+    "titre": "PCP·PG · PERT- und Gantt-Diagramme",
+    "objectifs": [
+     "Terminplanung: ein PERT-Diagramm (früheste und späteste Termine, Puffer, kritischer Pfad) und ein Gantt-Diagramm erstellen und lesen (Lektionen PERT und GANTT)."
+    ]
+   },
+   {
+    "titre": "FP·TP · Push, Pull und Schüttgutproduktion",
+    "objectifs": [
+     "Ich kann den Bring- (Push) und den Holfluss (Pull) beschreiben, ihre Informationsflüsse, Bestände, Fristen und Planungsaufwand vergleichen und die passende Art wählen; ich kann die Schüttgutproduktion, ihre Merkmale und Beispiele erklären."
+    ]
+   },
+   {
+    "titre": "NB · Stücklisten und Bedarf",
+    "objectifs": [
+     "Ich verstehe den Unterschied zwischen Primär-, Sekundär- und Nettobedarf und ihre Verbindung zum Verkaufsprogramm; ich kann Nettobedarfe berechnen; ich kann die Stücklistenart wählen (Mengen-, Struktur-, Baukasten- oder Variantenstückliste) und die Wirkung einer falschen Stückliste erklären."
+    ]
+   }
+  ]
+ }
 }

@@ -139,3 +139,4 @@ window.META={
   },
   note:{text:"Le sous-objectif B3.1 sur la mondialisation et les conteneurs ISO n’est pas traité dans les leçons de M403. La leçon 3.9.2 « Rayonnage mobile à palettes » décrit des rayonnages mobiles en porte-à-faux. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

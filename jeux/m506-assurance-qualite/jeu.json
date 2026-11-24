@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M506 – Qualitätssicherung (QS) in der Produktion",
+  "sous_titre": "Logistiker/-in EFZ · Modul M506",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M506 und 100 Aufgaben, davon 35 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "A1.2 · QM, QS und Checklisten",
+    "objectifs": [
+     "A1.2 Ich erstelle Checklisten mit Kriterien zur Beurteilung eines Auftrags (Machbarkeit, Verfügbarkeit von Waren, Personal und Arbeitsmitteln, Termine usw.) und beurteile mit diesen Checklisten Beispiele von Aufträgen. (K3)"
+    ]
+   },
+   {
+    "titre": "A3.4 · Kaizen, PDCA und kontinuierliche Verbesserung",
+    "objectifs": [
+     "A3.4 Ich erkläre anhand von Praxisbeispielen die wichtigsten Instrumente zur Verbesserung der Qualität von Produkten, Prozessen und Dienstleistungen sowie der Sicherheit (z. B. KVP, Kaizen-System, PDCA-Zyklus, Methode 635, 5S-Methode). (K4)"
+    ]
+   },
+   {
+    "titre": "B2.1 · ISO-Normen, Audits und Verfahren",
+    "objectifs": [
+     "B2.1 Ich beschreibe die in der Industrie gebräuchlichen Qualitätsnormen und nenne Beispiele von betrieblichen Qualitätsnormen sowie deren Bedeutung und Verbindlichkeit. (K2)"
+    ]
+   },
+   {
+    "titre": "B2.3 · Verschwendung, Rückverfolgbarkeit und Ressourcen",
+    "objectifs": [
+     "B2.3 Ich erkläre die Schwachstellen / möglichen Mängel in meinem Kompetenzbereich und beschreibe einfach umsetzbare Lösungen zu ihrer Behebung. (K2) — mit der Rückverfolgbarkeit und der Kreislaufwirtschaft (Lektionen 6.3 und 6.4)"
+    ]
+   }
+  ]
+ }
 }

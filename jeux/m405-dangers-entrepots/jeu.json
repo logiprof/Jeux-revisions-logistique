@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M405 – Gefahren in Lagern",
+  "sous_titre": "Logistiker/-in EFZ · Modul M405",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M405 und 100 Aufgaben, davon 34 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "B3.8·C4.2 · Unfälle und sichere Lagerung",
+    "objectifs": [
+     "B3.8 Ich beschreibe anhand von Beispielen die Risiken und Gefahren, die im logistischen Prozess für mich, für Mitarbeitende und für Dritte auftreten. (K2) — C4.2 Ich interpretiere die Angaben zur zulässigen Bodenbelastung und ziehe Schlüsse für meine Arbeit. (K3)"
+    ]
+   },
+   {
+    "titre": "A1.3·B3.9 · Arbeitszeiten, Erste Hilfe und PSA",
+    "objectifs": [
+     "A1.3 Ich erkläre die rechtlichen Grundlagen zur Arbeits- und Einsatzfähigkeit (Sicherheits- und Gesundheitsschutzvorschriften, Jugendarbeitsschutz, Ruhezeiten …). (K2) — A2.5 Ich zähle die für die Arbeit geeigneten Elemente der PSA auf und erkläre ihre Wirkung, ihren Gebrauch und ihre Pflege. (K2) — B3.9 Ich nenne die wichtigsten Elemente einer Notfallorganisation und erkläre Abläufe, Verhalten und Massnahmen gemäss Notfallplan des Betriebs. (K2)"
+    ]
+   },
+   {
+    "titre": "C5.6 · Brandgefahr",
+    "objectifs": [
+     "C5.6 Ich beschreibe das Vorgehen und die Sicherheitsmassnahmen bei Havarien mit gefährlichen Gütern oder bei einem Brand oder Chemieereignis (Selbstschutz, Erkennen, Alarmieren, Sichern). (K2)"
+    ]
+   },
+   {
+    "titre": "C5.2·B3.8 · Gefährliche Stoffe, Diebstahl und Schädlinge",
+    "objectifs": [
+     "C5.1 Ich beschreibe die Schutzmassnahmen und -mittel beim Umgang mit gefährlichen Stoffen sowie die Erste Hilfe. (K2) — C5.2 Ich erkenne gefährliche Stoffe (Etiketten, Piktogramme, SDB, Gefahrenklassen) und die Schutzmassnahmen. (K2) — mit B3.8: Diebstahlrisiko und Schädlinge"
+    ]
+   }
+  ]
+ }
 }
