@@ -119,3 +119,4 @@ window.META={
   },
   note:{text:"Le stock maximum suit l’exemple du cours (stock de sécurité + quantité optimale). La comparaison des stocks effectifs et déclarés (G4.9) n’est pas traitée dans les leçons : ces épreuves sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

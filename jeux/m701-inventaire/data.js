@@ -110,3 +110,4 @@ window.META={
   },
   note:{text:"L’objectif B3.4 (systèmes d’indicateurs) n’est pas traité dans les leçons : ces épreuves sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];
