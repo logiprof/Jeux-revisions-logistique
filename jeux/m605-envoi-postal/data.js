@@ -137,3 +137,4 @@ window.META={
   },
   note:{text:"La leçon « Objectifs » de ce module est vide : les objectifs du jeu suivent les leçons 5.1 à 5.5. Les prestations et tarifs de La Poste évoluent : vérifiez-les sur post.ch. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

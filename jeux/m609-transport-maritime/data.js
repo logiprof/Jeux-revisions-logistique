@@ -122,3 +122,4 @@ window.META={
   },
   note:{text:"Les coussins d’air de calage, cités dans les objectifs, ne sont pas expliqués dans les leçons : ces épreuves sont marquées « Hors support ». Les chiffres des canaux et des ports sont ceux du cours. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

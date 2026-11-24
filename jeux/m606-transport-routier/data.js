@@ -108,3 +108,4 @@ window.META={
   },
   note:{text:"Le tableau RPLP du cours date d’avant 2025 : depuis le 1.1.2025, les tarifs officiels sont de 3,26 / 2,82 / 2,39 ct par tonne-kilomètre (EURO 0 à V en catégorie 1, EURO VI en catégorie 3). Les calculs du jeu donnent le tarif dans l’énoncé. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

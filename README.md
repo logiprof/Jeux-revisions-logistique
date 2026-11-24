@@ -4,6 +4,7 @@ Jeux de révision LogiProf pour les apprenti·e·s **logisticien·ne·s CFC**, e
 
 - **68 jeux** (modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612, M701 à M705, M801 à M809), un dossier par jeu dans [`jeux/`](jeux/).
 - Chaque jeu : entraînement par objectif, examen blanc noté sur 6, révision ciblée des erreurs, progression enregistrée sur le compte de l’élève.
+- **Bilingue français / allemand** : chaque jeu existe dans les deux langues (bouton **FR | DE** dans le jeu) ; la progression de l’élève est la même dans les deux langues.
 - L’extension s’installe une seule fois ; chaque nouvelle version publiée ici arrive automatiquement sur le site.
 
 ## Installer l’extension
@@ -23,6 +24,10 @@ La liste des shortcodes est aussi dans **Réglages → Jeux logistique**.
 | `[jeux_logistique modules="M101,M203"]` | Seulement les modules choisis |
 | `[jeu_m101]`, `[jeu_m102]`… | Un seul jeu (voir le tableau ci-dessous) |
 | `[jeu_revision id="m101-histoire-logistique"]` | Un seul jeu, par son identifiant |
+| `[jeux_logistique langue="de"]` | Le catalogue en allemand (fonctionne aussi avec `modules="…"`) |
+| `[jeu_m101 langue="de"]` | Un seul jeu, ouvert directement en allemand |
+
+Sans `langue`, le jeu s’ouvre en français et l’élève peut passer à l’allemand avec le bouton **FR | DE** (son choix est mémorisé). Avec `langue="de"`, la carte, la page du jeu et le jeu sont en allemand.
 
 | Module | Jeu | Shortcode | Objectifs | Épreuves |
 |---|---|---|---|---|

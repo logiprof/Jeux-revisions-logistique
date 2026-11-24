@@ -115,3 +115,4 @@ window.META={
   },
   note:{text:"Le module n’a qu’un objectif principal (D3.2), découpé ici en trois parties. Actualité : la ROLA a cessé fin 2025 et le calendrier de Cargo Sous Terrain a été repoussé ; ces épreuves sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

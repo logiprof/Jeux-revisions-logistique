@@ -138,3 +138,4 @@ window.META={
   },
   note:{text:"La CMR, le connaissement et le bulletin de livraison ne sont pas détaillés dans les leçons : ces épreuves sont marquées « Hors support ». Les chiffres du cours datent de 2019. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

@@ -26,5 +26,31 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M610 – Der kombinierte Verkehr",
+  "sous_titre": "Logistiker/-in EFZ · Modul M610",
+  "duree": "10 Min. pro Serie",
+  "description": "3 Lernziele des Moduls M610 und 81 Aufgaben, davon 33 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "D3.2 a · Prinzip und Huckepackverkehr",
+    "objectifs": [
+     "D3.2 Ich beschreibe die Transportmittel (z. B. Lieferwagen, Lastwagen, Roller, Zug, Flugzeug, Schiff) für die Verteilung und Lieferung der verschiedenen Waren mit ihren Vor- und Nachteilen sowie die Kriterien (ökologisch, energetisch, wirtschaftlich, Sicherheit, Zuverlässigkeit, Schnelligkeit) für die Wahl des Transportmittels. (K2) — Teil: Prinzip des kombinierten Verkehrs, Schnittstellen, RoLa und unbegleiteter Verkehr"
+    ]
+   },
+   {
+    "titre": "D3.2 b · ISO-Container",
+    "objectifs": [
+     "D3.2 Ich beschreibe die Transportmittel (z. B. Lieferwagen, Lastwagen, Roller, Zug, Flugzeug, Schiff) für die Verteilung und Lieferung der verschiedenen Waren mit ihren Vor- und Nachteilen sowie die Kriterien (ökologisch, energetisch, wirtschaftlich, Sicherheit, Zuverlässigkeit, Schnelligkeit) für die Wahl des Transportmittels. (K2) — Teil: ISO-Container (Masse, Gewicht, Sicherheit)"
+    ]
+   },
+   {
+    "titre": "D3.2 c · Andere Wechselsysteme",
+    "objectifs": [
+     "D3.2 Ich beschreibe die Transportmittel (z. B. Lieferwagen, Lastwagen, Roller, Zug, Flugzeug, Schiff) für die Verteilung und Lieferung der verschiedenen Waren mit ihren Vor- und Nachteilen sowie die Kriterien (ökologisch, energetisch, wirtschaftlich, Sicherheit, Zuverlässigkeit, Schnelligkeit) für die Wahl des Transportmittels. (K2) — Teil: ACTS, Wechselbehälter, Cargo Domino, kombinierter Verkehr Strasse–Schiene, Cargo sous terrain"
+    ]
+   }
+  ]
+ }
 }

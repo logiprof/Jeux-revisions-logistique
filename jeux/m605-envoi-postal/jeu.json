@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M605 – Postversandarten",
+  "sous_titre": "Logistiker/-in EFZ · Modul M605",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M605 und 100 Aufgaben, davon 35 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "PE1 · Briefe und Pakete adressieren",
+    "objectifs": [
+     "Ich wende die Adressierregeln für Briefe und Pakete an, damit eine schnelle und fehlerfreie automatische Sortierung möglich ist. (Lektion 5.1)"
+    ]
+   },
+   {
+    "titre": "PE2 · Versandarten für Briefe und Pakete",
+    "objectifs": [
+     "Ich wähle die passende Grundleistung und die passenden Zusatzleistungen für den Versand von Briefen und Paketen. (Lektion 5.2)"
+    ]
+   },
+   {
+    "titre": "PE3 · Ausland und Sortierzentren",
+    "objectifs": [
+     "Ich erkläre die Besonderheiten von Auslandsendungen und die Bearbeitung von Briefen und Paketen in den Sortierzentren, einschliesslich des Gesundheitsschutzes. (Lektionen 5.3 und 5.4)"
+    ]
+   },
+   {
+    "titre": "PE4 · Zustellung und Abholung",
+    "objectifs": [
+     "Ich beschreibe die Zustellung auf der letzten Meile, die Prüfung der Identität und die Abholdienste PickPost und My Post 24. (Lektion 5.5)"
+    ]
+   }
+  ]
+ }
 }

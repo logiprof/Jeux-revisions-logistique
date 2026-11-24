@@ -38,5 +38,43 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M602 – Die Verpackungen",
+  "sous_titre": "Logistiker/-in EFZ · Modul M602",
+  "duree": "10 Min. pro Serie",
+  "description": "5 Lernziele des Moduls M602 und 125 Aufgaben, davon 36 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "B4.1 · Funktionen und Nachhaltigkeit",
+    "objectifs": [
+     "B4.1 Ich beschreibe Herkunft, Umweltverträglichkeit und Verwendung der in der Logistik eingesetzten Materialien und Rohstoffe (Verpackungen, Verbrauchsmaterial, Tauschgeräte, Reinigungsmittel usw.). (K2)"
+    ]
+   },
+   {
+    "titre": "C2.2 · Markierungen und Normen",
+    "objectifs": [
+     "C2.2 Ich beschreibe die Markierungen der Waren und der Transporteinheiten und ihre Bedeutung. (K2)"
+    ]
+   },
+   {
+    "titre": "C2.7 · Belastungen und Schäden",
+    "objectifs": [
+     "C2.7 Ich beschreibe die transportbedingten Schäden (mechanisch, klimatisch, Temperatur, Schädlinge, physikalische Kräfte beim Transport usw.). (K2)"
+    ]
+   },
+   {
+    "titre": "D1.3 · Verpackungsbegriffe (DIN)",
+    "objectifs": [
+     "D1.3 Ich nenne die geltenden Verpackungsbegriffe nach der Norm DIN 55405. (K2)"
+    ]
+   },
+   {
+    "titre": "D1.4 · Die richtige Verpackung wählen",
+    "objectifs": [
+     "D1.4 Ich beschreibe die Kriterien (ökologisch, wirtschaftlich und sicherheitsbezogen) für die Wahl der geeigneten Verpackung der Waren. (K2)"
+    ]
+   }
+  ]
+ }
 }

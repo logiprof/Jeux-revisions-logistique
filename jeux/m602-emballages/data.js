@@ -167,3 +167,4 @@ window.META={
   },
   note:{text:"Les pictogrammes de manutention autres que « Fragile » et « Ne pas empiler » ne figurent qu’en image dans le cours : ces épreuves sont marquées « Hors support ». La norme ISO R 780 citée dans le cours s’appelle aujourd’hui ISO 780. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

@@ -44,5 +44,49 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M611 – Die Kommissionierung",
+  "sous_titre": "Logistiker/-in EFZ · Modul M611",
+  "duree": "10 Min. pro Serie",
+  "description": "6 Lernziele des Moduls M611 und 162 Aufgaben, davon 38 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "h1.1 · Papier und digitale Datenträger",
+    "objectifs": [
+     "h1.1 Ich vergleiche konventionelle (Papier) und digitale Mittel (MDE, Pick-by-Voice usw.) in der Kommissionierung bezüglich Wirtschaftlichkeit, Ergonomie und Fehlerrisiko. (K2)"
+    ]
+   },
+   {
+    "titre": "h1.2·h1.6·h1.7 · Teilaufträge, ERP und Nachschub",
+    "objectifs": [
+     "h1.2 Ich erkläre die Auswirkung von Teilkommissionierungen auf die Durchführungszeit einer Kommissionierung. (K2) · h1.6 Ich erkläre das Vorgehen zur Korrektur der Mengen im ERP des Betriebs nach der Kommissionierung. (K2) · h1.7 Ich erkläre, wie der Nachschub auf der Grundlage der Mengenkontrolle die Verfügbarkeit der Waren im Kommissionierlager sichert. (K2)"
+    ]
+   },
+   {
+    "titre": "h1.4 · Automatisierung und Sorter",
+    "objectifs": [
+     "h1.4 Ich erkläre die Automatisierungstechniken der Kommissionierung und beschreibe ihren Einsatzbereich. (K2)"
+    ]
+   },
+   {
+    "titre": "h3.1 · Die drei Bereiche des Systems",
+    "objectifs": [
+     "h3.1 Ich beschreibe die drei Bereiche des Kommissioniersystems, nämlich den Materialfluss, den Datenfluss und die Organisation, ihren Zusammenhang und ihre Wirkung auf die Kommissionierleistung. (K3)"
+    ]
+   },
+   {
+    "titre": "h3.2·h3.5·h3.7 · Teilzeiten und Berechnungen",
+    "objectifs": [
+     "h3.2 Ich unterscheide die verschiedenen Tätigkeiten der Kommissionierung und ordne sie den richtigen Teilzeiten zu. (K3) · h3.5 Ich erkläre die Faktoren, welche die Bearbeitungszeit einer Kommissionierung beeinflussen. (K3) · h3.7 Ich berechne den Anteil der Teilzeiten an der gesamten Kommissionierzeit in Prozent, interpretiere die Ergebnisse und schlage Optimierungsmöglichkeiten vor. (K4)"
+    ]
+   },
+   {
+    "titre": "h3.6·h3.8·h3.11 · Wege, Schwachstellen und Sicherheit",
+    "objectifs": [
+     "h3.6 Ich zeige anhand von Fallstudien Möglichkeiten zur Verkürzung von Wegen und Kommissionierzeiten. (K3) · h3.8 Ich erkenne die Schwachstellen des Datenflusses und der Organisation und beschreibe Verbesserungsmassnahmen in der Kommissionierung. (K4) · h3.11 Ich beschreibe die Risiken und Gefahren in der Kommissionierung und die Massnahmen zur Verbesserung von Gesundheits- und Umweltschutz, Ergonomie und Arbeitssicherheit. (K3)"
+    ]
+   }
+  ]
+ }
 }

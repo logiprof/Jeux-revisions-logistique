@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M608 – Der Lufttransport",
+  "sous_titre": "Logistiker/-in EFZ · Modul M608",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M608 und 100 Aufgaben, davon 32 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "B3.2 · Bedeutung der Luftfracht",
+    "objectifs": [
+     "B3.2 Ich beschreibe die Grundlagen des Gütertransports (Hinterlegungsvertrag, Frachtführer, Incoterms usw.). (K2) — Teil: Luftfracht, AWB, IATA-DGR, Luftfrachtersatzverkehr"
+    ]
+   },
+   {
+    "titre": "C1.5 · Transportdokumente",
+    "objectifs": [
+     "C1.5 Ich beschreibe die Transportdokumente (CMR, Luftfrachtbrief, AWB, Konnossement) und den Unterschied zum Lieferschein. (K2)"
+    ]
+   },
+   {
+    "titre": "D3.2 · Einsatz, Flughäfen und ULD",
+    "objectifs": [
+     "D3.2 Ich beschreibe die Transportmittel (Lieferwagen, Lastwagen, Roller, Zug, Flugzeug, Schiff) für die Verteilung und Lieferung der Waren mit ihren Vor- und Nachteilen sowie die Auswahlkriterien. (K2) — Teil: Flugzeug"
+    ]
+   },
+   {
+    "titre": "D3.5·D4.1 · Sicherung und Gefahrgut",
+    "objectifs": [
+     "D3.5 Ich beschreibe die üblichen Schutzmittel (…) mit ihren Vor- und Nachteilen, den Kriterien zur Beurteilung ihres Zustands und der Verantwortung für die Beurteilung vor der Verwendung. (K2) — D4.1 Ich beschreibe die verschiedenen Sicherungsmittel für jedes Transportmittel. (K2) — Teil: Flugzeug"
+    ]
+   }
+  ]
+ }
 }

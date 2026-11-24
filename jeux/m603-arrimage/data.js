@@ -108,3 +108,4 @@ window.META={
   },
   note:{text:"La fermeture avec ficelle est annoncée dans la leçon 3.3 mais n’y est pas décrite. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];
