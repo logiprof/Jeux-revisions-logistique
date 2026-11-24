@@ -26,5 +26,31 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M310 – Vorbereitung zur Einlagerung",
+  "sous_titre": "Logistiker/-in EFZ · Modul M310",
+  "duree": "10 Min. pro Serie",
+  "description": "3 Lernziele des Moduls M310 und 75 Aufgaben, davon 36 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "M310.1 · Die Einlagerung vorbereiten",
+    "objectifs": [
+     "Ich kann die verschiedenen Schritte der Vorbereitung zur Einlagerung erklären, Situationen erkennen, die ein Umpacken oder Neuverpacken verlangen, verkaufsgerechte Verpackungen vorschlagen (neue Grösse, Aktion, Bundle) und die Anforderungen automatischer Lagersysteme anwenden."
+    ]
+   },
+   {
+    "titre": "M310.2 · Erfassung und Lagerkarte",
+    "objectifs": [
+     "Ich kann den Ablauf der Warenerfassung in einem ERP-System erklären, den Unterschied zwischen geplantem und ungeplantem Wareneingang machen und einen Artikel korrekt erfassen, unter Beachtung der wichtigen Angaben wie Artikelnummer, Verkaufseinheit und Höchstbestand."
+    ]
+   },
+   {
+    "titre": "M310.3 · Bestandsarten und Buchung",
+    "objectifs": [
+     "Ich kann die Begriffe verfügbarer, reservierter, gesperrter und QS-Bestand erklären, die Wirkung der Bestandsgrenzen deuten, Lagerzu- und -abgänge buchen und mit den Informatikmitteln eine genaue Verfolgung der Bewegungen sichern."
+    ]
+   }
+  ]
+ }
 }

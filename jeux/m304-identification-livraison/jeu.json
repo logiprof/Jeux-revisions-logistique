@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M304 – Identifikation der Lieferung",
+  "sous_titre": "Logistiker/-in EFZ · Modul M304",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M304 und 100 Aufgaben, davon 34 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "c2.3 · Grobidentifikation",
+    "objectifs": [
+     "c2.3 Ich beschreibe die Arbeiten einer Grobidentifikation und erkläre ihren Zweck. (K2) — mit c1.1 (Vorbereitungsarbeiten und Sicherheit beim Entladen)"
+    ]
+   },
+   {
+    "titre": "c2.2 · Feinidentifikation und Markierungen",
+    "objectifs": [
+     "c2.2 Ich beschreibe die Markierungen der Waren und Transporteinheiten und ihre Bedeutung. (K2) — mit der Feinidentifikation der Lieferung"
+    ]
+   },
+   {
+    "titre": "c1.5·c1.6 · Begleitdokumente",
+    "objectifs": [
+     "c1.5 Ich beschreibe die Transportdokumente (CMR, Luftfrachtbrief/AWB, Konnossement) und den Unterschied zum Lieferschein. (K2) — c1.6 Ich beschreibe die Elemente eines vollständigen Lieferscheins (Empfänger, Absender, Artikelnummer, Artikelbezeichnung, Menge, Einheiten). (K2)"
+    ]
+   },
+   {
+    "titre": "c2.6·b3.2 · Vorbehalte und internationaler Transport",
+    "objectifs": [
+     "c2.6 Ich erkläre die Bedeutung der Empfangsunterschrift auf den Transport- und Begleitdokumenten und beschreibe, wie Differenzen auf den Dokumenten festgehalten werden. (K2) — b3.2 Ich beschreibe die Grundlagen des Warentransports (Hinterlegungsvertrag, Frachtführer, Incoterms usw.). (K2)"
+    ]
+   }
+  ]
+ }
 }

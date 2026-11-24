@@ -142,3 +142,4 @@ window.META={
   },
   note:{text:"G3.2 (différences d’inventaire), H1.6 (correction des quantités dans l’ERP) et une partie de G4.9 ne sont pas traités dans les leçons : ces épreuves sont marquées « Hors support ». G4.4 et G4.5 se révisent avec le jeu M311. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

@@ -141,3 +141,4 @@ window.META={
   },
   note:{text:"Huit objectifs de l’enseignant regroupés en quatre objectifs de jeu. Le diable, le palonnier, le pont roulant, l’exosquelette et les indications du fabricant (a4.3) ne sont pas détaillés dans les leçons : ces épreuves sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

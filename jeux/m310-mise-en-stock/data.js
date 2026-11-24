@@ -109,3 +109,4 @@ window.META={
   },
   note:{text:"Les objectifs de l’enseignant n’ont pas de code du plan de formation : ils sont regroupés en M310.1 à M310.3. Le premier objectif de la leçon (comportements d’achat) provient d’un autre module et n’est pas repris. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M306 – Kontrolle der Behälter",
+  "sous_titre": "Logistiker/-in EFZ · Modul M306",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M306 und 100 Aufgaben, davon 32 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "c2.4 · Behälter und Ladungsträger",
+    "objectifs": [
+     "c2.4 Ich beschreibe die Ladungsträger (EPAL, CHEP und Dispobox), ihre Unterschiede und Tauschmöglichkeiten sowie die entsprechenden Tauschverfahren (Zug um Zug, Tauschschein und Kontokorrent). (K2)"
+    ]
+   },
+   {
+    "titre": "c2.5 · Tausch und Kontokorrent",
+    "objectifs": [
+     "c2.5 Ich beschreibe die Anforderungen an ein Kontokorrent (für Tauschgeräte) und erkläre die Ausgleichsmassnahmen. (K3) — mit den Tauschverfahren aus c2.4 (Zug um Zug, Tauschschein, Kontokorrent)"
+    ]
+   },
+   {
+    "titre": "c3.4 · Sortieren und Zustand der Ladungsträger",
+    "objectifs": [
+     "c3.4 Ich beschreibe die Kriterien für das Sortieren der Ladungsträger und die Beurteilung ihres Zustands sowie, je nach Ergebnis, die entsprechende Behandlung (Reparatur, Recycling, Entsorgung). (K2)"
+    ]
+   },
+   {
+    "titre": "c1.7 · Spezielle Ladungsträger und Zustand der Waren",
+    "objectifs": [
+     "c1.7 Ich beschreibe die Kriterien zur Beurteilung des Zustands der gelieferten Waren und Tauschgeräte (Kipp- und Schockindikatoren, Kühlkette). (K2) — mit den speziellen Ladungsträgern und Verpackungen"
+    ]
+   }
+  ]
+ }
 }

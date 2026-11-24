@@ -109,3 +109,4 @@ window.META={
   },
   note:{text:"c2.11 est découpé en deux parties ; g1.6 (prélèvement d’échantillons) forme le troisième objectif, avec un rappel de c1.7. Les bonnes pratiques d’étiquetage et l’échantillon témoin sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

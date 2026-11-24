@@ -26,5 +26,31 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M309 – Qualitätskontrolle",
+  "sous_titre": "Logistiker/-in EFZ · Modul M309",
+  "duree": "10 Min. pro Serie",
+  "description": "3 Lernziele des Moduls M309 und 75 Aufgaben, davon 36 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "c2.11a · Die Qualität und ihre Stufen",
+    "objectifs": [
+     "c2.11 Ich beschreibe die Instrumente der Qualitätskontrolle (Stichprobe, Vollkontrolle, mehrfache Stichprobenprüfung, Funktionskontrolle, Musterentnahme), führe sie anhand einer Fallstudie aus und beurteile die Ergebnisse. (K3) — Teil 1: Qualitätssicherung, Definition, Kriterien und Qualitätsstufen"
+    ]
+   },
+   {
+    "titre": "c2.11b · Kontrolltechniken",
+    "objectifs": [
+     "c2.11 Ich beschreibe die Instrumente der Qualitätskontrolle (Stichprobe, Vollkontrolle, mehrfache Stichprobenprüfung, Funktionskontrolle, Musterentnahme), führe sie anhand einer Fallstudie aus und beurteile die Ergebnisse. (K3) — Teil 2: Vollkontrolle, einfache und mehrfache Stichprobe, Funktionskontrolle"
+    ]
+   },
+   {
+    "titre": "g1.6 · Musterentnahme",
+    "objectifs": [
+     "g1.6 Ich beschreibe den Ablauf der Musterentnahme und ihre Bedeutung für den Kunden. (K3) — mit c1.7 (Kriterien zur Beurteilung des Zustands der Waren)"
+    ]
+   }
+  ]
+ }
 }

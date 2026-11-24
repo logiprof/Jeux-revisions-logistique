@@ -111,3 +111,4 @@ window.META={
   },
   note:{text:"Objectif C7.1 découpé en trois parties. La leçon 2.3.4 « La facture » reprend par erreur le texte de la confirmation de commande : le contenu de la facture et les concepts JIT/JIC sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

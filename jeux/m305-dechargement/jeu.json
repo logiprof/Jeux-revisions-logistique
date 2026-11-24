@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M305 – Entladen der Waren",
+  "sous_titre": "Logistiker/-in EFZ · Modul M305",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M305 und 100 Aufgaben, davon 34 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "b3.8·c1.1 · Gefahren der Infrastruktur",
+    "objectifs": [
+     "b3.8 Ich beschreibe anhand von Beispielen die Risiken und Gefahren, die im logistischen Prozess für mich, für Mitarbeitende und für Dritte auftreten. (K2) — c1.1 Ich beschreibe die Vorbereitungsarbeiten und die nötigen Ressourcen (Personal, Platz, Material, PSA) für einen wirtschaftlichen und qualitätsgerechten Wareneingang. (K2)"
+    ]
+   },
+   {
+    "titre": "c1.2·c1.4 · Fahrzeug und Überladeeinrichtungen",
+    "objectifs": [
+     "c1.2 Ich beschreibe die Massnahmen und Hilfsmittel zur Sicherung des Transportmittels (Keil, Feststellbremse, Befestigung der Rampe und Sicherheitsstützen). (K2) — c1.4 Ich beschreibe die Arbeitsmittel für das Entladen (Überladeblech, Überladebrücke, Hubplattform usw.). (K2)"
+    ]
+   },
+   {
+    "titre": "c1.3·a1.3 · Geräte und rechtliche Grundlagen",
+    "objectifs": [
+     "c1.3 Ich beschreibe die Flurförder- und Hebegeräte, ihre Eigenschaften und ihre Einsatzbereiche. (K2) — a1.3 Ich erkläre die rechtlichen Grundlagen zur Arbeitsfähigkeit (Sicherheit, jugendliche Arbeitnehmende, Ruhezeiten, Arbeitsmittel). (K2) — a4.3 Herstellerangaben. — d1.7 Ergonomische Hilfsmittel."
+    ]
+   },
+   {
+    "titre": "b3.8 · Risikozonen und Signalisation",
+    "objectifs": [
+     "b3.8 Ich beschreibe anhand von Beispielen die Risiken und Gefahren, die im logistischen Prozess für mich, für Mitarbeitende und für Dritte auftreten. (K2) — automatische Lager, Elektrizität, Signalisation"
+    ]
+   }
+  ]
+ }
 }

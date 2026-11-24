@@ -110,3 +110,4 @@ window.META={
   },
   note:{text:"La leçon « Objectifs » de M308 reprend c1.7 et c2.2 (déjà travaillés dans M304, M306 et M307) et c2.10. Les leçons portant sur compter, mesurer et peser, le jeu les rattache à c2.10 en trois parties. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
+window.META.langs = ["fr","de"];

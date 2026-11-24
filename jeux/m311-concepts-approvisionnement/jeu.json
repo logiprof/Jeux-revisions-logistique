@@ -32,5 +32,37 @@
   }
  ],
  "couleur": "#067030",
- "version": "1.0.0"
+ "version": "1.0.0",
+ "de": {
+  "titre": "M311 – Die Konzepte der Beschaffung",
+  "sous_titre": "Logistiker/-in EFZ · Modul M311",
+  "duree": "10 Min. pro Serie",
+  "description": "4 Lernziele des Moduls M311 und 100 Aufgaben, davon 33 % Praxisfälle aus dem Berufsalltag. Drei Modi: Training pro Lernziel, Probeprüfung mit Zeitlimit und Note von 1 bis 6, gezielte Wiederholung der Fehler.",
+  "contenu": [
+   {
+    "titre": "G4.5 · Beschaffungsformen und -konzepte",
+    "objectifs": [
+     "G4.5 Ich beschreibe alternative Beschaffungskonzepte, um Sicherheitsbestände zu verringern oder zu vermeiden, und erkläre ihre Wirkungen auf das Unternehmen. (K4)"
+    ]
+   },
+   {
+    "titre": "G4.1·G4.4 · Bestand, Frist und Bestellverfahren",
+    "objectifs": [
+     "G4.1 Ich beschreibe die Bedarfsermittlung anhand des (bisherigen) Verbrauchs und der Vorschau auf den künftigen Bedarf mit Praxisbeispielen und führe einfache Berechnungen durch. (K3) — G4.4 Ich beschreibe die Bestellverfahren mit festen Mengen, variablen Mengen und Bestellrhythmus. (K2)"
+    ]
+   },
+   {
+    "titre": "G4.8 · Optimale Bestellmenge (Andler)",
+    "objectifs": [
+     "G4.8 Ich berechne die optimale Bestellmenge (Andler), deute das Ergebnis und ziehe Schlüsse für meine Arbeit. (K3)"
+    ]
+   },
+   {
+    "titre": "G3.4 · ABC-Analyse",
+    "objectifs": [
+     "G3.4 Ich erstelle in Excel eine ABC-Analyse (Lagerumschlag oder Umsatz) eines Teils des Lagers oder einer Artikelgruppe und schlage Massnahmen zur Optimierung des Lagers vor. (K4)"
+    ]
+   }
+  ]
+ }
 }
