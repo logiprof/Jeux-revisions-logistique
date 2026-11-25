@@ -3,7 +3,7 @@
  * Plugin Name:       Jeux de révision – Logistique
  * Plugin URI:        https://github.com/logiprof/jeux-revisions-logistique
  * Description:       Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (modules M101 à M205). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
- * Version:           2.7.3
+ * Version:           2.8.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            LogiProf
@@ -14,7 +14,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JRL_VERSION', '2.7.3' );
+define( 'JRL_VERSION', '2.8.0' );
 define( 'JRL_FILE', __FILE__ );
 define( 'JRL_DIR', __DIR__ );
 define( 'JRL_REPO', 'logiprof/jeux-revisions-logistique' );
@@ -84,7 +84,7 @@ add_action( 'init', function () {
 		if ( '' === $tag || shortcode_exists( $tag ) ) { continue; }
 		add_shortcode( $tag, function ( $atts = array() ) use ( $slug ) {
 			$langue = is_array( $atts ) && ! empty( $atts['langue'] ) ? (string) $atts['langue'] : '';
-			return function_exists( 'jdr_shortcode_jeu' ) ? jdr_shortcode_jeu( array( 'id' => $slug, 'langue' => $langue ) ) : '';
+			return function_exists( 'jdr_shortcode_jeu' ) ? '<div class="' . esc_attr( jrl_aff_classes() ) . '">' . jdr_shortcode_jeu( array( 'id' => $slug, 'langue' => $langue ) ) . '</div>' : '';
 		} );
 	}
 }, 20 );
@@ -93,10 +93,11 @@ add_action( 'init', function () {
  * [jeux_logistique] : tout le catalogue de l'extension.
  * [jeux_logistique modules="M1"] : seulement les modules qui commencent par M1 (M101 à M110).
  * [jeux_logistique modules="M101,M203"] : seulement ces modules.
+ * [jeux_logistique colonnes="3"] : 3 jeux côte à côte (1 à 4 ; sinon le réglage « Affichage du catalogue »).
  */
 function jrl_shortcode_catalogue( $atts ) {
 	if ( ! function_exists( 'jdr_card' ) ) { return ''; }
-	$a = shortcode_atts( array( 'modules' => '', 'langue' => '' ), $atts, 'jeux_logistique' );
+	$a = shortcode_atts( array( 'modules' => '', 'langue' => '', 'colonnes' => '' ), $atts, 'jeux_logistique' );
 	$filtres = array_filter( array_map( 'trim', explode( ',', strtoupper( (string) $a['modules'] ) ) ) );
 	$tous = jdr_jeux();
 	$cartes = array();
@@ -113,8 +114,24 @@ function jrl_shortcode_catalogue( $atts ) {
 	jdr_enqueue();
 	$prev = function_exists( 'jdr_lang' ) ? jdr_lang() : 'fr';
 	if ( '' !== $a['langue'] && function_exists( 'jdr_lang' ) ) { jdr_lang( $a['langue'] ); }
-	$out = '<div class="jdr-grid">';
+	$col = jrl_colonnes( $a['colonnes'] );
+	$out = '<div class="' . esc_attr( jrl_aff_classes() ) . '"><div class="jdr-grid' . ( 'auto' !== $col ? ' jdr-cols-' . $col : '' ) . '">';
 	foreach ( $cartes as $c ) { $out .= jdr_card( $c[0], $c[1] ); }
 	if ( function_exists( 'jdr_lang' ) ) { jdr_lang( $prev ); }
-	return $out . '</div>';
+	return $out . '</div></div>';
+}
+
+/* ---------- Affichage (Réglages > Jeux logistique > Affichage du catalogue) ---------- */
+/** Nombre de jeux côte à côte : « auto » ou 1 à 4 (attribut colonnes="…" du shortcode, sinon le réglage). */
+function jrl_colonnes( $attr = '' ) {
+	$v = '' !== (string) $attr ? (string) $attr : (string) get_option( 'jrl_colonnes', 'auto' );
+	return in_array( $v, array( '1', '2', '3', '4' ), true ) ? $v : 'auto';
+}
+/** Classes de l'enveloppe : éléments de la carte masqués selon les réglages. */
+function jrl_aff_classes() {
+	$c = 'jrl-cat';
+	if ( '0' === get_option( 'jrl_aff_duree', '1' ) ) { $c .= ' jrl-no-duree'; }
+	if ( '0' === get_option( 'jrl_aff_progression', '1' ) ) { $c .= ' jrl-no-prog'; }
+	if ( '0' === get_option( 'jrl_aff_objectifs', '1' ) ) { $c .= ' jrl-no-obj'; }
+	return $c;
 }

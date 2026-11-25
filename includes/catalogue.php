@@ -32,11 +32,12 @@
  *         page du jeu ?lang=de servie avec index.de.html s'il existe (même identifiant, même progression).
  * 1.8.1 : carte du jeu : le bouton « Objectifs » déplie une liste à puces, un objectif par ligne (code et titre seulement).
  * 1.8.2 : carte du jeu sans le paragraphe de description.
+ * 1.8.3 : carte du jeu : titre et durée sur toute la largeur, sous l'icône.
  * 1.7.3 : aucun e-mail. Le bilan de chaque session est seulement enregistré dans la base (espace de l'élève, suivi du
  *         formateur) ; l'envoi du bilan par e-mail et son réglage sont supprimés. Seule l'extension de gestion écrit aux élèves.
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-$GLOBALS['jdr_engines']['1.8.2'] = dirname( __DIR__ );
+$GLOBALS['jdr_engines']['1.8.3'] = dirname( __DIR__ );
 if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	function jdr_engine_pick() {
 		if ( function_exists( 'jdr_boot' ) ) { return; } /* un moteur 1.1.0 ou plus ancien est déjà chargé */
@@ -48,9 +49,9 @@ if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	}
 	add_action( 'plugins_loaded', 'jdr_engine_pick', 1 );
 }
-if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) && ! function_exists( 'jdr_engine_1_8_2' ) ) {
-	function jdr_engine_1_8_2( $dir ) {
-		define( 'JDR_ENGINE_VERSION', '1.8.2' );
+if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) && ! function_exists( 'jdr_engine_1_8_2' ) && ! function_exists( 'jdr_engine_1_8_3' ) ) {
+	function jdr_engine_1_8_3( $dir ) {
+		define( 'JDR_ENGINE_VERSION', '1.8.3' );
 		define( 'JDR_ENGINE_URL', trailingslashit( plugin_dir_url( $dir . '/catalogue' ) ) );
 		define( 'JDR_DB_VERSION', '3' );
 

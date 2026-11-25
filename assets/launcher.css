@@ -13,6 +13,17 @@
 .jdr-card .jdr-card__dossier{display:block;margin-top:3px;font-size:.95rem;font-weight:700;line-height:1.3;color:var(--jdr-accent)!important}
 .jdr-card .jdr-card__desc{color:#3d424a!important;text-align:left;hyphens:manual}
 @media (min-width:700px){.jdr-card{grid-template-columns:88px minmax(0,1fr)}.jdr-card .jdr-card__logo{width:88px}}
+/* 1.8.3 : icône et module sur la 1re ligne, titre et durée sur toute la largeur de la carte, sous l'icône */
+.jdr-card .jdr-card__logo{grid-row:1}
+.jdr-card .jdr-card__kicker{grid-column:2;grid-row:1;align-self:center}
+.jdr-card .jdr-card__title,.jdr-card .jdr-card__meta{grid-column:1 / -1}
+/* Affichage du catalogue (extension Jeux de révision – Logistique) : jeux côte à côte et éléments masqués */
+.jrl-cat{container-type:inline-size;width:100%}
+.jrl-cat .jdr-grid[class*="jdr-cols-"]{grid-template-columns:minmax(0,1fr)}
+@container (min-width:600px){.jrl-cat .jdr-grid.jdr-cols-2,.jrl-cat .jdr-grid.jdr-cols-3,.jrl-cat .jdr-grid.jdr-cols-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@container (min-width:880px){.jrl-cat .jdr-grid.jdr-cols-3,.jrl-cat .jdr-grid.jdr-cols-4{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@container (min-width:1140px){.jrl-cat .jdr-grid.jdr-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.jrl-no-duree .jdr-card__meta,.jrl-no-prog .jdr-card__progress,.jrl-no-obj .jdr-card__content{display:none!important}
 .jdr-card__logo{width:96px;aspect-ratio:1/1;max-width:100%;border-radius:20px;overflow:hidden;background:#f3efe6}
 .jdr-card__logo img{display:block;width:100%;height:100%;object-fit:cover;margin:0}
 .jdr-card__body{display:flex;flex-direction:column;gap:8px;min-width:0}

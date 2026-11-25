@@ -39,6 +39,11 @@ add_action( 'admin_post_jrl_reglages', function () {
 	if ( ! current_user_can( 'update_plugins' ) ) { wp_die( 'Accès refusé.' ); }
 	check_admin_referer( 'jrl_reglages' );
 	update_option( 'jrl_maj_auto', empty( $_POST['jrl_maj_auto'] ) ? '0' : '1' );
+	if ( isset( $_POST['jrl_affichage'] ) ) {
+		$col = isset( $_POST['jrl_colonnes'] ) ? sanitize_key( wp_unslash( $_POST['jrl_colonnes'] ) ) : 'auto';
+		update_option( 'jrl_colonnes', in_array( $col, array( 'auto', '1', '2', '3', '4' ), true ) ? $col : 'auto' );
+		foreach ( array( 'jrl_aff_duree', 'jrl_aff_progression', 'jrl_aff_objectifs' ) as $o ) { update_option( $o, empty( $_POST[ $o ] ) ? '0' : '1' ); }
+	}
 	$ok = 'reglages';
 	if ( ! empty( $_POST['jrl_verifier'] ) ) {
 		delete_site_transient( 'jrl_github_release' );
@@ -67,10 +72,34 @@ function jrl_admin_page() {
 				<tr><td style="width:42%"><code>[jeux_logistique]</code></td><td>Tous les jeux de l’extension (<?php echo (int) count( $jeux ); ?>).</td></tr>
 				<tr><td><code>[jeux_logistique modules="M1"]</code></td><td>Seulement les modules M101 à M110 (M2 pour M201 à M205…).</td></tr>
 				<tr><td><code>[jeux_logistique modules="M101,M203"]</code></td><td>Seulement les modules choisis.</td></tr>
+				<tr><td><code>[jeux_logistique colonnes="3"]</code></td><td>Nombre de jeux côte à côte sur cette page (1 à 4). Sans <code>colonnes</code>, le réglage « Affichage du catalogue » ci-dessous s’applique.</td></tr>
 				<tr><td><code>[jeux_logistique langue="de"]</code></td><td>Le catalogue en allemand (cartes et jeux). Fonctionne aussi avec <code>modules="…"</code> et pour un seul jeu : <code>[jeu_m101 langue="de"]</code>. Sans <code>langue</code>, l’élève peut changer de langue dans le jeu (bouton FR | DE) ; sa progression est la même dans les deux langues.</td></tr>
 				<tr><td><code>[jeux_revision]</code></td><td>Tous les jeux de révision installés sur le site, y compris ceux d’autres extensions.</td></tr>
 			</tbody>
 		</table>
+
+		<h2>Affichage du catalogue</h2>
+		<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+			<?php wp_nonce_field( 'jrl_reglages' ); ?>
+			<input type="hidden" name="action" value="jrl_reglages"><input type="hidden" name="jrl_affichage" value="1">
+			<input type="hidden" name="jrl_maj_auto" value="<?php echo esc_attr( get_option( 'jrl_maj_auto', '1' ) ); ?>">
+			<table class="form-table" role="presentation" style="max-width:900px"><tbody>
+				<tr><th scope="row"><label for="jrl_colonnes">Jeux côte à côte</label></th><td>
+					<select name="jrl_colonnes" id="jrl_colonnes">
+						<?php foreach ( array( 'auto' => 'Automatique (selon la largeur)', '1' => '1 jeu par ligne', '2' => '2 jeux côte à côte', '3' => '3 jeux côte à côte', '4' => '4 jeux côte à côte' ) as $v => $l ) : ?>
+						<option value="<?php echo esc_attr( $v ); ?>" <?php selected( get_option( 'jrl_colonnes', 'auto' ), $v ); ?>><?php echo esc_html( $l ); ?></option>
+						<?php endforeach; ?>
+					</select>
+					<p class="description">Sur ordinateur. Quand la place manque (tablette, téléphone), les jeux passent automatiquement à 2 puis à 1 par ligne. Pour une seule page : <code>[jeux_logistique colonnes="2"]</code>.</p>
+				</td></tr>
+				<tr><th scope="row">Sur chaque carte</th><td><fieldset>
+					<label><input type="checkbox" name="jrl_aff_duree" value="1" <?php checked( '1', get_option( 'jrl_aff_duree', '1' ) ); ?>> Durée (« 10 min par série »)</label><br>
+					<label><input type="checkbox" name="jrl_aff_progression" value="1" <?php checked( '1', get_option( 'jrl_aff_progression', '1' ) ); ?>> Progression de l’élève</label><br>
+					<label><input type="checkbox" name="jrl_aff_objectifs" value="1" <?php checked( '1', get_option( 'jrl_aff_objectifs', '1' ) ); ?>> Bouton « Objectifs »</label>
+				</fieldset></td></tr>
+			</tbody></table>
+			<p><button class="button button-primary" type="submit">Enregistrer l’affichage</button></p>
+		</form>
 
 		<h2>Un jeu</h2>
 		<table class="widefat striped" style="max-width:900px">
