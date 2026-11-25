@@ -3,7 +3,7 @@
  * Plugin Name:       Jeux de révision – Logistique
  * Plugin URI:        https://github.com/logiprof/jeux-revisions-logistique
  * Description:       Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (modules M101 à M205). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
- * Version:           2.10.0
+ * Version:           2.11.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            LogiProf
@@ -14,7 +14,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JRL_VERSION', '2.10.0' );
+define( 'JRL_VERSION', '2.11.0' );
 define( 'JRL_FILE', __FILE__ );
 define( 'JRL_DIR', __DIR__ );
 define( 'JRL_REPO', 'logiprof/jeux-revisions-logistique' );
@@ -28,6 +28,8 @@ require_once __DIR__ . '/includes/updater.php';
 require_once __DIR__ . '/includes/admin.php';
 /* Regroupements de modules (un shortcode par regroupement) */
 require_once __DIR__ . '/includes/groupes.php';
+/* Gestion des jeux : activer / masquer, cartes, statistiques, remise à zéro */
+require_once __DIR__ . '/includes/gestion.php';
 
 /**
  * Jeux livrés par l'extension : un dossier par jeu dans jeux/<identifiant>/ avec index.html, data.js, jeu.json et logo.svg.
@@ -86,6 +88,7 @@ add_action( 'init', function () {
 		if ( '' === $tag || shortcode_exists( $tag ) ) { continue; }
 		add_shortcode( $tag, function ( $atts = array() ) use ( $slug ) {
 			$langue = is_array( $atts ) && ! empty( $atts['langue'] ) ? (string) $atts['langue'] : '';
+			if ( function_exists( 'jrl_est_masque' ) && jrl_est_masque( $slug ) ) { return current_user_can( 'edit_posts' ) ? '<p><em>Ce jeu est masqué (menu Jeux logistique › Gestion des jeux) : les élèves ne le voient pas.</em></p>' : ''; }
 			return function_exists( 'jdr_shortcode_jeu' ) ? '<div class="' . esc_attr( jrl_aff_classes() ) . '">' . jdr_shortcode_jeu( array( 'id' => $slug, 'langue' => $langue ) ) . '</div>' : '';
 		} );
 	}

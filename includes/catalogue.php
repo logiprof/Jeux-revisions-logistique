@@ -33,11 +33,12 @@
  * 1.8.1 : carte du jeu : le bouton « Objectifs » déplie une liste à puces, un objectif par ligne (code et titre seulement).
  * 1.8.2 : carte du jeu sans le paragraphe de description.
  * 1.8.3 : carte du jeu : titre et durée sur toute la largeur, sous l'icône.
+ * 1.8.4 : remise à zéro d'une progression par l'administration (marque « raz » : les appareils qui ne l'ont pas vue sont refusés).
  * 1.7.3 : aucun e-mail. Le bilan de chaque session est seulement enregistré dans la base (espace de l'élève, suivi du
  *         formateur) ; l'envoi du bilan par e-mail et son réglage sont supprimés. Seule l'extension de gestion écrit aux élèves.
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-$GLOBALS['jdr_engines']['1.8.3'] = dirname( __DIR__ );
+$GLOBALS['jdr_engines']['1.8.4'] = dirname( __DIR__ );
 if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	function jdr_engine_pick() {
 		if ( function_exists( 'jdr_boot' ) ) { return; } /* un moteur 1.1.0 ou plus ancien est déjà chargé */
@@ -49,9 +50,9 @@ if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	}
 	add_action( 'plugins_loaded', 'jdr_engine_pick', 1 );
 }
-if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) && ! function_exists( 'jdr_engine_1_8_2' ) && ! function_exists( 'jdr_engine_1_8_3' ) ) {
-	function jdr_engine_1_8_3( $dir ) {
-		define( 'JDR_ENGINE_VERSION', '1.8.3' );
+if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) && ! function_exists( 'jdr_engine_1_8_2' ) && ! function_exists( 'jdr_engine_1_8_3' ) && ! function_exists( 'jdr_engine_1_8_4' ) ) {
+	function jdr_engine_1_8_4( $dir ) {
+		define( 'JDR_ENGINE_VERSION', '1.8.4' );
 		define( 'JDR_ENGINE_URL', trailingslashit( plugin_dir_url( $dir . '/catalogue' ) ) );
 		define( 'JDR_DB_VERSION', '3' );
 
@@ -404,8 +405,10 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 			if ( ! is_object( $raw ) || ! isset( $raw->data ) || ! is_object( $raw->data ) || ! isset( $raw->data->state ) || ! is_object( $raw->data->state ) ) { return new WP_Error( 'jdr_data', 'Données invalides.', array( 'status' => 400 ) ); }
 			$json = wp_json_encode( $raw->data ); if ( ! $json || strlen( $json ) > 262144 ) { return new WP_Error( 'jdr_size', 'Progression trop volumineuse.', array( 'status' => 413 ) ); }
 			$d = json_decode( $json, true ); $uid = get_current_user_id(); $cur = jdr_user_data( $j, $uid );
-			/* un appareil en retard (XP inférieure) n'écrase jamais une progression plus avancée : le jeu reprend celle du site */
-			if ( $cur && (int) ( $cur['state']['xp'] ?? 0 ) > (int) ( $d['state']['xp'] ?? 0 ) ) {
+			/* un appareil en retard (XP inférieure) n'écrase jamais une progression plus avancée : le jeu reprend celle du site.
+			   Après une remise à zéro par l'administration (marque « raz »), un appareil qui ne l'a pas encore vue est aussi refusé. */
+			$raz = $cur ? (string) ( $cur['state']['raz'] ?? '' ) : '';
+			if ( $cur && ( (int) ( $cur['state']['xp'] ?? 0 ) > (int) ( $d['state']['xp'] ?? 0 ) || ( '' !== $raz && (string) ( $d['state']['raz'] ?? '' ) !== $raz ) ) ) {
 				return new WP_REST_Response( array( 'code' => 'jdr_conflict', 'data' => jdr_user_data_obj( $j, $uid ) ), 409 );
 			}
 			if ( ! jdr_write( $uid, $j, $d, $json ) ) { return new WP_Error( 'jdr_db', 'Enregistrement impossible.', array( 'status' => 500 ) ); }

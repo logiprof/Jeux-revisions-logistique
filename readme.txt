@@ -4,7 +4,7 @@ Tags: formation, quiz, révision, logistique, jeux
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.10.0
+Stable tag: 2.11.0
 License: GPL-2.0-or-later
 
 Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (68 jeux, modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612, M701 à M705, M801 à M809), avec mises à jour automatiques depuis GitHub.
@@ -27,6 +27,9 @@ Shortcodes :
 3. Désactivez les anciennes extensions « Jeu de révision – Mxxx » si un bandeau vous le propose : les progressions sont conservées.
 
 == Changelog ==
+
+= 2.11.0 =
+* Gestion des jeux : activer / masquer, statistiques par jeu, textes et couleur des cartes, aperçu, remise à zéro de la progression d'un élève
 
 = 2.10.0 =
 * Menu « Jeux logistique » dans la barre latérale de l'administration (Shortcodes et réglages, Regroupements, Suivi des élèves)
