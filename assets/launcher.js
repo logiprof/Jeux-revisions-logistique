@@ -30,7 +30,8 @@
 	}
 	function close() { if (!overlay) return; var o = overlay; overlay = null; exitFs(); o.remove(); document.documentElement.classList.remove('jdr-open'); if (lastButton) { try { lastButton.focus(); } catch (e) {} refresh(lastButton.getAttribute('data-jdr-id'), lastButton.getAttribute('data-jdr-lang')); } }
 	document.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('.jdr-play[data-jdr-src]'); if (!b) return; e.preventDefault(); open(b); });
-	function onFs() { if (overlay && wentFull && !fsElement()) close(); }
+	/* Leaving fullscreen (Esc or the game's button) keeps the game open: it still fills the window. */
+	function onFs() { if (overlay && !fsElement()) wentFull = false; }
 	document.addEventListener('fullscreenchange', onFs); document.addEventListener('webkitfullscreenchange', onFs);
 	document.addEventListener('keydown', function (e) { if (overlay && e.key === 'Escape') close(); });
 	window.addEventListener('message', function (e) { if (e.origin !== window.location.origin) return; if (e.data && e.data.jdr === 'close') close(); });

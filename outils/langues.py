@@ -55,6 +55,8 @@ def patch_fr(s):
 # (français, allemand) ; chaque texte français doit être présent au moins une fois dans le moteur.
 DE = [
     ('<html lang="fr">', '<html lang="de">'),
+    ('"Quitter le plein écran"', '"Vollbild beenden"'),
+    ('"Plein écran"', '"Vollbild"'),
     ('<script src="data.js"></script>', '<script src="data.de.js"></script>'),
     ('const LANG="fr";', 'const LANG="de";'),
     ('const KIND={pickimg:"Choisir l\'image",qcm:"QCM",odd:"Intrus",case:"Mise en situation",fill:"Texte à trous",tf:"Vrai ou faux",match:"Associer",sort:"Classer",order:"Remettre en ordre",multi:"Plusieurs réponses",num:"Réponse chiffrée"};',

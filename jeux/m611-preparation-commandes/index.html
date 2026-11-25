@@ -295,6 +295,37 @@ h2,h3{letter-spacing:-.01em}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) #mExam .mi{background:#4a5563!important}:root:not([data-theme="light"]) .hero,:root:not([data-theme="light"]) .top,:root:not([data-theme="light"]) .welcome{box-shadow:0 0 0 1px #3a4450}}
 :root[data-theme="dark"] #mExam .mi{background:#4a5563!important}
 :root[data-theme="dark"] .hero,:root[data-theme="dark"] .top,:root[data-theme="dark"] .welcome{box-shadow:0 0 0 1px #3a4450}
+
+/* affichage-ordinateur 2.7 */
+.olist{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.orow{display:grid;grid-template-columns:12px minmax(0,1fr) auto 16px;gap:14px;align-items:center;width:100%;text-align:left;padding:14px 18px;background:none;border:0;border-top:1px solid var(--line);border-radius:0;color:inherit;font:inherit;cursor:pointer;transition:background .12s}
+.orow:first-child{border-top:0}
+.orow:hover{background:color-mix(in srgb,var(--c) 8%,var(--panel))}
+.orow:focus-visible{outline:3px solid var(--y);outline-offset:-3px}
+.orow .dot{width:12px;height:12px;border-radius:50%;background:var(--c);align-self:start;margin-top:7px}
+.orow .ohead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.orow .code{font-family:var(--mono);font-size:.74rem;font-weight:700;color:var(--c);letter-spacing:.06em}
+.orow .ot{font-weight:600;font-size:1.02rem;line-height:1.3}
+.orow .goal{display:block;margin-top:3px;font-size:.84rem;color:var(--muted);line-height:1.4}
+.orow .ost{display:flex;align-items:center;gap:10px;white-space:nowrap}
+.orow .obar{width:90px;height:6px;border-radius:99px;background:var(--line);overflow:hidden}
+.orow .obar i{display:block;height:100%;background:var(--c);border-radius:99px}
+.orow .onb{font-size:.78rem}
+.orow .chev{color:var(--muted);font-size:1.5rem;line-height:1}
+@media (max-width:700px){.orow{grid-template-columns:12px minmax(0,1fr) 14px;padding:13px 14px;gap:12px}.orow .ost{grid-column:2;flex-wrap:wrap;white-space:normal}.orow .chev{grid-column:3;grid-row:1}.orow .obar{width:70px}}
+@media (min-width:1100px){
+.wrap{max-width:1180px}
+.welcome{max-width:none;width:100%;margin-top:2vh}
+.welcome .cover{max-height:38vh}
+.welcome h1{font-size:clamp(2.4rem,3.4vw,3.2rem)}
+.welcome .wtext{max-width:760px}
+.welcome .wtext>.muted{font-size:1.05rem}
+.welcome .art{width:190px}
+.card{padding:28px 32px}
+.card .q{font-size:1.2rem}
+.opts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.opt{min-height:64px;align-items:center}
+}
 </style>
 
 <div class="wrap" id="app" aria-live="polite"></div>
@@ -529,14 +560,14 @@ async function bootWP(){loadingScreen();const ok=await initCloud();if(ok)greet()
 /* Accueil sur le site : la personne est saluée par le prénom de son compte, puis commence ou reprend. */
 function greet(){
   SCREEN="greet";const started=S.xp>0||Object.keys(S.rec).length>0,i=levelOf(S.xp),done=OBJ.filter((o,oi)=>mastery(oi)>=80).length;
-  $("#app").innerHTML=`<div class="row" style="justify-content:flex-end">${langBtn()}<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button></div><section class="panel welcome enter">${coverHTML()}<div class="wbody"><div class="wtext">
+  $("#app").innerHTML=`<div class="row" style="justify-content:flex-end">${langBtn()}${fsBtn()}<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button></div><section class="panel welcome enter">${coverHTML()}<div class="wbody"><div class="wtext">
    <div><p class="eyebrow">${esc(META.eyebrow)}</p><h1 style="margin-top:6px">${esc(META.title)}</h1></div>
    <h2 id="hello" style="margin:0">Bonjour ${esc(WPU.first||WPU.name)}${started?", bon retour !":" !"}</h2>
    <p class="muted">${started?`Votre progression : ${globalMastery()} % de maîtrise, niveau « ${esc(LEVELS[i][1])} », ${S.xp} XP, objectifs maîtrisés : ${done}/${OBJ.length}${S.best?`, meilleure note à l'examen blanc ${S.best.toFixed(1)}`:""}.`:`${esc(META.intro)} ${OBJ.length} objectifs, ${OBJ.reduce((n,o)=>n+o.ch.length,0)} épreuves, un examen blanc noté sur 6.`}</p>
    <div class="row"><button class="btn y" id="go" type="button">${started?"Reprendre":"Commencer"}</button></div>
    <small class="muted">☁️ Votre progression est enregistrée sur votre compte du site.</small>
   </div><div class="art">${ISO}</div></div></section>`;
-  bindTop();$("#go").addEventListener("click",()=>{sTap();home()});$("#go").focus();
+  bindTop();$("#go").addEventListener("click",()=>{sTap();fsAuto();home()});$("#go").focus();
 }
 async function wpQuit(btn){
   if(btn){btn.disabled=true;btn.textContent="Enregistrement…"}
@@ -572,6 +603,21 @@ let SCREEN="";
 const ISO='<svg class="iso" viewBox="0 -24 300 300" aria-hidden="true" focusable="false"><g class="c" style="--i:0"><polygon class="t" points="150.0,106.0 189.8,129.0 150.0,152.0 110.2,129.0"/><polygon class="l" points="110.2,129.0 150.0,152.0 150.0,198.0 110.2,175.0"/><polygon class="r" points="189.8,129.0 150.0,152.0 150.0,198.0 189.8,175.0"/></g><g class="c" style="--i:6"><polygon class="t" points="150.0,60.0 189.8,83.0 150.0,106.0 110.2,83.0"/><polygon class="l" points="110.2,83.0 150.0,106.0 150.0,152.0 110.2,129.0"/><polygon class="r" points="189.8,83.0 150.0,106.0 150.0,152.0 189.8,129.0"/></g><g class="c mark" style="--i:9"><polygon class="t" points="150.0,14.0 189.8,37.0 150.0,60.0 110.2,37.0"/><polygon class="l" points="110.2,37.0 150.0,60.0 150.0,106.0 110.2,83.0"/><polygon class="r" points="189.8,37.0 150.0,60.0 150.0,106.0 189.8,83.0"/></g><g class="c" style="--i:1"><polygon class="t" points="189.8,129.0 229.7,152.0 189.8,175.0 150.0,152.0"/><polygon class="l" points="150.0,152.0 189.8,175.0 189.8,221.0 150.0,198.0"/><polygon class="r" points="229.7,152.0 189.8,175.0 189.8,221.0 229.7,198.0"/></g><g class="c" style="--i:2"><polygon class="t" points="110.2,129.0 150.0,152.0 110.2,175.0 70.3,152.0"/><polygon class="l" points="70.3,152.0 110.2,175.0 110.2,221.0 70.3,198.0"/><polygon class="r" points="150.0,152.0 110.2,175.0 110.2,221.0 150.0,198.0"/></g><g class="c" style="--i:7"><polygon class="t" points="189.8,83.0 229.7,106.0 189.8,129.0 150.0,106.0"/><polygon class="l" points="150.0,106.0 189.8,129.0 189.8,175.0 150.0,152.0"/><polygon class="r" points="229.7,106.0 189.8,129.0 189.8,175.0 229.7,152.0"/></g><g class="c" style="--i:8"><polygon class="t" points="110.2,83.0 150.0,106.0 110.2,129.0 70.3,106.0"/><polygon class="l" points="70.3,106.0 110.2,129.0 110.2,175.0 70.3,152.0"/><polygon class="r" points="150.0,106.0 110.2,129.0 110.2,175.0 150.0,152.0"/></g><g class="c" style="--i:3"><polygon class="t" points="229.7,152.0 269.5,175.0 229.7,198.0 189.8,175.0"/><polygon class="l" points="189.8,175.0 229.7,198.0 229.7,244.0 189.8,221.0"/><polygon class="r" points="269.5,175.0 229.7,198.0 229.7,244.0 269.5,221.0"/></g><g class="c" style="--i:4"><polygon class="t" points="150.0,152.0 189.8,175.0 150.0,198.0 110.2,175.0"/><polygon class="l" points="110.2,175.0 150.0,198.0 150.0,244.0 110.2,221.0"/><polygon class="r" points="189.8,175.0 150.0,198.0 150.0,244.0 189.8,221.0"/></g><g class="c" style="--i:5"><polygon class="t" points="70.3,152.0 110.2,175.0 70.3,198.0 30.5,175.0"/><polygon class="l" points="30.5,175.0 70.3,198.0 70.3,244.0 30.5,221.0"/><polygon class="r" points="110.2,175.0 70.3,198.0 70.3,244.0 110.2,221.0"/></g><g class="c" style="--i:10"><polygon class="s" points="150.0,-20.0 154.0,-9.5 165.2,-8.9 156.5,-1.9 159.4,8.9 150.0,2.8 140.6,8.9 143.5,-1.9 134.8,-8.9 146.0,-9.5"/></g></svg>';
 function coverHTML(){const c=META.cover;return c&&c.src?`<img class="cover" src="${esc(c.src)}" alt="${esc(c.alt||META.title)}">`:""}
 function capSVG(p,o){const r=33,C=2*Math.PI*r;return `<svg class="ring" viewBox="0 0 74 74"><circle cx="37" cy="37" r="${r}" fill="none" stroke="var(--line)" stroke-width="5"/><circle cx="37" cy="37" r="${r}" fill="none" stroke="${cv(o)}" stroke-width="5" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C*(1-p/100)}"/></svg>`}
+/* plein écran (ordinateur) */
+ICONS.fsin='<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
+ICONS.fsout='<path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
+function fsPar(){try{if(window.parent!==window&&window.parent.document&&window.parent.document.querySelector(".jdr-overlay"))return window.parent.document}catch(e){}return null}
+function fsEl(){const p=fsPar();return (p&&(p.fullscreenElement||p.webkitFullscreenElement))||document.fullscreenElement||document.webkitFullscreenElement||null}
+function fsOk(){const d=fsPar()||document;return matchMedia("(pointer:fine) and (min-width:900px)").matches&&!!(d.fullscreenEnabled||d.webkitFullscreenEnabled||document.fullscreenEnabled||document.webkitFullscreenEnabled)}
+function fsReq(el){const fn=el&&(el.requestFullscreen||el.webkitRequestFullscreen);if(!fn)return Promise.reject();try{const r=fn.call(el);return r&&r.then?r:Promise.resolve()}catch(e){return Promise.reject(e)}}
+function fsOn(){const p=fsPar(),own=document.documentElement;(p?fsReq(p.querySelector(".jdr-overlay")):Promise.reject()).catch(()=>fsReq(own)).catch(()=>{})}
+function fsOff(){const p=fsPar(),d=p&&(p.fullscreenElement||p.webkitFullscreenElement)?p:document,fn=d.exitFullscreen||d.webkitExitFullscreen;if(fn)try{const r=fn.call(d);if(r&&r.catch)r.catch(()=>{})}catch(e){}}
+function fsAuto(){if(fsOk()&&!fsEl())fsOn()}
+function fsLabel(){return fsEl()?"Quitter le plein écran":"Plein écran"}
+function fsBtn(){return fsOk()?`<button type="button" class="chip btnchip" id="fs">${ic(fsEl()?"fsout":"fsin")}${fsLabel()}</button>`:""}
+function fsSync(){const b=$("#fs");if(b)b.innerHTML=`${ic(fsEl()?"fsout":"fsin")}${fsLabel()}`}
+["fullscreenchange","webkitfullscreenchange"].forEach(ev=>{document.addEventListener(ev,fsSync);const p=fsPar();if(p)p.addEventListener(ev,fsSync)});
+
 function topBar(){
   const i=levelOf(S.xp),cur=LEVELS[i][0],nx=LEVELS[i+1];
   const w=nx?(S.xp-cur)/(nx[0]-cur)*100:100;const sk=streakNow();
@@ -580,22 +626,22 @@ function topBar(){
    <small>${S.xp} XP${nx?` · ${nx[0]-S.xp} XP avant « ${esc(nx[1])} »`:" · niveau maximum"}</small></div></div>
    <div class="chips"><span class="chip" title="Jours consécutifs avec au moins une session">${ic("flame")}${sk} jour${sk>1?"s":""}</span>
    <span class="chip" title="Objectif du jour">${ic("target")}${Math.min(S.day.d===today()?S.day.n:0,GOAL)}/${GOAL} aujourd'hui</span>
-   ${langBtn()}<button type="button" class="chip btnchip" id="snd" aria-pressed="${S.sound}">${ic(S.sound?"sound":"mute")}Son ${S.sound?"activé":"coupé"}</button>${WP?`<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button>`:""}</div></header>`;
+   ${langBtn()}${fsBtn()}<button type="button" class="chip btnchip" id="snd" aria-pressed="${S.sound}">${ic(S.sound?"sound":"mute")}Son ${S.sound?"activé":"coupé"}</button>${WP?`<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button>`:""}</div></header>`;
 }
-function bindTop(){const q=$("#wpquit");if(q)q.addEventListener("click",()=>wpQuit(q));const lg=$("#lang");if(lg)lg.addEventListener("click",()=>{lg.disabled=true;goLang(LANG==="fr"?"de":"fr")});const b=$("#snd");if(b)b.addEventListener("click",()=>{S.sound=!S.sound;save();sTap();b.setAttribute("aria-pressed",S.sound);b.innerHTML=`${ic(S.sound?"sound":"mute")}Son ${S.sound?"activé":"coupé"}`})}
+function bindTop(){const fb=$("#fs");if(fb)fb.addEventListener("click",()=>{if(fsEl())fsOff();else fsOn()});const q=$("#wpquit");if(q)q.addEventListener("click",()=>wpQuit(q));const lg=$("#lang");if(lg)lg.addEventListener("click",()=>{lg.disabled=true;goLang(LANG==="fr"?"de":"fr")});const b=$("#snd");if(b)b.addEventListener("click",()=>{S.sound=!S.sound;save();sTap();b.setAttribute("aria-pressed",S.sound);b.innerHTML=`${ic(S.sound?"sound":"mute")}Son ${S.sound?"activé":"coupé"}`})}
 
 function route(){if(WPU){S.name=WPU.name;home()}else if(WP&&!WP.loggedIn&&window.JDR_CFG)needLogin();else if(!S.name&&!S.started)welcome();else home()}
 
 function welcome(){
   SCREEN="welcome";
-  $("#app").innerHTML=(WP||HAS_DE?`<div class="row" style="justify-content:flex-end">${langBtn()}${WP?`<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button>`:""}</div>`:"")+`<section class="panel welcome enter">${coverHTML()}<div class="wbody"><div class="wtext">
+  $("#app").innerHTML=(WP||HAS_DE?`<div class="row" style="justify-content:flex-end">${langBtn()}${fsBtn()}${WP?`<button type="button" class="chip btnchip quitwp" id="wpquit">${ic("cross")}Quitter</button>`:""}</div>`:"")+`<section class="panel welcome enter">${coverHTML()}<div class="wbody"><div class="wtext">
    <div><p class="eyebrow">${esc(META.eyebrow)}</p><h1 style="margin-top:6px">${esc(META.title)}</h1></div>
    <h2 id="hello" style="margin:0">Bienvenue !</h2>
    <p class="muted">${esc(META.intro)} ${OBJ.length} objectifs, ${OBJ.reduce((n,o)=>n+o.ch.length,0)} épreuves, un examen blanc noté sur 6.</p>
    <form id="fstart" class="row" autocomplete="off"><button class="btn y" type="submit">Commencer</button></form>
   </div><div class="art">${ISO}</div></div></section>`;
   bindTop();
-  $("#fstart").addEventListener("submit",e=>{e.preventDefault();S.started=1;save();home()});
+  $("#fstart").addEventListener("submit",e=>{e.preventDefault();fsAuto();S.started=1;save();home()});
 }
 
 function home(){
@@ -611,10 +657,11 @@ function home(){
    <button class="mode" id="mRev" type="button" ${q||weakO.length?"":"disabled"}><span class="mh"><span class="mi" style="background:var(--coral)">${ic("review")}</span><h3>Révision ciblée</h3></span><small>Les épreuves ratées reviennent jusqu'à 2 réussites d'affilée, puis les objectifs pas encore maîtrisés.</small><span class="meta">${q?`${q} épreuve${q>1?"s":""} à revoir`:weakO.length?`${weakO.length} objectif${weakO.length>1?"s":""} à consolider`:"Tout est maîtrisé"}</span></button>
   </section>
   <div class="sect" id="objs"><h2>Objectifs du chapitre</h2><span class="muted" style="font-size:.88rem">Maîtrisé dès 80 %</span></div>
-  <section class="tray">${OBJ.map((o,oi)=>{const p=mastery(oi),s=statusOf(p);return `<button class="vial" type="button" data-o="${oi}" style="--c:${cv(o)}">
-    <span class="cap">${capSVG(p,o)}<span class="lid">${ic(o.ic)}</span></span>
-    <span style="min-width:0"><span class="code">${esc(o.code)}</span><h3>${esc(o.t)}</h3><span class="goal">${esc(o.g)}</span>
-    <span class="foot"><span class="status st${s}">${STATUS[s]}</span><span class="pct">${p} %</span><span class="muted" style="font-size:.8rem">${masteredCount(oi)}/${o.ch.length} épreuves</span></span></span></button>`}).join("")}</section>
+  <section class="olist">${OBJ.map((o,oi)=>{const p=mastery(oi),s=statusOf(p);return `<button class="orow" type="button" data-o="${oi}" style="--c:${cv(o)}">
+    <span class="dot" aria-hidden="true"></span>
+    <span style="min-width:0"><span class="ohead"><span class="code">${esc(o.code)}</span><span class="ot">${esc(o.t)}</span></span><span class="goal">${esc(o.g)}</span></span>
+    <span class="ost"><span class="status st${s}">${STATUS[s]}</span><span class="obar"><i style="width:${p}%"></i></span><span class="pct">${p} %</span><span class="muted onb">${masteredCount(oi)}/${o.ch.length} épreuves</span></span>
+    <span class="chev" aria-hidden="true">›</span></button>`}).join("")}</section>
   <div class="sect"><h2>Badges</h2><span class="muted" style="font-size:.88rem">${Object.keys(S.badges).length}/${BADGES.length}</span></div>
   <section class="badges">${BADGES.map(b=>`<div class="bdg${S.badges[b.id]?" on":""}"><span class="seal">${ic("star")}</span>${esc(b.t)}</div>`).join("")}</section>
   ${WPU?`<section class="panel save"><b>☁️ Progression enregistrée sur votre compte du site · ${esc(WPU.name)}</b><small>Elle est sauvegardée automatiquement après chaque réponse. Connectez-vous avec le même compte pour la retrouver sur n'importe quel appareil.</small></section>`:`<section class="panel save" id="preview"><b>Aperçu hors plateforme</b><small>Dans cet aperçu, la progression reste sur cet appareil. Sur LogiProf, l'élève est connecté : sa progression et ses résultats sont enregistrés automatiquement sur son compte, sans aucun code à noter.</small></section>`}
@@ -622,7 +669,7 @@ function home(){
   bindTop();
   if($("#frest"))$("#frest").addEventListener("submit",e=>{e.preventDefault();const d=readCode($("#ccode").value);
     if(!d){$("#e2").hidden=false;return}applyCode(d,"");save();home();toast("Progression restaurée.")});
-  $$(".vial").forEach(b=>b.addEventListener("click",()=>{sTap();startTrain(+b.dataset.o)}));
+  $$(".orow").forEach(b=>b.addEventListener("click",()=>{sTap();startTrain(+b.dataset.o)}));
   $("#mTrain").addEventListener("click",()=>{sTap();$("#objs").scrollIntoView({behavior:"smooth"})});
   $("#mExam").addEventListener("click",()=>{sTap();startExam()});
   $("#mRev").addEventListener("click",()=>{sTap();q?startReview():startWeak(weakO)});
