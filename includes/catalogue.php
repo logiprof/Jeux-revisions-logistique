@@ -31,11 +31,12 @@
  *         => array( 'de' => array( 'titre', 'sous_titre', 'duree', 'description', 'contenu', 'bouton'… ) ) du jeu) ;
  *         page du jeu ?lang=de servie avec index.de.html s'il existe (même identifiant, même progression).
  * 1.8.1 : carte du jeu : le bouton « Objectifs » déplie une liste à puces, un objectif par ligne (code et titre seulement).
+ * 1.8.2 : carte du jeu sans le paragraphe de description.
  * 1.7.3 : aucun e-mail. Le bilan de chaque session est seulement enregistré dans la base (espace de l'élève, suivi du
  *         formateur) ; l'envoi du bilan par e-mail et son réglage sont supprimés. Seule l'extension de gestion écrit aux élèves.
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-$GLOBALS['jdr_engines']['1.8.1'] = dirname( __DIR__ );
+$GLOBALS['jdr_engines']['1.8.2'] = dirname( __DIR__ );
 if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	function jdr_engine_pick() {
 		if ( function_exists( 'jdr_boot' ) ) { return; } /* un moteur 1.1.0 ou plus ancien est déjà chargé */
@@ -47,9 +48,9 @@ if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	}
 	add_action( 'plugins_loaded', 'jdr_engine_pick', 1 );
 }
-if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) ) {
-	function jdr_engine_1_8_1( $dir ) {
-		define( 'JDR_ENGINE_VERSION', '1.8.1' );
+if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) && ! function_exists( 'jdr_engine_1_8_2' ) ) {
+	function jdr_engine_1_8_2( $dir ) {
+		define( 'JDR_ENGINE_VERSION', '1.8.2' );
 		define( 'JDR_ENGINE_URL', trailingslashit( plugin_dir_url( $dir . '/catalogue' ) ) );
 		define( 'JDR_DB_VERSION', '3' );
 
@@ -362,7 +363,6 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 					<?php if ( $jeu['sous_titre'] ) : ?><p class="jdr-card__kicker"><?php echo esc_html( $jeu['sous_titre'] ); ?></p><?php endif; ?>
 					<h3 class="jdr-card__title"><?php echo esc_html( $jeu['titre'] ); ?><?php if ( $jeu['dossier'] && ! jdr_est_url( $jeu['dossier'] ) ) : ?><span class="jdr-card__dossier"><?php echo esc_html( jdr_t( 'Dossier : ' ) . $jeu['dossier'] ); ?></span><?php endif; ?></h3>
 					<?php if ( $jeu['duree'] ) : ?><p class="jdr-card__meta"><span><?php echo esc_html( $jeu['duree'] ); ?></span></p><?php endif; ?>
-					<p class="jdr-card__desc"><?php echo esc_html( $jeu['description'] ); ?></p>
 					<?php echo $extra; /* HTML fourni par l'extension de gestion, déjà échappé */ ?>
 					<div class="jdr-card__progress" data-jdr-prog="<?php echo esc_attr( $id ); ?>"><?php echo jdr_progress_html( $id, $jeu ); /* déjà échappé */ ?></div>
 					<?php if ( $jeu['contenu'] ) : ?><details class="jdr-card__content"><summary class="jdr-obj-btn"><?php echo esc_html( sprintf( jdr_t( 'Objectifs (%d)' ), count( $jeu['contenu'] ) ) ); ?></summary><ul class="jdr-obj"><?php foreach ( (array) $jeu['contenu'] as $l ) : $t = is_array( $l ) ? (string) ( $l['titre'] ?? '' ) : (string) $l; $sub = is_array( $l ) ? array_filter( (array) ( $l['objectifs'] ?? array() ) ) : array(); ?><li><?php echo esc_html( $t ); ?></li><?php endforeach; ?></ul></details><?php endif; ?>
