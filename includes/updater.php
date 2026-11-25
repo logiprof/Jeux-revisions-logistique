@@ -8,7 +8,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-/** Dernière release GitHub (mise en cache 6 h ; 1 h en cas d'échec). */
+/** Dernière release GitHub (mise en cache 2 h ; 1 h en cas d'échec). */
 function jrl_remote( $forcer = false ) {
 	$cle = 'jrl_github_release';
 	$r = $forcer ? false : get_site_transient( $cle );
@@ -38,7 +38,7 @@ function jrl_remote( $forcer = false ) {
 			'page'    => (string) ( $b['html_url'] ?? '' ),
 		);
 	}
-	set_site_transient( $cle, $r, $r['ok'] ? 6 * HOUR_IN_SECONDS : HOUR_IN_SECONDS );
+	set_site_transient( $cle, $r, $r['ok'] ? 2 * HOUR_IN_SECONDS : HOUR_IN_SECONDS );
 	return $r;
 }
 
@@ -117,6 +117,9 @@ add_filter( 'auto_update_plugin', function ( $update, $item ) {
 	if ( isset( $item->plugin ) && plugin_basename( JRL_FILE ) === $item->plugin && '1' === get_option( 'jrl_maj_auto', '1' ) ) { return true; }
 	return $update;
 }, 10, 2 );
+
+/* « Vérifier à nouveau » (Tableau de bord → Mises à jour) relit aussi GitHub, sans attendre la fin du cache */
+add_action( 'load-update-core.php', function () { if ( ! empty( $_GET['force-check'] ) && current_user_can( 'update_plugins' ) ) { delete_site_transient( 'jrl_github_release' ); } } );
 
 /* Après une mise à jour : on relira GitHub la prochaine fois */
 add_action( 'upgrader_process_complete', function () { delete_site_transient( 'jrl_github_release' ); } );
