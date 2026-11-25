@@ -59,11 +59,12 @@ function jrl_admin_page() {
 	$jeux = jrl_jeux();
 	$r = jrl_remote();
 	$ok = isset( $_GET['jrl_ok'] ) ? sanitize_key( $_GET['jrl_ok'] ) : '';
-	$msg = array( 'reglages' => 'Réglages enregistrés.', 'verifie' => 'GitHub a été consulté.', 'desactive' => 'Anciennes extensions désactivées.' );
+	$msg = array( 'reglages' => 'Réglages enregistrés.', 'verifie' => 'GitHub a été consulté.', 'desactive' => 'Anciennes extensions désactivées.', 'groupe_ok' => 'Regroupement enregistré.', 'groupe_supprime' => 'Regroupement supprimé.' );
 	?>
 	<div class="wrap">
 		<h1>Jeux de révision – Logistique</h1>
 		<?php if ( isset( $msg[ $ok ] ) ) : ?><div class="notice notice-success is-dismissible"><p><?php echo esc_html( $msg[ $ok ] ); ?></p></div><?php endif; ?>
+		<?php if ( 'groupe_vide' === $ok ) : ?><div class="notice notice-error is-dismissible"><p>Donnez un nom au regroupement et cochez au moins un module.</p></div><?php endif; ?>
 		<p>Copiez un shortcode dans une page ou un article (bloc « Code court »). Les élèves doivent être connectés pour jouer ; leur progression est enregistrée sur leur compte.</p>
 
 		<h2>Catalogue complet</h2>
@@ -72,6 +73,7 @@ function jrl_admin_page() {
 				<tr><td style="width:42%"><code>[jeux_logistique]</code></td><td>Tous les jeux de l’extension (<?php echo (int) count( $jeux ); ?>).</td></tr>
 				<tr><td><code>[jeux_logistique modules="M1"]</code></td><td>Seulement les modules M101 à M110 (M2 pour M201 à M205…).</td></tr>
 				<tr><td><code>[jeux_logistique modules="M101,M203"]</code></td><td>Seulement les modules choisis.</td></tr>
+				<tr><td><code>[jeux_logistique groupe="…"]</code></td><td>Un regroupement de modules que vous avez créé (voir « Regroupements de modules » plus bas) ; chaque regroupement a aussi son propre shortcode.</td></tr>
 				<tr><td><code>[jeux_logistique colonnes="3"]</code></td><td>Nombre de jeux côte à côte sur cette page (1 à 4). Sans <code>colonnes</code>, le réglage « Affichage du catalogue » ci-dessous s’applique.</td></tr>
 				<tr><td><code>[jeux_logistique langue="de"]</code></td><td>Le catalogue en allemand (cartes et jeux). Fonctionne aussi avec <code>modules="…"</code> et pour un seul jeu : <code>[jeu_m101 langue="de"]</code>. Sans <code>langue</code>, l’élève peut changer de langue dans le jeu (bouton FR | DE) ; sa progression est la même dans les deux langues.</td></tr>
 				<tr><td><code>[jeux_revision]</code></td><td>Tous les jeux de révision installés sur le site, y compris ceux d’autres extensions.</td></tr>
@@ -100,6 +102,8 @@ function jrl_admin_page() {
 			</tbody></table>
 			<p><button class="button button-primary" type="submit">Enregistrer l’affichage</button></p>
 		</form>
+
+		<?php if ( function_exists( 'jrl_groupes_admin' ) ) { jrl_groupes_admin(); } ?>
 
 		<h2>Un jeu</h2>
 		<table class="widefat striped" style="max-width:900px">

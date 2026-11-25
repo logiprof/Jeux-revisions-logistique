@@ -3,7 +3,7 @@
  * Plugin Name:       Jeux de révision – Logistique
  * Plugin URI:        https://github.com/logiprof/jeux-revisions-logistique
  * Description:       Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (modules M101 à M205). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
- * Version:           2.8.0
+ * Version:           2.9.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            LogiProf
@@ -14,7 +14,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JRL_VERSION', '2.8.0' );
+define( 'JRL_VERSION', '2.9.0' );
 define( 'JRL_FILE', __FILE__ );
 define( 'JRL_DIR', __DIR__ );
 define( 'JRL_REPO', 'logiprof/jeux-revisions-logistique' );
@@ -26,6 +26,8 @@ require_once __DIR__ . '/includes/catalogue.php';
 require_once __DIR__ . '/includes/updater.php';
 /* Page Réglages > Jeux logistique (liste des shortcodes) */
 require_once __DIR__ . '/includes/admin.php';
+/* Regroupements de modules (un shortcode par regroupement) */
+require_once __DIR__ . '/includes/groupes.php';
 
 /**
  * Jeux livrés par l'extension : un dossier par jeu dans jeux/<identifiant>/ avec index.html, data.js, jeu.json et logo.svg.
@@ -93,16 +95,24 @@ add_action( 'init', function () {
  * [jeux_logistique] : tout le catalogue de l'extension.
  * [jeux_logistique modules="M1"] : seulement les modules qui commencent par M1 (M101 à M110).
  * [jeux_logistique modules="M101,M203"] : seulement ces modules.
+ * [jeux_logistique groupe="modules-1re-annee"] ou [jeux_modules_1re_annee] : un regroupement (Réglages > Jeux logistique).
  * [jeux_logistique colonnes="3"] : 3 jeux côte à côte (1 à 4 ; sinon le réglage « Affichage du catalogue »).
  */
 function jrl_shortcode_catalogue( $atts ) {
 	if ( ! function_exists( 'jdr_card' ) ) { return ''; }
-	$a = shortcode_atts( array( 'modules' => '', 'langue' => '', 'colonnes' => '' ), $atts, 'jeux_logistique' );
+	$a = shortcode_atts( array( 'modules' => '', 'langue' => '', 'colonnes' => '', 'groupe' => '' ), $atts, 'jeux_logistique' );
 	$filtres = array_filter( array_map( 'trim', explode( ',', strtoupper( (string) $a['modules'] ) ) ) );
+	$groupe = null;
+	if ( '' !== (string) $a['groupe'] ) {
+		$groupe = function_exists( 'jrl_groupe' ) ? jrl_groupe( $a['groupe'] ) : null;
+		if ( ! $groupe ) { return current_user_can( 'edit_posts' ) ? '<p><em>Regroupement introuvable : vérifiez le shortcode dans Réglages › Jeux logistique.</em></p>' : ''; }
+		if ( '' === (string) $a['colonnes'] && ! empty( $groupe['colonnes'] ) ) { $a['colonnes'] = $groupe['colonnes']; }
+	}
 	$tous = jdr_jeux();
 	$cartes = array();
 	foreach ( jrl_jeux() as $slug => $d ) {
 		if ( ! isset( $tous[ $slug ] ) ) { continue; }
+		if ( $groupe && ! in_array( $slug, (array) $groupe['jeux'], true ) ) { continue; }
 		if ( $filtres ) {
 			$garde = false;
 			foreach ( $filtres as $f ) { if ( 0 === strpos( strtoupper( $d['module'] ), $f ) ) { $garde = true; break; } }
