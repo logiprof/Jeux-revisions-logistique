@@ -3,7 +3,7 @@
  * Plugin Name:       Jeux de révision – Logistique
  * Plugin URI:        https://github.com/logiprof/jeux-revisions-logistique
  * Description:       Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (modules M101 à M205). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
- * Version:           2.11.0
+ * Version:           2.12.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            LogiProf
@@ -14,7 +14,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JRL_VERSION', '2.11.0' );
+define( 'JRL_VERSION', '2.12.0' );
 define( 'JRL_FILE', __FILE__ );
 define( 'JRL_DIR', __DIR__ );
 define( 'JRL_REPO', 'logiprof/jeux-revisions-logistique' );
@@ -30,6 +30,8 @@ require_once __DIR__ . '/includes/admin.php';
 require_once __DIR__ . '/includes/groupes.php';
 /* Gestion des jeux : activer / masquer, cartes, statistiques, remise à zéro */
 require_once __DIR__ . '/includes/gestion.php';
+/* Classement par groupe Sensei (podium du catalogue, bouton Classement dans les jeux) */
+require_once __DIR__ . '/includes/classement.php';
 
 /**
  * Jeux livrés par l'extension : un dossier par jeu dans jeux/<identifiant>/ avec index.html, data.js, jeu.json et logo.svg.
@@ -99,11 +101,12 @@ add_action( 'init', function () {
  * [jeux_logistique modules="M1"] : seulement les modules qui commencent par M1 (M101 à M110).
  * [jeux_logistique modules="M101,M203"] : seulement ces modules.
  * [jeux_logistique groupe="modules-1re-annee"] ou [jeux_modules_1re_annee] : un regroupement (menu Jeux logistique).
+ * [jeux_logistique podium="non"] : sans le podium « Classement de la semaine » (affiché aux élèves d'un groupe Sensei).
  * [jeux_logistique colonnes="3"] : 3 jeux côte à côte (1 à 4 ; sinon le réglage « Affichage du catalogue »).
  */
 function jrl_shortcode_catalogue( $atts ) {
 	if ( ! function_exists( 'jdr_card' ) ) { return ''; }
-	$a = shortcode_atts( array( 'modules' => '', 'langue' => '', 'colonnes' => '', 'groupe' => '' ), $atts, 'jeux_logistique' );
+	$a = shortcode_atts( array( 'modules' => '', 'langue' => '', 'colonnes' => '', 'groupe' => '', 'podium' => '' ), $atts, 'jeux_logistique' );
 	$filtres = array_filter( array_map( 'trim', explode( ',', strtoupper( (string) $a['modules'] ) ) ) );
 	$groupe = null;
 	if ( '' !== (string) $a['groupe'] ) {
@@ -128,7 +131,8 @@ function jrl_shortcode_catalogue( $atts ) {
 	$prev = function_exists( 'jdr_lang' ) ? jdr_lang() : 'fr';
 	if ( '' !== $a['langue'] && function_exists( 'jdr_lang' ) ) { jdr_lang( $a['langue'] ); }
 	$col = jrl_colonnes( $a['colonnes'] );
-	$out = '<div class="' . esc_attr( jrl_aff_classes() ) . '"><div class="jdr-grid' . ( 'auto' !== $col ? ' jdr-cols-' . $col : '' ) . '">';
+	$podium = ( 'non' !== strtolower( (string) $a['podium'] ) && function_exists( 'jrl_cl_podium_html' ) ) ? jrl_cl_podium_html() : '';
+	$out = '<div class="' . esc_attr( jrl_aff_classes() ) . '">' . $podium . '<div class="jdr-grid' . ( 'auto' !== $col ? ' jdr-cols-' . $col : '' ) . '">';
 	foreach ( $cartes as $c ) { $out .= jdr_card( $c[0], $c[1] ); }
 	if ( function_exists( 'jdr_lang' ) ) { jdr_lang( $prev ); }
 	return $out . '</div></div>';

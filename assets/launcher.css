@@ -90,3 +90,27 @@ html.jdr-open,html.jdr-open body{overflow:hidden!important}
 .jdr-doc__list a{display:flex;gap:8px;align-items:center;font-size:.9rem;color:#1f2328;text-decoration:none;border-top:1px solid #ebe9e3;padding-top:6px}
 .jdr-doc__list a:hover{color:var(--jdr-accent)}
 .jdr-doc__list em{font-style:normal;font-size:.75rem;font-weight:700;color:#5b6472;background:#efede7;border-radius:99px;padding:1px 8px;white-space:nowrap}
+
+/* Classement des groupes (extension Jeux de révision – Logistique) */
+.jrl-podiums{display:grid;gap:16px;margin:0 0 20px}
+.jrl-podium{background:#313a45;color:#fff;border-radius:16px;padding:18px 20px;box-sizing:border-box}
+.jrl-podium h3{margin:0!important;color:#fff!important;font-size:1.15rem;line-height:1.3}
+.jrl-podium p{margin:0}
+.jrl-podium__head{display:flex;gap:12px;align-items:center}
+.jrl-podium__head p{color:#c9d1da;font-size:.88rem}
+.jrl-podium__ic{font-size:1.8rem;line-height:1}
+.jrl-podium__top{list-style:none;margin:14px 0 10px!important;padding:0!important;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.jrl-podium__top li{display:flex;flex-direction:column;gap:2px;background:rgba(255,255,255,.08);border-radius:12px;padding:10px 12px;border-top:4px solid #8a96a3}
+.jrl-podium__top li.jrl-p1{border-top-color:#f5c400}.jrl-podium__top li.jrl-p2{border-top-color:#c0c7cf}.jrl-podium__top li.jrl-p3{border-top-color:#c98a4b}
+.jrl-podium__top li.is-moi{outline:2px solid #2fae5f}
+.jrl-podium__r{font-size:.8rem;font-weight:700;color:#f5c400}
+.jrl-podium__top b{font-size:1.02rem}
+.jrl-podium__top span:last-child{font-variant-numeric:tabular-nums;color:#c9d1da;font-size:.9rem}
+.jrl-podium__moi,.jrl-podium__vide{color:#e6ebf0;font-size:.95rem;margin-top:8px!important}
+.jrl-podium__tout{margin-top:10px}
+.jrl-podium__tout summary{cursor:pointer;font-weight:700;color:#f5c400}
+.jrl-podium__tout ol{list-style:none;margin:8px 0 0!important;padding:0!important}
+.jrl-podium__tout li{display:grid;grid-template-columns:48px minmax(0,1fr) auto;gap:8px;padding:6px 8px;border-radius:8px}
+.jrl-podium__tout li:nth-child(odd){background:rgba(255,255,255,.05)}
+.jrl-podium__tout li.is-moi{background:rgba(47,174,95,.25)}
+.jrl-podium__tout li span:last-child{font-variant-numeric:tabular-nums}

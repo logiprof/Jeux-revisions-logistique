@@ -55,7 +55,7 @@ add_action( 'admin_post_jrl_reglages', function () {
 	if ( isset( $_POST['jrl_affichage'] ) ) {
 		$col = isset( $_POST['jrl_colonnes'] ) ? sanitize_key( wp_unslash( $_POST['jrl_colonnes'] ) ) : 'auto';
 		update_option( 'jrl_colonnes', in_array( $col, array( 'auto', '1', '2', '3', '4' ), true ) ? $col : 'auto' );
-		foreach ( array( 'jrl_aff_duree', 'jrl_aff_progression', 'jrl_aff_objectifs' ) as $o ) { update_option( $o, empty( $_POST[ $o ] ) ? '0' : '1' ); }
+		foreach ( array( 'jrl_aff_duree', 'jrl_aff_progression', 'jrl_aff_objectifs', 'jrl_cl_podium', 'jrl_cl_jeu' ) as $o ) { update_option( $o, empty( $_POST[ $o ] ) ? '0' : '1' ); }
 	}
 	$ok = 'reglages';
 	if ( ! empty( $_POST['jrl_verifier'] ) ) {
@@ -111,6 +111,11 @@ function jrl_admin_page() {
 					<label><input type="checkbox" name="jrl_aff_duree" value="1" <?php checked( '1', get_option( 'jrl_aff_duree', '1' ) ); ?>> Durée (« 10 min par série »)</label><br>
 					<label><input type="checkbox" name="jrl_aff_progression" value="1" <?php checked( '1', get_option( 'jrl_aff_progression', '1' ) ); ?>> Progression de l’élève</label><br>
 					<label><input type="checkbox" name="jrl_aff_objectifs" value="1" <?php checked( '1', get_option( 'jrl_aff_objectifs', '1' ) ); ?>> Bouton « Objectifs »</label>
+				</fieldset></td></tr>
+				<tr><th scope="row">Classement des groupes</th><td><fieldset>
+					<label><input type="checkbox" name="jrl_cl_podium" value="1" <?php checked( '1', get_option( 'jrl_cl_podium', '1' ) ); ?>> Podium « Classement de la semaine » au-dessus du catalogue</label><br>
+					<label><input type="checkbox" name="jrl_cl_jeu" value="1" <?php checked( '1', get_option( 'jrl_cl_jeu', '1' ) ); ?>> Bouton « Classement » dans chaque jeu</label>
+					<p class="description">Chaque élève ne voit que les camarades de son ou ses groupes Sensei (Sensei LMS › Groupes), avec le prénom et l’initiale du nom. Points : XP de la semaine (depuis lundi) et XP depuis le début. Les comptes enseignants ne sont pas classés. Pour une page sans podium : <code>[jeux_logistique podium="non"]</code>.</p>
 				</fieldset></td></tr>
 			</tbody></table>
 			<p><button class="button button-primary" type="submit">Enregistrer l’affichage</button></p>
