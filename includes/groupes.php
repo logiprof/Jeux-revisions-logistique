@@ -1,6 +1,6 @@
 <?php
 /*
- * Regroupements de modules (Réglages > Jeux logistique > Regroupements).
+ * Regroupements de modules (menu Jeux logistique > Regroupements).
  * Un regroupement = un nom (ex. « Modules 1re année ») + une liste de jeux. Il donne deux shortcodes :
  *   [jeux_logistique groupe="modules-1re-annee"]   et   [jeux_modules_1re_annee]
  * Les attributs langue="de" et colonnes="…" fonctionnent comme pour le catalogue.
@@ -40,7 +40,7 @@ add_action( 'admin_post_jrl_groupe', function () {
 	$ancien = isset( $_POST['ancien'] ) ? sanitize_title( wp_unslash( $_POST['ancien'] ) ) : '';
 	if ( ! empty( $_POST['supprimer'] ) ) {
 		unset( $g[ $ancien ] ); update_option( 'jrl_groupes', $g, false );
-		wp_safe_redirect( admin_url( 'options-general.php?page=jeux-logistique&jrl_ok=groupe_supprime#jrl-groupes' ) ); exit;
+		wp_safe_redirect( admin_url( 'admin.php?page=jeux-logistique&jrl_ok=groupe_supprime#jrl-groupes' ) ); exit;
 	}
 	$nom = isset( $_POST['nom'] ) ? sanitize_text_field( wp_unslash( $_POST['nom'] ) ) : '';
 	$tous = jrl_jeux();
@@ -48,7 +48,7 @@ add_action( 'admin_post_jrl_groupe', function () {
 	foreach ( (array) ( $_POST['jeux'] ?? array() ) as $j ) { $j = sanitize_key( wp_unslash( $j ) ); if ( isset( $tous[ $j ] ) ) { $jeux[] = $j; } }
 	$jeux = array_values( array_intersect( array_keys( $tous ), $jeux ) ); /* ordre du catalogue */
 	if ( '' === $nom || ! $jeux ) {
-		wp_safe_redirect( admin_url( 'options-general.php?page=jeux-logistique&jrl_ok=groupe_vide' . ( $ancien ? '&groupe=' . rawurlencode( $ancien ) : '' ) . '#jrl-groupes' ) ); exit;
+		wp_safe_redirect( admin_url( 'admin.php?page=jeux-logistique&jrl_ok=groupe_vide' . ( $ancien ? '&groupe=' . rawurlencode( $ancien ) : '' ) . '#jrl-groupes' ) ); exit;
 	}
 	$slug = sanitize_title( $nom );
 	if ( '' === $slug ) { $slug = 'groupe-' . ( count( $g ) + 1 ); }
@@ -65,7 +65,7 @@ add_action( 'admin_post_jrl_groupe', function () {
 		$g[ $slug ] = $val;
 	}
 	update_option( 'jrl_groupes', $g, false );
-	wp_safe_redirect( admin_url( 'options-general.php?page=jeux-logistique&jrl_ok=groupe_ok#jrl-groupes' ) ); exit;
+	wp_safe_redirect( admin_url( 'admin.php?page=jeux-logistique&jrl_ok=groupe_ok#jrl-groupes' ) ); exit;
 } );
 
 /** Section « Regroupements » de la page de réglages. */
@@ -92,7 +92,7 @@ function jrl_groupes_admin() {
 				<td><strong><?php echo esc_html( $g['nom'] ); ?></strong><?php echo ! empty( $g['colonnes'] ) ? '<br><small>' . esc_html( $g['colonnes'] ) . ' jeux côte à côte</small>' : ''; ?></td>
 				<td><code>[<?php echo esc_html( $tag ); ?>]</code><br><small><code>[jeux_logistique groupe="<?php echo esc_html( $slug ); ?>"]</code></small></td>
 				<td><?php echo (int) count( $mods ); ?> : <small><?php echo esc_html( implode( ', ', $mods ) ); ?></small></td>
-				<td><a class="button button-small" href="<?php echo esc_url( admin_url( 'options-general.php?page=jeux-logistique&groupe=' . rawurlencode( $slug ) . '#jrl-groupes' ) ); ?>">Modifier</a></td>
+				<td><a class="button button-small" href="<?php echo esc_url( admin_url( 'admin.php?page=jeux-logistique&groupe=' . rawurlencode( $slug ) . '#jrl-groupes' ) ); ?>">Modifier</a></td>
 			</tr>
 		<?php endforeach; ?>
 		</tbody>
@@ -126,7 +126,7 @@ function jrl_groupes_admin() {
 		<p>
 			<button class="button button-primary" type="submit"><?php echo $edit ? 'Enregistrer le regroupement' : 'Créer le regroupement'; ?></button>
 			<?php if ( $edit ) : ?>
-				<a class="button" href="<?php echo esc_url( admin_url( 'options-general.php?page=jeux-logistique#jrl-groupes' ) ); ?>">Annuler</a>
+				<a class="button" href="<?php echo esc_url( admin_url( 'admin.php?page=jeux-logistique#jrl-groupes' ) ); ?>">Annuler</a>
 				<button class="button button-link-delete" type="submit" name="supprimer" value="1" onclick="return confirm('Supprimer ce regroupement ? Les pages qui utilisent son shortcode n’afficheront plus rien.');">Supprimer</button>
 			<?php endif; ?>
 		</p>

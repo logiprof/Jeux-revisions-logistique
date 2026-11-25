@@ -3,7 +3,7 @@
  * Plugin Name:       Jeux de révision – Logistique
  * Plugin URI:        https://github.com/logiprof/jeux-revisions-logistique
  * Description:       Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (modules M101 à M205). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
- * Version:           2.9.0
+ * Version:           2.10.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            LogiProf
@@ -14,7 +14,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JRL_VERSION', '2.9.0' );
+define( 'JRL_VERSION', '2.10.0' );
 define( 'JRL_FILE', __FILE__ );
 define( 'JRL_DIR', __DIR__ );
 define( 'JRL_REPO', 'logiprof/jeux-revisions-logistique' );
@@ -24,7 +24,7 @@ define( 'JRL_ASSET', 'jeux-revisions-logistique.zip' );
 require_once __DIR__ . '/includes/catalogue.php';
 /* Mises à jour depuis les « releases » GitHub */
 require_once __DIR__ . '/includes/updater.php';
-/* Page Réglages > Jeux logistique (liste des shortcodes) */
+/* Menu Jeux logistique (shortcodes, affichage, regroupements, mises à jour) */
 require_once __DIR__ . '/includes/admin.php';
 /* Regroupements de modules (un shortcode par regroupement) */
 require_once __DIR__ . '/includes/groupes.php';
@@ -95,7 +95,7 @@ add_action( 'init', function () {
  * [jeux_logistique] : tout le catalogue de l'extension.
  * [jeux_logistique modules="M1"] : seulement les modules qui commencent par M1 (M101 à M110).
  * [jeux_logistique modules="M101,M203"] : seulement ces modules.
- * [jeux_logistique groupe="modules-1re-annee"] ou [jeux_modules_1re_annee] : un regroupement (Réglages > Jeux logistique).
+ * [jeux_logistique groupe="modules-1re-annee"] ou [jeux_modules_1re_annee] : un regroupement (menu Jeux logistique).
  * [jeux_logistique colonnes="3"] : 3 jeux côte à côte (1 à 4 ; sinon le réglage « Affichage du catalogue »).
  */
 function jrl_shortcode_catalogue( $atts ) {
@@ -105,7 +105,7 @@ function jrl_shortcode_catalogue( $atts ) {
 	$groupe = null;
 	if ( '' !== (string) $a['groupe'] ) {
 		$groupe = function_exists( 'jrl_groupe' ) ? jrl_groupe( $a['groupe'] ) : null;
-		if ( ! $groupe ) { return current_user_can( 'edit_posts' ) ? '<p><em>Regroupement introuvable : vérifiez le shortcode dans Réglages › Jeux logistique.</em></p>' : ''; }
+		if ( ! $groupe ) { return current_user_can( 'edit_posts' ) ? '<p><em>Regroupement introuvable : vérifiez le shortcode dans le menu Jeux logistique.</em></p>' : ''; }
 		if ( '' === (string) $a['colonnes'] && ! empty( $groupe['colonnes'] ) ) { $a['colonnes'] = $groupe['colonnes']; }
 	}
 	$tous = jdr_jeux();
@@ -131,7 +131,7 @@ function jrl_shortcode_catalogue( $atts ) {
 	return $out . '</div></div>';
 }
 
-/* ---------- Affichage (Réglages > Jeux logistique > Affichage du catalogue) ---------- */
+/* ---------- Affichage (menu Jeux logistique > Affichage du catalogue) ---------- */
 /** Nombre de jeux côte à côte : « auto » ou 1 à 4 (attribut colonnes="…" du shortcode, sinon le réglage). */
 function jrl_colonnes( $attr = '' ) {
 	$v = '' !== (string) $attr ? (string) $attr : (string) get_option( 'jrl_colonnes', 'auto' );

@@ -1,13 +1,26 @@
 <?php
-/* Réglages > Jeux logistique : liste des jeux et de leurs shortcodes, mises à jour */
+/* Menu Jeux logistique : liste des jeux et de leurs shortcodes, mises à jour */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
+/* Menu « Jeux logistique » dans la barre latérale de l'administration (sous Commentaires) */
 add_action( 'admin_menu', function () {
-	add_options_page( 'Jeux de révision – Logistique', 'Jeux logistique', 'edit_posts', 'jeux-logistique', 'jrl_admin_page' );
+	add_menu_page( 'Jeux de révision – Logistique', 'Jeux logistique', 'edit_posts', 'jeux-logistique', 'jrl_admin_page', 'dashicons-games', 26 );
+	add_submenu_page( 'jeux-logistique', 'Jeux de révision – Logistique', 'Shortcodes et réglages', 'edit_posts', 'jeux-logistique', 'jrl_admin_page' );
+	add_submenu_page( 'jeux-logistique', 'Regroupements de modules', 'Regroupements', 'edit_posts', 'admin.php?page=jeux-logistique#jrl-groupes' );
+	if ( function_exists( 'jdr_admin_page' ) ) {
+		add_submenu_page( 'jeux-logistique', 'Suivi des élèves', 'Suivi des élèves', function_exists( 'jdr_cap' ) ? jdr_cap() : 'edit_others_posts', 'tools.php?page=jeux-revision' );
+	}
+}, 20 );
+/* Ancienne adresse (Réglages > Jeux logistique) : redirection vers le nouveau menu */
+add_action( 'admin_init', function () {
+	global $pagenow;
+	if ( 'options-general.php' === $pagenow && isset( $_GET['page'] ) && 'jeux-logistique' === $_GET['page'] ) {
+		wp_safe_redirect( admin_url( 'admin.php?page=jeux-logistique' ) ); exit;
+	}
 } );
 
 add_filter( 'plugin_action_links_' . plugin_basename( JRL_FILE ), function ( $liens ) {
-	array_unshift( $liens, '<a href="' . esc_url( admin_url( 'options-general.php?page=jeux-logistique' ) ) . '">Shortcodes</a>' );
+	array_unshift( $liens, '<a href="' . esc_url( admin_url( 'admin.php?page=jeux-logistique' ) ) . '">Shortcodes</a>' );
 	return $liens;
 } );
 
@@ -25,14 +38,14 @@ add_action( 'admin_notices', function () {
 	if ( ! current_user_can( 'activate_plugins' ) ) { return; }
 	$d = jrl_doublons();
 	if ( ! $d ) { return; }
-	$url = wp_nonce_url( admin_url( 'options-general.php?page=jeux-logistique&jrl_desactiver=1' ), 'jrl_desactiver' );
+	$url = wp_nonce_url( admin_url( 'admin.php?page=jeux-logistique&jrl_desactiver=1' ), 'jrl_desactiver' );
 	echo '<div class="notice notice-warning"><p><strong>Jeux de révision – Logistique :</strong> ' . esc_html( sprintf( '%d ancienne(s) extension(s) « Jeu de révision – Mxxx » sont encore actives. Les mêmes jeux sont maintenant fournis par cette extension. Les progressions des élèves sont conservées.', count( $d ) ) ) . ' <a class="button button-small" href="' . esc_url( $url ) . '">Désactiver les anciennes extensions</a></p></div>';
 } );
 add_action( 'admin_init', function () {
 	if ( empty( $_GET['jrl_desactiver'] ) || ! current_user_can( 'activate_plugins' ) ) { return; }
 	check_admin_referer( 'jrl_desactiver' );
 	deactivate_plugins( jrl_doublons() );
-	wp_safe_redirect( admin_url( 'options-general.php?page=jeux-logistique&jrl_ok=desactive' ) ); exit;
+	wp_safe_redirect( admin_url( 'admin.php?page=jeux-logistique&jrl_ok=desactive' ) ); exit;
 } );
 
 add_action( 'admin_post_jrl_reglages', function () {
@@ -52,7 +65,7 @@ add_action( 'admin_post_jrl_reglages', function () {
 		wp_update_plugins();
 		$ok = 'verifie';
 	}
-	wp_safe_redirect( admin_url( 'options-general.php?page=jeux-logistique&jrl_ok=' . $ok ) ); exit;
+	wp_safe_redirect( admin_url( 'admin.php?page=jeux-logistique&jrl_ok=' . $ok ) ); exit;
 } );
 
 function jrl_admin_page() {
