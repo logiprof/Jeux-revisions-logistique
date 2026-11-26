@@ -94,6 +94,7 @@ function jrl_st_agregats( $depuis, $uids = null ) {
 		if ( ! $g ) { $g = array( 'eleves' => array(), 'seances' => 0, 'duree' => 0, 'bonnes' => 0, 'total' => 0, 'note' => 0, 'notes' => 0 ); }
 		$g['eleves'][ $s->user_id ] = 1; $g['seances']++; $g['duree'] += (int) $s->duree; $g['bonnes'] += (int) $s->bonnes; $g['total'] += (int) $s->total;
 		if ( 'exam' === $s->mode && $s->note > 0 ) { $g['note'] += (float) $s->note; $g['notes']++; $r['note'] += (float) $s->note; $r['notes']++; }
+		$r['modes'][ $s->mode ]['n'] = ( $r['modes'][ $s->mode ]['n'] ?? 0 ) + 1; $r['modes'][ $s->mode ]['duree'] = ( $r['modes'][ $s->mode ]['duree'] ?? 0 ) + (int) $s->duree;
 		$r['seances']++; $r['duree'] += (int) $s->duree; $r['bonnes'] += (int) $s->bonnes; $r['total'] += (int) $s->total;
 		$e = &$r['parEleve'][ (int) $s->user_id ];
 		if ( ! $e ) { $e = array( 'seances' => 0, 'duree' => 0, 'bonnes' => 0, 'total' => 0, 'note' => 0, 'notes' => 0, 'jeux' => array() ); }
@@ -193,6 +194,7 @@ function jrl_stats_page() {
 		<div><b><?php echo esc_html( jrl_st_note( $a['note'], $a['notes'] ) ); ?></b>note moyenne aux examens blancs<?php echo $a['notes'] ? ' (' . (int) $a['notes'] . ')' : ''; ?></div>
 	</div>
 	<?php jrl_st_graphe( $a['jours'], $depuis ); ?>
+	<?php if ( function_exists( 'jrl_rp_encadre' ) ) { jrl_rp_encadre( $per ); } ?>
 
 	<h2 id="jrl-classes">Classes</h2>
 	<?php if ( ! $classes ) : ?>
@@ -358,6 +360,8 @@ function jrl_st_assets() { ?>
 	.jrl-st .jrl-star{border:0;background:none;cursor:pointer;font-size:20px;line-height:1;color:#8c8f94;padding:2px}
 	.jrl-st .jrl-star.on{color:#d9a400}
 	.jrl-st h1 .jrl-star{font-size:26px;vertical-align:-2px}
+	.jrl-st .jrl-exp{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+	.jrl-st .jrl-csv{color:#50575e}
 	</style>
 <?php }
 
