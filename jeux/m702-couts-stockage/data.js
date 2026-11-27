@@ -111,4 +111,4 @@ window.META={
   },
   note:{text:"Les leçons ne présentent pas d’indicateurs de coûts chiffrés : ces épreuves sont marquées « Hors support ». Les calculs de comparaison d’emplacements suivent la logique du cours. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

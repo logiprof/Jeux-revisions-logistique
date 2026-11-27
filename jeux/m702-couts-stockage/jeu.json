@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M702 – I costi di stoccaggio",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M702",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M702 e 78 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "B3.4 · Costi fissi, variabili e indicatori",
+    "objectifs": [
+     "B3.4 Spiego il principio dei sistemi d’indicatori dell’azienda e la loro importanza per l’azienda e per l’esecuzione dei mandati. (C2)"
+    ]
+   },
+   {
+    "titre": "G2.10 · Costi dei locali di stoccaggio",
+    "objectifs": [
+     "G2.10 Spiego i fattori di costo di un’ubicazione di stoccaggio e calcolo con l’aiuto di esempi i costi delle superfici di stoccaggio (costi fissi e variabili). (C3)"
+    ]
+   },
+   {
+    "titre": "B3.7 · Costi di un mandato e riduzioni",
+    "objectifs": [
+     "B3.7 Descrivo, con l’aiuto di uno studio di caso, i costi calcolati durante l’esecuzione di un mandato di lavoro, valuto il risultato e ne deduco proposte di riduzione dei costi. (C3)"
+    ]
+   }
+  ]
  }
 }

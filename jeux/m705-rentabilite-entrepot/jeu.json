@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M705 – La redditività del magazzino",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M705",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M705 e 86 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "G2.10 · Costi e tasso di copertura",
+    "objectifs": [
+     "G2.10 Spiego i fattori di costo di un’ubicazione di stoccaggio e calcolo con l’aiuto di esempi i costi delle superfici di stoccaggio (costi fissi e variabili). (C3)"
+    ]
+   },
+   {
+    "titre": "G4.2 · G4.3 · Scorte minime, massime, punto di riordino",
+    "objectifs": [
+     "G4.2 Spiego l’origine di una scorta di sicurezza (= scorta minima) e di una scorta massima (capacità di stoccaggio, consumo, affidabilità di consegna, qualità dei fornitori, stock medio, rotazione delle scorte, termini di riapprovvigionamento) ed effettuo calcoli a questo scopo. (C3) · G4.3 Spiego l’importanza del punto di riordino, lo calcolo sulla base del consumo con l’aiuto di un esempio di caso e ne deduco le conseguenze per l’approvvigionamento. (C3)"
+    ]
+   },
+   {
+    "titre": "G4.9 · Differenze di stock e minimizzazione dei costi",
+    "objectifs": [
+     "G4.9 Calcolo gli stock di merci effettivi e dichiarati e la scorta minima e ne deduco i risultati delle misure da prendere. (C4)"
+    ]
+   }
+  ]
  }
 }

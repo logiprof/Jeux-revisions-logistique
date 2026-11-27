@@ -115,4 +115,4 @@ window.META={
   },
   note:{text:"La leçon « Objectifs » ne cite que A2.4 : les leçons 3.1 et 3.2 forment ici deux parties sans objectif officiel. Le seuil LPP est mis à jour (22 680 CHF en 2026). Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

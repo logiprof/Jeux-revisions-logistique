@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M701 – L’inventario",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M701",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M701 e 77 esercizi, di cui il 39 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "C6.1·C6.2 · Obbligo e tipi d’inventario",
+    "objectifs": [
+     "C6.1 Mostro l’importanza dell’inventario per un’azienda di logistica. (C2) · C6.2 Elenco i diversi tipi d’inventario (inventario a data fissa, inventario permanente, inventario a campione) e descrivo la procedura corrispondente. (C2)"
+    ]
+   },
+   {
+    "titre": "C6.3 · Preparazione e svolgimento",
+    "objectifs": [
+     "C6.3 Elenco tutti gli elementi importanti relativi alla preparazione, all’esecuzione (compresi gli strumenti di lavoro) e al seguito dell’inventario. (C2)"
+    ]
+   },
+   {
+    "titre": "B3.4·C6.4·G3.2·G3.3 · Differenze, cause e valutazione",
+    "objectifs": [
+     "B3.4 Spiego il principio dei sistemi d’indicatori dell’azienda e la loro importanza per l’azienda e per l’esecuzione dei mandati. (C2) · C6.4 Confronto con l’aiuto di esempi di casi il valore reale con il valore teorico, interpreto le differenze e descrivo le misure possibili a questo scopo. (C3) · G3.2 Calcolo e analizzo le differenze d’inventario con l’aiuto di uno studio di caso, le spiego e propongo miglioramenti. (C4) · G3.3 Descrivo le possibilità e l’utilità della valutazione dei risultati d’inventario, allestisco valutazioni semplici con l’aiuto di studi di casi e interpreto i risultati. (C2)"
+    ]
+   }
+  ]
  }
 }

@@ -118,4 +118,4 @@ window.META={
   },
   note:{text:"Le calcul des stocks minimum et maximum (G4.2) et l’analyse du transbordement (G1.4) ne sont pas traités dans les leçons : ces épreuves sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

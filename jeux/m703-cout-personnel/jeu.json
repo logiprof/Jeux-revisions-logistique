@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M703 – Il costo del personale",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M703",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M703 e 81 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "A2.4 · Diritti, obblighi e sicurezza",
+    "objectifs": [
+     "A2.4 Sulla base delle disposizioni legali descrivo i diritti e gli obblighi del datore di lavoro e del lavoratore in materia di protezione della salute, di prevenzione delle malattie professionali e di sicurezza sul lavoro. (C2)"
+    ]
+   },
+   {
+    "titre": "3.1 · Costi diretti e indiretti",
+    "objectifs": [
+     "Contenuto della lezione 3.1 (costi diretti e indiretti, salario e retribuzione, riduzione dei costi, tipi d’impiego) — senza obiettivo nella lezione «Obiettivi» del modulo"
+    ]
+   },
+   {
+    "titre": "3.2 · Salario, tre pilastri e deduzioni",
+    "objectifs": [
+     "Contenuto della lezione 3.2 (salario lordo e netto, tre pilastri, deduzioni) — senza obiettivo nella lezione «Obiettivi» del modulo"
+    ]
+   }
+  ]
  }
 }

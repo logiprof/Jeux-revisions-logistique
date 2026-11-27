@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M704 – Gli indicatori logistici",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M704",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M704 e 85 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "G3.3 · Stock medio, rotazione, copertura",
+    "objectifs": [
+     "G3.3 Descrivo le possibilità e l’utilità della valutazione dei risultati d’inventario, allestisco valutazioni semplici con l’aiuto di studi di casi e interpreto i risultati. (C2)"
+    ]
+   },
+   {
+    "titre": "G4.2·G1.4 · Scorte min/max e trasbordo",
+    "objectifs": [
+     "G4.2 Spiego l’origine di una scorta di sicurezza (= scorta minima) e di una scorta massima (capacità di stoccaggio, consumo, affidabilità di consegna, qualità dei fornitori, stock medio, rotazione delle scorte, termini di riapprovvigionamento) ed effettuo calcoli a questo scopo. (C3) · G1.4 Analizzo il processo di trasbordo e formulo proposte di miglioramento (sicurezza, redditività, risorse). (C4)"
+    ]
+   },
+   {
+    "titre": "G4.6·G4.7 · Tasso di servizio ed errori di consegna",
+    "objectifs": [
+     "G4.6 Descrivo i principi della disponibilità delle consegne e delle quantità mancanti e i loro effetti sulla gestione delle scorte e sul risultato d’esercizio. (C3) · G4.7 Calcolo, con l’aiuto di uno studio di caso, le quantità mancanti e la disponibilità delle consegne per merci selezionate secondo le istruzioni. (C3)"
+    ]
+   }
+  ]
  }
 }
