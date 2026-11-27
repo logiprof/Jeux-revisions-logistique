@@ -3,7 +3,7 @@
  * Plugin Name:       LogiPlay
  * Plugin URI:        https://github.com/logiprof/jeux-revisions-logistique
  * Description:       LogiPlay by LogiProf : jeux de révision gamifiés pour logisticien·ne·s CFC (modules M101 à M809 et mathématiques, en français, allemand et italien). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
- * Version:           2.27.0
+ * Version:           2.28.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            LogiProf
@@ -14,7 +14,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JRL_VERSION', '2.27.0' );
+define( 'JRL_VERSION', '2.28.0' );
 define( 'JRL_FILE', __FILE__ );
 define( 'JRL_DIR', __DIR__ );
 define( 'JRL_REPO', 'logiprof/jeux-revisions-logistique' );

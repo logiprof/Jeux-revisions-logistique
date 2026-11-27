@@ -4,10 +4,10 @@ Tags: formation, quiz, révision, logistique, jeux
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.27.0
+Stable tag: 2.28.0
 License: GPL-2.0-or-later
 
-LogiPlay by LogiProf : jeux de révision gamifiés pour logisticien·ne·s CFC (69 jeux, modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612, M701 à M705, M801 à M809, mathématiques 4 à 8), avec mises à jour automatiques depuis GitHub.
+LogiPlay by LogiProf : jeux de révision gamifiés pour logisticien·ne·s CFC (70 jeux, modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612, M701 à M705, M801 à M809, mathématiques 1 à 8), avec mises à jour automatiques depuis GitHub.
 
 == Description ==
 
@@ -27,6 +27,9 @@ Shortcodes :
 3. Désactivez les anciennes extensions « Jeu de révision – Mxxx » si un bandeau vous le propose : les progressions sont conservées.
 
 == Changelog ==
+
+= 2.28.0 =
+* Nouveau jeu Mathématiques – Fondamentaux (modules 1 à 3 : conversions, force et poids, pourcentages, surfaces et volumes, temps et vitesses, problèmes à plusieurs étapes), 167 épreuves en français, allemand et italien, avec calculatrice. Shortcode [jeu_maths_fondamentaux]
 
 = 2.27.0 =
 * LogiPlay : nouveau nom et logo, interface des shortcodes dans le style LogiOne, calculatrice dans le jeu de mathématiques

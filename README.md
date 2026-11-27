@@ -4,7 +4,7 @@
 
 Jeux de révision LogiProf pour les apprenti·e·s **logisticien·ne·s CFC**, et l’extension WordPress qui les installe sur votre site, avec mises à jour automatiques.
 
-- **69 jeux** (modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612, M701 à M705, M801 à M809, mathématiques 4 à 8), un dossier par jeu dans [`jeux/`](jeux/).
+- **70 jeux** (modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612, M701 à M705, M801 à M809, mathématiques 1 à 8), un dossier par jeu dans [`jeux/`](jeux/).
 - Chaque jeu : entraînement par objectif, examen blanc noté sur 6, révision ciblée des erreurs, progression enregistrée sur le compte de l’élève.
 - **Bilingue français / allemand** : chaque jeu existe dans les deux langues (bouton **FR | DE** dans le jeu) ; la progression de l’élève est la même dans les deux langues.
 - L’extension s’installe une seule fois ; chaque nouvelle version publiée ici arrive automatiquement sur le site.
@@ -105,6 +105,7 @@ Sans `langue`, le jeu s’ouvre en français et l’élève peut passer à l’a
 | M802 | Le transport | `[jeu_m802]` | 3 | 80 |
 | M803 | Logiciel d’exploitation | `[jeu_m803]` | 3 | 81 |
 | M809 | Poste de contrôle | `[jeu_m809]` | 2 | 54 |
+| MATHS | Fondamentaux | `[jeu_maths_fondamentaux]` | 6 | 167 |
 | MATHS | Applications professionnelles | `[jeu_maths_applications]` | 5 | 152 |
 
 ## Mises à jour automatiques
