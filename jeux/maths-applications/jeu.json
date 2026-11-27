@@ -76,5 +76,43 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "Matematica – Applicazioni professionali",
+  "sous_titre": "Impiegato/a in logistica AFC · Matematica, moduli da 4 a 8",
+  "duree": "10 min per serie",
+  "description": "5 moduli del corso di matematica applicata (lezioni da 4.1 a 8.4) e 152 esercizi, di cui il 32 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per modulo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "Mod. 4 · Proporzionalità e regola del tre",
+    "objectifs": [
+     "Prevedere una quantità, un tempo o un costo a partire da una situazione nota"
+    ]
+   },
+   {
+    "titre": "Mod. 5 · Percentuali avanzate",
+    "objectifs": [
+     "Leggere e calcolare tassi, sconti, aumenti e diminuzioni"
+    ]
+   },
+   {
+    "titre": "Mod. 6 · Tasso di riempimento e capacità",
+    "objectifs": [
+     "Misurare l’occupazione di uno stock o di un veicolo e lo spazio restante"
+    ]
+   },
+   {
+    "titre": "Mod. 7 · Palettizzazione e ottimizzazione",
+    "objectifs": [
+     "Calcolare quanti colli stanno su una paletta senza superare altezza e peso"
+    ]
+   },
+   {
+    "titre": "Mod. 8 · Carico utile e ripartizione",
+    "objectifs": [
+     "Verificare che un carico rispetti il carico utile del veicolo"
+    ]
+   }
+  ]
  }
 }

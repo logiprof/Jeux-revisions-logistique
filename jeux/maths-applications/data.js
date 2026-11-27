@@ -1982,4 +1982,4 @@ window.META = {
   "link": "logiprof"
  }
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];
