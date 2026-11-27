@@ -20,9 +20,20 @@ function jrl_t( $fr ) {
 		'(vous)' => '(Sie)',
 		'tous les jeux' => 'alle Spiele',
 	);
-	return ( function_exists( 'jdr_lang' ) && 'de' === jdr_lang() && isset( $de[ $fr ] ) ) ? $de[ $fr ] : $fr;
+	static $it = array(
+		'Classement de la semaine' => 'Classifica della settimana',
+		'Votre rang cette semaine : %s · %s XP' => 'La sua posizione questa settimana: %s · %s XP',
+		'Vous n’avez pas encore de points cette semaine : à vous de jouer !' => 'Questa settimana non ha ancora punti: tocca a lei!',
+		'Personne n’a encore de points cette semaine : soyez la première ou le premier !' => 'Questa settimana nessuno ha ancora punti: sia la prima o il primo!',
+		'Voir tout le classement' => 'Vedi tutta la classifica',
+		'(vous)' => '(Lei)',
+		'tous les jeux' => 'tutti i giochi',
+	);
+	$lg = function_exists( 'jdr_lang' ) ? jdr_lang() : 'fr';
+	if ( 'it' === $lg ) { return $it[ $fr ] ?? $fr; }
+	return ( 'de' === $lg && isset( $de[ $fr ] ) ) ? $de[ $fr ] : $fr;
 }
-function jrl_cl_rang( $n ) { return ( function_exists( 'jdr_lang' ) && 'de' === jdr_lang() ) ? $n . '.' : ( 1 === (int) $n ? '1er' : $n . 'e' ); }
+function jrl_cl_rang( $n ) { $lg = function_exists( 'jdr_lang' ) ? jdr_lang() : 'fr'; return 'de' === $lg ? $n . '.' : ( 'it' === $lg ? $n . '°' : ( 1 === (int) $n ? '1er' : $n . 'e' ) ); }
 
 function jrl_cl_table() {
 	global $wpdb; static $ok = null;

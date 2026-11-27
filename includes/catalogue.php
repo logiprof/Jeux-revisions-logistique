@@ -35,11 +35,12 @@
  * 1.8.3 : carte du jeu : titre et durée sur toute la largeur, sous l'icône.
  * 1.8.4 : remise à zéro d'une progression par l'administration (marque « raz » : les appareils qui ne l'ont pas vue sont refusés).
  * 1.8.5 : styles du podium « Classement de la semaine ».
+ * 1.9.0 : italien (langue="it", ?lang=it, index.it.html, clé i18n 'it') à côté du français et de l’allemand.
  * 1.7.3 : aucun e-mail. Le bilan de chaque session est seulement enregistré dans la base (espace de l'élève, suivi du
  *         formateur) ; l'envoi du bilan par e-mail et son réglage sont supprimés. Seule l'extension de gestion écrit aux élèves.
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-$GLOBALS['jdr_engines']['1.8.5'] = dirname( __DIR__ );
+$GLOBALS['jdr_engines']['1.9.0'] = dirname( __DIR__ );
 if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	function jdr_engine_pick() {
 		if ( function_exists( 'jdr_boot' ) ) { return; } /* un moteur 1.1.0 ou plus ancien est déjà chargé */
@@ -51,17 +52,30 @@ if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	}
 	add_action( 'plugins_loaded', 'jdr_engine_pick', 1 );
 }
-if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) && ! function_exists( 'jdr_engine_1_8_2' ) && ! function_exists( 'jdr_engine_1_8_3' ) && ! function_exists( 'jdr_engine_1_8_4' ) && ! function_exists( 'jdr_engine_1_8_5' ) ) {
-	function jdr_engine_1_8_5( $dir ) {
-		define( 'JDR_ENGINE_VERSION', '1.8.5' );
+if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) && ! function_exists( 'jdr_engine_1_8_2' ) && ! function_exists( 'jdr_engine_1_8_3' ) && ! function_exists( 'jdr_engine_1_8_4' ) && ! function_exists( 'jdr_engine_1_8_5' ) && ! function_exists( 'jdr_engine_1_9_0' ) ) {
+	function jdr_engine_1_9_0( $dir ) {
+		define( 'JDR_ENGINE_VERSION', '1.9.0' );
 		define( 'JDR_ENGINE_URL', trailingslashit( plugin_dir_url( $dir . '/catalogue' ) ) );
 		define( 'JDR_DB_VERSION', '3' );
 
 		function jdr_jeux() { $j = apply_filters( 'jdr_jeux', array() ); return is_array( $j ) ? $j : array(); }
-		/* langue des cartes et de la page du jeu : 'fr' (défaut) ou 'de' */
-		function jdr_lang( $l = null ) { static $cur = 'fr'; if ( null !== $l ) { $cur = ( 'de' === strtolower( (string) $l ) ) ? 'de' : 'fr'; } return $cur; }
+		/* langue des cartes et de la page du jeu : 'fr' (défaut), 'de' ou 'it' */
+		function jdr_lang( $l = null ) { static $cur = 'fr'; if ( null !== $l ) { $l = strtolower( (string) $l ); $cur = in_array( $l, array( 'de', 'it' ), true ) ? $l : 'fr'; } return $cur; }
 		function jdr_t( $s ) {
-			if ( 'de' !== jdr_lang() ) { return $s; }
+			if ( 'fr' === jdr_lang() ) { return $s; }
+			static $it = array(
+				'▶ Jouer' => '▶ Gioca', '▶ Commencer' => '▶ Inizia', '▶ Reprendre' => '▶ Continua', 'Se connecter pour jouer' => 'Accedere per giocare',
+				'Ce jeu n’est pas disponible pour votre groupe.' => 'Questo gioco non è disponibile per il suo gruppo.',
+				'Ce jeu est réservé aux membres du site. Connectez-vous : votre progression et votre score sont enregistrés sur votre compte.' => 'Questo gioco è riservato ai membri del sito. Effettui l’accesso: progressi e punteggio sono salvati nel suo account.',
+				'Votre progression' => 'I suoi progressi', 'Pas encore commencé · %d objectifs à découvrir' => 'Non ancora iniziato · %d obiettivi da scoprire',
+				'Points d’expérience' => 'Punti esperienza', 'Niveau' => 'Livello', 'niv.' => 'liv.', 'Objectifs maîtrisés (80 % ou plus)' => 'Obiettivi padroneggiati (80 % o più)',
+				'objectifs maîtrisés' => 'obiettivi padroneggiati', 'Meilleure note à l’examen blanc' => 'Nota migliore all’esame di prova', 'à l’examen' => 'all’esame',
+				'Maîtrise globale' => 'Padronanza globale', 'Maîtrise par objectif' => 'Padronanza per obiettivo',
+				'Dossier de formation' => 'Dossier di formazione', 'Notions clés et exercices sur papier · PDF' => 'Nozioni chiave ed esercizi su carta · PDF',
+				'Télécharger' => 'Scarica', 'Corrigé' => 'Soluzioni', 'Dossier : ' => 'Dossier: ', 'Objectifs (%d)' => 'Obiettivi (%d)',
+				'Jeu de révision' => 'Gioco di ripasso', 'Jeu non disponible' => 'Gioco non disponibile', 'Retour' => 'Indietro',
+			);
+			if ( 'it' === jdr_lang() ) { return isset( $it[ $s ] ) ? $it[ $s ] : $s; }
 			static $de = array(
 				'▶ Jouer' => '▶ Spielen', '▶ Commencer' => '▶ Starten', '▶ Reprendre' => '▶ Fortsetzen', 'Se connecter pour jouer' => 'Anmelden, um zu spielen',
 				'Ce jeu n’est pas disponible pour votre groupe.' => 'Dieses Spiel ist für Ihre Gruppe nicht verfügbar.',
@@ -76,10 +90,10 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 			);
 			return isset( $de[ $s ] ) ? $de[ $s ] : $s;
 		}
-		/* textes de la carte dans la langue courante : clé 'i18n' => array( 'de' => array( 'titre' => …, … ) ) */
+		/* textes de la carte dans la langue courante : clé 'i18n' => array( 'de' => array( 'titre' => …, … ), 'it' => … ) */
 		function jdr_loc( $jeu ) {
-			if ( 'de' !== jdr_lang() || ! is_array( $jeu ) ) { return $jeu; }
-			$d = ( isset( $jeu['i18n']['de'] ) && is_array( $jeu['i18n']['de'] ) ) ? $jeu['i18n']['de'] : array();
+			$lg = jdr_lang(); if ( 'fr' === $lg || ! is_array( $jeu ) ) { return $jeu; }
+			$d = ( isset( $jeu['i18n'][ $lg ] ) && is_array( $jeu['i18n'][ $lg ] ) ) ? $jeu['i18n'][ $lg ] : array();
 			foreach ( array( 'titre', 'sous_titre', 'duree', 'description', 'contenu', 'bouton', 'bouton_suite', 'bouton_connexion' ) as $k ) {
 				if ( isset( $d[ $k ] ) && '' !== $d[ $k ] && array() !== $d[ $k ] ) { $jeu[ $k ] = $d[ $k ]; }
 			}
@@ -233,7 +247,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 		}
 
 		/* ---------- page du jeu servie par le site (réservée aux connectés) ---------- */
-		function jdr_game_url( $id, $lang = '' ) { $q = array( 'jdr_jeu' => $id, 'wp' => '1', 'jeu' => $id ); if ( 'de' === $lang ) { $q['lang'] = 'de'; } return add_query_arg( $q, home_url( '/' ) ); } /* wp=1 & jeu : compatibilité avec les moteurs de jeu plus anciens */
+		function jdr_game_url( $id, $lang = '' ) { $q = array( 'jdr_jeu' => $id, 'wp' => '1', 'jeu' => $id ); if ( in_array( $lang, array( 'de', 'it' ), true ) ) { $q['lang'] = $lang; } return add_query_arg( $q, home_url( '/' ) ); } /* wp=1 & jeu : compatibilité avec les moteurs de jeu plus anciens */
 		function jdr_serve_game() {
 			if ( empty( $_GET['jdr_jeu'] ) ) { return; }
 			$id = sanitize_key( wp_unslash( $_GET['jdr_jeu'] ) ); $jeux = jdr_jeux();
@@ -249,7 +263,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 			$url = strtok( jdr_defaults( $jeux[ $id ] )['url'], '?' );
 			$base = trailingslashit( dirname( $url ) );
 			$file = wp_normalize_path( WP_PLUGIN_DIR . substr( $url, strlen( plugins_url() ) ) );
-			if ( 'de' === $lg ) { $fde = preg_replace( '#index\.html$#', 'index.de.html', $file ); if ( $fde !== $file && is_readable( $fde ) ) { $file = $fde; } } /* version allemande du jeu */
+			if ( in_array( $lg, array( 'de', 'it' ), true ) ) { $fde = preg_replace( '#index\.html$#', 'index.' . $lg . '.html', $file ); if ( $fde !== $file && is_readable( $fde ) ) { $file = $fde; } } /* version allemande ou italienne du jeu */
 			$html = ( 0 === strpos( $file, wp_normalize_path( WP_PLUGIN_DIR ) ) && is_readable( $file ) ) ? file_get_contents( $file ) : false;
 			if ( ! $html ) { status_header( 500 ); exit( 'Fichiers du jeu introuvables.' ); }
 			$cfg = jdr_cfg( $id ); $ref = wp_get_referer(); $cfg['back'] = $ref ? $ref : home_url( '/' );

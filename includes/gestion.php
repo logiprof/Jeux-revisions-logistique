@@ -273,9 +273,10 @@ function jrl_gestion_fiche( $slug ) {
 					<p>Ouvre le jeu dans un nouvel onglet, avec votre compte (votre propre progression), même s’il est masqué.</p>
 					<?php if ( function_exists( 'jdr_game_url' ) ) : ?>
 					<p><a class="button" href="<?php echo esc_url( jdr_game_url( $slug ) ); ?>" target="_blank" rel="noopener">Ouvrir en français</a>
-						<?php if ( file_exists( JRL_DIR . '/jeux/' . $slug . '/index.de.html' ) ) : ?><a class="button" href="<?php echo esc_url( jdr_game_url( $slug, 'de' ) ); ?>" target="_blank" rel="noopener">Auf Deutsch öffnen</a><?php endif; ?></p>
+						<?php if ( file_exists( JRL_DIR . '/jeux/' . $slug . '/index.de.html' ) ) : ?><a class="button" href="<?php echo esc_url( jdr_game_url( $slug, 'de' ) ); ?>" target="_blank" rel="noopener">Auf Deutsch öffnen</a><?php endif; ?>
+						<?php if ( file_exists( JRL_DIR . '/jeux/' . $slug . '/index.it.html' ) ) : ?><a class="button" href="<?php echo esc_url( jdr_game_url( $slug, 'it' ) ); ?>" target="_blank" rel="noopener">Aprire in italiano</a><?php endif; ?></p>
 					<?php endif; ?>
-					<p>Shortcodes : <code>[<?php echo esc_html( $d['shortcode'] ); ?>]</code> · <code>[<?php echo esc_html( $d['shortcode'] ); ?> langue="de"]</code></p>
+					<p>Shortcodes : <code>[<?php echo esc_html( $d['shortcode'] ); ?>]</code> · <code>[<?php echo esc_html( $d['shortcode'] ); ?> langue="de"]</code> · <code>[<?php echo esc_html( $d['shortcode'] ); ?> langue="it"]</code></p>
 				</div>
 			</div>
 		</div>

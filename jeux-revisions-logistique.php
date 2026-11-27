@@ -3,7 +3,7 @@
  * Plugin Name:       Jeux de révision – Logistique
  * Plugin URI:        https://github.com/logiprof/jeux-revisions-logistique
  * Description:       Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (modules M101 à M205). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
- * Version:           2.15.0
+ * Version:           2.16.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            LogiProf
@@ -14,7 +14,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JRL_VERSION', '2.15.0' );
+define( 'JRL_VERSION', '2.16.0' );
 define( 'JRL_FILE', __FILE__ );
 define( 'JRL_DIR', __DIR__ );
 define( 'JRL_REPO', 'logiprof/jeux-revisions-logistique' );
@@ -78,8 +78,11 @@ add_filter( 'jdr_jeux', function ( $jeux ) {
 			/* dossier de formation : jeux/<identifiant>/dossier.pdf et corrige.pdf, affichés sous le bouton s'ils sont présents */
 			'dossier'     => $pdf( 'dossier.pdf' ),
 			'corrige'     => $pdf( 'corrige.pdf' ),
-			/* version allemande : textes de la carte (jeu.json, clé « de ») ; le jeu lui-même est index.de.html */
-			'i18n'        => ( ! empty( $d['de'] ) && is_array( $d['de'] ) && file_exists( JRL_DIR . '/' . $base . 'index.de.html' ) ) ? array( 'de' => array_merge( array( 'bouton' => '▶ Starten', 'bouton_suite' => '▶ Fortsetzen', 'bouton_connexion' => 'Anmelden, um zu spielen' ), $d['de'] ) ) : array(),
+			/* versions allemande et italienne : textes de la carte (jeu.json, clés « de » et « it ») ; le jeu lui-même est index.de.html / index.it.html */
+			'i18n'        => array_filter( array(
+				'de' => ( ! empty( $d['de'] ) && is_array( $d['de'] ) && file_exists( JRL_DIR . '/' . $base . 'index.de.html' ) ) ? array_merge( array( 'bouton' => '▶ Starten', 'bouton_suite' => '▶ Fortsetzen', 'bouton_connexion' => 'Anmelden, um zu spielen' ), $d['de'] ) : array(),
+				'it' => ( ! empty( $d['it'] ) && is_array( $d['it'] ) && file_exists( JRL_DIR . '/' . $base . 'index.it.html' ) ) ? array_merge( array( 'bouton' => '▶ Inizia', 'bouton_suite' => '▶ Continua', 'bouton_connexion' => 'Accedere per giocare' ), $d['it'] ) : array(),
+			) ),
 		);
 	}
 	return $jeux;

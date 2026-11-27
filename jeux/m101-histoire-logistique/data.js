@@ -142,4 +142,4 @@ window.META={
   },
   note:{text:"Les objectifs de ce module ont été définis par l’enseignant (codes M101.1 à M101.4 ajoutés pour le jeu). La campagne de Russie, les caravansérails et les avantages du conteneur standard sont des compléments « Hors support ». Pour la NLFA, voir",url:"https://www.alptransit.ch",link:"alptransit.ch"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

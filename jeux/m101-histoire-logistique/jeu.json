@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M101 – Storia della logistica",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M101",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M101 e 100 esercizi, di cui il 32 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "M101.1 · La logistica militare",
+    "objectifs": [
+     "So analizzare l’impatto della logistica militare sui successi e sui fallimenti delle campagne di Napoleone Bonaparte, descrivendo i metodi utilizzati per il rifornimento e il trasporto del materiale bellico."
+    ]
+   },
+   {
+    "titre": "M101.2 · La Via della Seta",
+    "objectifs": [
+     "So descrivere il ruolo della Via della Seta nel commercio tra la Cina e l’Europa, identificando i principali prodotti scambiati e gli adattamenti logistici necessari per attraversare deserti e montagne."
+    ]
+   },
+   {
+    "titre": "M101.3 · L’informatica",
+    "objectifs": [
+     "So descrivere come l’informatica ha trasformato la logistica dagli anni ’60, fornendo esempi concreti dell’ottimizzazione delle catene di approvvigionamento e della gestione in tempo reale delle scorte."
+    ]
+   },
+   {
+    "titre": "M101.4 · Le innovazioni",
+    "objectifs": [
+     "So valutare l’importanza delle innovazioni logistiche, come il codice a barre o il modello di container, per l’efficienza e la tracciabilità delle moderne catene di approvvigionamento."
+    ]
+   }
+  ]
  }
 }

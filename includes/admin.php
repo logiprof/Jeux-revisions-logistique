@@ -88,7 +88,7 @@ function jrl_admin_page() {
 				<tr><td><code>[jeux_logistique modules="M101,M203"]</code></td><td>Seulement les modules choisis.</td></tr>
 				<tr><td><code>[jeux_logistique groupe="…"]</code></td><td>Un regroupement de modules que vous avez créé (voir « Regroupements de modules » plus bas) ; chaque regroupement a aussi son propre shortcode.</td></tr>
 				<tr><td><code>[jeux_logistique colonnes="3"]</code></td><td>Nombre de jeux côte à côte sur cette page (1 à 4). Sans <code>colonnes</code>, le réglage « Affichage du catalogue » ci-dessous s’applique.</td></tr>
-				<tr><td><code>[jeux_logistique langue="de"]</code></td><td>Le catalogue en allemand (cartes et jeux). Fonctionne aussi avec <code>modules="…"</code> et pour un seul jeu : <code>[jeu_m101 langue="de"]</code>. Sans <code>langue</code>, l’élève peut changer de langue dans le jeu (bouton FR | DE) ; sa progression est la même dans les deux langues.</td></tr>
+				<tr><td><code>[jeux_logistique langue="de"]</code><br><code>[jeux_logistique langue="it"]</code></td><td>Le catalogue en allemand ou en italien (cartes et jeux). Fonctionne aussi avec <code>modules="…"</code> et pour un seul jeu : <code>[jeu_m101 langue="it"]</code>. Sans <code>langue</code>, l’élève peut changer de langue dans le jeu (menu FR · DE · IT) ; sa progression est la même dans les trois langues. Un jeu pas encore traduit s’affiche en français.</td></tr>
 				<tr><td><code>[jeux_revision]</code></td><td>Tous les jeux de révision installés sur le site, y compris ceux d’autres extensions.</td></tr>
 			</tbody>
 		</table>

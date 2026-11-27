@@ -8,7 +8,7 @@
 		if (overlay) return; lastButton = btn;
 		overlay = document.createElement('div'); overlay.className = 'jdr-overlay';
 		overlay.setAttribute('role', 'dialog'); overlay.setAttribute('aria-modal', 'true'); overlay.setAttribute('aria-label', btn.getAttribute('data-jdr-title') || 'Jeu de révision');
-		var loader = document.createElement('div'); loader.className = 'jdr-loader'; loader.textContent = btn.getAttribute('data-jdr-lang') === 'de' ? 'Spiel wird geladen…' : 'Chargement du jeu…';
+		var loader = document.createElement('div'); loader.className = 'jdr-loader'; var lg = btn.getAttribute('data-jdr-lang'); loader.textContent = lg === 'de' ? 'Spiel wird geladen…' : (lg === 'it' ? 'Caricamento del gioco…' : 'Chargement du jeu…');
 		var frame = document.createElement('iframe'); frame.className = 'jdr-frame'; frame.title = btn.getAttribute('data-jdr-title') || 'Jeu de révision';
 		frame.setAttribute('allow', 'fullscreen; autoplay'); frame.setAttribute('allowfullscreen', ''); frame.src = btn.getAttribute('data-jdr-src');
 		frame.addEventListener('load', function () { loader.remove(); try { frame.focus(); } catch (e) {} });
@@ -20,7 +20,7 @@
 	function refresh(id, lang) {
 		var cfg = (window.JDR && window.JDR.cfg) || {};
 		if (!id || !cfg.loggedIn || !cfg.rest || !window.fetch) return;
-		fetch(cfg.rest + 'carte/' + encodeURIComponent(id) + (lang === 'de' ? '?lang=de' : ''), { credentials: 'same-origin', headers: { 'X-WP-Nonce': cfg.nonce } })
+		fetch(cfg.rest + 'carte/' + encodeURIComponent(id) + (lang === 'de' || lang === 'it' ? '?lang=' + lang : ''), { credentials: 'same-origin', headers: { 'X-WP-Nonce': cfg.nonce } })
 			.then(function (r) { return r.ok ? r.json() : null; })
 			.then(function (j) {
 				if (!j || typeof j.html !== 'string') return;
