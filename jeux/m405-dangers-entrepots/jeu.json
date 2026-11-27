@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M405 – Pericoli nei magazzini",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M405",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M405 e 100 esercizi, di cui il 34 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "B3.8·C4.2 · Infortuni e stoccaggio sicuro",
+    "objectifs": [
+     "B3.8 Descrivo con l’aiuto di esempi i rischi e i pericoli che si presentano nel processo logistico per me stesso, per i collaboratori e per terzi. (C2) — C4.2 Interpreto i dati relativi alle informazioni sul carico ammesso al suolo e ne traggo conclusioni per il mio lavoro. (C3)"
+    ]
+   },
+   {
+    "titre": "A1.3·B3.9 · Orari, soccorsi e DPI",
+    "objectifs": [
+     "A1.3 Spiego le basi legali relative alla capacità di lavoro e d’intervento (prescrizioni di sicurezza e di protezione della salute, protezione dei giovani lavoratori, tempi di riposo…). (C2) — A2.5 Elenco gli elementi dei DPI adatti al lavoro, spiego il loro effetto, il loro uso e la loro manutenzione. (C2) — B3.9 Cito gli elementi principali di un’organizzazione d’emergenza e spiego le procedure, il comportamento e le misure da prendere secondo il piano d’emergenza dell’azienda. (C2)"
+    ]
+   },
+   {
+    "titre": "C5.6 · Rischio d’incendio",
+    "objectifs": [
+     "C5.6 Descrivo la procedura e le misure di sicurezza da prendere in caso di avaria con merci pericolose o in caso d’incendio o d’incidente chimico (autoprotezione, rilevamento, allarme, messa in sicurezza). (C2)"
+    ]
+   },
+   {
+    "titre": "C5.2·B3.8 · Materie pericolose, furto e parassiti",
+    "objectifs": [
+     "C5.1 Descrivo le misure e i mezzi di protezione durante la manipolazione di sostanze pericolose e i primi soccorsi. (C2) — C5.2 Identifico le sostanze pericolose (etichette, pittogrammi, SDS, classi di pericolo) e le misure di protezione. (C2) — con B3.8: rischio di furto e parassiti"
+    ]
+   }
+  ]
  }
 }

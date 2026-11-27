@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M406 – Principi di stoccaggio",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M406",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M406 e 75 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "C4.3a · Ubicazione fissa e caotica",
+    "objectifs": [
+     "C4.3 Descrivo i diversi sistemi di stoccaggio (p. es. ubicazione fissa, caotico, FIFO, LIFO, FEFO) e i vantaggi e svantaggi di questi sistemi. (C2) — parte: stoccaggio a ubicazione fissa e stoccaggio caotico"
+    ]
+   },
+   {
+    "titre": "C4.3b · FIFO e FEFO",
+    "objectifs": [
+     "C4.3 Descrivo i diversi sistemi di stoccaggio (FIFO, FEFO) e i loro vantaggi e svantaggi. (C2) — con C4.1: forme di stoccaggio che supportano il FIFO e il FEFO"
+    ]
+   },
+   {
+    "titre": "C4.1·C4.3 · LIFO e HIFO",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte: LIFO e HIFO, vincoli e valutazione contabile"
+    ]
+   }
+  ]
  }
 }

@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M407 – Mezzi di trasporto",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M407",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M407 e 100 esercizi, di cui il 34 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "C3.3a · Classificare e scegliere un mezzo di trasporto",
+    "objectifs": [
+     "C3.3 Descrivo mezzi o tipi di trasporto adatti per il trasporto interno (cross-docking, trasbordo, produzione, stoccaggio). (C2) — parte: criteri di suddivisione e di scelta"
+    ]
+   },
+   {
+    "titre": "C3.3b · Equipaggiamenti di trasporto interno",
+    "objectifs": [
+     "C3.3 Descrivo mezzi o tipi di trasporto adatti per il trasporto interno. (C2) — parte: mezzi manuali, trasportatori, carriponte, mezzi di movimentazione, carrelli elevatori e trasloelevatori"
+    ]
+   },
+   {
+    "titre": "C1.3a · La legge della leva",
+    "objectifs": [
+     "C1.3 Descrivo i mezzi di movimentazione e di sollevamento, le loro caratteristiche e i loro campi d’impiego nella ricezione delle merci. (C2) — parte: leva a due bracci e stabilità del carrello elevatore"
+    ]
+   },
+   {
+    "titre": "C1.3b · Diagrammi di carico e mezzi di sollevamento",
+    "objectifs": [
+     "C1.3 Descrivo i mezzi di movimentazione e di sollevamento (carrello elevatore, carroponte, bilancino, tavola elevatrice a pantografo, ausili di sollevamento e di trasporto, esoscheletri), le loro caratteristiche e i loro campi d’impiego nella ricezione delle merci. (C2) — parte: diagrammi di portata e mezzi di sollevamento"
+    ]
+   }
+  ]
  }
 }

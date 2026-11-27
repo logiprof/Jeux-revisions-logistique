@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M401 – Il ruolo dello stoccaggio",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M401",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M401 e 75 esercizi, di cui il 40 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "B3.1a · Riserva e sicurezza",
+    "objectifs": [
+     "B3.1 Descrivo con l’aiuto di esempi pratici i processi logistici di diverse aziende di logistica (fornitore di servizi, azienda commerciale, azienda di produzione). (C2) — parte 1: funzione di riserva, stoccaggio caotico e funzione di sicurezza"
+    ]
+   },
+   {
+    "titre": "B3.1b · Trasformazione, controllo e smistamento",
+    "objectifs": [
+     "B3.1 Descrivo con l’aiuto di esempi pratici i processi logistici di diverse aziende di logistica (fornitore di servizi, azienda commerciale, azienda di produzione). (C2) — parte 2: funzione di trasformazione e funzione di controllo e smistamento"
+    ]
+   },
+   {
+    "titre": "C4.1 · Speculazione, affinamento e scelta dello stoccaggio",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2)"
+    ]
+   }
+  ]
  }
 }

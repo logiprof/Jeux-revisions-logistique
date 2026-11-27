@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M409 – I mezzi di movimentazione",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M409",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M409 e 100 esercizi, di cui il 34 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "H3.3a · Classificazione e mezzi semplici",
+    "objectifs": [
+     "H3.3 Spiego le categorie di mezzi di preparazione degli ordini e cito esempi per ogni categoria. (C2) — parte: classificazione, trattori, mezzi a timone e commissionatori"
+    ]
+   },
+   {
+    "titre": "H3.3b · Carrelli elevatori",
+    "objectifs": [
+     "H3.3 Spiego le categorie di mezzi di preparazione degli ordini e cito esempi per ogni categoria. (C2) — parte: carrelli elevatori e mezzi d’immagazzinamento, scelta secondo lo spazio e il carico"
+    ]
+   },
+   {
+    "titre": "H3.4a · Azionamento, montanti e attrezzature applicate",
+    "objectifs": [
+     "H3.4 Descrivo i mezzi di sollevamento e spiego con l’aiuto di esempi i campi d’applicazione e le possibilità d’impiego. (C2) — parte: tipi di azionamento, montanti, forche e attrezzature applicate"
+    ]
+   },
+   {
+    "titre": "H3.4b · FTS, trasloelevatori e Autostore",
+    "objectifs": [
+     "H3.4 Descrivo i dispositivi di trasporto e i mezzi di sollevamento e spiego con l’aiuto di esempi i campi d’applicazione e le possibilità d’impiego. (C2) — parte: sistemi di trasporto senza conducente, trasloelevatori e Autostore"
+    ]
+   }
+  ]
  }
 }

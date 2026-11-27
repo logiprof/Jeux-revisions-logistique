@@ -107,4 +107,4 @@ window.META={
   },
   note:{text:"Les principes de C4.1 (FIFO, stock minimum, systèmes et formes de stockage) ne sont pas traités dans M401 : quelques épreuves « Hors support » les rappellent ; ils sont développés dans M312 et M402 à M406. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

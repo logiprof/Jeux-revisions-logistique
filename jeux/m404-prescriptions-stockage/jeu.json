@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M404 – Prescrizioni di stoccaggio",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M404",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M404 e 75 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "C4.1a · Magazzini all’aperto, coperti e chiusi",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte 1: magazzini all’aperto, coperti e chiusi"
+    ]
+   },
+   {
+    "titre": "C4.1b · Altezza e struttura del magazzino",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte 2: magazzini a bassa, media e grande altezza; magazzini meccanizzati, automatici e sistemi complessi"
+    ]
+   },
+   {
+    "titre": "C4.1c · Condizioni per uno stoccaggio ottimale",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte 3: pulizia, spaziosità e ordine"
+    ]
+   }
+  ]
  }
 }

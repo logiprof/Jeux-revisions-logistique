@@ -88,5 +88,49 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M408 – Organizzazione del magazzino",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M408",
+  "duree": "10 min per serie",
+  "description": "6 obiettivi del modulo M408 e 150 esercizi, di cui il 34 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "G2.1·G2.2 · Pianificazione e flussi del magazzino",
+    "objectifs": [
+     "G2.1 Spiego la procedura e i criteri di sistemazione di un magazzino. (C2) — G2.2 Nomino i diversi elementi di un sistema di stoccaggio e spiego la funzione e i compiti di un magazzino. (C2) — con G1.1: analisi del processo di ricezione"
+    ]
+   },
+   {
+    "titre": "G2.3·G2.4 · Tipi di magazzino e forme di stoccaggio",
+    "objectifs": [
+     "G2.3 Spiego i tipi di stoccaggio in funzione delle tappe del processo e del grado di automazione. (C2) — G2.4 Spiego le prescrizioni (impilabile o no, altezza d’impilamento e carico al suolo) per la realizzazione di uno stoccaggio a blocchi. (C3)"
+    ]
+   },
+   {
+    "titre": "C4.2 · Carico al suolo",
+    "objectifs": [
+     "C4.2 Interpreto i dati relativi alle informazioni sul carico ammesso al suolo e ne traggo conclusioni per il mio lavoro. (C3) — con G2.9: calcolo del carico al suolo"
+    ]
+   },
+   {
+    "titre": "G2.9 · Superfici, spazio e corridoi",
+    "objectifs": [
+     "G2.9 Calcolo con l’aiuto di un caso pratico il carico al suolo, il tasso d’utilizzo della superficie e dello spazio del magazzino. (C3) — parte: superfici, spazio e larghezza dei corridoi"
+    ]
+   },
+   {
+    "titre": "G2.7·G2.8 · Scaffalature portapallet",
+    "objectifs": [
+     "G2.5 Descrivo i pericoli e i rischi dei magazzini con scaffalature e le misure di sicurezza. (C2) — G2.7 Spiego i diversi carichi di una scaffalatura portapallet (traverse, al suolo e totale). (C3) — G2.8 Calcolo il carico sulle scaffalature portapallet a partire da un caso pratico. (C3)"
+    ]
+   },
+   {
+    "titre": "G2.6·G3.5 · Numerazione e mappa di magazzino",
+    "objectifs": [
+     "G2.6 Descrivo due sistemi possibili di numerazione delle ubicazioni di stoccaggio sulle scaffalature. (C2) — G3.5 Spiego lo scopo di una mappa di magazzino, ne allestisco un esempio e spiego ciò che ne deriva. (C3) — con la numerazione degli articoli"
+    ]
+   }
+  ]
  }
 }

@@ -109,4 +109,4 @@ window.META={
   },
   note:{text:"Le sous-objectif « FIFO, LIFO et stockage en vrac » n’est pas traité dans les leçons de M402 : trois épreuves « Hors support » le rappellent (voir M312). Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

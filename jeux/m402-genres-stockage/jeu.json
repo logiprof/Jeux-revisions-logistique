@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M402 – I generi di stoccaggio",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M402",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M402 e 75 esercizi, di cui il 37 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "C4.1a · Magazzini secondo le merci",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte 1: concezione, magazzini di materie prime, self-service, prodotti finiti, temporanei e di maturazione"
+    ]
+   },
+   {
+    "titre": "B3.1 · Magazzini per settore",
+    "objectifs": [
+     "B3.1 Descrivo con l’aiuto di esempi pratici i processi logistici di diverse aziende di logistica (fornitore di servizi, azienda commerciale, azienda di produzione). (C2)"
+    ]
+   },
+   {
+    "titre": "C4.1b · Scelta dell’ubicazione e centralizzazione",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte 2: scelta dell’ubicazione geografica, magazzini centralizzati o decentralizzati"
+    ]
+   }
+  ]
  }
 }

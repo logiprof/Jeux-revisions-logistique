@@ -138,4 +138,4 @@ window.META={
   },
   note:{text:"A2.4, A4.3 et C5.5 sont peu ou pas traités dans les leçons : les épreuves concernées sont marquées « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

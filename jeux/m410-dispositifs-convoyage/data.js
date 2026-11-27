@@ -139,4 +139,4 @@ window.META={
   },
   note:{text:"Les objectifs « H3.x » du cours n’ont pas de numéro définitif. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

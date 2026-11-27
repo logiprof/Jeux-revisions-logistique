@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M403 – Le forme di stoccaggio",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M403",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M403 e 100 esercizi, di cui il 35 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "C4.1a · Stoccaggio a terra",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte 1: stoccaggio a terra, a blocchi, impilamento, bombole a pressione, prodotti lunghi, FIFO/FEFO/LIFO"
+    ]
+   },
+   {
+    "titre": "C4.1b · Scaffalature a ripiani e portapallet",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte 2: scaffalature a ripiani e scaffalature portapallet"
+    ]
+   },
+   {
+    "titre": "C4.1c · Drive-in, dinamica, cantilever e mobile",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte 3: drive-in, drive-through, scaffalature dinamiche e ad accumulo, a sbalzo, a nido d’ape, scaffalature mobili"
+    ]
+   },
+   {
+    "titre": "C4.1d · Rotanti, sospesi e impianti moderni",
+    "objectifs": [
+     "C4.1 Spiego i diversi sistemi, forme, tipi e principi di stoccaggio con le loro caratteristiche, le loro possibilità e la loro redditività. (C2) — parte 4: scaffalature rotanti, stoccaggio sospeso, navette, robot, magazzini verticali, Autostore; con B3.1 (processi di diverse aziende)"
+    ]
+   }
+  ]
  }
 }
