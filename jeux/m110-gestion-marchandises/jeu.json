@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M110 – Definizione della gestione delle merci",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M110",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M110 e 82 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "G1.2 · I dati di base",
+    "objectifs": [
+     "Descrivo la struttura, l’importanza e l’utilità dei dati di base delle merci. (C2)"
+    ]
+   },
+   {
+    "titre": "G3.6 · Calcolare stoccaggio e trasporto",
+    "objectifs": [
+     "Calcolo, con l’aiuto dei dati di base, i principi di base per lo stoccaggio e il trasporto di merci (struttura del magazzino, spazio necessario, disponibilità). (C3)"
+    ]
+   },
+   {
+    "titre": "G4.1 · Valutare il fabbisogno",
+    "objectifs": [
+     "Descrivo la valutazione del fabbisogno in funzione del consumo (passato) e della previsione del fabbisogno futuro con l’aiuto di esempi pratici ed effettuo calcoli semplici. (C3)"
+    ]
+   }
+  ]
  }
 }

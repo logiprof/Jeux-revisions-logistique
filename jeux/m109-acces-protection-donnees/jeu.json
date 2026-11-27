@@ -76,5 +76,43 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M109 – Accesso e protezione dei dati",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M109",
+  "duree": "10 min per serie",
+  "description": "5 obiettivi del modulo M109 e 139 esercizi, di cui il 37 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "A2.2 · Autorizzazioni d’accesso",
+    "objectifs": [
+     "Spiego il principio delle autorizzazioni d’accesso agli edifici e agli impianti e dei diritti d’accesso alle applicazioni e descrivo i sistemi utilizzati nella mia azienda per far rispettare queste autorizzazioni e questi diritti. (C2)"
+    ]
+   },
+   {
+    "titre": "A2.3 · Sicurezza informatica",
+    "objectifs": [
+     "Spiego come utilizzo sistematicamente i mezzi informatici e come proteggo l’azienda dai pericoli legati in particolare all’uso di Internet (sicurezza dei dati, attacchi di pirati, virus, phishing, ecc.). (C2)"
+    ]
+   },
+   {
+    "titre": "B1.5 · Segreti e protezione dei dati",
+    "objectifs": [
+     "Spiego le basi e gli effetti della protezione dei dati e della sfera privata nonché del segreto postale. (C2)"
+    ]
+   },
+   {
+    "titre": "B1.6 · Conseguenze nella pratica",
+    "objectifs": [
+     "Spiego le conseguenze delle disposizioni legali relative alla protezione dei dati e della sfera privata e al segreto postale per l’attività pratica, nonché una conseguenza per il cliente e per l’azienda in caso di violazione. (C2)"
+    ]
+   },
+   {
+    "titre": "D5.3 · Persone autorizzate a ricevere",
+    "objectifs": [
+     "Spiego le condizioni quadro legali relative alle persone autorizzate a ricevere merci da consegnare. (C2)"
+    ]
+   }
+  ]
  }
 }

@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M107 – Le categorie di rifiuti in Svizzera",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M107",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M107 e 109 esercizi, di cui il 37 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "B4.6 · Le categorie di rifiuti",
+    "objectifs": [
+     "Nomino i rifiuti prodotti da un’azienda logistica e li classifico nelle quattro principali categorie di rifiuti (rifiuti edili, rifiuti urbani, fanghi di depurazione, rifiuti speciali). (C2)"
+    ]
+   },
+   {
+    "titre": "C5.1 · Proteggersi e soccorrere",
+    "objectifs": [
+     "Descrivo le misure e i mezzi di protezione della salute, della sicurezza e dell’ambiente durante la manipolazione di sostanze pericolose e le misure specifiche di primo soccorso. (C2)"
+    ]
+   },
+   {
+    "titre": "C5.2 · Riconoscere il pericolo",
+    "objectifs": [
+     "Identifico le sostanze e i materiali pericolosi per l’ambiente (etichette, pittogrammi, schede di dati di sicurezza dei fabbricanti, classi di pericolo) e le misure di protezione durante la manipolazione di prodotti chimici e merci pericolose. (C2)"
+    ]
+   },
+   {
+    "titre": "C5.6 · Avaria e incendio",
+    "objectifs": [
+     "Descrivo la procedura e le misure di sicurezza da adottare in caso di avaria con merci pericolose o in caso di incendio o di incidente chimico (autoprotezione, rilevamento, allarme, messa in sicurezza). (C2)"
+    ]
+   }
+  ]
  }
 }

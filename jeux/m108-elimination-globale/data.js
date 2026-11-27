@@ -119,4 +119,4 @@ window.META={
   },
   note:{text:"La leçon « M108 – Objectifs » est vide : les trois objectifs reprennent les sous-objectifs M108 placés par erreur dans la leçon « M109 – Objectifs ». Les effets sur la logistique, le plastique en entrepôt et les exemples d’initiatives ODD sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

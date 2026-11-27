@@ -149,4 +149,4 @@ window.META={
   },
   note:{text:"Les objectifs B4.2 à B4.5 et B4.7, communs à M106 et M107, sont travaillés dans le jeu M106. Les pictogrammes viennent de la leçon M105 5.7 ; les EPI, les premiers secours, la fiche de données de sécurité et la conduite en cas d’avarie (C5.1, C5.2, C5.6) sont complétés « Hors support » (SUVA, Tox Info Suisse 145). Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

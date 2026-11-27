@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M108 – Lo smaltimento globale",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M108",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M108 e 81 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "M108.1 · La gestione ambientale",
+    "objectifs": [
+     "Descrivo le componenti di un sistema di gestione ambientale (identificazione degli impatti, audit), i suoi vantaggi interni ed esterni, nonché il processo e i vantaggi della certificazione ISO 14001. (C2)"
+    ]
+   },
+   {
+    "titre": "M108.2 · I problemi mondiali",
+    "objectifs": [
+     "Descrivo i problemi ambientali mondiali (cambiamento climatico, scarsità d’acqua, inquinamento dell’aria, erosione del suolo, sovrappopolazione, deforestazione, estinzione delle specie, rifiuti di plastica) e i loro effetti sulle aziende logistiche. (C2)"
+    ]
+   },
+   {
+    "titre": "M108.3 · L’Agenda 2030",
+    "objectifs": [
+     "Descrivo gli obiettivi di sviluppo sostenibile dell’Agenda 2030 (in particolare acqua, energia e consumo sostenibile), le iniziative delle aziende logistiche per raggiungerli e il ruolo della cooperazione internazionale. (C2)"
+    ]
+   }
+  ]
  }
 }
