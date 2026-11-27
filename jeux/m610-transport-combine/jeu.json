@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M610 – Il trasporto combinato",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M610",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M610 e 81 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "D3.2 a · Principio e trasporto strada-rotaia",
+    "objectifs": [
+     "D3.2 Descrivo i mezzi di trasporto (p. es. furgone di consegna, camion, scooter, treno, aereo, nave) per la distribuzione e la consegna delle diverse merci, con i vantaggi e gli svantaggi e i criteri (ecologici, energetici, economici, di sicurezza, di affidabilità, di rapidità) per la scelta del mezzo di trasporto. (C2) — parte: principio del trasporto combinato, interfacce, RoLa e trasporto combinato non accompagnato"
+    ]
+   },
+   {
+    "titre": "D3.2 b · Container ISO",
+    "objectifs": [
+     "D3.2 Descrivo i mezzi di trasporto (p. es. furgone di consegna, camion, scooter, treno, aereo, nave) per la distribuzione e la consegna delle diverse merci, con i vantaggi e gli svantaggi e i criteri (ecologici, energetici, economici, di sicurezza, di affidabilità, di rapidità) per la scelta del mezzo di trasporto. (C2) — parte: container ISO (dimensioni, peso, sicurezza)"
+    ]
+   },
+   {
+    "titre": "D3.2 c · Altri sistemi di scambio",
+    "objectifs": [
+     "D3.2 Descrivo i mezzi di trasporto (p. es. furgone di consegna, camion, scooter, treno, aereo, nave) per la distribuzione e la consegna delle diverse merci, con i vantaggi e gli svantaggi e i criteri (ecologici, energetici, economici, di sicurezza, di affidabilità, di rapidità) per la scelta del mezzo di trasporto. (C2) — parte: ACTS, casse mobili, Cargo Domino, combinato strada-ferrovia, Cargo Sous Terrain"
+    ]
+   }
+  ]
  }
 }

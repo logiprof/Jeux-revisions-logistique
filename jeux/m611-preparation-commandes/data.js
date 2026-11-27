@@ -210,4 +210,4 @@ window.META={
   },
   note:{text:"Les douze objectifs du module sont regroupés en six parties. La correction des quantités dans l’ERP, les méthodes de réapprovisionnement, les commandes partielles et la sécurité au travail sont peu ou pas traitées dans les leçons : ces épreuves sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

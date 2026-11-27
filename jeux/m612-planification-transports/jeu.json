@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M612 – La pianificazione dei trasporti",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M612",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M612 e 85 esercizi, di cui il 35 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "h2.2 · Raggruppamento e cross-docking",
+    "objectifs": [
+     "h2.2 Descrivo le nozioni di compattazione (condizionamento) e di cross-docking e spiego i loro effetti sulle spese di trasporto, sul risultato d’esercizio e sulla riduzione di CO2. (C2)"
+    ]
+   },
+   {
+    "titre": "h2.5 · Ripartizione del peso e fissaggio del carico",
+    "objectifs": [
+     "h2.5 Spiego la ripartizione sicura del peso di un carico sul mezzo di trasporto e l’effetto delle forze di gravità e ne deduco come le merci devono essere assicurate sui mezzi di trasporto. (C4)"
+    ]
+   },
+   {
+    "titre": "12.1–12.4 · Giri, Make or Buy e freddo",
+    "objectifs": [
+     "Contenuto delle lezioni da 12.1 a 12.4 (pianificazione dei giri, basi legali, Make or Buy, derrate deperibili e HACCP) — senza obiettivo nella lezione «Obiettivi» del modulo"
+    ]
+   }
+  ]
  }
 }

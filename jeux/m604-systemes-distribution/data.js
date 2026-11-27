@@ -108,4 +108,4 @@ window.META={
   },
   note:{text:"Le contrat de dépôt, le contrat de transport et le détail des Incoterms® 2020 (toujours en vigueur) ne sont pas traités dans le texte des leçons : ces épreuves sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

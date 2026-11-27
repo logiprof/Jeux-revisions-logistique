@@ -117,4 +117,4 @@ window.META={
   },
   note:{text:"La leçon « Objectifs » ne cite que h2.2 et h2.5 : les leçons 12.1 à 12.4 forment ici une 3e partie, sans objectif officiel. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

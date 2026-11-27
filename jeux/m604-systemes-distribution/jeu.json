@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M604 – I sistemi di distribuzione",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M604",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M604 e 75 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "B3.2 · Basi del trasporto e Incoterms",
+    "objectifs": [
+     "B3.2 Descrivo le basi del trasporto delle merci (contratto di deposito, trasportatore, Incoterms, ecc.). (C2)"
+    ]
+   },
+   {
+    "titre": "D1.6 · Mercato postale e CEP",
+    "objectifs": [
+     "D1.6 Descrivo il mercato della posta e dei CEP e nomino i principali fornitori. (C2)"
+    ]
+   },
+   {
+    "titre": "D3.1 · Sistemi di distribuzione",
+    "objectifs": [
+     "D3.1 Spiego con l’aiuto di esempi pratici diversi sistemi di distribuzione (regionale/nazionale/internazionale; diretto/a più livelli). (C2)"
+    ]
+   }
+  ]
  }
 }

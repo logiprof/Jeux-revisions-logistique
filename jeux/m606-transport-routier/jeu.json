@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M606 – Il trasporto stradale",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M606",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M606 e 75 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "D3.2 · Trasporto stradale e TTPCP",
+    "objectifs": [
+     "D3.2 Descrivo i mezzi di trasporto (furgone, camion, scooter, treno, aereo, nave) per la distribuzione e la consegna delle merci, con i loro vantaggi e svantaggi e i criteri di scelta (ecologici, energetici, economici, di sicurezza, di affidabilità, di rapidità). (C2)"
+    ]
+   },
+   {
+    "titre": "D4.1 · Forze dinamiche e ripartizione",
+    "objectifs": [
+     "D4.1 Descrivo i diversi mezzi di fissaggio per ogni mezzo di trasporto. (C2) — forze dinamiche, fissaggio per bloccaggio e per attrito, ripartizione del carico, obbligo di fissare il carico"
+    ]
+   },
+   {
+    "titre": "D3.5 · Mezzi di protezione",
+    "objectifs": [
+     "D3.5 Descrivo i mezzi di protezione comunemente usati per i camion e i treni (cinghie, barre di protezione, cuscini d’aria, pareti divisorie, carico adattato) con i loro vantaggi e svantaggi, i criteri di valutazione del loro stato e la responsabilità della valutazione prima dell’uso. (C2)"
+    ]
+   }
+  ]
  }
 }

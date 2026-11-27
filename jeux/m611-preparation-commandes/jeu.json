@@ -88,5 +88,49 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M611 – La preparazione delle commissioni",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M611",
+  "duree": "10 min per serie",
+  "description": "6 obiettivi del modulo M611 e 162 esercizi, di cui il 38 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "h1.1 · Supporti cartacei e digitali",
+    "objectifs": [
+     "h1.1 Confronto i mezzi convenzionali (carta) e digitali (terminali mobili, Pick by voice ecc.) nella preparazione delle commissioni in termini di redditività, ergonomia e rischio d’errore. (C2)"
+    ]
+   },
+   {
+    "titre": "h1.2·h1.6·h1.7 · Parziali, ERP e riapprovvigionamento",
+    "objectifs": [
+     "h1.2 Spiego l’impatto delle preparazioni di commissioni parziali sul tempo d’esecuzione di una preparazione di commissioni. (C2) · h1.6 Spiego la procedura di correzione delle quantità nell’ERP dell’azienda dopo la preparazione delle commissioni. (C2) · h1.7 Spiego come il riapprovvigionamento garantisce la disponibilità delle merci nel magazzino di preparazione delle commissioni sulla base del controllo delle quantità. (C2)"
+    ]
+   },
+   {
+    "titre": "h1.4 · Automazione e smistatori",
+    "objectifs": [
+     "h1.4 Spiego le tecniche d’automazione della preparazione delle commissioni e descrivo il loro campo d’applicazione. (C2)"
+    ]
+   },
+   {
+    "titre": "h3.1 · I tre ambiti del sistema",
+    "objectifs": [
+     "h3.1 Descrivo i tre ambiti del sistema di preparazione delle commissioni, cioè il flusso di materiale, il flusso di dati e l’organizzazione; il loro legame e il loro effetto sulla prestazione della preparazione delle commissioni. (C3)"
+    ]
+   },
+   {
+    "titre": "h3.2·h3.5·h3.7 · Tempi parziali e calcoli",
+    "objectifs": [
+     "h3.2 Distinguo le diverse attività della preparazione delle commissioni e le attribuisco ai tempi parziali corretti. (C3) · h3.5 Spiego i fattori che influenzano il tempo di trattamento di una preparazione di commissioni. (C3) · h3.7 Calcolo la percentuale dei tempi parziali rispetto al tempo totale di preparazione delle commissioni, interpreto i risultati e propongo possibilità d’ottimizzazione. (C4)"
+    ]
+   },
+   {
+    "titre": "h3.6·h3.8·h3.11 · Tragitti, punti deboli e sicurezza",
+    "objectifs": [
+     "h3.6 Mostro con l’aiuto di studi di casi le possibilità di accorciare i tragitti e i tempi di preparazione delle commissioni. (C3) · h3.8 Identifico i punti deboli del flusso di dati e dell’organizzazione e descrivo le misure di miglioramento nella preparazione delle commissioni. (C4) · h3.11 Descrivo i rischi e i pericoli nella preparazione delle commissioni e le misure di miglioramento della protezione della salute e dell’ambiente, dell’ergonomia e della sicurezza sul lavoro. (C3)"
+    ]
+   }
+  ]
  }
 }

@@ -107,4 +107,4 @@ window.META={
   },
   note:{text:"La leçon « Objectifs » de ce module est vide : les objectifs du jeu suivent les leçons 1.1 à 1.3. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

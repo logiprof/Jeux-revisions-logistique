@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M605 – Modalità d’invio postale",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M605",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M605 e 100 esercizi, di cui il 35 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "PE1 · Indirizzare lettere e pacchi",
+    "objectifs": [
+     "Applico le regole d’indirizzamento delle lettere e dei pacchi per permettere uno smistamento automatico rapido e senza errori. (lezione 5.1)"
+    ]
+   },
+   {
+    "titre": "PE2 · Modalità d’invio di lettere e pacchi",
+    "objectifs": [
+     "Scelgo la prestazione di base e le prestazioni complementari adatte per l’invio di lettere e pacchi. (lezione 5.2)"
+    ]
+   },
+   {
+    "titre": "PE3 · Estero e centri di smistamento",
+    "objectifs": [
+     "Spiego le particolarità degli invii all’estero e il trattamento delle lettere e dei pacchi nei centri di smistamento, compresa la protezione della salute. (lezioni 5.3 e 5.4)"
+    ]
+   },
+   {
+    "titre": "PE4 · Distribuzione e ritiro",
+    "objectifs": [
+     "Descrivo la distribuzione dell’ultimo chilometro, la verifica dell’identità e i servizi di ritiro PickPost e My Post 24. (lezione 5.5)"
+    ]
+   }
+  ]
  }
 }

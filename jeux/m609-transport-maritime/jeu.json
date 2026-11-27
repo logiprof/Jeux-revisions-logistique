@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M609 – Il trasporto marittimo",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M609",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M609 e 89 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "D3.2 · Vie e porti marittimi",
+    "objectifs": [
+     "D3.2 Descrivo i mezzi di trasporto (p. es. furgone di consegna, camion, scooter, treno, aereo, nave) per la distribuzione e la consegna delle diverse merci, con i vantaggi e gli svantaggi e i criteri (ecologici, energetici, economici, di sicurezza, di affidabilità, di rapidità) per la scelta del mezzo di trasporto. (C2) — parte: navigazione, vie e porti"
+    ]
+   },
+   {
+    "titre": "D3.5 · Fissaggio e forze in mare",
+    "objectifs": [
+     "D3.5 Descrivo i mezzi di protezione comunemente usati per i camion e i treni (cinghie di sicurezza, barre di protezione, cuscini d’aria e pareti divisorie, carico adattato) con i loro vantaggi e svantaggi, i criteri di valutazione del loro stato e la responsabilità della valutazione prima dell’uso. (C2) — parte: fissaggio marittimo e forze dinamiche"
+    ]
+   },
+   {
+    "titre": "D4.1 · Movimentazione e carico",
+    "objectifs": [
+     "D4.1 Descrivo i diversi mezzi di fissaggio per ogni mezzo di trasporto. (C2) — parte: movimentazione portuale, spreader, container e palette"
+    ]
+   }
+  ]
  }
 }

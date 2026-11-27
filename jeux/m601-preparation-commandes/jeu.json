@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M601 – La preparazione degli ordini",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M601",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M601 e 75 esercizi, di cui il 35 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "PC1 · Basi della preparazione",
+    "objectifs": [
+     "Distinguo i tipi di preparazione (statica, dinamica), i modi di spostamento (1D, 2D), di prelievo (manuale, automatico), di trasferimento (centralizzato, decentralizzato), di preparazione delle informazioni (batch, tempo reale) e la preparazione per uno o più settori. (lezione 1.1)"
+    ]
+   },
+   {
+    "titre": "PC2 · Modalità e organizzazione",
+    "objectifs": [
+     "Confronto le modalità di preparazione e la loro organizzazione operativa: orientata all’ordine o all’articolo, in serie o in parallelo, Pick-and-Pack, preparazione per corridoio di prelievo o seriale. (lezione 1.2)"
+    ]
+   },
+   {
+    "titre": "PC3 · Preparazione assistita",
+    "objectifs": [
+     "Descrivo le soluzioni tecnologiche di preparazione degli ordini assistita (Pick-by-Scan, Pick-by-Voice, Pick-by-Light, Pick-by-Vision), i loro vantaggi e i loro svantaggi. (lezione 1.3)"
+    ]
+   }
+  ]
  }
 }

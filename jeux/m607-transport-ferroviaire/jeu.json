@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M607 – Il trasporto ferroviario",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M607",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M607 e 75 esercizi, di cui il 32 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "D3.2 · La ferrovia e i suoi grandi assi",
+    "objectifs": [
+     "D3.2 Descrivo i mezzi di trasporto (furgone, camion, scooter, treno, aereo, nave) per la distribuzione e la consegna delle merci, con i loro vantaggi e svantaggi e i criteri di scelta. (C2) — parte: la ferrovia"
+    ]
+   },
+   {
+    "titre": "D3.5 · Carico dei vagoni",
+    "objectifs": [
+     "D3.5 Descrivo i mezzi di protezione comunemente usati per i camion e i treni (cinghie, barre di protezione, cuscini d’aria, pareti divisorie, carico adattato) con i loro vantaggi e svantaggi, i criteri di valutazione del loro stato e la responsabilità della valutazione prima dell’uso. (C2)"
+    ]
+   },
+   {
+    "titre": "D4.1 · Merci pericolose e futuro",
+    "objectifs": [
+     "D4.1 Descrivo i diversi mezzi di fissaggio per ogni mezzo di trasporto. (C2) — segnaletica delle merci pericolose per ferrovia, documenti, confronto ferrovia-strada e innovazioni (CST)"
+    ]
+   }
+  ]
  }
 }
