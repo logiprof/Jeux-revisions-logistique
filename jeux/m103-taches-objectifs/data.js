@@ -113,4 +113,4 @@ window.META={
   },
   note:{text:"Les interfaces internes et externes, les exemples de planification stratégique et tactique et la démarche d’optimisation sont des compléments « Hors support ». Les 6B suivent le professeur Jünemann, comme dans le cours. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

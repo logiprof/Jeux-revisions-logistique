@@ -40,5 +40,25 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M105 – La merce",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M105",
+  "duree": "10 min per serie",
+  "description": "2 obiettivi del modulo M105 e 64 esercizi, di cui il 34 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "C4.5 · Ciò che danneggia la merce",
+    "objectifs": [
+     "Descrivo i possibili fattori che hanno un effetto negativo sulla qualità delle merci nel magazzino (parassiti, temperatura, umidità dell’aria, polvere, luce). (C2)"
+    ]
+   },
+   {
+    "titre": "G2.12 · Perdite e conservazione",
+    "objectifs": [
+     "Descrivo le cause e le conseguenze della perdita di materiale, della durata di conservazione e delle date di scadenza delle merci. (C2)"
+    ]
+   }
+  ]
  }
 }

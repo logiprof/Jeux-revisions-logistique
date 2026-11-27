@@ -181,4 +181,4 @@ window.META={
   },
   note:{text:"Le cours ne développe pas l’efficacité énergétique (B4.4) ni les émissions (B4.5) : ces objectifs sont surtout traités avec des compléments « Hors support », comme l’upcycling et l’économie circulaire. Les quatre catégories de déchets (B4.6) sont travaillées dans le jeu M107. Chiffres : leçons 6.3 à 6.5. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

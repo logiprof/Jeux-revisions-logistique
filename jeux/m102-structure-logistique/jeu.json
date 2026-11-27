@@ -76,5 +76,43 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M102 – Struttura della logistica",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M102",
+  "duree": "10 min per serie",
+  "description": "5 obiettivi del modulo M102 e 125 esercizi, di cui il 40 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "B3.1 · Processi secondo l’azienda",
+    "objectifs": [
+     "Descrivo con esempi pratici i processi logistici di diverse aziende logistiche (fornitore di servizi, azienda commerciale, azienda di produzione). (C2)"
+    ]
+   },
+   {
+    "titre": "B3.3 · Logistica interna e SCM",
+    "objectifs": [
+     "Distinguo tra la logistica interna e la gestione della catena di approvvigionamento e classifico diversi processi con l’aiuto di esempi. (C2)"
+    ]
+   },
+   {
+    "titre": "B3.5 · Tappe e interfacce",
+    "objectifs": [
+     "Descrivo il processo logistico dell’azienda con le diverse tappe e le interfacce interne ed esterne. (C2)"
+    ]
+   },
+   {
+    "titre": "B3.6 · Punti deboli e ottimizzazione",
+    "objectifs": [
+     "Descrivo con l’aiuto di studi di caso i potenziali punti deboli dei processi logistici dell’azienda, poi identifico e spiego le misure di ottimizzazione dei processi e delle interfacce. (C3)"
+    ]
+   },
+   {
+    "titre": "B5.2 · I flussi",
+    "objectifs": [
+     "Descrivo con esempi pratici i flussi di merci, di valori e di informazioni nel processo logistico di diverse aziende logistiche (fornitore di servizi, azienda commerciale, azienda di produzione). (C2)"
+    ]
+   }
+  ]
  }
 }

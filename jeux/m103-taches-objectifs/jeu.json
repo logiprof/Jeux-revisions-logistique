@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M103 – Compiti e obiettivi della logistica",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M103",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M103 e 76 esercizi, di cui il 37 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "B3.5 · Il processo logistico",
+    "objectifs": [
+     "Descrivo il processo logistico dell’azienda con le diverse tappe e le interfacce interne ed esterne. (C2)"
+    ]
+   },
+   {
+    "titre": "B3.6 · Efficacia ed efficienza",
+    "objectifs": [
+     "Descrivo con l’aiuto di studi di caso i potenziali punti deboli dei processi logistici dell’azienda, poi identifico e spiego le misure di ottimizzazione dei processi e delle interfacce. (C3)"
+    ]
+   },
+   {
+    "titre": "D5.1 · Le 6 G, 7 G e 8 G",
+    "objectifs": [
+     "Descrivo le principali caratteristiche della consegna delle merci (6 G, 7 G e 8 G) alla produzione o ai clienti interni o esterni. (C2)"
+    ]
+   }
+  ]
  }
 }

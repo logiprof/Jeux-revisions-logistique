@@ -76,5 +76,43 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M106 – Lo smaltimento dei rifiuti in Svizzera",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M106",
+  "duree": "10 min per serie",
+  "description": "5 obiettivi del modulo M106 e 133 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "B4.2 · Il principio delle 3R",
+    "objectifs": [
+     "Spiego il principio della gestione dei rifiuti secondo le 3R: ridurre-riutilizzare-riciclare (upcycling, riciclare, incenerire, mettere in discarica). (C2)"
+    ]
+   },
+   {
+    "titre": "B4.3 · Economia circolare",
+    "objectifs": [
+     "Descrivo le vie di smaltimento (economia circolare), i vantaggi economici e ambientali del riciclaggio delle quantità residue di materiali e materie prime utilizzati in un’azienda logistica. (C2)"
+    ]
+   },
+   {
+    "titre": "B4.4 · Risorse ed energia",
+    "objectifs": [
+     "Descrivo, con l’aiuto di un esempio pratico, misure concrete per migliorare l’efficienza delle risorse e dell’energia nel processo logistico. (C2)"
+    ]
+   },
+   {
+    "titre": "B4.5 · Le emissioni",
+    "objectifs": [
+     "Descrivo diversi tipi di emissioni e le possibilità di evitarle. (C2)"
+    ]
+   },
+   {
+    "titre": "B4.7 · Separare e valorizzare",
+    "objectifs": [
+     "Descrivo l’utilità della separazione e della valorizzazione dei rifiuti aziendali come alternativa al loro smaltimento, cito esempi concreti di rifiuti che diventano così materiali valorizzati. (C2)"
+    ]
+   }
+  ]
  }
 }

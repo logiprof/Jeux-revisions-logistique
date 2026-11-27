@@ -173,4 +173,4 @@ window.META={
   },
   note:{text:"Les types d’entreprises logistiques, les interfaces internes et externes, le sens des flux de valeurs et la démarche d’optimisation sont des compléments « Hors support ». Le jeu reprend aussi la mondialisation (leçon 2.1) quand elle touche aux processus. Pour aller plus loin, voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];
