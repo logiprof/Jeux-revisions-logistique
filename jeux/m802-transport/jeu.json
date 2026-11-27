@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M802 – Il trasporto",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M802",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M802 e 80 esercizi, di cui il 38 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "d2.1 · Sorveglianza e dati di trasporto",
+    "objectifs": [
+     "d2.1 Descrivo le esigenze relative ai dati, alle informazioni e ai supporti di dati e i criteri di controllo della completezza e dell’esattezza dei dati. (C2)"
+    ]
+   },
+   {
+    "titre": "d2.2 · Track and Trace e trasmissione ai clienti",
+    "objectifs": [
+     "d2.2 Descrivo, in funzione del mezzo di trasporto (camion, treno) e delle merci da consegnare, le direttive relative al posizionamento (sul mezzo di trasporto o sulla merce) e alla trasmissione dei dati ai clienti. (C2)"
+    ]
+   },
+   {
+    "titre": "d3.3 · d3.4 · Piano del giro e piano di carico",
+    "objectifs": [
+     "d3.3 Descrivo l’importanza del piano del giro, i criteri per definirlo (redditività, ecologia, sicurezza, durata di conservazione dei prodotti, tempo, risorse) e determino con l’aiuto di uno studio di caso il miglior itinerario e un itinerario alternativo. (C3) · d3.4 Allestisco un piano di carico con l’aiuto di un esempio per permettere un carico sicuro ed efficiente. (C3)"
+    ]
+   }
+  ]
  }
 }

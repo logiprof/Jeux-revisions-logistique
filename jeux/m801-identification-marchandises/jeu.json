@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M801 – Identificazione delle merci",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M801",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M801 e 87 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "c2.8 a · GTIN, ISBN, SSCC e GS1-128",
+    "objectifs": [
+     "c2.8 Descrivo la struttura dei codici a barre (GTIN-8, GTIN-13, GS1-128, SSCC, DataMatrix, codice QR, codice bidimensionale) e i loro campi d’applicazione. (C2) · parte 1: codici unidimensionali"
+    ]
+   },
+   {
+    "titre": "c2.8 b · Codici 2D e posizionamento delle etichette",
+    "objectifs": [
+     "c2.8 Descrivo la struttura dei codici a barre (GTIN-8, GTIN-13, GS1-128, SSCC, DataMatrix, codice QR, codice bidimensionale) e i loro campi d’applicazione. (C2) · parte 2: codici bidimensionali e posizionamento"
+    ]
+   },
+   {
+    "titre": "c2.9 · L’RFID",
+    "objectifs": [
+     "c2.9 Descrivo il principio di funzionamento e il campo d’applicazione dell’RFID. (C2)"
+    ]
+   }
+  ]
  }
 }

@@ -40,5 +40,25 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M809 – Posto di controllo",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M809",
+  "duree": "10 min per serie",
+  "description": "2 obiettivi del modulo M809 e 54 esercizi, di cui il 35 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "H3.1 · Intralogistica e flussi",
+    "objectifs": [
+     "H 3.1 Descrivo i tre ambiti del sistema di preparazione delle commissioni, cioè il flusso di materiale, il flusso di dati e l’organizzazione; il loro legame e il loro effetto sulla prestazione della preparazione delle commissioni. (C3)"
+    ]
+   },
+   {
+    "titre": "H3.8 · Posto di controllo e miglioramenti",
+    "objectifs": [
+     "H 3.8 Identifico i punti deboli del flusso di dati e dell’organizzazione e descrivo le misure di miglioramento nella preparazione delle commissioni. (C4)"
+    ]
+   }
+  ]
  }
 }

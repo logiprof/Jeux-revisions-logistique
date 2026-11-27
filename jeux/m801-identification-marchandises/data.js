@@ -120,4 +120,4 @@ window.META={
   },
   note:{text:"Le cours parle de « GTIN-128 » : le nom officiel GS1 est GS1-128. Le SSCC est un numéro de 18 chiffres. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

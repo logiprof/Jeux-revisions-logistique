@@ -114,4 +114,4 @@ window.META={
   },
   note:{text:"Le placement des indicateurs de choc et de renversement n’est pas traité dans les leçons : ces épreuves sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];
