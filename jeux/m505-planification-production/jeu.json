@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M505 – Pianificazione e controllo della produzione (PCP)",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M505",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M505 e 100 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "PCP · Ruolo e compiti della PCP",
+    "objectifs": [
+     "So definire il ruolo della PCP e spiegare la sua importanza nel coordinamento tra vendite, acquisti e produzione; capisco i suoi compiti e la loro concatenazione; so analizzare un programma di produzione semplice (scorta insufficiente)."
+    ]
+   },
+   {
+    "titre": "PCP·PG · Diagrammi PERT e Gantt",
+    "objectifs": [
+     "Pianificazione dei termini: costruire e leggere un diagramma PERT (date al più presto e al più tardi, margini, cammino critico) e un diagramma di Gantt (lezioni PERT e GANTT)."
+    ]
+   },
+   {
+    "titre": "FP·TP · Push, pull e produzione alla rinfusa",
+    "objectifs": [
+     "So descrivere i flussi spinti (push) e tirati (pull), confrontare i loro flussi d’informazione, scorte, termini e sforzo di pianificazione, e scegliere la modalità adatta; so spiegare la produzione alla rinfusa, le sue caratteristiche ed esempi."
+    ]
+   },
+   {
+    "titre": "NB · Distinte base e fabbisogni",
+    "objectifs": [
+     "Capisco la differenza tra fabbisogni primari, secondari e secondari netti e il loro legame con il programma di vendita; so calcolare fabbisogni netti; so scegliere il tipo di distinta base (quantitativa, strutturale, modulare o a varianti) e spiegare l’impatto di una distinta base sbagliata."
+    ]
+   }
+  ]
  }
 }

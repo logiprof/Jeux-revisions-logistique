@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M506 – Assicurazione della qualità (AQ) nella produzione",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M506",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M506 e 100 esercizi, di cui il 35 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "A1.2 · GQ, AQ e liste di controllo",
+    "objectifs": [
+     "A1.2 Elaboro liste di controllo con criteri di valutazione di un ordine (fattibilità, disponibilità delle merci, del personale, attrezzature di lavoro disponibili, termini, ecc.) e valuto, con l’aiuto di queste liste di controllo, esempi di ordini. (C3)"
+    ]
+   },
+   {
+    "titre": "A3.4 · Kaizen, PDCA e miglioramento continuo",
+    "objectifs": [
+     "A3.4 Spiego con l’aiuto di esempi pratici i principali strumenti di miglioramento della qualità dei prodotti, dei processi e dei servizi e della sicurezza (p. es. processo CIP, sistema Kaizen, ciclo PDCA, metodo 635, metodo 5S). (C4)"
+    ]
+   },
+   {
+    "titre": "B2.1 · Norme ISO, audit e procedure",
+    "objectifs": [
+     "B2.1 Descrivo le norme di qualità in uso nell’industria e cito esempi di norme di qualità aziendali nonché il loro significato e il loro carattere obbligatorio. (C2)"
+    ]
+   },
+   {
+    "titre": "B2.3 · Sprechi, tracciabilità e risorse",
+    "objectifs": [
+     "B2.3 Spiego i punti deboli / difetti potenziali che compaiono nel mio campo di competenza e descrivo soluzioni facilmente realizzabili per porvi rimedio. (C2) — con la tracciabilità e l’economia circolare (lezioni 6.3 e 6.4)"
+    ]
+   }
+  ]
  }
 }

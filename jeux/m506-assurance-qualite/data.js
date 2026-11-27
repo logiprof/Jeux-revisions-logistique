@@ -138,4 +138,4 @@ window.META={
   },
   note:{text:"Le cours cite ISO 9001:2015 ; la nouvelle édition ISO 9001:2026 était annoncée pour le 16 septembre 2026, avec une transition de trois ans. Les listes de contrôle (A1.2) sont complétées hors support. Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

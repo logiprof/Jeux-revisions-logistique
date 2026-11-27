@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M502 – La logistica di produzione",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M502",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M502 e 75 esercizi, di cui il 37 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "LP1 · Ruolo e regola delle 6 G",
+    "objectifs": [
+     "So definire la logistica di produzione e spiegare la sua posizione tra l’approvvigionamento e la distribuzione. (C1) — Capisco come pianifica e controlla il flusso delle merci. (C2) — Applico la regola delle 6 G a una situazione concreta di produzione. (C3)"
+    ]
+   },
+   {
+    "titre": "LP2 · Obiettivi e disfunzioni",
+    "objectifs": [
+     "So elencare gli obiettivi principali della logistica di produzione (termini brevi, qualità, costi, capacità, organizzazione) e spiegarne l’impatto. (C2) — Analizzo le conseguenze di una rottura d’approvvigionamento o di un ritardo e propongo misure correttive. (C3)"
+    ]
+   },
+   {
+    "titre": "LP3 · Scorte di produzione e smaltimento",
+    "objectifs": [
+     "Identifico i tipi di magazzino legati alla produzione (a monte, intermedio, a valle, di prossimità) e il loro ruolo. (C1-C2) — Descrivo il processo logistico di smaltimento (raccolta, smistamento, imballaggio, stoccaggio, evacuazione) e applico le priorità prevenzione, valorizzazione, smaltimento. (C3)"
+    ]
+   }
+  ]
  }
 }

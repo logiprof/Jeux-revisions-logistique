@@ -139,4 +139,4 @@ window.META={
   },
   note:{text:"La saisie des temps (B5.1) n’est que peu traitée dans les leçons : les épreuves concernées sont marquées « Hors support ». Cours complet sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

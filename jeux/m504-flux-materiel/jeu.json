@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M504 – Il flusso dei materiali",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M504",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M504 e 100 esercizi, di cui il 32 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "B3.4a · Flusso dei materiali e Kanban",
+    "objectifs": [
+     "B3.4 Spiego il principio dei sistemi di indicatori dell’azienda e la loro importanza per l’azienda e per l’esecuzione dei mandati. (C2) — parte: flussi interni ed esterni, Kanban come indicatore di riapprovvigionamento"
+    ]
+   },
+   {
+    "titre": "B3.4b·B5.1 · Two-Bin, ordinazione ottica e registrazione",
+    "objectifs": [
+     "B3.4: Two-Bin e sistemi ottici come indicatori d’ordinazione. (C2) — B5.1 Spiego lo scopo e l’utilità di una registrazione corretta dei tempi di lavoro e di processo e mostro le possibilità di valutazione dei dati. (C2)"
+    ]
+   },
+   {
+    "titre": "B3.4c·B4.4 · Just in time e Just in Sequence",
+    "objectifs": [
+     "B3.4: JIT e JIS richiedono indicatori precisi per coordinare i flussi. (C2) — B4.4 Descrivo misure per migliorare l’efficienza delle risorse e dell’energia: riduzione delle scorte grazie al JIT. (C2) — con B5.1: registrazione dei termini"
+    ]
+   },
+   {
+    "titre": "B4.4 · Automazione a basso costo e Jidoka",
+    "objectifs": [
+     "B4.4 Descrivo, con l’aiuto di un esempio pratico, misure concrete per migliorare l’efficienza delle risorse e dell’energia nel processo logistico (LCA, Jidoka, tragitti semplificati). (C2)"
+    ]
+   }
+  ]
  }
 }

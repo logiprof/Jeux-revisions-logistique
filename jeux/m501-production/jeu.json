@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M501 – La produzione",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M501",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M501 e 75 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "PR1 · Definizione e fattori di produzione",
+    "objectifs": [
+     "So definire il termine produzione e distinguere le tre grandi categorie di produzione (beni materiali, energie, servizi). (C1) — Capisco come i fattori di produzione (lavoro umano, mezzi tecnici, materie prime) trasformano input in output in un processo di creazione di valore. (C2)"
+    ]
+   },
+   {
+    "titre": "PR2 · Obiettivi della produzione",
+    "objectifs": [
+     "So elencare gli obiettivi principali di una produzione efficiente (costi, rendimento, qualità, termini, carico, soddisfazione) e spiegarne l’importanza. (C2) — Analizzo una situazione di produzione e propongo azioni per migliorare il rendimento, la qualità e il rispetto dei termini. (C3)"
+    ]
+   },
+   {
+    "titre": "PR3 · Sviluppo e struttura del prodotto",
+    "objectifs": [
+     "So descrivere le cinque tappe dello sviluppo di un prodotto (idea, studi, prototipo, modello di serie, commercializzazione). (C1) — Capisco il ruolo della pianificazione tra i servizi. (C2) — Spiego la struttura di un prodotto, la sua standardizzazione e il momento giusto per personalizzare. (C2-C3)"
+    ]
+   }
+  ]
  }
 }

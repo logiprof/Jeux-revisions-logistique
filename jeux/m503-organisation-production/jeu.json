@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M503 – Organizzazione della produzione",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M503",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M503 e 75 esercizi, di cui il 37 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "OP1 · Tipi di fabbricazione",
+    "objectifs": [
+     "So elencare e distinguere i principali tipi di fabbricazione (unitaria, multipla, in serie, di massa, per varietà e per lotti). (C1) — Confronto i loro vantaggi e svantaggi e scelgo il tipo adatto a un prodotto giustificando la mia scelta. (C2-C3)"
+    ]
+   },
+   {
+    "titre": "OP2 · Organizzazione della produzione",
+    "objectifs": [
+     "So descrivere le forme d’organizzazione del lavoro (al banco, in officina, a catena, di cantiere) e il loro funzionamento. (C1) — Capisco la loro influenza sulla produttività, sulla qualità e sui costi, e propongo l’organizzazione adatta a una situazione. (C2-C3)"
+    ]
+   },
+   {
+    "titre": "OP3 · Lean Production",
+    "objectifs": [
+     "So spiegare gli obiettivi e i principi della Lean Production (riduzione degli sprechi, flessibilità). (C2) — Analizzo un processo e suggerisco miglioramenti basati sulla produzione snella. (C3)"
+    ]
+   }
+  ]
  }
 }
