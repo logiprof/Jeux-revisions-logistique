@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M304 – Identificazione della consegna",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M304",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M304 e 100 esercizi, di cui il 34 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "c2.3 · Identificazione globale",
+    "objectifs": [
+     "c2.3 Descrivo i lavori di un’identificazione globale e ne spiego lo scopo. (C2) — con c1.1 (lavori preparatori e sicurezza allo scarico)"
+    ]
+   },
+   {
+    "titre": "c2.2 · Identificazione dettagliata e marcature",
+    "objectifs": [
+     "c2.2 Descrivo le marcature delle merci e delle unità di trasporto e il loro significato. (C2) — con l’identificazione dettagliata della consegna"
+    ]
+   },
+   {
+    "titre": "c1.5·c1.6 · Documenti di accompagnamento",
+    "objectifs": [
+     "c1.5 Descrivo i documenti di trasporto (CMR, LTA, AWB, polizza di carico) e la differenza con il bollettino di consegna. (C2) — c1.6 Descrivo gli elementi di un bollettino di consegna completo (destinatario, mittente, numero d’articolo, designazione dell’articolo, quantità, unità). (C2)"
+    ]
+   },
+   {
+    "titre": "c2.6·b3.2 · Riserve e trasporto internazionale",
+    "objectifs": [
+     "c2.6 Spiego l’importanza della firma di ricezione sui documenti di trasporto e di accompagnamento e descrivo come le differenze vengono annotate sui documenti. (C2) — b3.2 Descrivo le basi del trasporto delle merci (contratto di deposito, trasportatore, Incoterms, ecc.). (C2)"
+    ]
+   }
+  ]
  }
 }

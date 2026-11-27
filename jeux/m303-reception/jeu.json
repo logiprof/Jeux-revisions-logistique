@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M303 – Processo di ricezione delle merci",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M303",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M303 e 75 esercizi, di cui il 35 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "c1.1a · La ricezione delle merci",
+    "objectifs": [
+     "c1.1 Descrivo i lavori preparatori e le risorse necessarie (personale, spazio, materiale, DPI) per una ricezione economica e conforme alla qualità delle merci sulla base degli ordini in corso. (C2) — parte 1: ruolo della ricezione, controlli, basi giuridiche"
+    ]
+   },
+   {
+    "titre": "c1.1b · Accettare come acquirente",
+    "objectifs": [
+     "c1.1 Descrivo i lavori preparatori e le risorse necessarie (personale, spazio, materiale, DPI) per una ricezione economica e conforme alla qualità delle merci sulla base degli ordini in corso. (C2) — parte 2: vendita mobiliare, acquisto in contanti e su fattura"
+    ]
+   },
+   {
+    "titre": "c1.1c · Ricezione pianificata o no",
+    "objectifs": [
+     "c1.1 Descrivo i lavori preparatori e le risorse necessarie (personale, spazio, materiale, DPI) per una ricezione economica e conforme alla qualità delle merci sulla base degli ordini in corso. (C2) — parte 3: ricezione pianificata e non pianificata, ERP, DPI"
+    ]
+   }
+  ]
  }
 }

@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M312 – Dati di magazzino",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M312",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M312 e 100 esercizi, di cui il 34 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "G2.12 · Conservazione, scadenza e perdite",
+    "objectifs": [
+     "G2.12 Descrivo le cause e le conseguenze della perdita di materiale, della durata di conservazione e delle date di scadenza delle merci. (C2)"
+    ]
+   },
+   {
+    "titre": "G4.2·G4.3 · Soglie di scorta e punto di riordino",
+    "objectifs": [
+     "G4.2 Spiego l’origine di una scorta di sicurezza e di una scorta massima (capacità di stoccaggio, consumo, affidabilità della consegna, qualità dei fornitori, scorta media, rotazione delle scorte, termini di riapprovvigionamento) ed effettuo calcoli a questo scopo. (C3) — G4.3 Spiego l’importanza del punto di riordino, lo calcolo sulla base del consumo con l’aiuto di un caso pratico e ne deduco le conseguenze per l’approvvigionamento. (C3)"
+    ]
+   },
+   {
+    "titre": "G3.1 · Tenere aggiornati i dati di magazzino",
+    "objectifs": [
+     "G3.1 Tengo aggiornati i dati relativi alle scorte (scorta disponibile, scorta totale, scorta bloccata, scorta di garanzia della qualità, scorta riservata) e spiego le differenze. (C3)"
+    ]
+   },
+   {
+    "titre": "G3.2·G4.9·H1.6 · Inventario, differenze e correzioni",
+    "objectifs": [
+     "G3.2 Calcolo e analizzo le differenze d’inventario con l’aiuto di un caso pratico, le spiego e propongo miglioramenti. (C4) — G4.9 Calcolo le scorte di merci effettive e dichiarate e la scorta minima e ne deduco i risultati delle misure da prendere. (C4) — H1.6 Spiego la procedura di correzione delle quantità nell’ERP dell’azienda dopo la preparazione degli ordini. (C2)"
+    ]
+   }
+  ]
  }
 }

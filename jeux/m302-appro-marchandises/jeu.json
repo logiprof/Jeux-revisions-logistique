@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M302 – L’approvvigionamento di merci",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M302",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M302 e 75 esercizi, di cui il 35 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "C7.1a · Dove acquistare?",
+    "objectifs": [
+     "C7.1 Elenco i principali fattori (scorta di sicurezza, consumo, rotazione, concetti d’approvvigionamento) che portano a un ordine ed effettuo calcoli semplici. (C3) — parte 1: acquisto privato o professionale, scelta del fornitore, tappe dell’acquisto"
+    ]
+   },
+   {
+    "titre": "C7.1b · Offerta, domanda e prezzo",
+    "objectifs": [
+     "C7.1 Elenco i principali fattori (scorta di sicurezza, consumo, rotazione, concetti d’approvvigionamento) che portano a un ordine ed effettuo calcoli semplici. (C3) — parte 2: legge della domanda e dell’offerta, equilibrio del mercato"
+    ]
+   },
+   {
+    "titre": "C7.1c · Processo d’ordinazione",
+    "objectifs": [
+     "C7.1 Elenco i principali fattori (scorta di sicurezza, consumo, rotazione, concetti d’approvvigionamento) che portano a un ordine ed effettuo calcoli semplici. (C3) — parte 3: offerta, ordine, conferma, fattura e concetti d’approvvigionamento (JIT, JIC)"
+    ]
+   }
+  ]
  }
 }

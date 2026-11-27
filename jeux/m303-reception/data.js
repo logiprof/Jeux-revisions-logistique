@@ -110,4 +110,4 @@ window.META={
   },
   note:{text:"Le module M303 n’a qu’un objectif (c1.1) : le jeu le découpe en trois parties. Les EPI de la réception sont un complément « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

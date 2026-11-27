@@ -110,4 +110,4 @@ window.META={
   },
   note:{text:"L’objectif c7.1 est découpé en deux parties. Le cours ne détaille pas les calculs (point de commande, stock de sécurité) ni les indicateurs (b3.4) : ces épreuves sont des compléments « Hors support » avec les formules usuelles. Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

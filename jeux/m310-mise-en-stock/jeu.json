@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M310 – Preparazione all’immagazzinamento",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M310",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M310 e 75 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "M310.1 · Preparare l’immagazzinamento",
+    "objectifs": [
+     "So spiegare le diverse tappe della preparazione all’immagazzinamento, identificare le situazioni che richiedono un ricondizionamento o un reimballaggio, proporre imballaggi adatti ai bisogni commerciali (nuova dimensione, promozione, bundle) e applicare le esigenze dei sistemi automatizzati di stoccaggio."
+    ]
+   },
+   {
+    "titre": "M310.2 · Registrazione e scheda di magazzino",
+    "objectifs": [
+     "So spiegare il processo di registrazione delle merci in un sistema ERP, distinguere tra una ricezione pianificata e non pianificata e registrare correttamente un articolo rispettando le informazioni chiave come il numero d’articolo, l’unità di vendita e la scorta massima."
+    ]
+   },
+   {
+    "titre": "M310.3 · Tipi di scorta e contabilizzazione",
+    "objectifs": [
+     "So spiegare le nozioni di scorta disponibile, scorta riservata, scorta bloccata e scorta di garanzia della qualità, interpretare l’impatto delle soglie di scorta, contabilizzare le entrate e le uscite di magazzino e garantire un seguito preciso dei movimenti grazie agli strumenti di gestione informatizzata."
+    ]
+   }
+  ]
  }
 }

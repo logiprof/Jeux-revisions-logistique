@@ -141,4 +141,4 @@ window.META={
   },
   note:{text:"Quatre objectifs de l’enseignant (c1.7, c2.4, c2.5, c3.4). Les indicateurs de choc, de basculement et de température (chaîne du froid) et le Dispobox ne sont pas détaillés dans les leçons : ces épreuves sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M309 – Controllo della qualità",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M309",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M309 e 75 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "c2.11a · La qualità e i suoi livelli",
+    "objectifs": [
+     "c2.11 Descrivo gli strumenti di controllo della qualità che sono il campionamento, il controllo completo, il controllo per campionamento multiplo, il controllo delle funzioni, il prelievo di campioni, li eseguo con l’aiuto di uno studio di caso e ne valuto i risultati. (C3) — parte 1: garanzia della qualità, definizione, criteri e livelli di qualità"
+    ]
+   },
+   {
+    "titre": "c2.11b · Tecniche di controllo",
+    "objectifs": [
+     "c2.11 Descrivo gli strumenti di controllo della qualità che sono il campionamento, il controllo completo, il controllo per campionamento multiplo, il controllo delle funzioni, il prelievo di campioni, li eseguo con l’aiuto di uno studio di caso e ne valuto i risultati. (C3) — parte 2: controllo completo, campionamento semplice e multiplo, controllo di funzionamento"
+    ]
+   },
+   {
+    "titre": "g1.6 · Prelievo di campioni",
+    "objectifs": [
+     "g1.6 Descrivo il processo di prelievo di campioni e la sua importanza per il cliente. (C3) — con c1.7 (criteri di valutazione dello stato delle merci)"
+    ]
+   }
+  ]
  }
 }

@@ -142,4 +142,4 @@ window.META={
   },
   note:{text:"Sept objectifs de l’enseignant regroupés en quatre objectifs de jeu. Les marquages d’emballage, la LTA/AWB, le connaissement et les Incoterms ne sont pas détaillés dans les leçons : ce sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

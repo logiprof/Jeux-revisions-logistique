@@ -141,4 +141,4 @@ window.META={
   },
   note:{text:"G1.1 (réception) et G1.6 (prélèvement d’échantillons) figurent dans les objectifs mais ne sont pas traités dans les leçons de M311 : révisez-les avec les jeux M303 et M309. Les calculs simples de besoins (G4.1) sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

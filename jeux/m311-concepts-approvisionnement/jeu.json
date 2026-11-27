@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M311 – I concetti dell’approvvigionamento",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M311",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M311 e 100 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "G4.5 · Forme e concetti d’approvvigionamento",
+    "objectifs": [
+     "G4.5 Descrivo concetti alternativi d’approvvigionamento per ridurre o evitare le scorte di sicurezza e spiego i loro effetti sull’azienda. (C4)"
+    ]
+   },
+   {
+    "titre": "G4.1·G4.4 · Scorta, termine e procedure d’ordinazione",
+    "objectifs": [
+     "G4.1 Descrivo la valutazione del fabbisogno in funzione del consumo (passato) e della previsione del fabbisogno futuro con l’aiuto di esempi pratici ed effettuo calcoli semplici. (C3) — G4.4 Descrivo i metodi d’ordinazione con quantità fisse, quantità variabili e ritmo d’ordinazione. (C2)"
+    ]
+   },
+   {
+    "titre": "G4.8 · Quantità ottimale d’ordinazione (Andler)",
+    "objectifs": [
+     "G4.8 Calcolo la quantità ottimale d’ordinazione (Andler), interpreto il risultato e ne traggo conclusioni per il mio lavoro. (C3)"
+    ]
+   },
+   {
+    "titre": "G3.4 · Analisi ABC",
+    "objectifs": [
+     "G3.4 Allestisco in Excel un’analisi ABC (rotazione delle scorte o cifra d’affari) di una parte del magazzino o di un gruppo di articoli e propongo misure di ottimizzazione del magazzino. (C4)"
+    ]
+   }
+  ]
  }
 }

@@ -111,4 +111,4 @@ window.META={
   },
   note:{text:"Trois objectifs de l’enseignant (c1.7, c2.6, c2.7). Les dommages dus aux nuisibles et aux forces physiques, ainsi que les étapes d’utilisation d’un indicateur (schéma du cours), sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

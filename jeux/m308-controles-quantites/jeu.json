@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M308 – I controlli delle quantità",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M308",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M308 e 75 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "c2.10a · Unità e conteggio",
+    "objectifs": [
+     "c2.10 Descrivo i lavori effettuati nell’ambito del controllo dettagliato e spiego le differenze rispetto all’identificazione globale. (C2) — parte 1: unità di misura, storia del metro, conteggio per quantità parziali"
+    ]
+   },
+   {
+    "titre": "c2.10b · Misurare lunghezze e volumi",
+    "objectifs": [
+     "c2.10 Descrivo i lavori effettuati nell’ambito del controllo dettagliato e spiego le differenze rispetto all’identificazione globale. (C2) — parte 2: strumenti di misura delle lunghezze e dei volumi"
+    ]
+   },
+   {
+    "titre": "c2.10c · Pesare",
+    "objectifs": [
+     "c2.10 Descrivo i lavori effettuati nell’ambito del controllo dettagliato e spiego le differenze rispetto all’identificazione globale. (C2) — parte 3: bilance, tara, peso netto e lordo, verifica degli strumenti"
+    ]
+   }
+  ]
  }
 }

@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M301 – La logistica d’approvvigionamento",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M301",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M301 e 76 esercizi, di cui il 37 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "c7.1a · Compiti e concetti d’acquisto",
+    "objectifs": [
+     "c7.1 Elenco i principali fattori (scorta di sicurezza, consumo, rotazione, concetti d’approvvigionamento) che portano a un ordine ed effettuo calcoli semplici. (C3) — parte 1: compiti degli acquisti, «Make or Buy», esternalizzazione"
+    ]
+   },
+   {
+    "titre": "c7.1b · Quantità, momento e calcoli",
+    "objectifs": [
+     "c7.1 Elenco i principali fattori (scorta di sicurezza, consumo, rotazione, concetti d’approvvigionamento) che portano a un ordine ed effettuo calcoli semplici. (C3) — parte 2: quantità, momento d’acquisto, scorta di sicurezza, consumo, calcoli"
+    ]
+   },
+   {
+    "titre": "b3.4 · Sistemi di indicatori",
+    "objectifs": [
+     "b3.4 Spiego il principio dei sistemi di indicatori dell’azienda e la loro importanza per l’azienda e per l’esecuzione dei mandati. (C2)"
+    ]
+   }
+  ]
  }
 }

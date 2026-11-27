@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M307 – Controllo sommario e trattamento dei danni",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M307",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M307 e 75 esercizi, di cui il 41 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "c2.6 · Errori, differenze e verbale",
+    "objectifs": [
+     "c2.6 Spiego l’importanza della firma di ricezione sui documenti di trasporto e di accompagnamento e descrivo come le differenze vengono annotate sui documenti. (C2)"
+    ]
+   },
+   {
+    "titre": "c2.7 · Danni legati al trasporto",
+    "objectifs": [
+     "c2.7 Descrivo i danni legati al trasporto (meccanici, climatici, temperatura, parassiti, forze fisiche durante il trasporto, ecc.). (C2)"
+    ]
+   },
+   {
+    "titre": "c1.7 · Indicatori e registratori",
+    "objectifs": [
+     "c1.7 Descrivo i criteri di valutazione dello stato delle merci e dei supporti di scambio consegnati (indicatori di ribaltamento e d’urto, catena del freddo). (C2)"
+    ]
+   }
+  ]
  }
 }
