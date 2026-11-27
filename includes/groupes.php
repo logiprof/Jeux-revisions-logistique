@@ -1,6 +1,6 @@
 <?php
 /*
- * Regroupements de modules (menu Jeux logistique > Regroupements).
+ * Regroupements de modules (menu LogiPlay > Regroupements).
  * Un regroupement = un nom (ex. « Modules 1re année ») + une liste de jeux. Il donne deux shortcodes :
  *   [jeux_logistique groupe="modules-1re-annee"]   et   [jeux_modules_1re_annee]
  * Les attributs langue="de" et colonnes="…" fonctionnent comme pour le catalogue.

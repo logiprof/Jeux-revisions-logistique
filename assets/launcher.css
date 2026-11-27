@@ -17,7 +17,7 @@
 .jdr-card .jdr-card__logo{grid-row:1}
 .jdr-card .jdr-card__kicker{grid-column:2;grid-row:1;align-self:center}
 .jdr-card .jdr-card__title,.jdr-card .jdr-card__meta{grid-column:1 / -1}
-/* Affichage du catalogue (extension Jeux de révision – Logistique) : jeux côte à côte et éléments masqués */
+/* Affichage du catalogue (extension LogiPlay) : jeux côte à côte et éléments masqués */
 .jrl-cat{container-type:inline-size;width:100%}
 .jrl-cat .jdr-grid[class*="jdr-cols-"]{grid-template-columns:minmax(0,1fr)}
 @container (min-width:600px){.jrl-cat .jdr-grid.jdr-cols-2,.jrl-cat .jdr-grid.jdr-cols-3,.jrl-cat .jdr-grid.jdr-cols-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -65,7 +65,7 @@ a.jdr-play{display:inline-block;text-decoration:none}
 .jdr-prog__login{font-weight:700;color:var(--jdr-accent);text-decoration:underline}
 .jdr-prog .screen-reader-text{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
 html.jdr-open,html.jdr-open body{overflow:hidden!important}
-.jdr-overlay{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:2147483000;background:#fbf6ee;margin:0;padding:0;display:block}
+.jdr-overlay{position:fixed;inset:0;width:100vw;height:100vh;height:100dvh;z-index:2147483000;background:#eef0eb;margin:0;padding:0;display:block}
 .jdr-overlay:fullscreen{width:100%;height:100%}
 .jdr-frame{position:absolute;inset:0;width:100%;height:100%;border:0;display:block;background:transparent}
 .jdr-loader{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:600 1.1rem/1.4 system-ui,sans-serif;color:#56677d}
@@ -91,7 +91,7 @@ html.jdr-open,html.jdr-open body{overflow:hidden!important}
 .jdr-doc__list a:hover{color:var(--jdr-accent)}
 .jdr-doc__list em{font-style:normal;font-size:.75rem;font-weight:700;color:#5b6472;background:#efede7;border-radius:99px;padding:1px 8px;white-space:nowrap}
 
-/* Classement des groupes (extension Jeux de révision – Logistique) */
+/* Classement des groupes (extension LogiPlay) */
 .jrl-podiums{display:grid;gap:16px;margin:0 0 20px}
 .jrl-podium{background:#313a45;color:#fff;border-radius:16px;padding:18px 20px;box-sizing:border-box}
 .jrl-podium h3{margin:0!important;color:#fff!important;font-size:1.15rem;line-height:1.3}

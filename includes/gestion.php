@@ -1,6 +1,6 @@
 <?php
 /*
- * Gestion des jeux (menu Jeux logistique > Gestion des jeux).
+ * Gestion des jeux (menu LogiPlay > Gestion des jeux).
  * - activer / masquer un jeu (un jeu masqué n'apparaît plus nulle part pour les élèves et ne s'ouvre plus) ;
  * - statistiques par jeu (élèves, maîtrise moyenne, note moyenne, dernière activité) ;
  * - textes de la carte modifiables (titre, durée, en français et en allemand) et couleur ;

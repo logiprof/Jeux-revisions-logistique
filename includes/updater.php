@@ -57,7 +57,7 @@ function jrl_update_info( $plugin_file ) {
 		'requires'     => '6.0',
 		'requires_php' => '7.4',
 		'tested'       => get_bloginfo( 'version' ),
-		'icons'        => array( 'svg' => plugins_url( 'assets/icone.svg', JRL_FILE ), '1x' => plugins_url( 'assets/icone.svg', JRL_FILE ) ),
+		'icons'        => array( 'svg' => plugins_url( 'assets/logiplay-icone.svg', JRL_FILE ), '1x' => plugins_url( 'assets/logiplay-icone-128.png', JRL_FILE ), '2x' => plugins_url( 'assets/logiplay-icone-256.png', JRL_FILE ) ),
 	);
 }
 
@@ -85,7 +85,7 @@ add_filter( 'plugins_api', function ( $res, $action, $args ) {
 	$r = jrl_remote();
 	$nb = count( jrl_jeux() );
 	return (object) array(
-		'name'          => 'Jeux de révision – Logistique',
+		'name'          => 'LogiPlay',
 		'slug'          => 'jeux-revisions-logistique',
 		'version'       => ! empty( $r['version'] ) ? $r['version'] : JRL_VERSION,
 		'author'        => '<a href="https://logiprof.fontes-oliveira.ch">LogiProf</a>',
@@ -96,7 +96,7 @@ add_filter( 'plugins_api', function ( $res, $action, $args ) {
 		'last_updated'  => ! empty( $r['date'] ) ? $r['date'] : '',
 		'download_link' => ! empty( $r['paquet'] ) ? $r['paquet'] : '',
 		'sections'      => array(
-			'description' => '<p>Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (' . (int) $nb . ' jeux installés). Shortcode <code>[jeux_logistique]</code> pour tout le catalogue, <code>[jeu_m101]</code>… pour un seul jeu.</p>',
+			'description' => '<p>LogiPlay by LogiProf : catalogue des jeux de révision pour logisticien·ne·s CFC (' . (int) $nb . ' jeux installés). Shortcode <code>[jeux_logistique]</code> pour tout le catalogue, <code>[jeu_m101]</code>… pour un seul jeu.</p>',
 			'changelog'   => ! empty( $r['notes'] ) ? wpautop( esc_html( $r['notes'] ) ) : '<p>Voir les versions sur GitHub.</p>',
 		),
 		'banners'       => array(),

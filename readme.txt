@@ -1,13 +1,13 @@
-=== Jeux de révision – Logistique ===
+=== LogiPlay ===
 Contributors: logiprof
 Tags: formation, quiz, révision, logistique, jeux
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.26.0
+Stable tag: 2.27.0
 License: GPL-2.0-or-later
 
-Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (69 jeux, modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612, M701 à M705, M801 à M809, mathématiques 4 à 8), avec mises à jour automatiques depuis GitHub.
+LogiPlay by LogiProf : jeux de révision gamifiés pour logisticien·ne·s CFC (69 jeux, modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612, M701 à M705, M801 à M809, mathématiques 4 à 8), avec mises à jour automatiques depuis GitHub.
 
 == Description ==
 
@@ -18,7 +18,7 @@ Shortcodes :
 * [jeux_logistique] : tout le catalogue ;
 * [jeux_logistique modules="M1"] : les modules M101 à M110 ;
 * [jeux_logistique modules="M101,M203"] : les modules choisis ;
-* [jeu_m101], [jeu_m102]… : un seul jeu (liste complète dans menu Jeux logistique).
+* [jeu_m101], [jeu_m102]… : un seul jeu (liste complète dans le menu LogiPlay).
 
 == Installation ==
 
@@ -27,6 +27,9 @@ Shortcodes :
 3. Désactivez les anciennes extensions « Jeu de révision – Mxxx » si un bandeau vous le propose : les progressions sont conservées.
 
 == Changelog ==
+
+= 2.27.0 =
+* LogiPlay : nouveau nom et logo, interface des shortcodes dans le style LogiOne, calculatrice dans le jeu de mathématiques
 
 = 2.26.0 =
 * Version italienne du jeu Mathématiques – Applications professionnelles
@@ -77,13 +80,13 @@ Shortcodes :
 * Gestion des jeux : activer / masquer, statistiques par jeu, textes et couleur des cartes, aperçu, remise à zéro de la progression d'un élève
 
 = 2.10.0 =
-* Menu « Jeux logistique » dans la barre latérale de l'administration (Shortcodes et réglages, Regroupements, Suivi des élèves)
+* Menu « LogiPlay » dans la barre latérale de l'administration (Shortcodes et réglages, Regroupements, Suivi des élèves)
 
 = 2.9.0 =
-* Regroupements de modules : Réglages > Jeux logistique, un shortcode par regroupement ([jeux_<nom>] ou [jeux_logistique groupe="…"])
+* Regroupements de modules : LogiPlay, un shortcode par regroupement ([jeux_<nom>] ou [jeux_logistique groupe="…"])
 
 = 2.8.0 =
-* Cartes : titre sur toute la largeur sous l'icône. Réglages > Jeux logistique > Affichage du catalogue : jeux côte à côte (1 à 4), durée, progression et bouton Objectifs affichables ; attribut colonnes="…"
+* Cartes : titre sur toute la largeur sous l'icône. LogiPlay > Affichage du catalogue : jeux côte à côte (1 à 4), durée, progression et bouton Objectifs affichables ; attribut colonnes="…"
 
 = 2.7.3 =
 * Cartes du catalogue sans le paragraphe de description

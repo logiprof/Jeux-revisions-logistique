@@ -1,6 +1,6 @@
 <?php
 /*
- * Export des statistiques (Jeux logistique > Statistiques > Exporter).
+ * Export des statistiques (LogiPlay > Statistiques > Exporter).
  * - Rapport à présenter (direction, association) : page autonome, imprimable / enregistrable en PDF,
  *   chaque graphique téléchargeable en PNG (diapositives, courrier). Données agrégées seulement : aucun nom d'élève.
  * - Tableaux CSV (Excel) : par jeu, par classe.
@@ -197,7 +197,7 @@ h2{font-size:18px;margin:4px 0 12px}
 	<a href="<?php echo esc_url( jrl_st_url( array( 'periode' => $o['periode'] ) ) ); ?>">Retour</a>
 </div>
 <main><div class="page">
-	<p class="eyebrow"><?php echo esc_html( $site ); ?> · Jeux de révision – Logistique</p>
+	<p class="eyebrow"><?php echo esc_html( $site ); ?> · LogiPlay</p>
 	<h1>Utilisation des jeux de révision</h1>
 	<p class="per"><?php echo esc_html( ucfirst( $per ) . ' · ' . $portee . ' · ' . count( $jeux ) . ' jeux disponibles (FR/DE)' ); ?></p>
 	<div class="kpis">

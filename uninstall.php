@@ -1,6 +1,6 @@
 <?php
 /* Suppression de l'extension : les progressions des élèves sont CONSERVÉES, sauf si l'administrateur a demandé
-   l'effacement des données (Outils > Jeux de révision). */
+   l'effacement des données (Outils > LogiPlay). */
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) { exit; }
 delete_option( 'jrl_maj_auto' );
 delete_site_transient( 'jrl_github_release' );

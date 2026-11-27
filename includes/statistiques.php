@@ -1,6 +1,6 @@
 <?php
 /*
- * Statistiques des jeux (menu Jeux logistique > Statistiques).
+ * Statistiques des jeux (menu LogiPlay > Statistiques).
  * - Vue d'ensemble sur une période : élèves actifs, séances, temps de jeu, réussite, activité par jour.
  * - Par jeu : élèves, séances, temps, réussite, note moyenne à l'examen blanc.
  * - Par classe (groupes Sensei Pro) : élèves actifs, XP gagnés, temps, réussite, maîtrise ; détail des élèves.
@@ -33,7 +33,7 @@ add_action( 'admin_menu', function () {
 	if ( current_user_can( 'edit_posts' ) ) {
 		add_submenu_page( 'jeux-logistique', 'Statistiques des jeux', 'Statistiques', 'jrl_voir_stats', 'jeux-logistique-stats', 'jrl_stats_page', 2 );
 	} elseif ( current_user_can( 'jrl_voir_stats' ) ) {
-		add_menu_page( 'Statistiques des jeux', 'Jeux logistique', 'jrl_voir_stats', 'jeux-logistique-stats', 'jrl_stats_page', 'dashicons-games', 26 );
+		add_menu_page( 'Statistiques des jeux', 'LogiPlay', 'jrl_voir_stats', 'jeux-logistique-stats', 'jrl_stats_page', 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iYmxhY2siIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEwIDEuMiAxNy42IDUuNiAxMCAxMCAyLjQgNS42WiBNOC42IDMuNlY3LjZMMTIgNS42WiIvPjxwYXRoIGZpbGw9ImJsYWNrIiBkPSJNMiA2LjQgOS41IDEwLjhWMTkuMkwyIDE0LjhaIi8+PHBhdGggZmlsbD0iYmxhY2siIGQ9Ik0xOCA2LjQgMTAuNSAxMC44VjE5LjJMMTggMTQuOFoiLz48L3N2Zz4=', 26 );
 	}
 }, 22 );
 
@@ -258,7 +258,7 @@ function jrl_stats_page() {
 		<p><?php foreach ( wp_roles()->roles as $slug => $r ) : if ( 'administrator' === $slug ) { continue; } ?>
 			<label style="display:inline-block;margin:0 16px 6px 0"><input type="checkbox" name="roles[]" value="<?php echo esc_attr( $slug ); ?>" <?php checked( in_array( $slug, $roles, true ) ); ?>> <?php echo esc_html( translate_user_role( $r['name'] ) ); ?></label>
 		<?php endforeach; ?></p>
-		<p class="description">Un·e enseignant·e qui n’a pas le droit de modifier le site voit seulement un menu « Jeux logistique » avec cette page. Chacun·e choisit ses propres classes favorites.</p>
+		<p class="description">Un·e enseignant·e qui n’a pas le droit de modifier le site voit seulement un menu « LogiPlay » avec cette page. Chacun·e choisit ses propres classes favorites.</p>
 		<p><button class="button" type="submit">Enregistrer l’accès</button></p>
 	</form>
 	<?php endif; ?>

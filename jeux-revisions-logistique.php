@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Jeux de révision – Logistique
+ * Plugin Name:       LogiPlay
  * Plugin URI:        https://github.com/logiprof/jeux-revisions-logistique
- * Description:       Catalogue des jeux de révision LogiProf pour logisticien·ne·s CFC (modules M101 à M205). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
- * Version:           2.26.0
+ * Description:       LogiPlay by LogiProf : jeux de révision gamifiés pour logisticien·ne·s CFC (modules M101 à M809 et mathématiques, en français, allemand et italien). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
+ * Version:           2.27.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            LogiProf
@@ -14,7 +14,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JRL_VERSION', '2.26.0' );
+define( 'JRL_VERSION', '2.27.0' );
 define( 'JRL_FILE', __FILE__ );
 define( 'JRL_DIR', __DIR__ );
 define( 'JRL_REPO', 'logiprof/jeux-revisions-logistique' );
@@ -35,6 +35,8 @@ require_once __DIR__ . '/includes/classement.php';
 /* Statistiques : élèves actifs, temps de jeu, scores par classe, classes favorites par enseignant·e */
 require_once __DIR__ . '/includes/statistiques.php';
 require_once __DIR__ . '/includes/rapport.php';
+/* Interface LogiPlay des shortcodes (bandeau, tuiles, cartes) */
+require_once __DIR__ . '/includes/interface.php';
 
 /**
  * Jeux livrés par l'extension : un dossier par jeu dans jeux/<identifiant>/ avec index.html, data.js, jeu.json et logo.svg.
@@ -96,8 +98,10 @@ add_action( 'init', function () {
 		if ( '' === $tag || shortcode_exists( $tag ) ) { continue; }
 		add_shortcode( $tag, function ( $atts = array() ) use ( $slug ) {
 			$langue = is_array( $atts ) && ! empty( $atts['langue'] ) ? (string) $atts['langue'] : '';
-			if ( function_exists( 'jrl_est_masque' ) && jrl_est_masque( $slug ) ) { return current_user_can( 'edit_posts' ) ? '<p><em>Ce jeu est masqué (menu Jeux logistique › Gestion des jeux) : les élèves ne le voient pas.</em></p>' : ''; }
-			return function_exists( 'jdr_shortcode_jeu' ) ? '<div class="' . esc_attr( jrl_aff_classes() ) . '">' . jdr_shortcode_jeu( array( 'id' => $slug, 'langue' => $langue ) ) . '</div>' : '';
+			if ( function_exists( 'jrl_est_masque' ) && jrl_est_masque( $slug ) ) { return current_user_can( 'edit_posts' ) ? '<p><em>Ce jeu est masqué (menu LogiPlay › Gestion des jeux) : les élèves ne le voient pas.</em></p>' : ''; }
+			if ( ! function_exists( 'jdr_shortcode_jeu' ) ) { return ''; }
+			jrl_lp_enqueue();
+			return '<div class="lpl-app lpl-solo ' . esc_attr( jrl_aff_classes() ) . '">' . jdr_shortcode_jeu( array( 'id' => $slug, 'langue' => $langue ) ) . '</div>';
 		} );
 	}
 }, 20 );
@@ -106,18 +110,19 @@ add_action( 'init', function () {
  * [jeux_logistique] : tout le catalogue de l'extension.
  * [jeux_logistique modules="M1"] : seulement les modules qui commencent par M1 (M101 à M110).
  * [jeux_logistique modules="M101,M203"] : seulement ces modules.
- * [jeux_logistique groupe="modules-1re-annee"] ou [jeux_modules_1re_annee] : un regroupement (menu Jeux logistique).
+ * [jeux_logistique groupe="modules-1re-annee"] ou [jeux_modules_1re_annee] : un regroupement (menu LogiPlay).
  * [jeux_logistique podium="non"] : sans le podium « Classement de la semaine » (affiché aux élèves d'un groupe Sensei).
  * [jeux_logistique colonnes="3"] : 3 jeux côte à côte (1 à 4 ; sinon le réglage « Affichage du catalogue »).
+ * [jeux_logistique entete="non"] : sans le bandeau LogiPlay ; [jeux_logistique largeur="contenu"] : dans la colonne du thème au lieu de toute la largeur.
  */
 function jrl_shortcode_catalogue( $atts ) {
 	if ( ! function_exists( 'jdr_card' ) ) { return ''; }
-	$a = shortcode_atts( array( 'modules' => '', 'langue' => '', 'colonnes' => '', 'groupe' => '', 'podium' => '' ), $atts, 'jeux_logistique' );
+	$a = shortcode_atts( array( 'modules' => '', 'langue' => '', 'colonnes' => '', 'groupe' => '', 'podium' => '', 'entete' => '', 'largeur' => '' ), $atts, 'jeux_logistique' );
 	$filtres = array_filter( array_map( 'trim', explode( ',', strtoupper( (string) $a['modules'] ) ) ) );
 	$groupe = null;
 	if ( '' !== (string) $a['groupe'] ) {
 		$groupe = function_exists( 'jrl_groupe' ) ? jrl_groupe( $a['groupe'] ) : null;
-		if ( ! $groupe ) { return current_user_can( 'edit_posts' ) ? '<p><em>Regroupement introuvable : vérifiez le shortcode dans le menu Jeux logistique.</em></p>' : ''; }
+		if ( ! $groupe ) { return current_user_can( 'edit_posts' ) ? '<p><em>Regroupement introuvable : vérifiez le shortcode dans le menu LogiPlay.</em></p>' : ''; }
 		if ( '' === (string) $a['colonnes'] && ! empty( $groupe['colonnes'] ) ) { $a['colonnes'] = $groupe['colonnes']; }
 	}
 	$tous = jdr_jeux();
@@ -133,18 +138,25 @@ function jrl_shortcode_catalogue( $atts ) {
 		$cartes[] = array( $slug, $tous[ $slug ] );
 	}
 	if ( ! $cartes ) { return current_user_can( 'edit_posts' ) ? '<p><em>Aucun jeu ne correspond à ce shortcode.</em></p>' : ''; }
-	jdr_enqueue();
+	jdr_enqueue(); jrl_lp_enqueue();
 	$prev = function_exists( 'jdr_lang' ) ? jdr_lang() : 'fr';
 	if ( '' !== $a['langue'] && function_exists( 'jdr_lang' ) ) { jdr_lang( $a['langue'] ); }
 	$col = jrl_colonnes( $a['colonnes'] );
 	$podium = ( 'non' !== strtolower( (string) $a['podium'] ) && function_exists( 'jrl_cl_podium_html' ) ) ? jrl_cl_podium_html() : '';
-	$out = '<div class="' . esc_attr( jrl_aff_classes() ) . '">' . $podium . '<div class="jdr-grid' . ( 'auto' !== $col ? ' jdr-cols-' . $col : '' ) . '">';
+	$entete = 'non' !== strtolower( (string) $a['entete'] );
+	$plein = 'contenu' !== strtolower( (string) $a['largeur'] );
+	$slugs = array(); $infos = array(); foreach ( $cartes as $c ) { $slugs[] = $c[0]; $infos[ $c[0] ] = $c[1]; }
+	$out = '<section class="lpl-app ' . ( $plein ? 'lpl-full' : 'lpl-contenu' ) . ' ' . esc_attr( jrl_aff_classes() ) . '">'
+		. ( $entete ? jrl_lp_hero( count( $cartes ) ) : '' )
+		. '<div class="lpl-body">' . jrl_lp_tuiles( $slugs, $infos ) . $podium
+		. '<h3 class="lpl-h">' . esc_html( jrl_lp_t( 'Vos jeux' ) ) . ' <span>' . esc_html( 1 === count( $cartes ) ? jrl_lp_t( '1 jeu' ) : sprintf( jrl_lp_t( '%d jeux' ), count( $cartes ) ) ) . '</span></h3>'
+		. '<div class="jdr-grid' . ( 'auto' !== $col ? ' jdr-cols-' . $col : '' ) . '">';
 	foreach ( $cartes as $c ) { $out .= jdr_card( $c[0], $c[1] ); }
 	if ( function_exists( 'jdr_lang' ) ) { jdr_lang( $prev ); }
-	return $out . '</div></div>';
+	return $out . '</div></div></section>';
 }
 
-/* ---------- Affichage (menu Jeux logistique > Affichage du catalogue) ---------- */
+/* ---------- Affichage (menu LogiPlay > Affichage du catalogue) ---------- */
 /** Nombre de jeux côte à côte : « auto » ou 1 à 4 (attribut colonnes="…" du shortcode, sinon le réglage). */
 function jrl_colonnes( $attr = '' ) {
 	$v = '' !== (string) $attr ? (string) $attr : (string) get_option( 'jrl_colonnes', 'auto' );

@@ -20,7 +20,7 @@
  *         progression dans l'historique (30 derniers jours d'activité restaurables, jdr_restaurer_jour) ;
  *         supprimer un jeu ne supprime plus ses données, sauf réglage explicite (option jdr_effacer_donnees, fonction
  *         jdr_effacer_donnees_ok() appelée par la désinstallation de chaque jeu) ; sauvegarde complète en un fichier
- *         (export JSON) et restauration (import) dans Outils > Jeux de révision.
+ *         (export JSON) et restauration (import) dans Outils > LogiPlay.
  *         Dossier de formation : clés 'dossier' et 'corrige' (URL des PDF livrés avec le jeu), affichés sous le bouton de la carte ;
  *         filtre jdr_carte_pied ( $html, $jeu, $uid, $peut_jouer ) pour le remplacer ou le compléter (extension de gestion).
  * 1.7.2 : fusion avec la lignée 1.6.x des jeux enfants : prénom transmis aussi dans JDR_CFG.user.first ;
@@ -127,7 +127,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 			foreach ( array( jdr_table(), jdr_table_hist(), jdr_table_sess() ) as $t ) { if ( $wpdb->get_var( $wpdb->prepare( 'SHOW TABLES LIKE %s', $t ) ) !== $t ) { delete_transient( 'jdr_tables_ok' ); return false; } }
 			set_transient( 'jdr_tables_ok', 1, 12 * HOUR_IN_SECONDS ); return true;
 		}
-		/* la désinstallation d'un jeu efface-t-elle ses données ? Non, sauf réglage explicite dans Outils > Jeux de révision */
+		/* la désinstallation d'un jeu efface-t-elle ses données ? Non, sauf réglage explicite dans Outils > LogiPlay */
 		function jdr_effacer_donnees_ok() { return '1' === get_option( 'jdr_effacer_donnees', '0' ); }
 		function jdr_maybe_install_db() {
 			if ( get_option( 'jdr_db_version' ) === JDR_DB_VERSION && jdr_tables_ok() ) { return; }
@@ -372,9 +372,11 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 			$jeu = jdr_loc( jdr_defaults( $jeu ) ); $in = is_user_logged_in();
 			$c = sanitize_hex_color( $jeu['couleur'] ); $c = $c ? $c : '#1f4e8c';
 			$btn = jdr_started( $id ) ? $jeu['bouton_suite'] : $jeu['bouton']; $btn = $btn ? $btn : jdr_t( '▶ Jouer' );
-			$acc = $in ? jdr_acces( $id ) : true; $extra = $in ? (string) apply_filters( 'jdr_carte_extra', '', $id, get_current_user_id() ) : '';
+			$acc = $in ? jdr_acces( $id ) : true;
+			$etat = ''; if ( $in ) { $su = jdr_summary( jdr_user_data( $id ) ); if ( $su && ( $su['xp'] > 0 || $su['global'] > 0 ) ) { $etat = $su['global'] >= 80 ? ' is-mastered' : ' is-started'; } }
+			$extra = $in ? (string) apply_filters( 'jdr_carte_extra', '', $id, get_current_user_id() ) : '';
 			ob_start(); ?>
-			<article class="jdr-card<?php echo true !== $acc ? ' jdr-card--locked' : ''; ?>" style="--jdr-accent:<?php echo esc_attr( $c ); ?>" data-jdr-id="<?php echo esc_attr( $id ); ?>">
+			<article class="jdr-card<?php echo esc_attr( $etat ); echo true !== $acc ? ' jdr-card--locked' : ''; ?>" style="--jdr-accent:<?php echo esc_attr( $c ); ?>" data-jdr-id="<?php echo esc_attr( $id ); ?>">
 				<div class="jdr-card__logo"><img src="<?php echo esc_url( $jeu['logo'] ); ?>" alt="" width="96" height="96" loading="lazy"></div>
 				<div class="jdr-card__body">
 					<?php if ( $jeu['sous_titre'] ) : ?><p class="jdr-card__kicker"><?php echo esc_html( $jeu['sous_titre'] ); ?></p><?php endif; ?>
@@ -511,7 +513,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 
 		/* ---------- administration : jeux installés et suivi des participants ---------- */
 		function jdr_cap() { return apply_filters( 'jdr_capacite_suivi', 'edit_others_posts' ); }
-		function jdr_admin_menu() { add_management_page( 'Jeux de révision', 'Jeux de révision', 'edit_posts', 'jeux-revision', 'jdr_admin_page' ); }
+		function jdr_admin_menu() { add_management_page( 'LogiPlay – Suivi des élèves', 'LogiPlay', 'edit_posts', 'jeux-revision', 'jdr_admin_page' ); }
 		function jdr_rows_for( $jeu ) {
 			global $wpdb;
 			return $wpdb->get_results( $wpdb->prepare( 'SELECT p.user_id, p.xp, p.maitrise, p.objectifs, p.meilleure_note, p.sauvegardes, p.cree_le, p.maj_le, u.display_name, u.user_login, u.user_email, (SELECT COUNT(*) FROM ' . jdr_table_sess() . ' s WHERE s.user_id = p.user_id AND s.jeu = p.jeu) AS sessions FROM ' . jdr_table() . " p LEFT JOIN {$wpdb->users} u ON u.ID = p.user_id WHERE p.jeu = %s ORDER BY p.maj_le DESC LIMIT 2000", $jeu ) );

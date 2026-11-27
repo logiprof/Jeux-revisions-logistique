@@ -1,4 +1,6 @@
-# Jeux de révision – Logistique
+<img src="assets/logiplay-logo.svg" alt="LogiPlay by LogiProf" height="80">
+
+# LogiPlay
 
 Jeux de révision LogiProf pour les apprenti·e·s **logisticien·ne·s CFC**, et l’extension WordPress qui les installe sur votre site, avec mises à jour automatiques.
 
@@ -13,7 +15,11 @@ Jeux de révision LogiProf pour les apprenti·e·s **logisticien·ne·s CFC**, e
 2. Dans WordPress : **Extensions → Ajouter → Téléverser une extension**, choisissez le zip, puis **Activer**.
 3. Si vous aviez installé les anciennes extensions « Jeu de révision – Mxxx », un bandeau propose de les désactiver. Les progressions des élèves sont conservées.
 
-La liste des shortcodes est aussi dans le menu **Jeux logistique** (barre latérale de l’administration).
+La liste des shortcodes est aussi dans le menu **LogiPlay** (barre latérale de l’administration).
+
+Interface : le catalogue s’affiche dans le style LogiOne (bandeau anthracite avec le logo LogiPlay, tuiles de progression, classement de la semaine, cartes des jeux). Attributs : `entete="non"` pour retirer le bandeau, `largeur="contenu"` pour rester dans la colonne du thème.
+
+Calculatrice : le jeu de mathématiques affiche une calculatrice à côté de chaque question (comme LogiExam). Pour l’ajouter à un autre jeu : `python3 outils/calculatrice/ajouter.py jeux/<slug>` (à relancer après une nouvelle traduction).
 
 ## Shortcodes
 
@@ -103,7 +109,7 @@ Sans `langue`, le jeu s’ouvre en français et l’élève peut passer à l’a
 
 ## Mises à jour automatiques
 
-L’extension lit la dernière *release* de ce dépôt (en-tête `Update URI`). Quand une version plus récente existe, WordPress la propose dans **Extensions** et l’installe automatiquement si l’option est cochée dans le menu **Jeux logistique** (barre latérale de l’administration) (cochée par défaut). Le bouton **Rechercher une mise à jour maintenant** force la vérification.
+L’extension lit la dernière *release* de ce dépôt (en-tête `Update URI`). Quand une version plus récente existe, WordPress la propose dans **Extensions** et l’installe automatiquement si l’option est cochée dans le menu **LogiPlay** (barre latérale de l’administration) (cochée par défaut). Le bouton **Rechercher une mise à jour maintenant** force la vérification.
 
 ### Publier une nouvelle version
 
@@ -134,7 +140,7 @@ Progression, historique et bilans sont enregistrés dans la base du site (tables
 jeux-revisions-logistique.php   extension (catalogue, shortcodes)
 includes/catalogue.php          moteur commun des jeux de révision (1.7.3)
 includes/updater.php            mises à jour depuis GitHub
-includes/admin.php              menu Jeux logistique
+includes/admin.php              menu LogiPlay
 assets/                         lanceur des jeux, icône
 jeux/<identifiant>/             un dossier par jeu
 outils/construire_zip.sh        construit le zip de l’extension

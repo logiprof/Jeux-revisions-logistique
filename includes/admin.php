@@ -2,16 +2,16 @@
 /* Menu Jeux logistique : liste des jeux et de leurs shortcodes, mises à jour */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-/* Menu « Jeux logistique » dans la barre latérale de l'administration (sous Commentaires) */
+/* Menu « LogiPlay » dans la barre latérale de l'administration (sous Commentaires) */
 add_action( 'admin_menu', function () {
-	add_menu_page( 'Jeux de révision – Logistique', 'Jeux logistique', 'edit_posts', 'jeux-logistique', 'jrl_admin_page', 'dashicons-games', 26 );
-	add_submenu_page( 'jeux-logistique', 'Jeux de révision – Logistique', 'Shortcodes et réglages', 'edit_posts', 'jeux-logistique', 'jrl_admin_page' );
+	add_menu_page( 'LogiPlay', 'LogiPlay', 'edit_posts', 'jeux-logistique', 'jrl_admin_page', 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PHBhdGggZmlsbD0iYmxhY2siIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEwIDEuMiAxNy42IDUuNiAxMCAxMCAyLjQgNS42WiBNOC42IDMuNlY3LjZMMTIgNS42WiIvPjxwYXRoIGZpbGw9ImJsYWNrIiBkPSJNMiA2LjQgOS41IDEwLjhWMTkuMkwyIDE0LjhaIi8+PHBhdGggZmlsbD0iYmxhY2siIGQ9Ik0xOCA2LjQgMTAuNSAxMC44VjE5LjJMMTggMTQuOFoiLz48L3N2Zz4=', 26 );
+	add_submenu_page( 'jeux-logistique', 'LogiPlay', 'Shortcodes et réglages', 'edit_posts', 'jeux-logistique', 'jrl_admin_page' );
 	add_submenu_page( 'jeux-logistique', 'Regroupements de modules', 'Regroupements', 'edit_posts', 'admin.php?page=jeux-logistique#jrl-groupes' );
 	if ( function_exists( 'jdr_admin_page' ) ) {
 		add_submenu_page( 'jeux-logistique', 'Suivi des élèves', 'Suivi des élèves', function_exists( 'jdr_cap' ) ? jdr_cap() : 'edit_others_posts', 'tools.php?page=jeux-revision' );
 	}
 }, 20 );
-/* Ancienne adresse (Réglages > Jeux logistique) : redirection vers le nouveau menu */
+/* Ancienne adresse (LogiPlay) : redirection vers le nouveau menu */
 add_action( 'admin_init', function () {
 	global $pagenow;
 	if ( 'options-general.php' === $pagenow && isset( $_GET['page'] ) && 'jeux-logistique' === $_GET['page'] ) {
@@ -39,7 +39,7 @@ add_action( 'admin_notices', function () {
 	$d = jrl_doublons();
 	if ( ! $d ) { return; }
 	$url = wp_nonce_url( admin_url( 'admin.php?page=jeux-logistique&jrl_desactiver=1' ), 'jrl_desactiver' );
-	echo '<div class="notice notice-warning"><p><strong>Jeux de révision – Logistique :</strong> ' . esc_html( sprintf( '%d ancienne(s) extension(s) « Jeu de révision – Mxxx » sont encore actives. Les mêmes jeux sont maintenant fournis par cette extension. Les progressions des élèves sont conservées.', count( $d ) ) ) . ' <a class="button button-small" href="' . esc_url( $url ) . '">Désactiver les anciennes extensions</a></p></div>';
+	echo '<div class="notice notice-warning"><p><strong>LogiPlay :</strong> ' . esc_html( sprintf( '%d ancienne(s) extension(s) « Jeu de révision – Mxxx » sont encore actives. Les mêmes jeux sont maintenant fournis par cette extension. Les progressions des élèves sont conservées.', count( $d ) ) ) . ' <a class="button button-small" href="' . esc_url( $url ) . '">Désactiver les anciennes extensions</a></p></div>';
 } );
 add_action( 'admin_init', function () {
 	if ( empty( $_GET['jrl_desactiver'] ) || ! current_user_can( 'activate_plugins' ) ) { return; }
@@ -75,7 +75,7 @@ function jrl_admin_page() {
 	$msg = array( 'reglages' => 'Réglages enregistrés.', 'verifie' => 'GitHub a été consulté.', 'desactive' => 'Anciennes extensions désactivées.', 'groupe_ok' => 'Regroupement enregistré.', 'groupe_supprime' => 'Regroupement supprimé.' );
 	?>
 	<div class="wrap">
-		<h1>Jeux de révision – Logistique</h1>
+		<h1 style="margin:8px 0 14px"><img src="<?php echo esc_url( plugins_url( 'assets/logiplay-logo.svg', JRL_FILE ) ); ?>" alt="LogiPlay by LogiProf" style="height:56px;width:auto;display:block"></h1>
 		<?php if ( isset( $msg[ $ok ] ) ) : ?><div class="notice notice-success is-dismissible"><p><?php echo esc_html( $msg[ $ok ] ); ?></p></div><?php endif; ?>
 		<?php if ( 'groupe_vide' === $ok ) : ?><div class="notice notice-error is-dismissible"><p>Donnez un nom au regroupement et cochez au moins un module.</p></div><?php endif; ?>
 		<p>Copiez un shortcode dans une page ou un article (bloc « Code court »). Les élèves doivent être connectés pour jouer ; leur progression est enregistrée sur leur compte.</p>
@@ -87,6 +87,8 @@ function jrl_admin_page() {
 				<tr><td><code>[jeux_logistique modules="M1"]</code></td><td>Seulement les modules M101 à M110 (M2 pour M201 à M205…).</td></tr>
 				<tr><td><code>[jeux_logistique modules="M101,M203"]</code></td><td>Seulement les modules choisis.</td></tr>
 				<tr><td><code>[jeux_logistique groupe="…"]</code></td><td>Un regroupement de modules que vous avez créé (voir « Regroupements de modules » plus bas) ; chaque regroupement a aussi son propre shortcode.</td></tr>
+				<tr><td><code>[jeux_logistique entete="non"]</code></td><td>Sans le bandeau LogiPlay (logo, salutation, cubes) en haut du catalogue.</td></tr>
+				<tr><td><code>[jeux_logistique largeur="contenu"]</code></td><td>Catalogue dans la colonne du thème. Par défaut, l’interface LogiPlay occupe toute la largeur de la page, comme LogiLive.</td></tr>
 				<tr><td><code>[jeux_logistique colonnes="3"]</code></td><td>Nombre de jeux côte à côte sur cette page (1 à 4). Sans <code>colonnes</code>, le réglage « Affichage du catalogue » ci-dessous s’applique.</td></tr>
 				<tr><td><code>[jeux_logistique langue="de"]</code><br><code>[jeux_logistique langue="it"]</code></td><td>Le catalogue en allemand ou en italien (cartes et jeux). Fonctionne aussi avec <code>modules="…"</code> et pour un seul jeu : <code>[jeu_m101 langue="it"]</code>. Sans <code>langue</code>, l’élève peut changer de langue dans le jeu (menu FR · DE · IT) ; sa progression est la même dans les trois langues. Un jeu pas encore traduit s’affiche en français.</td></tr>
 				<tr><td><code>[jeux_revision]</code></td><td>Tous les jeux de révision installés sur le site, y compris ceux d’autres extensions.</td></tr>
