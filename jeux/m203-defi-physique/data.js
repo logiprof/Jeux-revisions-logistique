@@ -272,4 +272,4 @@ window.META={
   },
   note:{text:"Le jeu porte sur le sous-chapitre 3.6. Les situations de pression (B2.5), l’organisation d’urgence (B3.9), les engins de levage (C1.3) et une partie des moyens auxiliaires (D1.7) n’y sont pas traités : ces questions sont marquées « Hors support » et s’appuient sur la Suva et le SECO. Voir",url:"https://www.suva.ch/fr-ch/prevention/par-danger/materiaux-rayonnements-et-situations-a-risque/contraintes-corporelles-et-ergonomie/manutention-des-charges-lourdes/soulevez-fute",link:"suva.ch"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

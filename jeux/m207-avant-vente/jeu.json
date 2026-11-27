@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M207 – La prevendita",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M207",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M207 e 76 esercizi, di cui il 39 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "M207.1 · I bisogni e Maslow",
+    "objectifs": [
+     "So spiegare la definizione di un bisogno e la sua importanza per la vendita, descrivere i cinque livelli della piramide di Maslow con esempi, analizzare quale bisogno è prioritario in una situazione e usarla per rispondere ai clienti."
+    ]
+   },
+   {
+    "titre": "M207.2 · Vendita e motivi d’acquisto",
+    "objectifs": [
+     "So identificare i ruoli dell’acquirente e del venditore e l’obiettivo della vendita per un’azienda, ed elencare e spiegare le diverse motivazioni d’acquisto con esempi."
+    ]
+   },
+   {
+    "titre": "M207.3 · Valutare i fornitori",
+    "objectifs": [
+     "So discutere i criteri di valutazione dei fornitori (qualità, consegna, prezzo, rischio d’insolvenza, fiducia, affidabilità, dipendenza), usare una griglia di valutazione per confrontarli e scegliere il fornitore migliore."
+    ]
+   }
+  ]
  }
 }

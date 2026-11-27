@@ -100,5 +100,55 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M205 – Il marketing",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M205",
+  "duree": "10 min per serie",
+  "description": "7 obiettivi del modulo M205 e 175 esercizi, di cui il 37 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "M205.1 · Obiettivi del marketing",
+    "objectifs": [
+     "So spiegare i diversi obiettivi del marketing, come promuovere le vendite, aumentare la quota di mercato, migliorare la notorietà e consolidare un’immagine positiva sul mercato."
+    ]
+   },
+   {
+    "titre": "M205.2 · L’offerta e la domanda",
+    "objectifs": [
+     "So descrivere l’effetto dell’offerta e della domanda sui prezzi dei prodotti, dando esempi concreti come le variazioni di prezzo dovute a raccolti abbondanti o a eventi climatici."
+    ]
+   },
+   {
+    "titre": "M205.3 · La globalizzazione",
+    "objectifs": [
+     "Capisco come la globalizzazione limita l’impatto dell’offerta locale sui prezzi e so dare esempi di prodotti importati che influenzano i mercati locali."
+    ]
+   },
+   {
+    "titre": "M205.4 · Il marketing mix",
+    "objectifs": [
+     "So spiegare i quattro elementi del marketing mix (Prodotto, Prezzo, Punto vendita, Promozione) e la loro importanza nella strategia di marketing di un’azienda."
+    ]
+   },
+   {
+    "titre": "M205.5 · I tipi di pubblicità",
+    "objectifs": [
+     "So distinguere tra pubblicità informativa e pubblicità suggestiva, spiegandone le caratteristiche e gli obiettivi rispettivi."
+    ]
+   },
+   {
+    "titre": "M205.6 · Il concetto AIDA",
+    "objectifs": [
+     "So applicare il concetto AIDA (Attenzione, Interesse, Desiderio, Azione) per creare un annuncio pubblicitario efficace che catturi l’attenzione dei clienti e li inciti all’acquisto."
+    ]
+   },
+   {
+    "titre": "M205.7 · Una buona pubblicità",
+    "objectifs": [
+     "So valutare una pubblicità per determinare se è originale, veritiera ed emotivamente coinvolgente, identificando gli elementi che contribuiscono alla sua efficacia."
+    ]
+   }
+  ]
  }
 }

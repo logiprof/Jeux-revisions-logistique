@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M208 – Il servizio di vendita",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M208",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M208 e 77 esercizi, di cui il 34 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "M208.1 · Incitare all’acquisto",
+    "objectifs": [
+     "So spiegare le motivazioni che influenzano il comportamento d’acquisto, usare la psicologia della vendita (altezza degli occhi, odori), gestire gli incentivi (bollini, punti, buoni) e attuare la promozione delle vendite (riduzioni, offerte, dimostrazioni, vendite aggiuntive)."
+    ]
+   },
+   {
+    "titre": "M208.2 · Situazioni e colloqui di vendita",
+    "objectifs": [
+     "So distinguere i bisogni dei clienti negli acquisti quotidiani e negli acquisti che richiedono una consulenza specializzata, e adattare il mio approccio di vendita (colloquio di vendita, faccia a faccia, telefono)."
+    ]
+   },
+   {
+    "titre": "M208.3 · Contratto di vendita e CGV",
+    "objectifs": [
+     "Capisco i diritti e gli obblighi del contratto di vendita, le condizioni generali di vendita e le procedure di disdetta, e so applicarli in situazioni reali."
+    ]
+   }
+  ]
  }
 }

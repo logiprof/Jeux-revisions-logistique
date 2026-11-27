@@ -112,5 +112,61 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M203 – La sfida fisica nel mondo del lavoro",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M203",
+  "duree": "10 min per serie",
+  "description": "8 obiettivi del modulo M203 e 202 esercizi, di cui il 35 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "A2.5 · I DPI",
+    "objectifs": [
+     "Elenco gli elementi dei dispositivi di protezione individuale (DPI) adatti al lavoro, spiego il loro effetto, il loro utilizzo e la loro manutenzione. (C2)"
+    ]
+   },
+   {
+    "titre": "A2.7 · Misure preventive",
+    "objectifs": [
+     "Descrivo misure personali preventive concrete per la protezione della salute e dell’ambiente al fine di evitare le malattie professionali e per la sicurezza sul lavoro. (C2)"
+    ]
+   },
+   {
+    "titre": "A2.8 · Sollecitazioni fisiche",
+    "objectifs": [
+     "Descrivo le sollecitazioni fisiche (scheletro, articolazioni, muscolatura) legate all’attività professionale, i loro effetti e le misure preventive per evitarle o ridurle. (C2)"
+    ]
+   },
+   {
+    "titre": "B2.5 · Situazioni di pressione",
+    "objectifs": [
+     "Descrivo metodi, procedure e comportamenti che permettono di prevenire, disinnescare e gestire situazioni di pressione. (C2)"
+    ]
+   },
+   {
+    "titre": "B3.8 · Rischi e pericoli",
+    "objectifs": [
+     "Descrivo con l’aiuto di esempi i rischi e i pericoli che si presentano nel processo logistico per me stesso, per i collaboratori e per i terzi. (C2)"
+    ]
+   },
+   {
+    "titre": "B3.9 · Organizzazione d’emergenza",
+    "objectifs": [
+     "Cito gli elementi principali di un’organizzazione d’emergenza e spiego le procedure, il comportamento e le misure da prendere secondo il piano d’emergenza dell’azienda. (C2)"
+    ]
+   },
+   {
+    "titre": "C1.3 · Mezzi di movimentazione",
+    "objectifs": [
+     "Descrivo i mezzi di movimentazione e di sollevamento (carrello elevatore, carroponte, bilancino, tavolo elevatore a pantografo, ausili per il sollevamento e il trasporto, esoscheletri), le loro caratteristiche e i loro campi d’impiego nella ricezione delle merci. (C2)"
+    ]
+   },
+   {
+    "titre": "D1.7 · Mezzi ausiliari",
+    "objectifs": [
+     "Conosco diversi mezzi ausiliari che permettono di riporre le merci in modo ergonomico e sicuro e spiego i loro vantaggi con l’aiuto di un esempio (carrello elevatore, esoscheletro, carrello a due ruote, ecc.) (C2)"
+    ]
+   }
+  ]
  }
 }

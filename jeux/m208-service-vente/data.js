@@ -113,4 +113,4 @@ window.META={
   },
   note:{text:"Objectifs définis par l’enseignant, regroupés en trois objectifs (M208.1 à M208.3). Le détail de l’art. 205 CO et les exemples de vente en logistique sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

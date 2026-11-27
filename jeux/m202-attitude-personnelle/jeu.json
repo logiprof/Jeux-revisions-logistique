@@ -64,5 +64,37 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M202 – L’atteggiamento personale",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M202",
+  "duree": "10 min per serie",
+  "description": "4 obiettivi del modulo M202 e 105 esercizi, di cui il 33 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "A3.1 · I ruoli nella squadra",
+    "objectifs": [
+     "Descrivo i diversi ruoli nel mondo del lavoro e spiego i loro effetti sul comportamento di chi ricopre questi ruoli. (C2)"
+    ]
+   },
+   {
+    "titre": "A3.2 · Il lavoro di squadra",
+    "objectifs": [
+     "Descrivo le condizioni di una buona collaborazione in squadra e spiego perché il lavoro di squadra porta a risultati migliori del lavoro individuale. (C2)"
+    ]
+   },
+   {
+    "titre": "B1.1 · Carta e presentazione",
+    "objectifs": [
+     "Spiego l’importanza della carta di un’azienda nonché la mia responsabilità individuale nel rispetto dei valori, come pure l’importanza delle buone maniere e di una presentazione curata (abbigliamento, igiene, ecc.). (C2)"
+    ]
+   },
+   {
+    "titre": "B1.3 · Comunicazione e accoglienza",
+    "objectifs": [
+     "Spiego l’importanza di un’accoglienza cortese delle richieste e dei bisogni dei clienti interni ed esterni. (C2)"
+    ]
+   }
+  ]
  }
 }

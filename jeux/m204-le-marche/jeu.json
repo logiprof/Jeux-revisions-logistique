@@ -100,5 +100,55 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M204 – Il mercato",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M204",
+  "duree": "10 min per serie",
+  "description": "7 obiettivi del modulo M204 e 175 esercizi, di cui il 34 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "M204.1 · La ricerca di mercato",
+    "objectifs": [
+     "So analizzare l’importanza della ricerca di mercato per le aziende, identificando le informazioni necessarie per prendere decisioni e descrivendo i metodi utilizzati per raccogliere questi dati."
+    ]
+   },
+   {
+    "titre": "M204.2 · Il bisogno",
+    "objectifs": [
+     "So spiegare il concetto di bisogno nella creazione di un mercato, descrivendo come influenza la domanda e dando esempi di bisogni specifici che hanno portato alla creazione di nuovi prodotti o servizi."
+    ]
+   },
+   {
+    "titre": "M204.3 · Le forme di mercato",
+    "objectifs": [
+     "So confrontare i tipi di mercato (monopolio, oligopolio, polipolio) spiegandone le caratteristiche e valutandone l’impatto sulla concorrenza e sulle strategie delle aziende."
+    ]
+   },
+   {
+    "titre": "M204.4 · Classificare i mercati",
+    "objectifs": [
+     "So descrivere i criteri di classificazione dei mercati, come gli oggetti scambiati, le funzioni e l’accesso, dando esempi concreti per ogni categoria."
+    ]
+   },
+   {
+    "titre": "M204.5 · La dimensione del mercato",
+    "objectifs": [
+     "So spiegare le sfide logistiche legate alla dimensione di un mercato, confrontando le specificità dei mercati locali, regionali, nazionali e globali."
+    ]
+   },
+   {
+    "titre": "M204.6 · I mercati chiusi",
+    "objectifs": [
+     "So descrivere i meccanismi di accesso ai mercati chiusi, spiegando le restrizioni come licenze, concessioni ed esigenze di capitale minimo."
+    ]
+   },
+   {
+    "titre": "M204.7 · Il monopolio",
+    "objectifs": [
+     "So analizzare le cause e le conseguenze di un monopolio su un mercato, spiegando come influenza i prezzi e le strategie delle aziende concorrenti."
+    ]
+   }
+  ]
  }
 }

@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M201 – Il cliente",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M201",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M201 e 77 esercizi, di cui il 36 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "A3.1 · I ruoli e il cliente",
+    "objectifs": [
+     "Descrivo i diversi ruoli nel mondo del lavoro e spiego i loro effetti sul comportamento di chi ricopre questi ruoli. (C2)"
+    ]
+   },
+   {
+    "titre": "B1.3 · Accoglienza dei clienti",
+    "objectifs": [
+     "Spiego l’importanza di un’accoglienza cortese delle richieste e dei bisogni dei clienti interni ed esterni. (C2)"
+    ]
+   },
+   {
+    "titre": "D5.1 · La consegna riuscita",
+    "objectifs": [
+     "Descrivo le caratteristiche principali della consegna delle merci (6 G, 7 G e 8 G) alla produzione o ai clienti interni o esterni. (C2)"
+    ]
+   }
+  ]
  }
 }

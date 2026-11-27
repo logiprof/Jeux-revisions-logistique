@@ -52,5 +52,31 @@
     ]
    }
   ]
+ },
+ "it": {
+  "titre": "M209 – Servizio post-vendita",
+  "sous_titre": "Impiegato/a in logistica AFC · Modulo M209",
+  "duree": "10 min per serie",
+  "description": "3 obiettivi del modulo M209 e 75 esercizi, di cui il 32 % casi pratici del lavoro quotidiano. Tre modalità: allenamento per obiettivo, esame di prova a tempo con nota da 1 a 6, ripasso mirato degli errori.",
+  "contenu": [
+   {
+    "titre": "D6.2a · Trattare i reclami",
+    "objectifs": [
+     "Spiego l’utilità e le possibilità di un trattamento dei reclami orientato alla ricerca di soluzioni (definizioni, diritto di reclamo, tappe del trattamento). (C3) — parte 1 di D6.2"
+    ]
+   },
+   {
+    "titre": "D6.2b · Soddisfazione e fidelizzazione",
+    "objectifs": [
+     "Deduco misure per mantenere la soddisfazione dei clienti: servizio post-vendita, fidelizzazione, inchieste di soddisfazione, prudenza con i concorsi. (C3) — parte 2 di D6.2"
+    ]
+   },
+   {
+    "titre": "D6.2c · Garanzia e gesto commerciale",
+    "objectifs": [
+     "Distinguo la garanzia del venditore, la garanzia del fabbricante e la buona volontà (gesto commerciale) per proporre una soluzione adatta al cliente. (C3) — parte 3 di D6.2"
+    ]
+   }
+  ]
  }
 }

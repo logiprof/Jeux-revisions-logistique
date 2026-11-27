@@ -112,4 +112,4 @@ window.META={
   },
   note:{text:"Objectifs définis par l’enseignant, regroupés en trois objectifs (M207.1 à M207.3). Les calculs de grille de scoring pondérée et les exemples de vente en logistique sont des compléments « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];

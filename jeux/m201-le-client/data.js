@@ -114,4 +114,4 @@ window.META={
   },
   note:{text:"Les leçons du module M201 ne traitent pas la livraison (objectif D5.1) : les questions sur les 6B, 7B et 8B suivent la définition du module M103 (leçon 3.2, professeur Jünemann). La notion de client interne est un complément « Hors support ». Voir le cours sur",url:"https://logiprof.fontes-oliveira.ch",link:"logiprof"}
 };
-window.META.langs = ["fr","de"];
+window.META.langs = ["fr","de","it"];
