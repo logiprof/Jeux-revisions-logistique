@@ -369,7 +369,7 @@ const OBJ=window.OBJ, LEVELS=window.LEVELS, META=window.META;
 /* WordPress : configuration injectée par l'extension (page du jeu servie par le site : window.JDR_CFG) ou lue dans la page parente (?wp=1). */
 const WPC=(()=>{try{const q=new URLSearchParams(location.search);let c=window.JDR_CFG||null;
   if(!c&&q.get("wp")==="1"&&window.parent!==window&&window.parent.JDR)c=window.parent.JDR.cfg||null;if(!c)return null;
-  return {rest:c.rest||"",nonce:c.nonce||"",loggedIn:!!c.loggedIn,jeu:c.jeu||q.get("jeu")||"",user:c.user||null,ajax:c.ajax||"",back:c.back||"",login:c.login||"",site:c.site||""}}catch(e){return null}})();
+  return {rest:c.rest||"",nonce:c.nonce||"",loggedIn:!!c.loggedIn,jeu:c.jeu||q.get("jeu")||"",user:c.user||null,ajax:c.ajax||"",back:c.back||"",login:c.login||"",site:c.site||"",guest:!!c.guest}}catch(e){return null}})();
 /* Utilisateur connecté au site : son compte remplace le pseudo et le code de sauvegarde. */
 const WPU=WPC&&WPC.loggedIn&&WPC.user&&WPC.user.id?{id:String(WPC.user.id),name:String(WPC.user.name||"Partecipante"),first:String(WPC.user.prenom||WPC.user.name||"").trim()}:null;
 const KEY=META.key+(WPU?"-u"+WPU.id:"");
@@ -690,7 +690,7 @@ function topBar(){
 }
 function bindTop(){const fb=$("#fs");if(fb)fb.addEventListener("click",()=>{if(fsEl())fsOff();else fsOn()});const q=$("#wpquit");if(q)q.addEventListener("click",()=>wpQuit(q));bindLang();const b=$("#snd");if(b)b.addEventListener("click",()=>{S.sound=!S.sound;save();sTap();b.setAttribute("aria-pressed",S.sound);b.innerHTML=`${ic(S.sound?"sound":"mute")}Audio ${S.sound?"attivo":"spento"}`})}
 
-function route(){if(WPU){S.name=WPU.name;home()}else if(WP&&!WP.loggedIn&&window.JDR_CFG)needLogin();else if(!S.name&&!S.started)welcome();else home()}
+function route(){if(WPU){S.name=WPU.name;home()}else if(WP&&!WP.loggedIn&&!WP.guest&&window.JDR_CFG)needLogin();else if(!S.name&&!S.started)welcome();else home()}
 
 function welcome(){
   SCREEN="welcome";
@@ -725,7 +725,7 @@ function home(){
     <span class="chev" aria-hidden="true">›</span></button>`}).join("")}</section>
   <div class="sect"><h2>Distintivi</h2><span class="muted" style="font-size:.88rem">${Object.keys(S.badges).length}/${BADGES.length}</span></div>
   <section class="badges">${BADGES.map(b=>`<div class="bdg${S.badges[b.id]?" on":""}"><span class="seal">${ic("star")}</span>${esc(b.t)}</div>`).join("")}</section>
-  ${WPU?`<section class="panel save"><b>☁️ Progressi salvati nel suo account del sito · ${esc(WPU.name)}</b><small>Sono salvati automaticamente dopo ogni risposta. Acceda con lo stesso account per ritrovarli su qualsiasi dispositivo.</small></section>`:`<section class="panel save" id="preview"><b>Anteprima fuori piattaforma</b><small>In questa anteprima i progressi restano su questo dispositivo. Su LogiProf l’apprendista ha effettuato l’accesso: progressi e risultati sono salvati automaticamente nel suo account, senza codici da annotare.</small></section>`}
+  ${WPU?`<section class="panel save"><b>☁️ Progressi salvati nel suo account del sito · ${esc(WPU.name)}</b><small>Sono salvati automaticamente dopo ogni risposta. Acceda con lo stesso account per ritrovarli su qualsiasi dispositivo.</small></section>`:`${WP&&WP.guest?`<section class="panel save" id="guest"><b>Modalità ospite</b><small>Sta giocando senza account: i progressi restano in questo browser, su questo dispositivo. Acceda per salvarli nel suo account e ritrovarli ovunque.</small>${WP.login?`<a class="btn y small" href="${esc(WP.login)}" target="_top" style="margin-top:8px;align-self:flex-start">Accedi</a>`:""}</section>`:`<section class="panel save" id="preview"><b>Anteprima fuori piattaforma</b><small>In questa anteprima i progressi restano su questo dispositivo. Su LogiProf l’apprendista ha effettuato l’accesso: progressi e risultati sono salvati automaticamente nel suo account, senza codici da annotare.</small></section>`}`}
   ${META.note?`<p class="note">${esc(META.note.text)}${META.note.url?` <a href="${esc(META.note.url)}" target="_blank" rel="noopener">${esc(META.note.link||META.note.url)}</a>.`:""}</p>`:""}`;
   bindTop();rkInit();
   if($("#frest"))$("#frest").addEventListener("submit",e=>{e.preventDefault();const d=readCode($("#ccode").value);
@@ -962,7 +962,7 @@ const RENDER={
  }
 };
 
-if(LREDIR)goLang(LPREF);else if(WPU)bootWP();else if(WP&&!WP.loggedIn&&window.JDR_CFG)needLogin();else{route();initCloud()}
+if(LREDIR)goLang(LPREF);else if(WPU)bootWP();else if(WP&&!WP.loggedIn&&!WP.guest&&window.JDR_CFG)needLogin();else{route();initCloud()}
 </script>
 
 </body></html>

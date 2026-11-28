@@ -55,7 +55,7 @@ add_action( 'admin_post_jrl_reglages', function () {
 	if ( isset( $_POST['jrl_affichage'] ) ) {
 		$col = isset( $_POST['jrl_colonnes'] ) ? sanitize_key( wp_unslash( $_POST['jrl_colonnes'] ) ) : 'auto';
 		update_option( 'jrl_colonnes', in_array( $col, array( 'auto', '1', '2', '3', '4' ), true ) ? $col : 'auto' );
-		foreach ( array( 'jrl_aff_duree', 'jrl_aff_progression', 'jrl_aff_objectifs', 'jrl_cl_podium', 'jrl_cl_jeu' ) as $o ) { update_option( $o, empty( $_POST[ $o ] ) ? '0' : '1' ); }
+		foreach ( array( 'jrl_aff_duree', 'jrl_aff_progression', 'jrl_aff_objectifs', 'jrl_cl_podium', 'jrl_cl_jeu', 'jrl_visiteurs' ) as $o ) { update_option( $o, empty( $_POST[ $o ] ) ? '0' : '1' ); }
 	}
 	$ok = 'reglages';
 	if ( ! empty( $_POST['jrl_verifier'] ) ) {
@@ -78,7 +78,7 @@ function jrl_admin_page() {
 		<h1 style="margin:8px 0 14px"><img src="<?php echo esc_url( plugins_url( 'assets/logiplay-logo.svg', JRL_FILE ) ); ?>" alt="LogiPlay by LogiProf" style="height:56px;width:auto;display:block"></h1>
 		<?php if ( isset( $msg[ $ok ] ) ) : ?><div class="notice notice-success is-dismissible"><p><?php echo esc_html( $msg[ $ok ] ); ?></p></div><?php endif; ?>
 		<?php if ( 'groupe_vide' === $ok ) : ?><div class="notice notice-error is-dismissible"><p>Donnez un nom au regroupement et cochez au moins un module.</p></div><?php endif; ?>
-		<p>Copiez un shortcode dans une page ou un article (bloc « Code court »). Les élèves doivent être connectés pour jouer ; leur progression est enregistrée sur leur compte.</p>
+		<p>Copiez un shortcode dans une page ou un article (bloc « Code court »). Les élèves connectés retrouvent leur progression sur leur compte. Si l’accès des visiteurs est activé (plus bas), les personnes sans compte peuvent aussi jouer : leur progression reste dans leur navigateur, sans classement.</p>
 
 		<h2>Catalogue complet</h2>
 		<table class="widefat striped" style="max-width:900px">
@@ -113,6 +113,10 @@ function jrl_admin_page() {
 					<label><input type="checkbox" name="jrl_aff_duree" value="1" <?php checked( '1', get_option( 'jrl_aff_duree', '1' ) ); ?>> Durée (« 10 min par série »)</label><br>
 					<label><input type="checkbox" name="jrl_aff_progression" value="1" <?php checked( '1', get_option( 'jrl_aff_progression', '1' ) ); ?>> Progression de l’élève</label><br>
 					<label><input type="checkbox" name="jrl_aff_objectifs" value="1" <?php checked( '1', get_option( 'jrl_aff_objectifs', '1' ) ); ?>> Bouton « Objectifs »</label>
+				</fieldset></td></tr>
+				<tr><th scope="row">Visiteurs sans compte</th><td><fieldset>
+					<label><input type="checkbox" name="jrl_visiteurs" value="1" <?php checked( '1', get_option( 'jrl_visiteurs', '1' ) ); ?>> Les visiteurs non connectés peuvent jouer</label>
+					<p class="description">Sans compte, la progression reste dans le navigateur de la personne (sur cet appareil) : rien n’est enregistré sur le site, pas de bilan, pas de classement ni de podium. Un lien « Se connecter » reste proposé. Décoché : il faut un compte pour jouer.</p>
 				</fieldset></td></tr>
 				<tr><th scope="row">Classement des groupes</th><td><fieldset>
 					<label><input type="checkbox" name="jrl_cl_podium" value="1" <?php checked( '1', get_option( 'jrl_cl_podium', '1' ) ); ?>> Podium « Classement de la semaine » au-dessus du catalogue</label><br>

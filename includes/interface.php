@@ -28,6 +28,7 @@ function jrl_lp_t( $fr ) {
 			'Jeux commencés' => 'Begonnene Spiele', 'Points d’expérience' => 'Erfahrungspunkte', 'Objectifs maîtrisés' => 'Beherrschte Lernziele', 'Meilleure note' => 'Beste Note',
 			'à l’examen blanc' => 'in der Probeprüfung', 'pas encore d’examen' => 'noch keine Prüfung',
 			'Vos jeux' => 'Ihre Spiele', 'Se connecter' => 'Anmelden',
+			'Jouez librement, sans compte : votre progression reste dans ce navigateur. Connectez-vous pour l’enregistrer sur votre compte et participer au classement.' => 'Spielen Sie frei, ohne Konto: Ihr Fortschritt bleibt in diesem Browser. Melden Sie sich an, um ihn in Ihrem Konto zu speichern und an der Rangliste teilzunehmen.',
 		),
 		'it' => array(
 			'Jeux de révision · Logisticien·ne CFC' => 'Giochi di ripasso · Impiegato/a in logistica AFC',
@@ -39,6 +40,7 @@ function jrl_lp_t( $fr ) {
 			'Jeux commencés' => 'Giochi iniziati', 'Points d’expérience' => 'Punti esperienza', 'Objectifs maîtrisés' => 'Obiettivi padroneggiati', 'Meilleure note' => 'Nota migliore',
 			'à l’examen blanc' => 'all’esame di prova', 'pas encore d’examen' => 'nessun esame ancora',
 			'Vos jeux' => 'I suoi giochi', 'Se connecter' => 'Accedi',
+			'Jouez librement, sans compte : votre progression reste dans ce navigateur. Connectez-vous pour l’enregistrer sur votre compte et participer au classement.' => 'Giochi liberamente, senza account: i progressi restano in questo browser. Acceda per salvarli nel suo account e partecipare alla classifica.',
 		),
 	);
 	return isset( $tr[ $lg ][ $fr ] ) ? $tr[ $lg ][ $fr ] : $fr;
@@ -70,7 +72,7 @@ function jrl_lp_hero( $nb ) {
 	$hello = jrl_lp_t( 'Révisez en jouant' );
 	if ( $in && function_exists( 'jdr_prenom' ) ) { $hello = sprintf( jrl_lp_t( 'Bonjour %s !' ), jdr_prenom( wp_get_current_user() ) ); }
 	$lead = $in ? jrl_lp_t( 'Choisissez un module : entraînement par objectif, examen blanc noté sur 6 et révision ciblée de vos erreurs.' )
-		: jrl_lp_t( 'Connectez-vous pour jouer : votre progression et vos points sont enregistrés sur votre compte.' );
+		: ( function_exists( 'jdr_visiteurs' ) && jdr_visiteurs() ? jrl_lp_t( 'Jouez librement, sans compte : votre progression reste dans ce navigateur. Connectez-vous pour l’enregistrer sur votre compte et participer au classement.' ) : jrl_lp_t( 'Connectez-vous pour jouer : votre progression et vos points sont enregistrés sur votre compte.' ) );
 	$h = '<header class="lpl-hero"><div class="lpl-hero-top">'
 		. '<span class="lpl-brand"><img class="lpl-logo" src="' . esc_url( plugins_url( 'assets/logiplay-logo-blanc.svg', JRL_FILE ) ) . '" alt="LogiPlay by LogiProf" width="270" height="80" decoding="async"></span>'
 		. '<span class="lpl-pill"><span class="lpl-dot" aria-hidden="true"></span>' . esc_html( 1 === (int) $nb ? jrl_lp_t( '1 jeu' ) : sprintf( jrl_lp_t( '%d jeux' ), (int) $nb ) ) . ' · FR · DE · IT</span>'

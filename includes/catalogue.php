@@ -36,11 +36,13 @@
  * 1.8.4 : remise à zéro d'une progression par l'administration (marque « raz » : les appareils qui ne l'ont pas vue sont refusés).
  * 1.8.5 : styles du podium « Classement de la semaine ».
  * 1.9.0 : italien (langue="it", ?lang=it, index.it.html, clé i18n 'it') à côté du français et de l’allemand.
+ * 1.10.0 : mode visiteur (filtre jdr_visiteurs) : sans compte, le jeu s'ouvre quand même (JDR_CFG.guest), la progression
+ *          reste dans le navigateur ; ni enregistrement en base, ni bilan, ni classement.
  * 1.7.3 : aucun e-mail. Le bilan de chaque session est seulement enregistré dans la base (espace de l'élève, suivi du
  *         formateur) ; l'envoi du bilan par e-mail et son réglage sont supprimés. Seule l'extension de gestion écrit aux élèves.
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-$GLOBALS['jdr_engines']['1.9.0'] = dirname( __DIR__ );
+$GLOBALS['jdr_engines']['1.10.0'] = dirname( __DIR__ );
 if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	function jdr_engine_pick() {
 		if ( function_exists( 'jdr_boot' ) ) { return; } /* un moteur 1.1.0 ou plus ancien est déjà chargé */
@@ -52,12 +54,14 @@ if ( ! function_exists( 'jdr_engine_pick' ) ) {
 	}
 	add_action( 'plugins_loaded', 'jdr_engine_pick', 1 );
 }
-if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) && ! function_exists( 'jdr_engine_1_8_2' ) && ! function_exists( 'jdr_engine_1_8_3' ) && ! function_exists( 'jdr_engine_1_8_4' ) && ! function_exists( 'jdr_engine_1_8_5' ) && ! function_exists( 'jdr_engine_1_9_0' ) ) {
-	function jdr_engine_1_9_0( $dir ) {
-		define( 'JDR_ENGINE_VERSION', '1.9.0' );
+if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1_8_1' ) && ! function_exists( 'jdr_engine_1_8_2' ) && ! function_exists( 'jdr_engine_1_8_3' ) && ! function_exists( 'jdr_engine_1_8_4' ) && ! function_exists( 'jdr_engine_1_8_5' ) && ! function_exists( 'jdr_engine_1_9_0' ) && ! function_exists( 'jdr_engine_1_10_0' ) ) {
+	function jdr_engine_1_10_0( $dir ) {
+		define( 'JDR_ENGINE_VERSION', '1.10.0' );
 		define( 'JDR_ENGINE_URL', trailingslashit( plugin_dir_url( $dir . '/catalogue' ) ) );
 		define( 'JDR_DB_VERSION', '3' );
 
+		/* visiteurs non connectés autorisés à jouer (sans enregistrement) : réglage de l'extension, filtre jdr_visiteurs */
+		function jdr_visiteurs() { return (bool) apply_filters( 'jdr_visiteurs', false ); }
 		function jdr_jeux() { $j = apply_filters( 'jdr_jeux', array() ); return is_array( $j ) ? $j : array(); }
 		/* langue des cartes et de la page du jeu : 'fr' (défaut), 'de' ou 'it' */
 		function jdr_lang( $l = null ) { static $cur = 'fr'; if ( null !== $l ) { $l = strtolower( (string) $l ); $cur = in_array( $l, array( 'de', 'it' ), true ) ? $l : 'fr'; } return $cur; }
@@ -73,6 +77,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 				'Maîtrise globale' => 'Padronanza globale', 'Maîtrise par objectif' => 'Padronanza per obiettivo',
 				'Dossier de formation' => 'Dossier di formazione', 'Notions clés et exercices sur papier · PDF' => 'Nozioni chiave ed esercizi su carta · PDF',
 				'Télécharger' => 'Scarica', 'Corrigé' => 'Soluzioni', 'Dossier : ' => 'Dossier: ', 'Objectifs (%d)' => 'Obiettivi (%d)',
+				'Jouez sans compte : votre progression reste dans ce navigateur. Connectez-vous pour l’enregistrer sur votre compte et participer au classement.' => 'Giochi senza account: i progressi restano in questo browser. Acceda per salvarli nel suo account e partecipare alla classifica.', 'Se connecter' => 'Accedi',
 				'Jeu de révision' => 'Gioco di ripasso', 'Jeu non disponible' => 'Gioco non disponibile', 'Retour' => 'Indietro',
 			);
 			if ( 'it' === jdr_lang() ) { return isset( $it[ $s ] ) ? $it[ $s ] : $s; }
@@ -86,6 +91,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 				'Maîtrise globale' => 'Lernstand gesamt', 'Maîtrise par objectif' => 'Lernstand pro Lernziel',
 				'Dossier de formation' => 'Ausbildungsdossier', 'Notions clés et exercices sur papier · PDF' => 'Grundbegriffe und Übungen auf Papier · PDF',
 				'Télécharger' => 'Herunterladen', 'Corrigé' => 'Lösungen', 'Dossier : ' => 'Dossier: ', 'Objectifs (%d)' => 'Lernziele (%d)',
+				'Jouez sans compte : votre progression reste dans ce navigateur. Connectez-vous pour l’enregistrer sur votre compte et participer au classement.' => 'Spielen Sie ohne Konto: Ihr Fortschritt bleibt in diesem Browser. Melden Sie sich an, um ihn in Ihrem Konto zu speichern und an der Rangliste teilzunehmen.', 'Se connecter' => 'Anmelden',
 				'Jeu de révision' => 'Lernspiel', 'Jeu non disponible' => 'Spiel nicht verfügbar', 'Retour' => 'Zurück',
 			);
 			return isset( $de[ $s ] ) ? $de[ $s ] : $s;
@@ -237,7 +243,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 			$u = wp_get_current_user(); $in = is_user_logged_in();
 			return array( 'rest' => esc_url_raw( rest_url( 'jdr/v1/' ) ), 'nonce' => $in ? wp_create_nonce( 'wp_rest' ) : '', 'loggedIn' => $in, 'jeu' => $id,
 				'user' => $in ? array( 'id' => (int) $u->ID, 'name' => $u->display_name ? $u->display_name : $u->user_login, 'prenom' => jdr_prenom( $u ), 'first' => trim( (string) get_user_meta( $u->ID, 'first_name', true ) ) ) : null,
-				'ajax' => admin_url( 'admin-ajax.php' ), 'login' => jdr_login_url(), 'site' => home_url( '/' ) );
+				'ajax' => admin_url( 'admin-ajax.php' ), 'login' => jdr_login_url(), 'site' => home_url( '/' ), 'guest' => ! $in && jdr_visiteurs() );
 		}
 		function jdr_enqueue() {
 			static $done = false; wp_enqueue_style( 'jdr-launcher' ); wp_enqueue_script( 'jdr-launcher' );
@@ -253,8 +259,8 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 			$id = sanitize_key( wp_unslash( $_GET['jdr_jeu'] ) ); $jeux = jdr_jeux();
 			if ( ! isset( $jeux[ $id ] ) ) { status_header( 404 ); exit( 'Jeu introuvable.' ); }
 			$lg = isset( $_GET['lang'] ) ? sanitize_key( wp_unslash( $_GET['lang'] ) ) : ''; jdr_lang( $lg );
-			if ( ! is_user_logged_in() ) { wp_safe_redirect( jdr_login_url( jdr_game_url( $id, $lg ) ) ); exit; }
-			$acc = jdr_acces( $id );
+			if ( ! is_user_logged_in() && ! jdr_visiteurs() ) { wp_safe_redirect( jdr_login_url( jdr_game_url( $id, $lg ) ) ); exit; }
+			$acc = is_user_logged_in() ? jdr_acces( $id ) : true; /* visiteur : jeu ouvert, rien n'est enregistré */
 			if ( true !== $acc ) {
 				status_header( 403 ); nocache_headers(); header( 'Content-Type: text/html; charset=utf-8' ); $ref = wp_get_referer();
 				echo '<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>' . esc_html( jdr_t( 'Jeu non disponible' ) ) . '</title></head><body style="margin:0;min-height:100vh;display:grid;place-items:center;background:#eef3f8;font-family:system-ui,sans-serif;color:#1f2328"><div style="max-width:420px;background:#fff;border-radius:16px;padding:28px;text-align:center;box-shadow:0 6px 24px rgba(15,33,55,.08)"><div style="font-size:2rem">🔒</div><h1 style="font-size:1.25rem">' . esc_html( jdr_t( 'Jeu non disponible' ) ) . '</h1><p>' . esc_html( $acc ) . '</p><p><a href="' . esc_url( $ref ? $ref : home_url( '/' ) ) . '" onclick="if(window.parent!==window){parent.postMessage({jdr:\'close\'},location.origin);return false}">' . esc_html( jdr_t( 'Retour' ) ) . '</a></p></div></body></html>';
@@ -266,7 +272,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 			if ( in_array( $lg, array( 'de', 'it' ), true ) ) { $fde = preg_replace( '#index\.html$#', 'index.' . $lg . '.html', $file ); if ( $fde !== $file && is_readable( $fde ) ) { $file = $fde; } } /* version allemande ou italienne du jeu */
 			$html = ( 0 === strpos( $file, wp_normalize_path( WP_PLUGIN_DIR ) ) && is_readable( $file ) ) ? file_get_contents( $file ) : false;
 			if ( ! $html ) { status_header( 500 ); exit( 'Fichiers du jeu introuvables.' ); }
-			$cfg = jdr_cfg( $id ); $ref = wp_get_referer(); $cfg['back'] = $ref ? $ref : home_url( '/' );
+			$cfg = jdr_cfg( $id ); $ref = wp_get_referer(); $cfg['back'] = $ref ? $ref : home_url( '/' ); if ( ! empty( $cfg['guest'] ) ) { $cfg['login'] = jdr_login_url( $cfg['back'] ); } /* visiteur : après connexion, retour à la page des jeux */
 			$inject = '<base href="' . esc_url( $base ) . '"><script>window.JDR_CFG=' . wp_json_encode( $cfg ) . ';</script>';
 			$html = preg_replace( '/<head>/i', '<head>' . $inject, $html, 1 );
 			nocache_headers(); header( 'Content-Type: text/html; charset=utf-8' ); header( 'X-Robots-Tag: noindex, nofollow' ); header( 'X-Frame-Options: SAMEORIGIN' );
@@ -330,6 +336,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 		function jdr_progress_html( $id, $jeu ) {
 			$jeu = jdr_loc( jdr_defaults( $jeu ) ); $n = count( (array) $jeu['contenu'] );
 			if ( ! is_user_logged_in() ) {
+				if ( jdr_visiteurs() ) { return '<div class="jdr-prog jdr-prog--anon"><p>' . esc_html( jdr_t( 'Jouez sans compte : votre progression reste dans ce navigateur. Connectez-vous pour l’enregistrer sur votre compte et participer au classement.' ) ) . ' <a href="' . esc_url( jdr_login_url() ) . '">' . esc_html( jdr_t( 'Se connecter' ) ) . '</a></p></div>'; }
 				return '<div class="jdr-prog jdr-prog--anon"><p>' . esc_html( jdr_t( 'Ce jeu est réservé aux membres du site. Connectez-vous : votre progression et votre score sont enregistrés sur votre compte.' ) ) . '</p></div>';
 			}
 			$d = jdr_user_data( $id ); $s = jdr_summary( $d );
@@ -387,7 +394,7 @@ if ( ! function_exists( 'jdr_engine_1_8_0' ) && ! function_exists( 'jdr_engine_1
 					<?php if ( $jeu['contenu'] ) : ?><details class="jdr-card__content"><summary class="jdr-obj-btn"><?php echo esc_html( sprintf( jdr_t( 'Objectifs (%d)' ), count( $jeu['contenu'] ) ) ); ?></summary><ul class="jdr-obj"><?php foreach ( (array) $jeu['contenu'] as $l ) : $t = is_array( $l ) ? (string) ( $l['titre'] ?? '' ) : (string) $l; $sub = is_array( $l ) ? array_filter( (array) ( $l['objectifs'] ?? array() ) ) : array(); ?><li><?php echo esc_html( $t ); ?></li><?php endforeach; ?></ul></details><?php endif; ?>
 					<?php if ( $in && true !== $acc ) : ?>
 					<p class="jdr-locked" role="note"><span aria-hidden="true">🔒</span> <?php echo esc_html( $acc ); ?></p>
-					<?php elseif ( $in ) : ?>
+					<?php elseif ( $in || jdr_visiteurs() ) : ?>
 					<button type="button" class="jdr-play" data-jdr-id="<?php echo esc_attr( $id ); ?>" data-jdr-src="<?php echo esc_url( jdr_game_url( $id, jdr_lang() ) ); ?>" data-jdr-lang="<?php echo esc_attr( jdr_lang() ); ?>" data-jdr-title="<?php echo esc_attr( $jeu['titre'] ); ?>"><?php echo esc_html( $btn ); ?></button>
 					<?php else : ?>
 					<a class="jdr-play jdr-play--login" href="<?php echo esc_url( jdr_login_url() ); ?>"><?php echo esc_html( $jeu['bouton_connexion'] ); ?></a>

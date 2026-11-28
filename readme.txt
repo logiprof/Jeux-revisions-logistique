@@ -4,14 +4,14 @@ Tags: formation, quiz, révision, logistique, jeux
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 2.28.0
+Stable tag: 2.29.0
 License: GPL-2.0-or-later
 
 LogiPlay by LogiProf : jeux de révision gamifiés pour logisticien·ne·s CFC (70 jeux, modules M101 à M110, M201 à M209, M301 à M312, M401 à M410, M501 à M506, M601 à M612, M701 à M705, M801 à M809, mathématiques 1 à 8), avec mises à jour automatiques depuis GitHub.
 
 == Description ==
 
-Chaque jeu propose un entraînement par objectif, un examen blanc chronométré noté sur 6 et une révision ciblée des erreurs. Les élèves doivent être connectés : leur progression est enregistrée sur leur compte. Aucun jeu n’envoie d’e-mail.
+Chaque jeu propose un entraînement par objectif, un examen blanc chronométré noté sur 6 et une révision ciblée des erreurs. Les élèves connectés retrouvent leur progression sur leur compte ; les visiteurs sans compte peuvent aussi jouer (progression gardée dans leur navigateur, sans classement), réglable dans le menu LogiPlay. Aucun jeu n’envoie d’e-mail.
 
 Shortcodes :
 
@@ -27,6 +27,9 @@ Shortcodes :
 3. Désactivez les anciennes extensions « Jeu de révision – Mxxx » si un bandeau vous le propose : les progressions sont conservées.
 
 == Changelog ==
+
+= 2.29.0 =
+* Accès des visiteurs sans compte (progression gardée dans le navigateur, sans classement ni bilan, réglage « Visiteurs sans compte » dans le menu LogiPlay, activé par défaut). Safari : le jeu se charge après l'entrée en plein écran et la page des jeux ne reste plus blanche après avoir quitté un jeu. Moteur commun 1.10.0.
 
 = 2.28.0 =
 * Nouveau jeu Mathématiques – Fondamentaux (modules 1 à 3 : conversions, force et poids, pourcentages, surfaces et volumes, temps et vitesses, problèmes à plusieurs étapes), 167 épreuves en français, allemand et italien, avec calculatrice. Shortcode [jeu_maths_fondamentaux]
