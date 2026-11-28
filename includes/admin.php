@@ -56,6 +56,10 @@ add_action( 'admin_post_jrl_reglages', function () {
 		$col = isset( $_POST['jrl_colonnes'] ) ? sanitize_key( wp_unslash( $_POST['jrl_colonnes'] ) ) : 'auto';
 		update_option( 'jrl_colonnes', in_array( $col, array( 'auto', '1', '2', '3', '4' ), true ) ? $col : 'auto' );
 		foreach ( array( 'jrl_aff_duree', 'jrl_aff_progression', 'jrl_aff_objectifs', 'jrl_cl_podium', 'jrl_cl_jeu', 'jrl_visiteurs' ) as $o ) { update_option( $o, empty( $_POST[ $o ] ) ? '0' : '1' ); }
+		if ( isset( $_POST['jrl_visiteurs_liste'] ) ) { /* cases cochées = jeux ouverts ; on enregistre les jeux fermés (un nouveau jeu est donc ouvert d'office) */
+			$ouverts = isset( $_POST['jrl_ouverts'] ) ? array_map( 'sanitize_key', (array) wp_unslash( $_POST['jrl_ouverts'] ) ) : array();
+			update_option( 'jrl_visiteurs_fermes', array_values( array_diff( array_keys( jrl_jeux() ), $ouverts ) ), false );
+		}
 	}
 	$ok = 'reglages';
 	if ( ! empty( $_POST['jrl_verifier'] ) ) {
@@ -116,8 +120,22 @@ function jrl_admin_page() {
 				</fieldset></td></tr>
 				<tr><th scope="row">Visiteurs sans compte</th><td><fieldset>
 					<label><input type="checkbox" name="jrl_visiteurs" value="1" <?php checked( '1', get_option( 'jrl_visiteurs', '1' ) ); ?>> Les visiteurs non connectés peuvent jouer</label>
-					<p class="description">Sans compte, la progression reste dans le navigateur de la personne (sur cet appareil) : rien n’est enregistré sur le site, pas de bilan, pas de classement ni de podium. Un lien « Se connecter » reste proposé. Décoché : il faut un compte pour jouer.</p>
+					<p class="description">Sans compte, la progression reste dans le navigateur de la personne (sur cet appareil) : rien n’est enregistré sur le site, pas de bilan, pas de classement ni de podium. Un lien « Se connecter » reste proposé. Décoché : il faut un compte pour jouer, quel que soit le jeu.</p>
 				</fieldset></td></tr>
+				<tr><th scope="row">Jeux ouverts sans compte</th><td>
+					<?php $fermes = (array) get_option( 'jrl_visiteurs_fermes', array() ); $nb_ouverts = count( array_diff( array_keys( $jeux ), $fermes ) ); ?>
+					<input type="hidden" name="jrl_visiteurs_liste" value="1">
+					<p style="margin-top:0"><strong id="jrl-nb-ouverts"><?php echo (int) $nb_ouverts; ?></strong> sur <?php echo count( $jeux ); ?> jeux ouverts aux visiteurs.
+						<button type="button" class="button-link" data-jrl-tout="1">Tout cocher</button> · <button type="button" class="button-link" data-jrl-tout="0">Tout décocher</button></p>
+					<div id="jrl-ouverts" style="max-height:320px;overflow:auto;border:1px solid #dcdcde;background:#fff;padding:8px 12px;columns:2 320px;column-gap:24px">
+						<?php foreach ( $jeux as $slug => $d ) : ?>
+						<label style="display:block;break-inside:avoid;margin:3px 0"><input type="checkbox" name="jrl_ouverts[]" value="<?php echo esc_attr( $slug ); ?>" <?php checked( ! in_array( $slug, $fermes, true ) ); ?>> <strong><?php echo esc_html( $d['module'] ); ?></strong> · <?php echo esc_html( preg_replace( '/^M\d+\s*[–-]\s*/u', '', (string) $d['titre'] ) ); ?></label>
+						<?php endforeach; ?>
+					</div>
+					<p class="description">Par défaut, tous les jeux sont ouverts, y compris les nouveaux jeux des prochaines versions. Un jeu décoché reste réservé aux comptes : sa carte affiche « Se connecter pour jouer ». Sans effet si la case « Les visiteurs non connectés peuvent jouer » est décochée.</p>
+					<script>(function(){var b=document.getElementById('jrl-ouverts');if(!b)return;function n(){document.getElementById('jrl-nb-ouverts').textContent=b.querySelectorAll('input:checked').length;}
+					b.addEventListener('change',n);document.querySelectorAll('[data-jrl-tout]').forEach(function(x){x.addEventListener('click',function(){var v=x.getAttribute('data-jrl-tout')==='1';b.querySelectorAll('input').forEach(function(i){i.checked=v;});n();});});})();</script>
+				</td></tr>
 				<tr><th scope="row">Classement des groupes</th><td><fieldset>
 					<label><input type="checkbox" name="jrl_cl_podium" value="1" <?php checked( '1', get_option( 'jrl_cl_podium', '1' ) ); ?>> Podium « Classement de la semaine » au-dessus du catalogue</label><br>
 					<label><input type="checkbox" name="jrl_cl_jeu" value="1" <?php checked( '1', get_option( 'jrl_cl_jeu', '1' ) ); ?>> Bouton « Classement » dans chaque jeu</label>

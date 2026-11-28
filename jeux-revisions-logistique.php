@@ -3,7 +3,7 @@
  * Plugin Name:       LogiPlay
  * Plugin URI:        https://github.com/logiprof/jeux-revisions-logistique
  * Description:       LogiPlay by LogiProf : jeux de révision gamifiés pour logisticien·ne·s CFC (modules M101 à M809 et mathématiques, en français, allemand et italien). Shortcodes : [jeux_logistique] pour tout le catalogue, [jeu_m101], [jeu_m102]… pour un seul jeu. Mises à jour automatiques depuis GitHub.
- * Version:           2.29.0
+ * Version:           2.30.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
  * Author:            LogiProf
@@ -14,7 +14,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JRL_VERSION', '2.29.0' );
+define( 'JRL_VERSION', '2.30.0' );
 define( 'JRL_FILE', __FILE__ );
 define( 'JRL_DIR', __DIR__ );
 define( 'JRL_REPO', 'logiprof/jeux-revisions-logistique' );
@@ -23,7 +23,13 @@ define( 'JRL_ASSET', 'jeux-revisions-logistique.zip' );
 /* Moteur commun des jeux de révision (cartes, page du jeu, progression en base, suivi) */
 require_once __DIR__ . '/includes/catalogue.php';
 /* Visiteurs sans compte : ils jouent, la progression reste dans leur navigateur (ni base, ni bilan, ni classement). Réglage dans le menu LogiPlay. */
-add_filter( 'jdr_visiteurs', function () { return '0' !== get_option( 'jrl_visiteurs', '1' ); } );
+/* Réglage général jrl_visiteurs + liste des jeux fermés aux visiteurs (jrl_visiteurs_fermes) : par défaut, tous les jeux sont ouverts. */
+add_filter( 'jdr_visiteurs', function ( $v, $id = '' ) {
+	if ( '0' === get_option( 'jrl_visiteurs', '1' ) ) { return false; }
+	$fermes = (array) get_option( 'jrl_visiteurs_fermes', array() );
+	if ( '' !== (string) $id ) { return ! in_array( $id, $fermes, true ); }
+	return ! function_exists( 'jdr_jeux' ) || count( array_diff( array_keys( jdr_jeux() ), $fermes ) ) > 0;
+}, 10, 2 );
 /* Mises à jour depuis les « releases » GitHub */
 require_once __DIR__ . '/includes/updater.php';
 /* Menu Jeux logistique (shortcodes, affichage, regroupements, mises à jour) */
